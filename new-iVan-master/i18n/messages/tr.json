@@ -1,0 +1,1612 @@
+{
+  "Home": {
+    "title": "Swipped",
+    "tagLine": "Daha akıllı, daha hızlı işe alın",
+    "description": "Swipped, Birleşik Krallık genelinde teslimat, temizlik, çilingir ve daha fazlası için işletmeleri güvenilir sağlayıcılarla bağlar."
+  },
+  "Auth": {
+    "email": "E-posta",
+    "password": "Şifre",
+    "first_name": "Ad",
+    "last_name": "Soyad",
+    "login": "Giriş Yap",
+    "signup": "Kayıt Ol",
+    "auto_login": "Otomatik giriş",
+    "join_the_membership": "Üyeliğe katıl",
+    "already_have_account": "Zaten hesabınız var mı? Giriş yapın",
+    "email_field_required": "E-posta alanı zorunludur.",
+    "invalid_email": "Lütfen geçerli bir e-posta girin.",
+    "password_min_length": "Şifre en az 6 karakter olmalıdır.",
+    "first_name_min_length": "Ad en az 2 karakter olmalıdır.",
+    "last_name_min_length": "Soyad en az 2 karakter olmalıdır.",
+    "all_fields_required": "Tüm alanlar zorunludur.",
+    "registration_successful": "Kayıt başarılı!",
+    "registration_failed": "Kayıt başarısız. Lütfen tekrar deneyin.",
+    "loading": "Yükleniyor...",
+    "invalid_credentials": "Geçersiz kimlik bilgileri.",
+    "user_not_found": "Lütfen giriş yapmadan önce kayıt olun.",
+    "device_limit_reached": "Cihaz limitinize ulaşıldı.",
+    "logout": "Çıkış Yap",
+    "logout_successful": "Çıkış başarılı!",
+    "logout_failed": "Çıkış başarısız. Lütfen tekrar deneyin.",
+    "login_successful": "Giriş başarılı!",
+    "reset_email_sent": "Şifre sıfırlama bağlantısı e-postanıza gönderildi.",
+    "send_reset_link": "Sıfırlama Bağlantısı Gönder",
+    "back_to_login": "Girişe geri dön",
+    "sending": "Gönderiliyor...",
+    "forgot_password": "Şifrenizi mi unuttunuz?",
+    "reset_password": "Şifreyi Sıfırla",
+    "reset_password_successful": "Şifre sıfırlama başarılı!",
+    "something_went_wrong": "Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin.",
+    "new_password": "Yeni Şifre",
+    "confirm_password": "Şifreyi Onayla",
+    "new_password_required": "Yeni şifre zorunludur",
+    "confirm_password_required": "Şifre onayı zorunludur",
+    "passwords_must_match": "Şifreler eşleşmelidir"
+  },
+  "AuthPages": {
+    "login": {
+      "title": "Swipped'e Tekrar Hoş Geldiniz",
+      "subtitle": "Swipped'e giriş yapın ve işe alım sürecinizi kolaylaştırın",
+      "email_label": "E-posta",
+      "password_label": "Şifre",
+      "submit": "Giriş Yap",
+      "loading": "Yükleniyor...",
+      "forgot_password_hint": "Şifrenizi mi unuttunuz?",
+      "forgot_password_link": "Buradan sıfırlayın.",
+      "signup_prompt": "Burada yeni misiniz?",
+      "signup_link": "Kayıt Ol",
+      "success_toast": "Başarılı giriş",
+      "error_toast": "Geçersiz e-posta veya şifre"
+    },
+    "register": {
+      "title": "Kayıt Ol",
+      "subtitle": "Swipped'e katılın ve yolculuğunuza bugün başlayın",
+      "first_name_label": "Ad",
+      "last_name_label": "Soyad",
+      "email_label": "E-posta",
+      "password_label": "Şifre",
+      "confirm_password_label": "Şifreyi Onayla",
+      "submit": "Hesabımı Oluştur",
+      "login_prompt": "Zaten hesabınız var mı?",
+      "login_link": "Giriş Yap",
+      "success_toast": "Kayıt başarılı! Hesabınızı doğrulamak için lütfen e-postanızı kontrol edin.",
+      "error_toast": "Hata, tekrar deneyin"
+    },
+    "forgotPassword": {
+      "title": "Şifremi Unuttum",
+      "email_label": "E-posta",
+      "submit": "Şifremi Unuttum",
+      "back_to_login": "Girişe geri dön",
+      "success_toast": "Sıfırlama bağlantısı başarıyla gönderildi",
+      "error_toast": "Sıfırlama bağlantısı gönderilemedi",
+      "generic_error_toast": "Bir şeyler ters gitti"
+    },
+    "resetPassword": {
+      "title": "Şifrenizi Sıfırlayın",
+      "new_password_label": "Yeni Şifre",
+      "confirm_password_label": "Şifreyi Onayla",
+      "submit": "Şifreyi Sıfırla",
+      "success_toast": "Şifre başarıyla sıfırlandı",
+      "error_toast": "Bir hata oluştu"
+    },
+    "activate": {
+      "title": "Hesap Etkinleştiriliyor...",
+      "success_toast": "Hesabınız etkinleştirildi.",
+      "error_toast": "Etkinleştirme başarısız.",
+      "error_message": "Etkinleştirme başarısız. Daha sonra tekrar deneyin.",
+      "generic_error_message": "Bir hata oluştu. Lütfen tekrar deneyin."
+    }
+  },
+  "AdminPages": {
+    "dashboard": {
+      "open_jobs_title": "AÇIK İŞLER"
+    },
+    "changePassword": {
+      "title": "Şifreyi Değiştir",
+      "password_label": "Şifre",
+      "confirm_password_label": "Şifreyi Onayla",
+      "save": "Kaydet",
+      "loading": "Yükleniyor..."
+    },
+    "jobsList": {
+      "title": "Açık İşler",
+      "breadcrumb_home": "Ana Sayfa",
+      "breadcrumb_current": "Açık İşler",
+      "loading": "Yükleniyor...",
+      "add_job": "İş Ekle",
+      "table_number": "#",
+      "table_title": "Başlık",
+      "table_category": "Kategori",
+      "table_status": "Durum",
+      "table_action": "Eylem",
+      "empty_text": "Açık iş yok. Yeni bir iş açın.",
+      "empty_action_text": "Bir İş Aç",
+      "confirm_delete": "Bu işi silmek istediğinizden emin misiniz?",
+      "toast_delete_success": "İş başarıyla silindi!",
+      "toast_delete_error_prefix": "İş silinirken hata oluştu:",
+      "toast_delete_generic_error": "İş silinirken hata oluştu. Lütfen tekrar deneyin."
+    },
+    "providers": {
+      "title": "Sağlayıcılar",
+      "breadcrumb_home": "Ana Sayfa",
+      "breadcrumb_current": "Sağlayıcılar",
+      "loading": "Yükleniyor...",
+      "table_number": "#",
+      "table_name": "İsim",
+      "table_email": "E-posta",
+      "table_action": "Eylem",
+      "no_providers": "Sağlayıcı bulunamadı.",
+      "toast_delete_success": "Sağlayıcı başarıyla silindi",
+      "toast_delete_failed": "Sağlayıcı silinemedi",
+      "toast_unexpected_error": "Beklenmeyen bir hata oluştu",
+      "wallet_modal_title": "Cüzdan Detayları",
+      "wallet_account_holder": "Hesap Sahibi:",
+      "wallet_account_number": "Hesap Numarası:",
+      "wallet_sort_code": "Şube Kodu:",
+      "wallet_amount": "Tutar:",
+      "wallet_created_at": "Oluşturulma Tarihi:",
+      "wallet_not_found": "Bu sağlayıcı için cüzdan bulunamadı.",
+      "wallet_close": "Kapat"
+    },
+    "payouts": {
+      "pending_label": "Beklemede ({amount})",
+      "completed_label": "Tamamlandı ({amount})",
+      "loading": "Yükleniyor...",
+      "price_label": "Fiyat: {amount}",
+      "completed_by": "İşi Tamamlayan: {name}",
+      "completed_at": "Tamamlandı: {date}",
+      "empty_pending": "Henüz bekleyen ödeme yok.",
+      "empty_completed": "Tamamlanmış ödeme yok."
+    },
+    "profile": {
+      "title": "Profil",
+      "loading": "Yükleniyor...",
+      "save": "Kaydet",
+      "first_name_label": "Ad",
+      "last_name_label": "Soyad",
+      "email_label": "E-posta adresi",
+      "email_placeholder": "E-posta girin",
+      "toast_fetch_failed": "Kullanıcı verileri alınamadı",
+      "toast_update_failed": "Kullanıcı güncellenemedi"
+    },
+    "verifications": {
+      "title": "Doğrulamalar",
+      "breadcrumb_home": "Ana Sayfa",
+      "breadcrumb_current": "Doğrulamalar",
+      "loading": "Yükleniyor...",
+      "toast_fetch_failed": "Belgeler alınamadı",
+      "tab_service": "Hizmet Doğrulama",
+      "tab_job": "İş Tamamlama Kanıtı",
+      "selected_count": "{count} belge seçildi",
+      "cancel": "İptal",
+      "approve": "Onayla",
+      "reject": "Reddet",
+      "approving": "Onaylanıyor...",
+      "rejecting": "Reddediliyor...",
+      "table_job_title": "İş Başlığı",
+      "table_service_provider": "Hizmet Sağlayıcı",
+      "table_category_type": "Kategori / Tür",
+      "table_documents": "Belgeler",
+      "table_document": "Belge",
+      "table_view": "Görüntüle",
+      "no_service_docs": "Doğrulama bekleyen hizmet belgesi yok.",
+      "no_job_docs": "Doğrulama bekleyen iş kanıtı belgesi yok.",
+      "reject_modal_title": "Belgeleri Reddet",
+      "reject_reason_label": "Reddetme Nedeni",
+      "modal_cancel": "İptal",
+      "modal_reject": "Reddet"
+    },
+    "layout": {
+      "nav_dashboard": "Pano",
+      "nav_jobs": "İşler",
+      "nav_providers": "Sağlayıcılar",
+      "nav_verifications": "Doğrulamalar",
+      "nav_payouts": "Ödemeler",
+      "menu_profile": "Profil",
+      "menu_change_password": "Şifreyi Değiştir",
+      "menu_logout": "Çıkış Yap"
+    }
+  },
+  "OnBoardPages": {
+    "layout": {
+      "loading": "Yükleniyor..."
+    },
+    "lookingToProvide": {
+      "title": "Bize Ne Sunduğunuzu Söyleyin — Hizmetinizi Seçin",
+      "toast_pending_exists": "Zaten bekleyen bir hizmetiniz var. Lütfen onay bekleyin.",
+      "toast_already_approved": "Bu hizmet zaten onaylandı.",
+      "toast_select_service": "Lütfen bir hizmet seçin.",
+      "toast_generic_error": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+      "success_added": "Hizmetler başarıyla eklendi!",
+      "success_updated": "Hizmetler başarıyla güncellendi!",
+      "success_auto_approved": "Hizmet onaylandı! Belgeleriniz zaten doğrulandı.",
+      "button_saving": "Kaydediliyor...",
+      "button_continue": "Devam Et",
+      "status_Approved": "Onaylandı",
+      "status_Pending": "Beklemede",
+      "status_Rejected": "Reddedildi"
+    },
+    "addressOnboarding": {
+      "provider_title": "Hizmet Konumunuzu Belirleyin",
+      "provider_description": "Müşterilerin sizi bulabilmesi için hizmetlerinizi nerede sağlayacağınızı söyleyin.",
+      "provider_address_label": "Hizmet Adresiniz",
+      "provider_address_placeholder": "Hizmet konum adresinizi girin",
+      "shop_owner_title": "Mağaza Konumunuzu Belirleyin",
+      "shop_owner_description": "Müşterilerin sizi bulabilmesi için mağazanızın nerede olduğunu söyleyin.",
+      "shop_owner_address_label": "Mağaza Adresiniz",
+      "shop_owner_address_placeholder": "Mağaza adresinizi girin",
+      "customer_title": "Kurulumunuzu Tamamlayın",
+      "customer_description": "Size yakın hizmetleri gösterebilmemiz için nerede olduğunuzu söyleyin.",
+      "customer_address_label": "Adresiniz",
+      "customer_address_placeholder": "Adresinizi girin",
+      "selected_location": "Seçilen Konum",
+      "toast_address_required": "Devam etmek için lütfen bir adres seçin.",
+      "success_address_saved": "Adres başarıyla kaydedildi!",
+      "toast_save_error": "Adres kaydedilemedi. Lütfen tekrar deneyin.",
+      "button_saving": "Kaydediliyor...",
+      "button_continue": "Devam Et"
+    }
+  },
+  "ProviderPages": {
+    "layout": {
+      "nav_dashboard": "Pano",
+      "nav_jobs": "İşler",
+      "nav_payouts": "Ödemeler",
+      "menu_profile": "Profil",
+      "menu_change_password": "Şifreyi Değiştir",
+      "menu_address": "Adres Defteri",
+      "menu_services": "Hizmetler ve Doğrulama",
+      "menu_support": "Destek",
+      "menu_payments": "Ödemeler",
+      "menu_subscription_plans": "Abonelik Planları",
+      "menu_billing_history": "Fatura Geçmişi",
+      "menu_logout": "Çıkış Yap",
+      "toast_fetch_failed": "Kullanıcı verileri alınamadı"
+    },
+    "changePassword": {
+      "title": "Şifreyi Değiştir",
+      "password_label": "Şifre",
+      "confirm_password_label": "Şifreyi Onayla",
+      "save": "Kaydet",
+      "loading": "Yükleniyor..."
+    },
+    "dashboard": {
+      "tab_inprogress": "Devam Ediyor ({count})",
+      "tab_completed": "Tamamlandı ({count})",
+      "tab_cancelled": "İptal Edildi ({count})",
+      "loading": "Yükleniyor...",
+      "price_label": "Fiyat: {amount}",
+      "from_label": "Gönderen: {city}",
+      "btn_completing": "Tamamlanıyor...",
+      "btn_complete": "Tamamla",
+      "btn_completion_pending": "Tamamlama Beklemede",
+      "btn_cancelling": "İptal Ediliyor...",
+      "btn_cancel": "İptal Et",
+      "btn_view": "Görüntüle",
+      "empty_inprogress": "Devam eden iş yok.",
+      "empty_completed": "Henüz tamamlanmış iş yok.",
+      "empty_cancelled": "İptal edilmiş iş yok.",
+      "confirm_cancel": "Bu işi iptal etmek istediğinizden emin misiniz?",
+      "confirm_cancel_desc": "Bu işi iptal ederseniz, bir sonraki ödemenizden $20 kesinti yapılır ve çok fazla iş iptal ederseniz hesabınız askıya alınabilir.",
+      "toast_complete_success": "İş başarıyla tamamlandı!",
+      "toast_complete_failed": "İş tamamlanamadı",
+      "toast_complete_generic": "İş tamamlanırken bir şeyler ters gitti",
+      "toast_cancel_success": "İş başarıyla iptal edildi!",
+      "toast_cancel_failed": "İş iptal edilirken bir şeyler ters gitti.",
+      "toast_cancel_error": "İş iptal edilirken hata oluştu"
+    },
+    "jobs": {
+      "search_placeholder": "İşleri ara...",
+      "filter_all": "Tümü",
+      "count_label": "{count} İş Mevcut",
+      "clear_filters": "Filtreleri Temizle",
+      "loading": "Yükleniyor...",
+      "view_book": "Görüntüle ve Rezerve Et",
+      "empty": "Mevcut iş yok.",
+      "price_label": "Fiyat: {amount}",
+      "from_label": "Gönderen: {city}"
+    },
+    "jobDetails": {
+      "title": "İş Detayları",
+      "accept": "İşi Kabul Et",
+      "payment": "Ödeme",
+      "payment_badge": "{time} Ödeme - ${price}",
+      "job_id": "İŞ KODU: {id}",
+      "date": "Tarih:",
+      "distance": "Mesafe:",
+      "miles": "Mil",
+      "mile": "Mil",
+      "pickup": "Alım",
+      "pickup_between": "{start} - {end} Arasında Alım",
+      "pickup_at": "{time} saatinde",
+      "address_blurred_until_accept": "Adres, iş kabul edilene kadar bulanık",
+      "address_blurred": "Adres bulanık",
+      "blurred": "Bulanık",
+      "dropoff": "Teslimat",
+      "between": "{start} - {end} Arasında",
+      "at": "{time} Saatinde",
+      "pickup_location": "ALIM KONUMU",
+      "job_location": "İŞ KONUMU",
+      "dropoff_location": "TESLİMAT KONUMU",
+      "locations_blurred_until_accept": "Tam konumu açmak için işi kabul edin",
+      "accept_confirm": "Bu işi kabul etmek istediğinizden emin misiniz?",
+      "accept_warning": "Lütfen dikkat: Kabul edildikten sonra bu iş tamamlanmalıdır. Tamamlanmaması durumunda hesabınıza ceza uygulanabilir.",
+      "toast_accept_not_approved": "Hizmet onaylanmadı.",
+      "toast_accept_success": "İş başarıyla kabul edildi",
+      "toast_accept_failed": "İşi kabul ederken bir şeyler ters gitti.",
+      "toast_error_loading": "İş detayları yüklenirken hata oluştu",
+      "loading": "Yükleniyor..."
+    },
+    "payouts": {
+      "pending_label": "Beklemede ({amount})",
+      "completed_label": "Tamamlandı ({amount})",
+      "loading": "Yükleniyor...",
+      "price_label": "Fiyat: {amount}",
+      "completed_at": "Tamamlandı: {date}",
+      "empty_pending": "Henüz bekleyen ödeme yok.",
+      "empty_completed": "Tamamlanmış ödeme yok."
+    },
+    "profile": {
+      "title": "Profil",
+      "loading": "Yükleniyor...",
+      "first_name": "Ad",
+      "last_name": "Soyad",
+      "email_address": "E-posta adresi",
+      "language": "Dil",
+      "first_name_placeholder": "Ad",
+      "last_name_placeholder": "Soyad",
+      "email_placeholder": "E-posta girin",
+      "select_language": "Dil seçin",
+      "save": "Kaydet",
+      "saving": "Yükleniyor...",
+      "validation": {
+        "first_name_required": "Ad gerekli",
+        "first_name_min_length": "Ad en az 3 karakter olmalı",
+        "last_name_required": "Soyad gerekli",
+        "last_name_min_length": "Soyad en az 3 karakter olmalı",
+        "email_required": "E-posta gerekli",
+        "email_valid": "E-posta geçerli olmalı"
+      },
+      "errors": {
+        "failed_fetch_user": "Kullanıcı verileri alınamadı",
+        "failed_update_user": "Kullanıcı güncellenemedi"
+      }
+    },
+    "settings": {
+      "title": "Sağlayıcı Ayarları",
+      "loading": "Yükleniyor...",
+      "select_prompt": "Lütfen menüden bir ayar bölümü seçin."
+    },
+    "billingHistory": {
+      "title": "Fatura Geçmişi",
+      "loading": "Yükleniyor...",
+      "current_subscription": "Mevcut Abonelik",
+      "transaction_history": "İşlem Geçmişi",
+      "no_billing_history": "Fatura Geçmişi Yok",
+      "no_subscriptions": "İşlem bulunamadı.",
+      "view_details": "Detayları Görüntüle",
+      "subscription_details": "Abonelik Detayları",
+      "manage_subscription": "Aboneliğinizi yönetin ve fatura bilgilerini görüntüleyin",
+      "table_headers": {
+        "date": "Tarih",
+        "plan": "Plan",
+        "amount": "Tutar",
+        "transaction_id": "İşlem ID"
+      },
+      "transaction_date": "İşlem Tarihi",
+      "failed_fetch_billing": "Fatura geçmişi alınamadı"
+    },
+    "subscription": {
+      "title": "Abonelik",
+      "loading": "Yükleniyor...",
+      "current_plan": "Mevcut Plan",
+      "amount": "Tutar",
+      "type": "Tür",
+      "start_date": "Başlangıç Tarihi",
+      "end_date": "Bitiş Tarihi",
+      "ongoing": "Devam Ediyor",
+      "active": "Aktif",
+      "upgraded": "Yükseltildi",
+      "cancelled": "İptal Edildi",
+      "expired": "Süresi Doldu",
+      "no_subscription": "Abonelik Yok",
+      "active_subscription_message": "Tam erişimli aktif abonelik",
+      "cancelled_access_until": "İptal edildi - {date} tarihine kadar erişim",
+      "cancelled_access_expired": "İptal edildi - erişim süresi doldu",
+      "expired_renew_message": "Süresi doldu - erişime devam etmek için yenileyin",
+      "cancel_subscription": "Aboneliği İptal Et",
+      "cancelling": "İptal Ediliyor...",
+      "renew_subscription": "Aboneliği Yenile",
+      "no_active_subscription": "Aktif Abonelik Yok",
+      "subscribe_unlock_message": "Premium özelliklerin kilidini açmak için abone olun",
+      "view_plans": "Planları Görüntüle",
+      "subscription_cancelled_success": "Abonelik başarıyla iptal edildi",
+      "failed_cancel_subscription": "Abonelik iptal edilemedi"
+    },
+    "support": {
+      "help_center": "Yardım Merkezi",
+      "frequently_asked_questions": "Sık Sorulan Sorular",
+      "phone_support": "Telefon Desteği",
+      "email_support": "E-posta Desteği",
+      "text_us": "Bize Yazın",
+      "email_us": "Bize E-posta Gönderin",
+      "copied": "Kopyalandı!",
+      "phone_copied_success": "Telefon numarası panoya kopyalandı!",
+      "failed_copy_phone": "Telefon numarası kopyalanamadı",
+      "faq": {
+        "how_get_paid": {
+          "question": "Nasıl ödeme alırım?",
+          "answer": "Belirlediğiniz banka hesabınıza doğrudan ödeme sunuyoruz. Size en uygun seçeneği seçmenize olanak tanıyan esnek ödeme koşulları sağlıyoruz. Üç farklı ödeme koşulu sunuyoruz: aynı gün ödeme, 30 günlük ödeme ve 45 günlük ödeme. Ödeme koşulu seçimi tamamen size bağlıdır, tercihlerinize ve finansal ihtiyaçlarınıza göre belirlenir."
+        },
+        "verification_time": {
+          "question": "Hesabımın doğrulanması ne kadar sürer?",
+          "answer": "Genellikle süreç yaklaşık 5-7 iş günü sürer. Başarıyla kayıt olduktan sonra bir e-posta bildirimi almayı bekleyebilirsiniz."
+        },
+        "required_documents": {
+          "question": "Kayıt olmak için hangi belgelere ihtiyacım var?",
+          "answer": "Sürücü Belgesi: Şoför olarak çalışmayı planlıyorsanız veya faaliyetlerinizin bir parçası olarak araç kullanacaksanız geçerli bir sürücü belgesi gereklidir. Belgenizin güncel olduğundan ve kullanmayı planladığınız araç türü için gerekli kriterleri karşıladığından emin olun. Kurye Sigortası: Kurye olarak çalışıyorsanız kurye sigortasına sahip olmak önemlidir. Bu sigorta türü genellikle taşıdığınız eşyaların olası hasar veya kaybı için sizi kapsar. Hem sizi hem de müşterilerinizi korur. Sorumluluk Sigortası: Sorumluluk sigortası, işiniz sırasında başkalarına verilen zararlar veya yaralanmalar için sizi ve işinizi korumak için çok önemlidir. Herhangi bir finansal riski azaltmak için sorumluluk sigortasına sahip olmanız önerilir. İngiltere Banka Hesabı: Ödeme alma, finansları yönetme ve müşteriler veya işverenlerle sorunsuz işlemler sağlama gibi çeşitli nedenlerle İngiltere banka hesabına sahip olmak genellikle gereklidir. İş işlemlerini verimli bir şekilde yürütmenize olanak tanıyan geçerli bir banka hesabına sahip olmak önemlidir. Akıllı Telefon: Günümüzün dijital çağında akıllı telefon, kurye hizmetleri dahil birçok meslek için temel bir araçtır. Akıllı telefon bağlantıda kalmanızı, gerekli uygulamalara erişmenizi, müşterilerle iletişim kurmanızı, rotaları yönlendirmenizi ve işinizi verimli bir şekilde yönetmenizi sağlar. İnternet bağlantısı ve iş alanınız için ilgili uygulamalara sahip bir akıllı telefona sahip olduğunuzdan emin olun."
+        },
+        "restricted_accounts": {
+          "question": "Neden bazı hesaplar kısıtlanır?",
+          "answer": "Şirketimizde müşterilerimizden gelen geri bildirimleri büyük önem veriyoruz. En yüksek hizmet standartlarını korumak ve müşteri memnuniyetini sağlamak için, olumsuz geri bildirim geçmişine dayalı olarak belirli hesaplara kısıtlamalar getirebiliriz. Bu kısıtlamalar sorunları ele almak ve hizmetlerimizin genel kalitesini artırmak için konulur."
+        },
+        "missed_job": {
+          "question": "Bir işi kabul ederim ama kararlaştırıldığı gibi katılmazsam ne olur?",
+          "answer": "Zamanında olma ve güvenilirlik konusunu ciddiye alıyoruz ve yüksek düzeyde profesyonellik sürdürmek bizim için önemlidir. Bir işi kabul eder ancak kararlaştırıldığı gibi katılmazsanız, bir ceza uygulanabilir. Bu ceza, taahhütlerinizi yerine getirmenizi ve müşterilerimizin beklentilerini karşılamayı öncelik haline getirmenizi hatırlatmak için verilir."
+        },
+        "contact_team": {
+          "question": "Ekibinizin bir üyesiyle nasıl iletişime geçebilirim?",
+          "answer": "Size yardımcı olmak için her zaman buradayız. Herhangi bir sorunuz, endişeniz varsa veya yardıma ihtiyacınız varsa, özel ekibimizle iletişime geçmekten çekinmeyin. Bize 02035351953 numaralı telefondan ulaşabilirsiniz. Ekibimiz size gerekli destek ve rehberliği sağlamaktan mutluluk duyacaktır."
+        }
+      }
+    },
+    "wallet": {
+      "add_new_card": "Yeni Kart Ekle",
+      "account_holder_name": "Hesap Sahibi Adı",
+      "account_number": "Hesap Numarası (8 haneli)",
+      "sort_code": "Şube Kodu (örn. 12-34-56)",
+      "cancel": "İptal",
+      "save": "Kaydet",
+      "saving": "Kaydediliyor...",
+      "loading": "Yükleniyor...",
+      "existing_cards": "Mevcut Kartlar",
+      "account_holder_required": "Hesap sahibi adı gerekli",
+      "account_number_required": "Hesap numarası gerekli",
+      "must_be_8_digits": "8 haneli olmalı",
+      "sort_code_required": "Şube kodu gerekli",
+      "must_be_format": "12-34-56 formatında olmalı",
+      "card_set_default": "Ödeme kartı varsayılan olarak ayarlandı",
+      "failed_update_payment": "Ödeme yöntemi güncellenemedi",
+      "error_updating_payment": "Ödeme yöntemi güncellenirken hata oluştu",
+      "card_deleted_success": "Kart başarıyla silindi!",
+      "error_deleting_card": "Kart silinirken hata oluştu",
+      "card_added_success": "Kart başarıyla eklendi!",
+      "failed_add_card": "Kart eklenemedi",
+      "unexpected_error": "Beklenmeyen bir hata oluştu",
+      "failed_load_cards": "Ödeme kartları yüklenemedi"
+    }
+  },
+  "PublicPages": {
+    "layout": {
+      "login": "Giriş Yap",
+      "signup": "Kayıt Ol",
+      "language_selector": "Dil",
+      "footer_brand": "Swipped",
+      "footer_desc": "Swippped'de, tüm ihtiyaçlarınız için sorunsuz çözümler sunuyoruz. Amacımız her hizmeti uygun, verimli ve zahmetsiz hale getirmek—sorunları hızlı ve güvenilir bir şekilde çözmenize yardımcı olmak.",
+      "nav_home": "Ana Sayfa",
+      "nav_collection": "Toplama",
+      "nav_shop": "Mağaza",
+      "nav_order_food": "Yemek siparişi",
+      "nav_sales": "Satışlar",
+      "nav_about": "Hakkımızda",
+      "nav_services": "Hizmetler",
+      "nav_partner": "Bizimle ortak olun",
+      "footer_terms": "Şartlar",
+      "footer_privacy": "Gizlilik",
+      "footer_cookies": "Çerezler",
+      "footer_copyright": "Swipped © {year}. Tüm Hakları Saklıdır."
+    },
+    "home": {
+      "services_title": "Hizmetler",
+      "from_price": "${price} itibaren",
+      "continue": "Devam Et",
+      "moving_delivery_title": "Taşıma ve Teslimat",
+      "moving_delivery_desc": "20 Dakikada Kapınızda Küçük paketlerden tam kamyon yüklerine kadar, sürücülerimiz ülke genelinde hazır. Dakikalar içinde rezervasyon yapın ve 20 dakika içinde kapınızda biri olsun.",
+      "cleaning_title": "Profesyonel Temizlik",
+      "cleaning_desc": "20 Dakikada Kapınızda Hızlı ev temizliklerinden derinlemesine temizliklere kadar, güvenilir temizlikçilerimiz ülke genelinde hazır. Dakikalar içinde rezervasyon yapın ve 20 dakika içinde kapınızda biri olsun.",
+      "locksmith_title": "Çilingir Hizmetleri",
+      "locksmith_desc": "20 Dakikada Kapınızda Kilitlendiniz mi yoksa acil kilit tamirine mi ihtiyacınız var? Çilingirlerimiz ülke genelinde hazır. Dakikalar içinde rezervasyon yapın ve 20 dakika içinde kapınızda biri olsun.",
+      "click_collect_title": "Tıkla ve Topla Teslimat",
+      "click_collect_desc": "20 Dakikada Kapınızda Siparişinizi almak için vaktiniz yok mu? Birleşik Krallık’taki herhangi bir mağazadan tıkla ve topla siparişinizi alır ve doğrudan kapınıza teslim ederiz—hızlı ve sorunsuz.",
+      "hero_title": "Temel Hizmetler, Basitleştirildi",
+      "hero_subtitle": "Basitleştirildi",
+      "rating_label": "5.0 Puan",
+      "rating_from_clients": "Mutlu Müşterilerden Puan",
+      "hero_desc": "Alışveriş ve teslimattan arızalara ve temizliğe kadar — her şey Swipped ile.",
+      "hero_desc_subtitle": "Alışveriş. Rezervasyon. Tamamlandı.",
+      "hero_desc_subtitle_words": {
+        "shop": "Bağlan",
+        "book": "Keşfet",
+        "done": "+ Daha Fazla"
+      },
+      "book_service": "HİZMET REZERVASYONU YAP",
+      "shop_now": "ŞİMDİ SATIN AL",
+      "ways_to_use_title": "Swipped'i kullanma yolları",
+      "our_services": "Yerel profesyoneliniz",
+      "services_available": "{count} hizmet mevcut",
+      "showing_services_in": "{location} {flag} Konumunda Hizmetler Gösteriliyor",
+      "change": "Değiştir",
+      "global_users": "Küresel kullanıcılar: {count}",
+      "your_location": "Konumunuz: {count}",
+      "ecosystem_title": "Swipped Ekosistemi",
+      "services_live": "{count} Aktif Hizmet",
+      "global_users_near_you": "{globalCount} Küresel Kullanıcı • {nearYouCount} Yakınında",
+      "order_now": "Şimdi sipariş ver",
+      "book_now": "Şimdi rezervasyon yap",
+      "menu_title": "Menü",
+      "mini_apps_title": "Mini Uygulamalar",
+      "service_available": "Hizmet Mevcut",
+      "global_users_label": "Küresel Kullanıcılar",
+      "local_users": "Yerel Kullanıcılar",
+      "categories": "Kategoriler",
+      "instant_deliveries": "Anında Teslimatlar",
+      "reservations": "Rezervasyonlar",
+      "book_in_seconds": "Saniyeler İçinde Rezervasyon Yap",
+      "services_label": "Hizmetler",
+      "view_all_mini_apps": "Tüm Mini Uygulamaları Görüntüle",
+      "miniApps": {
+        "apps": {
+          "digitalLandExchange": "Dijital Arazi Değişimi",
+          "swippedWorkforce": "Swipped İşgücü",
+          "swippedConnect": "Swipped Connect",
+          "swippedLiveStreaming": "Swipped Canlı Yayın",
+          "swippedVirtualWorld": "Swipped Virtual World 🗺",
+          "charityDonations": "Swipped Donations"
+        },
+        "comingSoon": {
+          "title": "Yakında",
+          "message": "{appName} yakında geliyor! Güncellemeler için bizi takip edin.",
+          "defaultAppName": "Bu özellik"
+        },
+        "add": "Ekle"
+      },
+      "promotional_slider": {
+        "slide1": {
+          "title": "Swipped işletme hesabı",
+          "desc": "Swipped İşletme Hesabı ile işinizi daha ileriye taşıyın — büyümenize yardımcı olacak araçlar ve ödüllerle dolu"
+        },
+        "slide2": {
+          "title": "Hadi başlayalım",
+          "desc": "Swipped ile işinizi bir sonraki seviyeye taşıyın — daha hızlı ölçeklenmenize, daha iyi yönetmenize ve daha fazla kazanmanıza yardımcı olmak için tasarlandı"
+        },
+        "slide3": {
+          "title": "Bizimle ortak olun",
+          "desc": "Dakikalar içinde başlayın — kaydolun ve Swipped ile kazanmaya başlayın"
+        },
+        "slide4": {
+          "title": "Sadece bir kaydırma uzakta",
+          "desc": "Tüm günlük ihtiyaçlarınız, tek bir yerde yönetiliyor — stres yok, sıkıntı yok"
+        },
+        "slide5": {
+          "title": "Swipped Fulfilment",
+          "desc": "Her yerden satın — size müşteri getireceğiz, ürünlerinizi paketleyeceğiz ve sizin için göndereceğiz"
+        },
+        "slide6": {
+          "title": "Tüm Hizmetler, Tek Platform",
+          "desc": "Anında rezervasyonlar, hızlı teslimat ve sorunsuz iletişim için yerel restoranlar, mağazalar ve hizmet sağlayıcılar"
+        },
+        "slide7": {
+          "title": "Sanal Arazi",
+          "desc": "Gelecekteki dijital deneyimler, uzun vadeli değer ve Swipped ekosistemi içindeki entegrasyon için oluşturulmuş sanal arazi varlıklarına sahip olun ve ticaret yapın."
+        },
+        "slide8": {
+          "title": "Kitle Fonlaması",
+          "desc": "Bağlı hizmetlerin ve dijital inovasyonun geleceğini inşa etmeye yardımcı olarak kitle fonlaması yolculuğumuza katılarak Swipped'in büyümesini destekleyin."
+        }
+      },
+      "services": {
+        "shop": {
+          "name": "Mağazalar",
+          "description": "İstediğinizi, istediğiniz zaman alın. Günlük ihtiyaçlardan son dakika hediyelere kadar, mağazayı kapınıza getiriyoruz"
+        },
+        "restaurant": {
+          "name": "Restoranlar",
+          "description": "Favori yemeklerinizi kolayca doğrudan size teslim edin. Restoranları göz atın, yeni lezzetler keşfedin ve sadece birkaç dokunuşla siparişinizi verin"
+        },
+        "supermarket": {
+          "name": "Süpermarketler",
+          "description": "Favori süpermarketlerinizden gıda ve günlük ihtiyaçlarınızı alışveriş yapın. Hızlı teslimat doğrudan kapınıza"
+        },
+        "swipped_rides": {
+          "name": "Taxi Rides",
+          "description": "Doğrulanmış sürücüler, canlı takip ve her yolculuk için şeffaf fiyatlandırma ile talep üzerine güvenli ve uygun fiyatlı yolculuklar rezerve edin."
+        },
+        "restaurant_reservation": {
+          "name": "Restoran Rezervasyonu",
+          "description": "Artık favori restoranınızda doğrudan Swipped'te bir masa rezerve edebilirsiniz. Arama yok, kuyruk yok — sadece dokunun, rezerve edin ve keyfini çıkarın."
+        },
+        "luggage_storage": {
+          "name": "Bagaj Depolama",
+          "description": "Hafif ve stressiz seyahat edin. Çantalarınızı birkaç saat, birkaç gün veya hatta birkaç hafta bizde saklayın—planlarınıza uygun olan ne varsa."
+        },
+        "dry_cleaning_pick_up": {
+          "name": "Kuru Temizleme",
+          "description": "Evinizden çıkmadan mükemmel temiz kıyafetlerin keyfini çıkarın. Kıyafetlerinizi doğrudan kapınızdan topluyoruz, profesyonelce kuru temizliyoruz ve taze olarak geri teslim ediyoruz"
+        },
+        "recovery": {
+          "name": "Arıza servisi",
+          "description": "Yolda mı kaldınız? Özel kurtarma ekibimiz sadece bir dokunuş uzakta. Nerede olursanız olun, ulusal ağımız 7/24 çalışır, hızlı, güvenli ve güvenilir yardım sağlar."
+        },
+        "cleaning": {
+          "name": "Temizlik Hizmeti",
+          "description": "Evlerden ticari alanlara Airbnb mülklerine kadar — sizi kapsıyoruz. Acil çağrı veya planlanmış randevu, profesyonellerimiz yardıma hazır."
+        },
+        "locksmith": {
+          "name": "Çilingir",
+          "description": "Dışarıda kilitli kaldıysanız veya anahtarlarınızı kaybettiyseniz, çilingirlerimiz doğrudan size gelecektir. Ulusal düzeyde çalışıyoruz ve 7/24 yardım sunuyoruz."
+        },
+        "car_key_replacement": {
+          "name": "Araba Anahtarı Değişimi",
+          "description": "Araba anahtarınızı mı kaybettiniz? Nerede olursanız olun değiştireceğiz. Uzman teknisyenlerimiz doğrudan konumunuza gelir, yeni anahtarınızı keser ve programlar, böylece sorunsuz bir şekilde yola devam edebilirsiniz."
+        },
+        "removals": {
+          "name": "Çöp Kaldırma",
+          "description": "Bugün çöp kaldırılması mı gerekiyor? Her zaman yardımcı olabiliriz. Hızlı ve güvenilir kaldırma ekiplerimiz, evinizden, iş yerinizden veya bahçenizden istenmeyen eşyaları temizlemek için talep üzerine mevcuttur. Tek eşyalardan tam yüklere kadar"
+        },
+        "click_and_collect": {
+          "name": "Tıkla ve Topla",
+          "description": "Herhangi bir mağazadan ulusal toplama, doğrudan evinize teslim edilir. Swipped ile her şey erişilebilir ve zahmetsiz hale gelir."
+        },
+        "van": {
+          "name": "Kurye hizmeti",
+          "description": "Hızlı gönderin — Swipped ile gönderin. Küçük paketlerden mobilyalara ve paletlere kadar, anında size yardımcı olmaya hazır ulusal bir filo ile her şeyi hallediyoruz."
+        },
+        "mot_resrevations": {
+          "name": "MOT ve servis",
+          "description": "Aracınızı yola hazır tutmak için sertifikalı profesyonellerle güvenilir MOT testleri ve araç servisleri rezerve edin."
+        },
+        "shisha_lounge": {
+          "name": "Nargile salonları",
+          "description": "En iyi nargile salonlarında yerinizi rezerve edin. Masanızı rezerve edin ve arkadaşlarınızla rahatlatıcı bir akşam geçirin."
+        },
+        "spa": {
+          "name": "Spa tedavileri",
+          "description": "Anında rezerve edilen profesyonel spa tedavileri, masajlar ve sağlık hizmetleri ile rahatlayın ve dinlenin."
+        },
+        "beauty": {
+          "name": "Güzellik salonu",
+          "description": "Yakınınızdaki güvenilir profesyonellerle saç, tırnak ve cilt tedavileri için güzellik randevuları rezerve edin."
+        },
+        "healthcare": {
+          "name": "Sağlık randevuları",
+          "description": "Güvenilir sağlayıcılarla sağlık randevuları rezerve edin. Diş hekimi, klinik, IV damlalık ve daha fazla sağlık hizmeti."
+        },
+        "events": {
+          "name": "Etkinlik hizmetleri",
+          "description": "Profesyonel etkinlik hizmetleri rezerve edin. DJ kiralama, canlı müzik, karakter görünümleri ve özel etkinlikleriniz için daha fazlası."
+        },
+        "entertainment": {
+          "name": "Eğlence mekanları",
+          "description": "Heyecan verici eğlence deneyimleri rezerve edin. VR deneyimleri, bowling, karaoke odaları ve unutulmaz eğlence."
+        }
+      },
+      "cards": {
+        "click_collect_title": "Tıkla ve Topla Teslimat – 20 Dakikada Kapınızda",
+        "click_collect_desc": "Siparişinizi almak için vaktiniz yok mu? Birleşik Krallık'taki herhangi bir mağazadan tıkla ve topla siparişinizi alır ve doğrudan kapınıza teslim ederiz—hızlı ve sorunsuz.",
+        "moving_title": "Taşıma ve Teslimat – 20 Dakikada Kapınızda",
+        "moving_desc": "İhtiyacınız olan hizmetleri rezerve etmeyi basit ve uygun hale getiriyoruz. Bir talep verdikten sonra, güvenilir hizmet sağlayıcılarımız 20-60 dakika içinde size ulaşabilir, en çok ihtiyacınız olduğunda hızlı ve güvenilir yardım sağlar.",
+        "fast_delivery_title": "Sadece 60 dakika. Bekleme yok, sorun yok – hızlı, güvenilir alışveriş basitleştirildi.",
+        "fast_delivery_desc": "Favori yerel mağazalarınızdan alışveriş yapın ve neredeyse her ürünü doğrudan kapınıza teslim edin",
+        "rubbish_removal": "Swippped'de, tüm ihtiyaçlarınız için sorunsuz çözümler sunuyoruz. Amacımız her hizmeti uygun, verimli ve zahmetsiz hale getirmek—sorunları hızlı ve güvenilir bir şekilde çözmenize yardımcı olmak."
+      },
+      "reliable": "Güvenilir",
+      "solutions": "Çözümler",
+      "contact": {
+        "title": "Hızlı ve Güvenilir Destek için Bize Ulaşın",
+        "desc": "Bir sorunuz mu var veya hizmetlerimizden birine mi ihtiyacınız var? Aşağıdaki formu doldurun, ekibimiz en kısa sürede size geri dönecektir.",
+        "address": "Londra, İngiltere",
+        "phone": "02074867727",
+        "email": "swipped@customerservice.com",
+        "first_name_label": "Ad",
+        "first_name_ph": "Ad",
+        "last_name_label": "Soyad",
+        "last_name_ph": "Soyad",
+        "email_label": "E-posta",
+        "email_ph": "E-posta",
+        "phone_label": "Telefon",
+        "phone_ph": "Telefon",
+        "message_label": "Mesaj",
+        "message_ph": "Mesaj",
+        "submit": "Gönder"
+      },
+      "promo_eyebrow": "Sınırlı süreli teklif",
+      "promo_discount": "%15 indirim",
+      "promo_sub": "ilk taksi yolculuğunuzda · kodu kullanın",
+      "promo_code": "SWIPPED15"
+    },
+    "booking": {
+      "continue": "Devam Et",
+      "toast_success": "{category} işi başarıyla oluşturuldu",
+      "toast_generic_error": "Bir şeyler ters gitti!",
+      "toast_failed_save": "İş kaydedilemedi",
+      "errors": {
+        "pickupAddressLine1": "Alım Adresi zorunludur",
+        "dropOffAddressLine1": "Teslimat Adresi zorunludur",
+        "distance": "Lütfen alım ve teslimat adreslerini belirleyin",
+        "category": "Kategori zorunludur",
+        "title": "İş Başlığı zorunludur",
+        "vanSize": "Kamyonet Boyutu zorunludur",
+        "movingItem": "Taşınan Öğe zorunludur",
+        "make": "Araç Markası zorunludur",
+        "model": "Araç Modeli zorunludur",
+        "year": "Araç Yılı zorunludur",
+        "howManyItems": "Öğe sayısı zorunludur",
+        "howManyRooms": "Oda sayısı zorunludur",
+        "howManyBathrooms": "Banyo sayısı zorunludur",
+        "howManyHours": "Saat sayısı zorunludur",
+        "typeOfPlace": "Yer türü zorunludur",
+        "typeOfKey": "Anahtar türü zorunludur",
+        "typeOfLock": "Kilit türü zorunludur",
+        "storeName": "Mağaza adı zorunludur",
+        "clickAndCollectIdNumber": "Tıkla ve Topla ID numarası zorunludur",
+        "yourName": "Adınız zorunludur",
+        "contactNumber": "İletişim numarası zorunludur",
+        "invalid_contact": "Geçersiz iletişim numarası",
+        "pickupDate": "Alım Tarihi zorunludur",
+        "pickupFixedTime": "Esnek değilse Alım Saati zorunludur",
+        "dropOffDate": "Teslimat Tarihi zorunludur",
+        "dropOffFixedTime": "Esnek değilse Teslimat Saati zorunludur"
+      }
+    },
+    "jobDistanceForm": {
+      "loading_maps": "Adres önerileri için Google Haritalar yükleniyor...",
+      "enter_pickup": "Alım Girin",
+      "enter_dropoff": "Teslimat Girin",
+      "enter_your_location": "Konumunuzu girin",
+      "placeholder_pickup": "Alım adresini girin",
+      "placeholder_dropoff": "Teslimat adresini girin",
+      "estimated_distance": "Tahmini mesafe: {miles} mil",
+      "calculating": "Hesaplanıyor...",
+      "another_services": "Diğer hizmetler",
+      "pickup_badge": "✅ Alım: {address}",
+      "dropoff_badge": "✅ Teslimat: {address}",
+      "map_title": "Haritada Konumları Seçin",
+      "banner_title": "Profesyonel Hizmet",
+      "banner_desc": "Hızlı, güvenilir ve profesyonel",
+      "banner_available": "Mevcut"
+    },
+    "detailForm": {
+      "job_title": "İş Başlığı",
+      "job_title_ph": "İş başlığı...",
+      "van_type": "Araç Türü",
+      "select_van_size": "Araç Türünü Seçin",
+      "bike": "Bisiklet",
+      "motorbike": "Motosiklet",
+      "car": "Araba",
+      "small_van": "Küçük Kamyonet",
+      "medium_van": "Orta Kamyonet",
+      "large_van": "Büyük Kamyonet",
+      "xl_van": "XL Kamyonet",
+      "moving_what": "Neyi taşıyorsunuz?",
+      "moving_what_ph": "Örn., Kutular, Mobilya, vb.",
+      "help_loading": "Yüklemede yardım edecek misiniz?",
+      "two_men": "2 kişi gerekli mi?",
+      "vehicle_make": "Araç Markası",
+      "vehicle_make_ph": "Araç markasını girin",
+      "select_vehicle_make": "Araç Markası Seçin",
+      "vehicle_model": "Araç Modeli",
+      "vehicle_model_ph": "Araç modelini girin",
+      "select_vehicle_model": "Araç Modeli Seçin",
+      "vehicle_year": "Araç Yılı",
+      "vehicle_year_ph": "Araç yılını girin",
+      "car_turn_on": "Araba çalışıyor mu?",
+      "how_many_items": "Kaç Öğe",
+      "select": "Seç",
+      "type_of_key": "Anahtar Türü",
+      "type_of_lock": "Kilit Türü",
+      "how_many_rooms": "Kaç Yatak Odası",
+      "how_many_bathrooms": "Kaç Banyo",
+      "how_many_hours": "Kaç Saat",
+      "type_of_property": "Mülk Türü",
+      "has_cleaning_products": "Temizlik ürünleriniz var mı?",
+      "store_name": "Mağaza Adı",
+      "store_name_ph": "Mağaza adını girin",
+      "click_collect_id": "Tıkla ve Topla ID Numarası",
+      "click_collect_id_ph": "ID Numarası girin",
+      "your_name": "Adınız",
+      "your_name_ph": "Adınızı girin",
+      "contact_number": "İletişim Numarası",
+      "contact_number_ph": "İletişim numarasını girin",
+      "pickup_date": "Alım Tarihi",
+      "job_date": "İş Tarihi",
+      "date_ph": "Tarih seçin",
+      "time_ph": "Saat seçin",
+      "today": "Bugün",
+      "tomorrow": "Yarın",
+      "pickup_time_flexible": "Alım saati esnek mi?",
+      "pickup_time": "Alım Saati",
+      "dropoff_date": "Teslimat Tarihi",
+      "dropoff_time_flexible": "Teslimat saati esnek mi?",
+      "dropoff_time": "Teslimat Saati",
+      "notes": "Notlar (İsteğe bağlı)",
+      "notes_ph": "Rezervasyonunuzla ilgili ek detaylar..."
+    },
+    "checkout": {
+      "title": "Ödeme",
+      "booking_summary": "Rezervasyon Özeti",
+      "pickup": "Alım:",
+      "dropoff": "Teslimat:",
+      "distance": "Mesafe:",
+      "s": "mil",
+      "date": "Tarih:",
+      "pickup_time": "Alım Saati:",
+      "loading_assistance": "Yükleme Yardımı:",
+      "two_men_service": "İki Kişi Servisi:",
+      "total": "Toplam:",
+      "payment_method": "Ödeme Yöntemi",
+      "processing": "İşleniyor...",
+      "pay_amount": "${amount} Öde",
+      "modal_title": "Ödeme Yöntemlerim",
+      "payment_methods": {
+        "apple_pay": "Apple Pay",
+        "klarna": "Klarna ile 3 taksit",
+        "add_card": "Yeni kart ekle"
+      },
+      "success_title": "Rezervasyon Onaylandı!",
+      "success_desc": "Rezervasyonunuz başarıyla gönderildi. Kısa süre içinde bir onay e-postası alacaksınız.",
+      "booking_id": "Rezervasyon Kodu: #{id}"
+    },
+    "terms": {
+      "title": "Şartlar ve Koşullar",
+      "last_updated": "Son güncelleme: Aralık 2024",
+      "section_1_title": "1. Şartların Kabulü",
+      "section_1_content": "Swipped'e erişerek ve kullanarak, bu anlaşmanın şartlarına ve hükümlerine bağlı olmayı kabul edersiniz. Yukarıdakilere uymayı kabul etmiyorsanız, lütfen bu hizmeti kullanmayın.",
+      "section_2_title": "2. Hizmet Tanımı",
+      "section_2_content": "Swipped, müşterileri teslimat, temizlik, çilingir hizmetleri ve daha fazlası için hizmet sağlayıcılarla bağlayan bir platformdur. Aracı olarak hareket ederiz ve üçüncü taraf sağlayıcıların sunduğu hizmetlerin kalitesinden doğrudan sorumlu değiliz.",
+      "section_3_title": "3. Kullanıcı Sorumlulukları",
+      "section_3_content": "Kullanıcılar, doğru bilgi sağlamak, hizmet sağlayıcılara saygılı davranmak ve güvenli çalışma koşulları sağlamakla sorumludur. Ödeme, rezervasyon onayı üzerine kararlaştırıldığı şekilde yapılmalıdır.",
+      "section_4_title": "4. Hizmet Sağlayıcı Sorumlulukları",
+      "section_4_content": "Hizmet sağlayıcılar, profesyonel standartları korumalı, zamanında gelmeli, hizmetleri tarif edildiği gibi tamamlamalı ve gerektiğinde uygun sigorta ve lisanslara sahip olmalıdır.",
+      "section_5_title": "5. Ödeme Şartları",
+      "section_5_content": "Tüm ödemeler platformumuz üzerinden güvenli bir şekilde işlenir. Fiyatlar, rezervasyon onayı öncesinde açıkça gösterilir. İadeler, iade politikamıza tabidir ve belirtilen süre içinde talep edilmelidir.",
+      "section_6_title": "6. Sorumluluğun Sınırlandırılması",
+      "section_6_content": "Swipped'in sorumluluğu, yasaların izin verdiği ölçüde sınırlıdır. Platformumuzun veya üçüncü taraflarca sağlanan hizmetlerin kullanımından kaynaklanan dolaylı, tesadüfi veya sonuçsal zararlardan sorumlu değiliz.",
+      "section_7_title": "7. Fesih",
+      "section_7_content": "Hizmetimize erişimi, önceden bildirimde bulunmaksızın veya sorumluluk üstlenmeksizin, herhangi bir nedenle, özellikle şartları ihlal etmeniz durumunda derhal sonlandırabilir veya askıya alabiliriz.",
+      "section_8_title": "8. Şartlarda Değişiklik",
+      "section_8_content": "Bu şartları istediğimiz zaman değiştirme hakkını saklı tutarız. Kullanıcılar, önemli değişiklikler hakkında e-posta veya platform bildirimleri yoluyla bilgilendirilecektir. Hizmetin devam eden kullanımı, değiştirilen şartların kabul edildiği anlamına gelir.",
+      "contact_info": "Bu şartlarla ilgili sorularınız için lütfen legal@swipped.com adresinden bizimle iletişime geçin"
+    },
+    "privacy": {
+      "title": "Gizlilik Politikası",
+      "last_updated": "Son güncelleme: Aralık 2024",
+      "section_1_title": "1. Topladığımız Bilgiler",
+      "section_1_content": "Hesap oluşturduğunuzda, bir hizmet rezervasyonu yaptığınızda veya bizimle iletişime geçtiğinizde doğrudan bize sağladığınız bilgileri topluyoruz. Bu, adınızı, e-posta adresinizi, telefon numaranızı ve ödeme bilgilerinizi içerir.",
+      "section_2_title": "2. Bilgilerinizi Nasıl Kullanıyoruz",
+      "section_2_content": "Topladığımız bilgileri hizmetlerimizi sağlamak, sürdürmek ve iyileştirmek, işlemleri işlemek, teknik bildirimler ve destek mesajları göndermek ve hizmetler ile promosyon teklifleri hakkında sizinle iletişim kurmak için kullanırız.",
+      "section_3_title": "3. Bilgi Paylaşımı",
+      "section_3_content": "Bilgilerinizi, ödeme işleme ve müşteri desteği gibi hizmetleri bizim adımıza gerçekleştiren hizmet sağlayıcılarla paylaşabiliriz. Kişisel bilgilerinizi üçüncü taraflara satmaz veya kiralamayız.",
+      "section_4_title": "4. Veri Güvenliği",
+      "section_4_content": "Kişisel bilgilerinizi kayıp, hırsızlık, kötüye kullanım ve yetkisiz erişimden korumak için makul önlemler alırız. Ancak, internet üzerinden hiçbir iletim yöntemi %100 güvenli değildir.",
+      "section_5_title": "5. Veri Saklama",
+      "section_5_content": "Bilgilerinizi, hesabınız aktif olduğu sürece veya size hizmet sağlamak için gerektiği sürece saklarız. Ayrıca, yasal yükümlülüklerimize uymak için bilgilerinizi gerektiği şekilde saklayabilir ve kullanabiliriz.",
+      "section_6_title": "6. Haklarınız",
+      "section_6_content": "Kişisel bilgilerinize erişme, güncelleme veya silme hakkına sahipsiniz. Ayrıca, bizden gelen belirli iletişimlerden vazgeçebilirsiniz. Bu hakları kullanmak için bizimle iletişime geçin.",
+      "section_7_title": "7. Çerezler ve İzleme",
+      "section_7_content": "Hizmetimizdeki aktiviteleri izlemek ve belirli bilgileri tutmak için çerezler ve benzer izleme teknolojileri kullanırız. Tarayıcınızı tüm çerezleri reddetmeye veya bir çerez gönderildiğinde bildirimde bulunmaya ayarlayabilirsiniz.",
+      "section_8_title": "8. Üçüncü Taraf Hizmetleri",
+      "section_8_content": "Hizmetimiz, üçüncü taraf web sitelerine veya hizmetlere bağlantılar içerebilir. Bu üçüncü tarafların gizlilik uygulamalarından sorumlu değiliz. Gizlilik politikalarını okumanızı öneririz.",
+      "section_9_title": "9. Gizlilik Politikasında Değişiklikler",
+      "section_9_content": "Gizlilik Politikamızı zaman zaman güncelleyebiliriz. Yeni Gizlilik Politikasını bu sayfada yayınlayarak ve etkili tarihi güncelleyerek sizi değişiklikler hakkında bilgilendireceğiz.",
+      "contact_info": "Bu gizlilik politikasıyla ilgili sorularınız için lütfen privacy@swipped.com adresinden bizimle iletişime geçin"
+    },
+    "earningsCalculator": {
+      "title": "Kendi patronunuz olun. Kendi saatlerinizi belirleyin. Kendi paranızı kazanın.",
+      "subtitle": "Swipped, işletmeleri güvenilir sağlayıcılarla bağlayan platformdur. Binlerce günlük fırsata erişin. Daha fazla para kazanmak ve işinizi büyütmek için ihtiyacınız olan her şey.",
+      "calculate_title": "Potansiyel kazancınızı hesaplayın",
+      "step1": {
+        "title": "Programınız",
+        "question": "Hangi hizmetleri sunuyorsunuz?",
+        "select_services": "Hizmetleri seçin",
+        "days_question": "Haftada kaç gün çalışıyorsunuz?",
+        "edit": "Düzenle"
+      },
+      "step2": {
+        "title": "Bir bölge seçin",
+        "question": "En çok hangi bölgede çalışıyorsunuz?",
+        "edit": "Düzenle"
+      },
+      "step3": {
+        "title": "Kazancınız",
+        "label": "İşte ne kadar kazanabileceğiniz",
+        "period": "/ay"
+      },
+      "common": {
+        "service": "hizmet",
+        "services": "hizmetler",
+        "days_per_week": "gün/hafta",
+        "reset": "Sıfırla",
+        "continue": "Devam Et",
+        "calculate": "Hesapla",
+        "takes_30_seconds": "30 saniye sürer",
+        "almost": "Neredeyse!"
+      }
+    },
+    "businessAccount": {
+      "back": "Geri",
+      "title": "Swipped İşletme Hesabı",
+      "description": "Bugün bir Swipped İşletme Kredi Hesabı için kaydolun ve işletmeniz için özel avantajların kilidini açın. Nakit akışınızı iyileştirmenize yardımcı oluyoruz, böylece operasyonlarınız büyüyebilir ve bir sonraki seviyeye geçebilir — hepsi Swipped platformu içinde. Bugün başlamak için aşağıdaki formu doldurun!",
+      "apply_title": "İşletme Hesabı Başvurusu",
+      "form": {
+        "first_name": "Ad *",
+        "last_name": "Soyad *",
+        "company_name": "Şirket Adı *",
+        "company_number": "Şirket Numarası *",
+        "email": "E-posta *",
+        "contact_number": "İletişim Numarası *",
+        "limit_request": "Limit Talebi *",
+        "limit_1000": "£1,000",
+        "limit_3000": "£3,000",
+        "limit_5000": "£5,000",
+        "limit_custom": "Özel limit (maks. £25,000)",
+        "custom_limit_placeholder": "Özel limit girin",
+        "submit": "Başvuruyu Gönder",
+        "submitting": "Gönderiliyor..."
+      },
+      "errors": {
+        "first_name_required": "Ad zorunludur",
+        "last_name_required": "Soyad zorunludur",
+        "company_number_required": "Şirket numarası zorunludur",
+        "company_name_required": "Şirket adı zorunludur",
+        "email_required": "E-posta zorunludur",
+        "email_invalid": "Lütfen geçerli bir e-posta adresi girin",
+        "contact_number_required": "İletişim numarası zorunludur",
+        "limit_request_required": "Lütfen bir limit talebi seçin",
+        "custom_limit_required": "Özel limit zorunludur",
+        "custom_limit_invalid": "Lütfen geçerli bir tutar girin",
+        "custom_limit_max": "Özel limit £25,000'ı aşamaz"
+      },
+      "toast": {
+        "fill_required": "Lütfen tüm zorunlu alanları doğru şekilde doldurun",
+        "submit_success": "Başvuru başarıyla gönderildi! Yakında sizinle iletişime geçeceğiz.",
+        "submit_failed": "Başvuru gönderilemedi. Lütfen tekrar deneyin.",
+        "error_occurred": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+      }
+    },
+    "fulfilment": {
+      "back": "Geri",
+      "title": "Swipped Satıcı Programını Başlatıyoruz!",
+      "description": "Her yerden satış yapın — size müşteri getireceğiz, ürünlerinizi paketleyeceğiz ve dünya çapında göndereceğiz. Markanızın küresel varlığını kolayca büyütün ve ölçeklendirmek istediğiniz ülkeleri seçin.",
+      "launch_date": "10-01-2026 tarihinde başlatılıyor.",
+      "form_instruction": "Aşağıdaki formu doldurun ve ekibimizin bir üyesi sizinle iletişime geçecektir.",
+      "features": {
+        "title": "Why Choose Swipped?",
+        "scale_anywhere": "Scale anywhere with a single tap — choose any county and let Swipped handle the rest.",
+        "sell_store_pack": "We sell your products, store your inventory, pack orders, and ship fast.",
+        "real_time_dashboard": "Real-time dashboard insights show your sales, growth, and profits.",
+        "weekly_payouts": "Weekly payouts are deposited straight into your bank to keep your business moving.",
+        "no_signup_fees": "No sign-up fees, only 15% per completed orders"
+      },
+      "form_title": "Swipped Satıcı Programına Katılın",
+      "form": {
+        "name": "Ad *",
+        "email": "E-posta *",
+        "contact_number": "İletişim Numarası *",
+        "product_range": "Ürün Yelpazesi *",
+        "country_to_sell": "Satmak istediğiniz ülke *",
+        "select_product_range": "Ürün yelpazesi seçin",
+        "select_country": "Ülke seçin",
+        "submit": "Başvuruyu gönder",
+        "submitting": "Gönderiliyor..."
+      },
+      "errors": {
+        "name_required": "Ad zorunludur",
+        "email_required": "E-posta zorunludur",
+        "email_invalid": "Lütfen geçerli bir e-posta adresi girin",
+        "contact_number_required": "İletişim numarası zorunludur",
+        "product_range_required": "Ürün yelpazesi zorunludur",
+        "country_required": "Ülke zorunludur"
+      },
+      "toast": {
+        "fill_required": "Lütfen tüm zorunlu alanları doğru şekilde doldurun",
+        "submit_success": "Sorgu başarıyla gönderildi! Yakında sizinle iletişime geçeceğiz.",
+        "submit_failed": "Sorgu gönderilemedi. Lütfen tekrar deneyin.",
+        "error_occurred": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+      }
+    },
+    "swippedRides": {
+      "pickup": "Pickup",
+      "currentLocation": "Current Location",
+      "whereTo": "Where to?",
+      "home": "Home",
+      "work": "Work",
+      "savedPlaces": "Saved Places",
+      "requestRide": "Request Ride",
+      "chooseRide": "Choose Ride",
+      "swippedGo": "Swipped Go",
+      "swippedGoDesc": "Affordable, everyday rides",
+      "swippedComfort": "Swipped Comfort",
+      "swippedComfortDesc": "More space, quieter ride",
+      "swippedExecutive": "Swipped Executive",
+      "swippedExecutiveDesc": "Premium vehicles & drivers",
+      "confirmRide": "Confirm Ride",
+      "rideConfirmed": "Ride confirmed! This is a demo.",
+      "goBadge": "Best value",
+      "comfortBadge": "Popular",
+      "executiveBadge": "Premium",
+      "passenger": "Passenger",
+      "passengers": "Passengers",
+      "eta": "min"
+    }
+  },
+  "MapComponent": {
+    "pickup_title": "Alış Konumu",
+    "dropoff_title": "Bırakış Konumu",
+    "set_pickup_current": "Alış Konumunu Ayarla (Mevcut Konum)",
+    "set_dropoff_current": "Bırakış Konumunu Ayarla (Mevcut Konum)",
+    "clear_all": "Tümünü Temizle",
+    "tip_title": "İpucu:",
+    "tip_description": "Alış ve bırakış konumlarını ayarlamak için haritanın herhangi bir yerine tıklayın veya mevcut konumunuzu kullanmak için yukarıdaki düğmeleri kullanın.",
+    "unable_get_location_pickup": "Mevcut konumunuz alınamıyor. Lütfen alış konumunu ayarlamak için haritaya tıklayın.",
+    "unable_get_location_dropoff": "Mevcut konumunuz alınamıyor. Lütfen bırakış konumunu ayarlamak için haritaya tıklayın.",
+    "geolocation_not_supported_pickup": "Coğrafi konum bu tarayıcı tarafından desteklenmiyor. Lütfen alış konumunu ayarlamak için haritaya tıklayın.",
+    "geolocation_not_supported_dropoff": "Coğrafi konum bu tarayıcı tarafından desteklenmiyor. Lütfen bırakış konumunu ayarlamak için haritaya tıklayın.",
+    "confirm_replace_locations": "Hem alış hem de bırakış konumları ayarlanmış. Alış konumu olarak ayarlamak için Tamam'a, bırakış konumu olarak ayarlamak için İptal'e tıklayın."
+  },
+  "Services": {
+    "shop": {
+      "name": "Yerel Mağazalarınız",
+      "description": "İstediğinizi, istediğiniz zaman alın. Günlük ihtiyaçlardan son dakika hediyelere kadar, mağazayı kapınıza getiriyoruz"
+    },
+    "restaurant": {
+      "name": "Yerel Restoranlarınız",
+      "description": "Favori yemeklerinizi kolayca doğrudan size teslim edin. Restoranları keşfedin, yeni lezzetler deneyin ve sadece birkaç dokunuşla sipariş verin"
+    },
+    "supermarket": {
+      "name": "Yerel Süpermarketleriniz",
+      "description": "Favori süpermarketlerinizden gıda ve günlük ihtiyaçlar için alışveriş yapın. Hızlı teslimat doğrudan kapınıza"
+    },
+    "Book a Table": {
+      "name": "Masa Rezervasyonu",
+      "description": "Artık favori restoranınızda Swipped üzerinden doğrudan masa rezervasyonu yapabilirsiniz. Arama yok, kuyruk yok — sadece dokunun, rezerve edin ve keyfini çıkarın."
+    },
+    "Click & Collect": {
+      "name": "Click & Collect Teslimatı",
+      "description": "Mağazalardan online siparişlerin alınması ve toplanması"
+    },
+    "Van": {
+      "name": "Kurye Hizmeti",
+      "description": "Van teslimat ve nakliye hizmetleri"
+    },
+    "Recovery": {
+      "name": "Yol Yardım Hizmeti",
+      "description": "Araç kurtarma ve çekme hizmetleri"
+    },
+    "Cleaning": {
+      "name": "Temizlik Hizmetleri",
+      "description": "Profesyonel temizlik hizmetleri"
+    },
+    "Locksmith": {
+      "name": "Çilingir",
+      "description": "7/24 çilingir hizmetleri"
+    },
+    "Car Key Replacement": {
+      "name": "Mobil Araba Anahtarı Değişimi",
+      "description": "Araba anahtarı değişimi ve programlama"
+    },
+    "Removals": {
+      "name": "Çöp Temizleme",
+      "description": "Mobilya ve çöp temizleme"
+    },
+    "Luggage Storage": {
+      "name": "Bagaj Depolama",
+      "description": "Güvenli bagaj depolama ve yönetim hizmetleri"
+    },
+    "Dry Cleaning Pick-Up": {
+      "name": "Kuru Temizleme Teslim Alma",
+      "description": "Kuru temizleme toplama ve teslimat hizmetleri"
+    },
+    "MOT &  Repairs": {
+      "name": "MOT Rezervasyonu",
+      "description": "Sertifikalı merkezlerde MOT testinizi rezerve edin. Aracınızın muayenesini size uygun bir zamanda planlayın."
+    },
+    "Shisha lounges": {
+      "name": "Nargile Salonu Rezervasyonları",
+      "description": "En iyi nargile salonlarında yerinizi rezerve edin. Masanızı rezerve edin ve arkadaşlarınızla rahatlatıcı bir akşam geçirin."
+    },
+    "Spa": {
+      "name": "Spa Rezervasyonları",
+      "description": "Spa randevunuzu rezerve edin ve kendinize rahatlama ve yenilenme günü hediye edin."
+    },
+    "Beauty": {
+      "name": "Güzellik Salonu Rezervasyonları",
+      "description": "En iyi güzellik salonlarında randevunuzu rezerve edin. Saç kesimlerinden tedavilere kadar, bugün yerinizi rezerve edin."
+    },
+    "Healthcare": {
+      "name": "Tıbbi Randevular",
+      "description": "Güvenilir sağlık hizmet sağlayıcılarından randevular rezerve edin. Diş hekimi, klinik, damar içi serum ve diğer hizmetler."
+    },
+    "Events": {
+      "name": "Etkinlik Hizmetleri",
+      "description": "Etkinlikleriniz için profesyonel hizmetler rezerve edin. DJ, canlı müzik, karakterler ve daha fazlası özel etkinliklerin için."
+    },
+    "Entertainment": {
+      "name": "Eğlence Mekanları",
+      "description": "Heyecan verici eğlence deneyimleri rezerve edin. Sanal gerçeklik deneyimleri, bowling, karaoke salonları."
+    }
+  },
+  "CheckoutVerify": {
+    "loading": "Yükleniyor...",
+    "verifying_subscription": "Aboneliğinizi doğrularken lütfen bekleyin.",
+    "payment_successful": "Ödeme Başarılı!",
+    "thank_you_subscribing": "Hizmetimize abone olduğunuz için teşekkürler! 🎉",
+    "subscription_activated": "Aboneliğiniz başarıyla etkinleştirildi ve artık tüm premium özelliklere erişebilirsiniz.",
+    "subscription_details": "Abonelik Detayları",
+    "plan": "Plan:",
+    "amount": "Tutar:",
+    "status": "Durum:",
+    "active": "Aktif",
+    "continue_dashboard": "Panele Devam Et",
+    "payment_cancelled": "Ödeme İptal Edildi",
+    "payment_cancelled_desc": "Ödemeniz iptal edildi. Hesabınızdan herhangi bir ücret alınmadı.",
+    "try_again_desc": "İstediğiniz zaman tekrar deneyebilir veya yardıma ihtiyacınız varsa destek ile iletişime geçebilirsiniz.",
+    "try_again": "Tekrar Dene",
+    "back_dashboard": "Panele Geri Dön",
+    "payment_error": "Ödeme Hatası",
+    "payment_error_desc": "Ödemenizi işlerken bir hata oluştu.",
+    "contact_support_desc": "Lütfen tekrar deneyin veya sorun devam ederse destek ile iletişime geçin."
+  },
+  "Pricing": {
+    "choose_plan": "Planınızı Seçin",
+    "select_perfect_plan": "İhtiyaçlarınıza uygun mükemmel abonelik planını seçin ve işinizi bugün büyütmeye başlayın.",
+    "subscription_expires": "Aboneliğiniz {date} tarihinde sona erecek",
+    "subscription_expired": "Aboneliğinizin süresi doldu. İşleri kabul etmeye devam etmek için lütfen yenileyin.",
+    "subscription_cancelled": "Aboneliğiniz iptal edildi.",
+    "most_popular": "En Popüler",
+    "monthly_access": "Aylık Erişim",
+    "half_year_access": "Altı Aylık Erişim",
+    "yearly_access": "Yıllık Erişim",
+    "monthly_access_desc": "Hizmet sağlayıcıları için işleri kabul etmek ve yönetmek üzere 1 aylık erişim.",
+    "half_year_access_desc": "Hizmet sağlayıcıları için işleri kabul etmek üzere indirimli fiyatlarla 6 aylık erişim.",
+    "yearly_access_desc": "Hizmet sağlayıcıları için en iyi değerle sınırsız işleri kabul etmek üzere 12 aylık tam erişim.",
+    "access_all_jobs": "Tüm işlere erişim",
+    "accept_unlimited_jobs": "Sınırsız iş kabul etme",
+    "mobile_app_access": "Mobil uygulama erişimi",
+    "email_notifications": "E-posta bildirimleri",
+    "basic_support": "Temel destek",
+    "priority_support": "Öncelikli destek",
+    "discounted_pricing": "İndirimli fiyatlandırma",
+    "best_value_pricing": "En iyi değer fiyatlandırması",
+    "early_access_features": "Yeni özelliklere erken erişim",
+    "current_plan": "Mevcut Plan",
+    "upgrade_plan": "Planı Yükselt",
+    "downgrade_not_allowed": "Düşürme İzni Yok",
+    "subscribe_now": "Şimdi Abone Ol",
+    "processing": "İşleniyor...",
+    "per_month": "/ay",
+    "per_6_months": "/6 ay",
+    "per_year": "/yıl"
+  },
+  "VisitorPages": {
+    "layout": {
+      "role": "Basic account",
+      "menu_wallet": "Wallet Management",
+      "menu_support": "Support"
+    },
+    "feedback": {
+      "title": "Deneyiminizi Değerlendirin",
+      "subtitle": "Geri bildirimlerinizi paylaşarak gelişmemize yardımcı olun",
+      "job_details": {
+        "service_provider": "Hizmet Sağlayıcısı",
+        "completed_on": "Tamamlandı"
+      },
+      "rating": {
+        "label": "Bu hizmeti nasıl değerlendirirsiniz?",
+        "required": "*",
+        "poor": "Kötü",
+        "fair": "Orta",
+        "good": "İyi",
+        "very_good": "Çok İyi",
+        "excellent": "Mükemmel"
+      },
+      "comments": {
+        "label": "Ek Yorumlar (İsteğe Bağlı)",
+        "placeholder": "Deneyiminiz hakkında bize bilgi verin...",
+        "character_count": "{count}/500 karakter"
+      },
+      "actions": {
+        "skip": "Atla",
+        "submit": "Geri Bildirim Gönder",
+        "processing": "İşleniyor...",
+        "submitting": "Gönderiliyor..."
+      },
+      "messages": {
+        "rating_required": "Lütfen göndermeden önce bir değerlendirme seçin",
+        "submit_success": "Geri bildirim başarıyla gönderildi",
+        "skip_success": "Geri bildirim başarıyla atlandı",
+        "submit_error": "Geri bildirim gönderilemedi"
+      }
+    },
+    "support": {
+      "title": "Support",
+      "help_center": "Help Center",
+      "frequently_asked_questions": "Frequently Asked Questions",
+      "phone_support": "Phone Support",
+      "email_support": "Email Support",
+      "text_us": "Text Us",
+      "email_us": "Email Us",
+      "copied": "Copied!",
+      "phone_copied_success": "Phone number copied to clipboard!",
+      "failed_copy_phone": "Failed to copy phone number",
+      "faq": {
+        "how_get_paid": {
+          "question": "How do I pay for services?",
+          "answer": "You can pay for services using various payment methods including credit/debit cards, bank transfers, or digital wallets. Payment is typically processed securely through our platform when you place an order or book a service."
+        },
+        "verification_time": {
+          "question": "How long does it take to verify my account?",
+          "answer": "Account verification typically takes approximately 5-7 working days to complete. After successfully signing up, you can expect to receive an email notification once your account has been verified."
+        },
+        "required_documents": {
+          "question": "What information do I need to create an account?",
+          "answer": "To create an account, you'll need to provide basic information such as your name, email address, phone number, and address. You may also need to verify your identity depending on the services you wish to use. All information is kept secure and confidential."
+        },
+        "restricted_accounts": {
+          "question": "Why might my account be restricted?",
+          "answer": "Accounts may be restricted if there are issues with payment, violations of our terms of service, or concerns raised by service providers. If your account is restricted, you'll receive a notification explaining the reason and steps to resolve the issue."
+        },
+        "missed_job": {
+          "question": "What happens if I need to cancel an order?",
+          "answer": "You can cancel an order through your dashboard, but cancellation policies may vary depending on the service type and timing. Some services may have cancellation fees if cancelled close to the scheduled time. Check the specific terms when placing your order."
+        },
+        "contact_team": {
+          "question": "How can I contact a member of your team?",
+          "answer": "We are always here to assist you. If you have any questions, concerns, or require assistance, please don't hesitate to get in touch with our dedicated team. You can reach us at 02035351953 or email us at update@ivanplatform.com. Our team will be happy to provide you with the necessary support and guidance."
+        }
+      }
+    }
+  },
+  "ShopsPage": {
+    "title": "Yerel Mağazalarınızı Keşfedin",
+    "subtitle": "60 dakika içinde teslim",
+    "subtitle_words": {
+      "delivered": "Delivered",
+      "within": "Within",
+      "sixty_minutes": "60 minutes"
+    },
+    "search_placeholder": "Mağaza adına göre ara...",
+    "showing_shops": "{count} mağaza gösteriliyor",
+    "miles_from": "{address} adresinden {radius} mil",
+    "clear_location": "Konumu Temizle",
+    "choose_location": "Konum Seç",
+    "change": "Değiştir",
+    "showing_shops_in": "{location} {flag} konumundaki mağazalar gösteriliyor",
+    "location_changed": "Konum {location} {flag} olarak değiştirildi",
+    "no_shops_found": "Mağaza Bulunamadı",
+    "no_shops_search": "Arama kriterlerinizi ayarlamayı deneyin",
+    "no_shops_available": "Şu anda mevcut mağaza yok",
+    "products": "ürün",
+    "miles_away": "mil uzaklıkta",
+    "view_products": "Ürünleri Görüntüle",
+    "failed_fetch_shops": "Mağazalar getirilemedi",
+    "error_fetching_shops": "Mağazalar getirilirken hata oluştu",
+    "closing_at": "{time} saatinde kapanıyor",
+    "closed": "Kapalı",
+    "switch_to_restaurants": "Restoranlara geç",
+    "switch_to_supermarkets": "Süpermarketlere geç",
+    "switch_to_services": "Hizmetlere geç",
+    "new_badge": "YENİ",
+    "free_delivery": "Ücretsiz teslimat",
+    "open_closes": "Açık • {time} saatinde kapanıyor",
+    "order_now": "Şimdi Sipariş Ver"
+  },
+  "ShopProductsPage": {
+    "loading": "Yükleniyor...",
+    "shop_products": "Mağaza Ürünleri",
+    "search_placeholder": "Ürünleri isim, açıklama veya kategoriye göre ara...",
+    "filters": "Filtreler",
+    "price_range": "Fiyat Aralığı",
+    "min": "Min",
+    "max": "Max",
+    "availability": "Mevcutluk",
+    "in_stock_only": "Sadece Stokta Olanlar",
+    "sort_by": "Sırala",
+    "name_asc": "İsim: A'dan Z'ye",
+    "name_desc": "İsim: Z'den A'ya",
+    "price_asc": "Fiyat: Düşükten Yükseğe",
+    "price_desc": "Fiyat: Yüksekten Düşüğe",
+    "newest_first": "En Yeni Önce",
+    "oldest_first": "En Eski Önce",
+    "category": "Kategori",
+    "all": "Tümü",
+    "clear_all_filters": "Tüm Filtreleri Temizle",
+    "showing_products": "{count} ürün gösteriliyor",
+    "no_products_found": "Ürün Bulunamadı",
+    "no_products_search": "Arama kriterlerinizi ayarlamayı deneyin",
+    "no_products_available": "Şu anda mevcut ürün yok",
+    "in_stock": "{count} stokta",
+    "out_of_stock": "Stokta yok",
+    "add_to_cart": "Sepete Ekle",
+    "remove_from_cart": "Sepetten Çıkar",
+    "out_of_stock_btn": "Stokta Yok",
+    "show_all_products": "Tüm ürünleri göster",
+    "closing_at": "{time} saatinde kapanıyor",
+    "opens_at": "{time} saatinde açılıyor",
+    "closed": "Kapalı",
+    "open_closes": "Açık • {time} saatinde kapanıyor",
+    "new_badge": "YENİ",
+    "show_favorites_only": "Sadece favorileri göster",
+    "apply": "Uygula",
+    "clear_all": "Tümünü Temizle",
+    "failed_fetch_products": "Ürünler getirilemedi",
+    "error_fetching_products": "Ürünler getirilirken hata oluştu",
+    "only_customers_cart": "Sadece müşteriler ürünleri sepete ekleyebilir",
+    "product_out_of_stock": "Ürün stokta yok",
+    "product_removed_cart": "Ürün sepetten çıkarıldı",
+    "product_added_cart": "Ürün sepete eklendi",
+    "product_quantity_updated": "Ürün miktarı sepette güncellendi",
+    "failed_remove_product": "Ürün sepetten çıkarılamadı",
+    "failed_add_product": "Ürün sepete eklenemedi",
+    "shop_closed_order": "Bu mağaza şu anda kapalı. Lütfen çalışma saatlerinde tekrar gelin",
+    "link_copied": "Bağlantı panoya kopyalandı!",
+    "failed_copy_link": "Bağlantı kopyalanamadı"
+  },
+  "ProductDetailPage": {
+    "loading": "Yükleniyor...",
+    "product_not_found": "Ürün Bulunamadı",
+    "product_not_exist": "Aradığınız ürün mevcut değil.",
+    "back_to_shops": "Mağazalara Dön",
+    "back": "Geri",
+    "in_stock": "{count} stokta",
+    "out_of_stock": "Stokta yok",
+    "delivered_within_60_minutes": "60 dakika içinde teslim",
+    "description": "Açıklama",
+    "product_details": "Ürün Detayları",
+    "weight": "Ağırlık",
+    "dimensions": "Boyutlar",
+    "in_cart": "Sepette",
+    "out_of_stock_btn": "Stokta Yok",
+    "removing": "Çıkarılıyor...",
+    "remove_from_cart": "Sepetten Çıkar",
+    "view_cart": "Sepeti Görüntüle",
+    "adding": "Ekleniyor...",
+    "add_to_cart": "Sepete Ekle",
+    "failed_load_product": "Ürün detayları yüklenemedi",
+    "only_customers_manage_cart": "Sadece müşteriler sepeti yönetebilir",
+    "product_out_of_stock": "Ürün stokta yok",
+    "product_removed_cart": "Ürün sepetten çıkarıldı",
+    "product_added_cart": "Ürün sepete eklendi",
+    "failed_remove_product": "Ürün sepetten çıkarılamadı",
+    "failed_add_product": "Ürün sepete eklenemedi",
+    "shop_closed_order": "Bu mağaza şu anda kapalı. Lütfen çalışma saatlerinde tekrar gelin",
+    "preparation_time": "Hazırlama Süresi",
+    "minutes": "dakika",
+    "calories": "Kalori",
+    "kcal": "kcal",
+    "dietary_info": "Diyet Bilgisi",
+    "allergens": "Alerjenler"
+  },
+  "PurchasePage": {
+    "loading": "Yükleniyor...",
+    "loading_cart": "Sepet yükleniyor...",
+    "cart_empty": "Sepetiniz Boş",
+    "add_products_to_cart": "Devam etmek için sepete bazı ürünler ekleyin.",
+    "browse_products": "Ürünleri Gözat",
+    "checkout": "Ödeme",
+    "items": "ürün",
+    "step_of": "Adım {current} / {total}",
+    "cart_items": "Sepet Ürünleri",
+    "shop_info": "Mağaza",
+    "view_shop": "Mağazayı görüntüle",
+    "delivery_address": "Teslimat Adresi",
+    "delivery_address_placeholder": "Ürünlerin teslim edileceği adresi girin",
+    "delivery_address_required": "Teslimat adresi gereklidir",
+    "delivery_address_confirmed": "✓ Teslimat adresi: {address}",
+    "loading_maps": "🔄 Haritalar yükleniyor...",
+    "continue_to_checkout": "Ödemeye Devam Et",
+    "additional_notes": "Teslimat için Ek Notlar",
+    "special_instructions_placeholder": "Teslimat için özel talimatlar (isteğe bağlı)...",
+    "order_summary": "Sipariş Özeti",
+    "subtotal": "Ara Toplam",
+    "delivery_price": "Teslimat Ücreti",
+    "calculating": "Hesaplanıyor...",
+    "distance": "Mesafe",
+    "miles": "mil",
+    "total": "Toplam",
+    "back_to_location": "Konuma Geri Dön",
+    "place_order": "Sipariş Ver",
+    "processing": "İşleniyor...",
+    "please_login": "Sepeti görüntülemek için lütfen giriş yapın",
+    "failed_fetch_cart": "Sepet ürünleri alınamadı",
+    "cart_updated_successfully": "Sepet başarıyla güncellendi",
+    "failed_update_cart": "Sepet güncellenemedi",
+    "shop_closed_order": "Bu mağaza şu anda kapalı. Lütfen çalışma saatlerinde tekrar gelin",
+    "item_removed_cart": "Ürün sepetten çıkarıldı",
+    "failed_remove_item": "Ürün çıkarılamadı",
+    "cart_empty_error": "Sepetiniz boş",
+    "order_created": "Sipariş oluşturuldu! Ödemeye yönlendiriliyor...",
+    "order_created_successfully": "Sipariş başarıyla oluşturuldu!",
+    "failed_create_order": "Sipariş oluşturulamadı",
+    "order_food": "Yemek siparişi ver"
+  },
+  "RestaurantsPage": {
+    "title": "Yerel Restoranlarınızı Keşfedin",
+    "subtitle_words": {
+      "delivered": "Teslim Edildi",
+      "within": "İçinde",
+      "sixty_minutes": "60 dakika"
+    },
+    "search_placeholder": "Restoranları isme göre ara...",
+    "showing_restaurants": "{count} restoran gösteriliyor",
+    "miles_from": "{address} konumundan {radius} mil",
+    "clear_location": "Konumu Temizle",
+    "choose_location": "Konum Seç",
+    "change": "Değiştir",
+    "showing_restaurants_in": "{location} {flag} konumunda restoranlar gösteriliyor",
+    "location_changed": "Konum {location} {flag} olarak değiştirildi",
+    "no_restaurants_found": "Restoran Bulunamadı",
+    "miles_away": "mil uzakta",
+    "view_menu": "Menüyü Görüntüle",
+    "failed_fetch_restaurants": "Restoranlar alınamadı",
+    "error_fetching_restaurants": "Restoranlar alınırken hata oluştu",
+    "closing_at": "{time} saatinde kapanıyor",
+    "closed": "Kapalı",
+    "items": "öğe",
+    "items_count": "{count} öğe",
+    "minimum_order": "Min: £{amount}",
+    "resturant_reservation": "Restoran Rezervasyonu"
+  },
+  "RestaurantMenuPage": {
+    "loading": "Yükleniyor...",
+    "restaurant_menu": "Restoran Menüsü",
+    "search_placeholder": "Menü öğelerini isme göre ara...",
+    "filters": "Filtreler",
+    "category": "Kategori",
+    "cuisine": "Mutfak",
+    "filter_by_cuisine": "Mutfak türüne göre filtrele...",
+    "sort_by": "Sırala",
+    "name_asc": "İsim: A'dan Z'ye",
+    "name_desc": "İsim: Z'den A'ya",
+    "price_asc": "Fiyat: Düşükten Yükseğe",
+    "price_desc": "Fiyat: Yüksekten Düşüğe",
+    "clear_all_filters": "Tüm Filtreleri Temizle",
+    "showing_items": "{count} öğe gösteriliyor",
+    "no_items_found": "Menü Öğesi Bulunamadı",
+    "only_customers_cart": "Sadece müşteriler sepete öğe ekleyebilir",
+    "item_unavailable": "Öğe mevcut değil",
+    "item_removed_cart": "Öğe sepetten çıkarıldı",
+    "failed_remove_item": "Öğe çıkarılamadı",
+    "item_added_cart": "Öğe sepete eklendi",
+    "item_quantity_updated": "Sepetteki öğe miktarı güncellendi",
+    "failed_add_item": "Öğe sepete eklenemedi",
+    "shop_closed_order": "Bu mağaza şu anda kapalı. Lütfen çalışma saatlerinde tekrar gelin",
+    "failed_fetch_menu": "Menü öğeleri alınamadı",
+    "error_fetching_menu": "Menü öğeleri alınırken hata oluştu",
+    "menu_items": "Menü Öğeleri",
+    "rating": "Değerlendirme",
+    "unavailable": "Mevcut değil",
+    "closing_at": "{time} saatinde kapanıyor",
+    "opens_at": "{time} saatinde açılıyor",
+    "closed": "Kapalı",
+    "new_badge": "YENİ"
+  },
+  "ReservationPage": {
+    "link_copied": "Bağlantı panoya kopyalandı!",
+    "failed_copy_link": "Bağlantı kopyalanamadı",
+    "restaurant_no_reservations": "Bu restoran rezervasyon kabul etmiyor.",
+    "restaurant_not_found": "Restoran bulunamadı.",
+    "failed_load_restaurant": "Restoran detayları yüklenemedi.",
+    "fill_required_fields": "Lütfen tüm gerekli alanları doldurun.",
+    "select_future_date": "Lütfen gelecek bir tarih seçin.",
+    "reservation_created": "Rezervasyon başarıyla oluşturuldu! Onay için e-postanızı kontrol edin.",
+    "failed_create_reservation": "Rezervasyon oluşturulamadı.",
+    "failed_create_reservation_try_again": "Rezervasyon oluşturulamadı. Lütfen tekrar deneyin.",
+    "booking": "Masa Rezervasyonu",
+    "menu": "Menü",
+    "services": "Hizmetler",
+    "about_us": "Hakkımızda",
+    "gallery": "Galeri",
+    "address": "Adres",
+    "opening_hours": "Çalışma Saatleri",
+    "opening_time": "Açılış Saati",
+    "closing_time": "Kapanış Saati",
+    "daily": "Günlük",
+    "contact_number": "İletişim Numarası",
+    "halal_status": "Helal Durumu",
+    "halal": "Helal",
+    "date": "Tarih",
+    "time": "Saat",
+    "select_time": "Bir saat seçin",
+    "number_of_guests": "Misafir Sayısı",
+    "number_of_patients": "Hasta Sayısı",
+    "guest": "Misafir",
+    "guests": "Misafirler",
+    "patient": "Hasta",
+    "patients": "Hastalar",
+    "name": "İsim",
+    "phone_number": "Telefon Numarası",
+    "email": "E-posta",
+    "special_requests": "Özel İstekler (İsteğe Bağlı)",
+    "special_requests_placeholder": "Herhangi bir özel diyet gereksinimi veya istek...",
+    "processing": "İşleniyor...",
+    "book_reservation": "Rezervasyon Yap"
+  },
+  "ReservationsPage": {
+    "search_placeholder": "Restoranları ara...",
+    "no_restaurants_found": "Restoran bulunamadı",
+    "reserve": "Rezerve Et",
+    "failed_fetch_restaurants": "Restoranlar alınamadı",
+    "error_fetching_restaurants": "Restoranlar alınırken hata oluştu",
+    "new_badge": "YENİ",
+    "change": "Değiştir",
+    "showing_restaurants_in": "{location} {flag} içindeki Restoranları Göster",
+    "select_service": "Hizmet Seç",
+    "cancel": "İptal",
+    "continue_to_reservation": "Rezervasyona Devam Et",
+    "processing": "İşleniyor...",
+    "rating": "Değerlendirme",
+    "city": "Şehir",
+    "select_city": "Şehir Seç",
+    "no_deposit_required": "Depozito Gerekmez",
+    "fill_required_fields": "Lütfen tüm gerekli alanları doldurun",
+    "select_future_date": "Lütfen gelecekteki bir tarih seçin",
+    "reservation_created": "Rezervasyon başarıyla oluşturuldu",
+    "failed_create_reservation": "Rezervasyon oluşturulamadı",
+    "failed_create_reservation_try_again": "Rezervasyon oluşturulamadı. Lütfen tekrar deneyin.",
+    "please_select_service": "Lütfen rezervasyonunuzla devam etmek için bir hizmet seçin",
+    "selected": "Seçildi",
+    "select_mot_service": "MOT Hizmeti Seç",
+    "select_spa_service": "Spa Hizmeti Seç",
+    "select_shisha_service": "Nargile Hizmeti Seç",
+    "select_beauty_service": "Güzellik Hizmeti Seç",
+    "select_healthcare_service": "Sağlık Hizmeti Seç",
+    "select_events_service": "Etkinlik Hizmeti Seç",
+    "select_entertainment_service": "Eğlence Mekanı Seç",
+    "select_restaurant_service": "Mutfak seçin",
+    "select_shop_service": "Mağaza kategorisi seçin"
+  },
+  "FeatureDescriptionModal": {
+    "defaultDescription": "Our service providers are ready to help you—day or night. Get a quote in just 60 seconds and solve your needs quickly and smoothly.",
+    "descriptions": {
+      "courier": "Our courier service offers fast, reliable delivery for parcels of all sizes — from small envelopes to larger items. Choose urgent same-day delivery or schedule a time that suits you. Whether it's a one-off job or regular deliveries, we make it simple and stress-free. Get a quote in just 60 seconds and solve your courier needs quickly and smoothly.",
+      "van": "Our courier service offers fast, reliable delivery for parcels of all sizes — from small envelopes to larger items. Choose urgent same-day delivery or schedule a time that suits you. Whether it's a one-off job or regular deliveries, we make it simple and stress-free. Get a quote in just 60 seconds and solve your courier needs quickly and smoothly.",
+      "luggageStorage": "Our luggage storage service lets you store your bags safely and conveniently at a location near you. Choose your closest drop-off point, or let us arrange pick-up and drop-off straight to your door. Whether it's for a few hours or a few weeks, we make it hassle-free. Get a quote in just 60 seconds and solve your luggage storage needs quickly and smoothly.",
+      "locksmith": "Our locksmith service connects you with trusted, fully vetted professionals in your area. Whether you need urgent help or prefer to schedule an appointment, we've got you covered. Get a quote in just 60 seconds and solve your locksmith needs quickly and smoothly.",
+      "professionalCleaning": "Our cleaning service connects you with trusted, fully vetted professionals who deliver exceptional results. Whether you need an urgent call-out or prefer to book a scheduled appointment, we make it simple and convenient. Get a quote in just 60 seconds and solve your cleaning needs quickly and smoothly.",
+      "cleaning": "Our cleaning service connects you with trusted, fully vetted professionals who deliver exceptional results. Whether you need an urgent call-out or prefer to book a scheduled appointment, we make it simple and convenient. Get a quote in just 60 seconds and solve your cleaning needs quickly and smoothly.",
+      "dryCleaningPickUp": "Our dry cleaning service offers convenient door-to-door collection and delivery, or you can choose to drop off and collect from your closest service provider. Fast, simple, and reliable—your clothes are in safe hands. Get a quote in just 60 seconds and solve your dry-cleaning needs quickly and smoothly.",
+      "breakdownAssistance": "Our nationwide breakdown assistance service is available 24/7, whether you need an urgent call-out or prefer to book an appointment. Wherever you are, we're ready to help get you moving again. Get a quote in just 60 seconds and solve your breakdown needs quickly and smoothly.",
+      "recovery": "Our nationwide breakdown assistance service is available 24/7, whether you need an urgent call-out or prefer to book an appointment. Wherever you are, we're ready to help get you moving again. Get a quote in just 60 seconds and solve your breakdown needs quickly and smoothly.",
+      "rubbishRemovals": "Our rubbish removal service can collect all types of waste — from furniture and household bags to garden waste and more. We're available 24/7 for emergency call-outs or scheduled appointments, making it easy to clear any clutter fast. Get a quote in just 60 seconds and solve your rubbish removal needs quickly and smoothly.",
+      "removals": "Our rubbish removal service can collect all types of waste — from furniture and household bags to garden waste and more. We're available 24/7 for emergency call-outs or scheduled appointments, making it easy to clear any clutter fast. Get a quote in just 60 seconds and solve your rubbish removal needs quickly and smoothly.",
+      "clickCollectDelivery": "Our Click & Collect delivery service lets us collect your online order directly from the store and deliver it straight to your home. Operating within business hours, we offer both urgent call-outs and scheduled appointments for your convenience. Get a quote in just 60 seconds and solve your Click & Collect delivery needs quickly and smoothly.",
+      "clickCollect": "Our Click & Collect delivery service lets us collect your online order directly from the store and deliver it straight to your home. Operating within business hours, we offer both urgent call-outs and scheduled appointments for your convenience. Get a quote in just 60 seconds and solve your Click & Collect delivery needs quickly and smoothly."
+    },
+    "features": {
+      "howItWorks": {
+        "label": "How It Works",
+        "description": "1. Get Your Quote in 60 Seconds\nEnter your location and answer a few quick questions about your request. We'll instantly generate the right quote tailored to your needs.\n\n2. Get Matched With a Local Professional\nOnce your payment is confirmed, we'll connect you to a nearby vetted specialist. You can communicate directly through the in-app calling and messaging system, and track job status, pickup, and arrival times in real-time.\n\n3. Job Completed — Leave a Rating\nAfter the service is finished, leave a review for your service provider to help us maintain quality and improve your experience."
+      },
+      "scheduled": {
+        "label": "Scheduled Appointments",
+        "description": "Need something later? Choose a date and time that suits you. Book in advance and your service provider will arrive exactly when you need them."
+      },
+      "emergency": {
+        "label": "24/7 Emergency Call-Outs",
+        "description": "Day or night, we're here. For urgent problems, we send a service provider to you immediately — no waiting until morning."
+      },
+      "monthly": {
+        "label": "Pay Monthly Available",
+        "description": "Spread the cost instead of paying everything upfront. Choose flexible monthly installments to make your service more affordable."
+      },
+      "trusted": {
+        "label": "Trusted & Verified Providers",
+        "description": "Every provider on Swipped is carefully checked, approved, and trusted—so you always get safe, reliable service."
+      },
+      "about": {
+        "label": "About Service"
+      }
+    }
+  }
+}

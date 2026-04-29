@@ -1,0 +1,192 @@
+.profile-section-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  border: 1px solid #eaecf2;
+  margin-bottom: 24px;
+}
+
+.profile-section-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a2a4a;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.store-photo-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.store-photo-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid #e0e5f0;
+}
+
+.store-photo-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.store-photo-label {
+  font-weight: 500;
+  color: #333;
+  font-size: 15px;
+  flex: 1;
+  min-width: 0;
+}
+
+.store-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.gallery-add-btn {
+  aspect-ratio: 1;
+  border: 2px dashed #c5cde0;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #fafbff;
+}
+
+.gallery-item {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gallery-delete-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  line-height: 1;
+}
+
+.pill-btn-primary {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 22px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.pill-btn-primary:hover {
+  background: #1d4ed8;
+  color: #fff;
+}
+
+.email-input-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.email-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.verified-badge {
+  color: #22c55e;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+}
+
+.verified-badge-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+.save-btn {
+  border-radius: 20px;
+  padding: 10px 32px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .profile-section-card {
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+  }
+
+  .profile-section-title {
+    margin-bottom: 16px;
+  }
+
+  .store-photo-row {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .store-photo-label {
+    font-size: 13px;
+  }
+
+  .pill-btn-primary {
+    padding: 7px 16px;
+    font-size: 13px;
+  }
+
+  .email-input-row {
+    flex-direction: column;
+  }
+
+  .email-input-row .pill-btn-primary {
+    align-self: flex-end;
+  }
+
+  .store-gallery-grid {
+    gap: 8px;
+  }
+
+  .save-btn {
+    padding: 8px 24px;
+    font-size: 14px;
+  }
+}

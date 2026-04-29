@@ -1,0 +1,1565 @@
+{
+  "Home": {
+    "title": "Swipped",
+    "tagLine": "更智能、更快速地招聘",
+    "description": "Swipped 将英国各地的企业与值得信赖的供应商连接起来，提供配送、清洁、锁匠等服务。"
+  },
+  "Auth": {
+    "email": "电子邮件",
+    "password": "密码",
+    "first_name": "名字",
+    "last_name": "姓氏",
+    "login": "登录",
+    "signup": "注册",
+    "auto_login": "自动登录",
+    "join_the_membership": "加入会员",
+    "already_have_account": "已有账户？请登录",
+    "email_field_required": "电子邮件字段为必填项。",
+    "invalid_email": "请输入有效的电子邮件地址。",
+    "password_min_length": "密码必须至少为6个字符。",
+    "first_name_min_length": "名字必须至少为2个字符。",
+    "last_name_min_length": "姓氏必须至少为2个字符。",
+    "all_fields_required": "所有字段均为必填项。",
+    "registration_successful": "注册成功！",
+    "registration_failed": "注册失败，请重试。",
+    "loading": "加载中...",
+    "invalid_credentials": "无效的凭证。",
+    "user_not_found": "请在登录前注册。",
+    "device_limit_reached": "您的设备限制已达到上限。",
+    "logout": "退出登录",
+    "logout_successful": "退出登录成功！",
+    "logout_failed": "退出登录失败，请重试。",
+    "login_successful": "登录成功！",
+    "reset_email_sent": "密码重置链接已发送到您的电子邮件。",
+    "send_reset_link": "发送重置链接",
+    "back_to_login": "返回登录",
+    "sending": "发送中...",
+    "forgot_password": "忘记密码？",
+    "reset_password": "重置密码",
+    "reset_password_successful": "密码重置成功！",
+    "something_went_wrong": "出现错误，请稍后重试。",
+    "new_password": "新密码",
+    "confirm_password": "确认密码",
+    "new_password_required": "新密码为必填项",
+    "confirm_password_required": "确认密码为必填项",
+    "passwords_must_match": "密码必须匹配"
+  },
+  "AuthPages": {
+    "login": {
+      "title": "欢迎回到 Swipped",
+      "subtitle": "登录 Swipped，优化您的招聘流程",
+      "email_label": "电子邮件",
+      "password_label": "密码",
+      "submit": "登录",
+      "loading": "加载中...",
+      "forgot_password_hint": "忘记密码？",
+      "forgot_password_link": "在这里重置。",
+      "signup_prompt": "新用户？",
+      "signup_link": "注册",
+      "success_toast": "登录成功",
+      "error_toast": "电子邮件或密码无效"
+    },
+    "register": {
+      "title": "注册",
+      "subtitle": "加入 Swipped，今天就开始您的旅程",
+      "first_name_label": "名字",
+      "last_name_label": "姓氏",
+      "email_label": "电子邮件",
+      "password_label": "密码",
+      "confirm_password_label": "确认密码",
+      "submit": "创建我的账户",
+      "login_prompt": "已有账户？",
+      "login_link": "登录",
+      "success_toast": "注册成功！请检查您的电子邮件以验证账户。",
+      "error_toast": "错误，请重试"
+    },
+    "forgotPassword": {
+      "title": "忘记密码",
+      "email_label": "电子邮件",
+      "submit": "忘记密码",
+      "back_to_login": "返回登录",
+      "success_toast": "重置链接发送成功",
+      "error_toast": "发送重置链接失败",
+      "generic_error_toast": "出现错误"
+    },
+    "resetPassword": {
+      "title": "重置您的密码",
+      "new_password_label": "新密码",
+      "confirm_password_label": "确认密码",
+      "submit": "重置密码",
+      "success_toast": "密码重置成功",
+      "error_toast": "发生错误"
+    },
+    "activate": {
+      "title": "账户激活中...",
+      "success_toast": "您的账户已成功激活。",
+      "error_toast": "激活失败。",
+      "error_message": "激活失败，请稍后重试。",
+      "generic_error_message": "发生错误，请重试。"
+    }
+  },
+  "AdminPages": {
+    "dashboard": {
+      "open_jobs_title": "开放职位"
+    },
+    "changePassword": {
+      "title": "更改密码",
+      "password_label": "密码",
+      "confirm_password_label": "确认密码",
+      "save": "保存",
+      "loading": "加载中..."
+    },
+    "jobsList": {
+      "title": "开放职位",
+      "breadcrumb_home": "首页",
+      "breadcrumb_current": "开放职位",
+      "loading": "加载中...",
+      "add_job": "添加职位",
+      "table_number": "#",
+      "table_title": "标题",
+      "table_category": "类别",
+      "table_status": "状态",
+      "table_action": "操作",
+      "empty_text": "没有开放职位。创建新职位。",
+      "empty_action_text": "创建职位",
+      "confirm_delete": "您确定要删除此职位吗？",
+      "toast_delete_success": "职位删除成功！",
+      "toast_delete_error_prefix": "删除职位错误：",
+      "toast_delete_generic_error": "删除职位错误，请重试。"
+    },
+    "providers": {
+      "title": "供应商",
+      "breadcrumb_home": "首页",
+      "breadcrumb_current": "供应商",
+      "loading": "加载中...",
+      "table_number": "#",
+      "table_name": "姓名",
+      "table_email": "电子邮件",
+      "table_action": "操作",
+      "no_providers": "未找到供应商。",
+      "toast_delete_success": "供应商删除成功",
+      "toast_delete_failed": "删除供应商失败",
+      "toast_unexpected_error": "发生意外错误",
+      "wallet_modal_title": "钱包详情",
+      "wallet_account_holder": "账户持有人：",
+      "wallet_account_number": "账户号码：",
+      "wallet_sort_code": "分类代码：",
+      "wallet_amount": "金额：",
+      "wallet_created_at": "创建时间：",
+      "wallet_not_found": "未找到该供应商的钱包。",
+      "wallet_close": "关闭"
+    },
+    "payouts": {
+      "pending_label": "待处理 ({amount})",
+      "completed_label": "已完成 ({amount})",
+      "loading": "加载中...",
+      "price_label": "价格：{amount}",
+      "completed_by": "职位完成者：{name}",
+      "completed_at": "已完成：{date}",
+      "empty_pending": "暂无待处理付款。",
+      "empty_completed": "暂无已完成付款。"
+    },
+    "profile": {
+      "title": "个人资料",
+      "loading": "加载中...",
+      "save": "保存",
+      "first_name_label": "名字",
+      "last_name_label": "姓氏",
+      "email_label": "电子邮件地址",
+      "email_placeholder": "输入电子邮件",
+      "toast_fetch_failed": "获取用户数据失败",
+      "toast_update_failed": "更新用户失败"
+    },
+    "verifications": {
+      "title": "验证",
+      "breadcrumb_home": "首页",
+      "breadcrumb_current": "验证",
+      "loading": "加载中...",
+      "toast_fetch_failed": "获取文档失败",
+      "tab_service": "服务验证",
+      "tab_job": "职位完成证明",
+      "selected_count": "已选择 {count} 个文档",
+      "cancel": "取消",
+      "approve": "批准",
+      "reject": "拒绝",
+      "approving": "批准中...",
+      "rejecting": "拒绝中...",
+      "table_job_title": "职位标题",
+      "table_service_provider": "服务供应商",
+      "table_category_type": "类别 / 类型",
+      "table_documents": "文档",
+      "table_document": "文档",
+      "table_view": "查看",
+      "no_service_docs": "没有待验证的服务文档。",
+      "no_job_docs": "没有待验证的职位证明文档。",
+      "reject_modal_title": "拒绝文档",
+      "reject_reason_label": "拒绝原因",
+      "modal_cancel": "取消",
+      "modal_reject": "拒绝"
+    },
+    "layout": {
+      "nav_dashboard": "仪表板",
+      "nav_jobs": "职位",
+      "nav_providers": "供应商",
+      "nav_verifications": "验证",
+      "nav_payouts": "付款",
+      "menu_profile": "个人资料",
+      "menu_change_password": "更改密码",
+      "menu_logout": "退出登录"
+    }
+  },
+  "OnBoardPages": {
+    "layout": {
+      "loading": "加载中..."
+    },
+    "lookingToProvide": {
+      "title": "告诉我们您提供什么 — 选择您的服务",
+      "toast_pending_exists": "您已有待审批的服务。请等待批准。",
+      "toast_already_approved": "此服务已获批准。",
+      "toast_select_service": "请选择一项服务。",
+      "toast_generic_error": "出现错误，请重试。",
+      "success_added": "服务添加成功！",
+      "success_updated": "服务更新成功！",
+      "success_auto_approved": "服务已批准！您的文件已经验证。",
+      "button_saving": "保存中...",
+      "button_continue": "继续",
+      "status_Approved": "已批准",
+      "status_Pending": "待处理",
+      "status_Rejected": "已拒绝"
+    },
+    "addressOnboarding": {
+      "provider_title": "设置您的服务位置",
+      "provider_description": "告诉我们您将在哪里提供服务，以便客户能够找到您。",
+      "provider_address_label": "您的服务地址",
+      "provider_address_placeholder": "输入您的服务位置地址",
+      "shop_owner_title": "设置您的商店位置",
+      "shop_owner_description": "告诉我们您的商店在哪里，以便客户能够找到您。",
+      "shop_owner_address_label": "您的商店地址",
+      "shop_owner_address_placeholder": "输入您的商店地址",
+      "customer_title": "完成您的设置",
+      "customer_description": "告诉我们您在哪里，以便我们能够向您显示附近的服务。",
+      "customer_address_label": "您的地址",
+      "customer_address_placeholder": "输入您的地址",
+      "selected_location": "所选位置",
+      "toast_address_required": "请选择一个地址以继续。",
+      "success_address_saved": "地址保存成功！",
+      "toast_save_error": "保存地址失败。请重试。",
+      "button_saving": "保存中...",
+      "button_continue": "继续"
+    }
+  },
+  "ProviderPages": {
+    "layout": {
+      "nav_dashboard": "仪表板",
+      "nav_jobs": "职位",
+      "nav_payouts": "付款",
+      "menu_profile": "个人资料",
+      "menu_change_password": "更改密码",
+      "menu_address": "地址簿",
+      "menu_services": "服务与验证",
+      "menu_support": "支持",
+      "menu_payments": "付款",
+      "menu_subscription_plans": "订阅计划",
+      "menu_billing_history": "账单历史",
+      "menu_logout": "退出登录",
+      "toast_fetch_failed": "获取用户数据失败"
+    },
+    "changePassword": {
+      "title": "更改密码",
+      "password_label": "密码",
+      "confirm_password_label": "确认密码",
+      "save": "保存",
+      "loading": "加载中..."
+    },
+    "dashboard": {
+      "tab_inprogress": "进行中 ({count})",
+      "tab_completed": "已完成 ({count})",
+      "tab_cancelled": "已取消 ({count})",
+      "loading": "加载中...",
+      "price_label": "价格：${amount}",
+      "from_label": "来自：{city}",
+      "btn_completing": "完成中...",
+      "btn_complete": "完成",
+      "btn_completion_pending": "完成待处理",
+      "btn_cancelling": "取消中...",
+      "btn_cancel": "取消",
+      "btn_view": "查看",
+      "empty_inprogress": "没有进行中的职位。",
+      "empty_completed": "暂无已完成职位。",
+      "empty_cancelled": "没有已取消的职位。",
+      "confirm_cancel": "您确定要取消此职位吗？",
+      "confirm_cancel_desc": "如果您取消此职位，将从您的下次付款中扣除 $20 的罚款，如果您取消过多职位，我们也可能暂停您的账户。",
+      "toast_complete_success": "职位完成成功！",
+      "toast_complete_failed": "完成职位失败",
+      "toast_complete_generic": "完成职位时出现错误",
+      "toast_cancel_success": "职位取消成功！",
+      "toast_cancel_failed": "取消职位时出现错误。",
+      "toast_cancel_error": "取消职位错误"
+    },
+    "jobs": {
+      "search_placeholder": "搜索职位...",
+      "filter_all": "全部",
+      "count_label": "{count} 个职位可用",
+      "clear_filters": "清除筛选",
+      "loading": "加载中...",
+      "view_book": "查看并预订",
+      "empty": "没有可用的职位。",
+      "price_label": "价格：{amount}",
+      "from_label": "来自：{city}"
+    },
+    "jobDetails": {
+      "title": "职位详情",
+      "accept": "接受职位",
+      "payment": "付款",
+      "payment_badge": "{time} 付款 - ${price}",
+      "job_id": "职位 ID：{id}",
+      "date": "日期：",
+      "distance": "距离：",
+      "miles": "英里",
+      "mile": "英里",
+      "pickup": "取货",
+      "pickup_between": "取货时间：{start} - {end}",
+      "pickup_at": "在 {time}",
+      "address_blurred_until_accept": "接受职位前地址模糊",
+      "address_blurred": "地址模糊",
+      "blurred": "模糊",
+      "dropoff": "送货",
+      "between": "{start} - {end} 之间",
+      "at": "在 {time}",
+      "pickup_location": "取货地点",
+      "job_location": "工作地点",
+      "dropoff_location": "送货地点",
+      "locations_blurred_until_accept": "接受工作以解锁完整位置",
+      "accept_confirm": "您确定要接受此职位吗？",
+      "accept_warning": "请注意：一旦接受，此工作必须完成。未完成可能会导致您的账户被处以罚款。",
+      "toast_accept_not_approved": "服务未获批准。",
+      "toast_accept_success": "职位接受成功",
+      "toast_accept_failed": "接受职位时出现错误。",
+      "toast_error_loading": "加载职位详情错误",
+      "loading": "加载中..."
+    },
+    "payouts": {
+      "pending_label": "待处理 ({amount})",
+      "completed_label": "已完成 ({amount})",
+      "loading": "加载中...",
+      "price_label": "价格：{amount}",
+      "completed_at": "已完成：{date}",
+      "empty_pending": "暂无待处理付款。",
+      "empty_completed": "暂无已完成付款。"
+    },
+    "profile": {
+      "title": "个人资料",
+      "loading": "加载中...",
+      "first_name": "名字",
+      "last_name": "姓氏",
+      "email_address": "电子邮件地址",
+      "language": "语言",
+      "first_name_placeholder": "名字",
+      "last_name_placeholder": "姓氏",
+      "email_placeholder": "输入电子邮件",
+      "select_language": "选择语言",
+      "save": "保存",
+      "saving": "加载中...",
+      "validation": {
+        "first_name_required": "名字必填",
+        "first_name_min_length": "名字必须至少为3个字符",
+        "last_name_required": "姓氏必填",
+        "last_name_min_length": "姓氏必须至少为3个字符",
+        "email_required": "电子邮件必填",
+        "email_valid": "电子邮件必须有效"
+      },
+      "errors": {
+        "failed_fetch_user": "获取用户数据失败",
+        "failed_update_user": "更新用户失败"
+      }
+    },
+    "settings": {
+      "title": "供应商设置",
+      "loading": "加载中...",
+      "select_prompt": "请从菜单中选择一个设置部分。"
+    },
+    "billingHistory": {
+      "title": "账单历史",
+      "loading": "加载中...",
+      "current_subscription": "当前订阅",
+      "transaction_history": "交易历史",
+      "no_billing_history": "无账单历史",
+      "no_subscriptions": "未找到交易。",
+      "view_details": "查看详情",
+      "subscription_details": "订阅详情",
+      "manage_subscription": "管理您的订阅并查看账单信息",
+      "table_headers": {
+        "date": "日期",
+        "plan": "计划",
+        "amount": "金额",
+        "transaction_id": "交易 ID"
+      },
+      "transaction_date": "交易日期",
+      "failed_fetch_billing": "获取账单历史失败"
+    },
+    "subscription": {
+      "title": "订阅",
+      "loading": "加载中...",
+      "current_plan": "当前计划",
+      "amount": "金额",
+      "type": "类型",
+      "start_date": "开始日期",
+      "end_date": "结束日期",
+      "ongoing": "持续进行",
+      "active": "活跃",
+      "upgraded": "已升级",
+      "cancelled": "已取消",
+      "expired": "已过期",
+      "no_subscription": "无订阅",
+      "active_subscription_message": "活跃的订阅，享有全部访问权限",
+      "cancelled_access_until": "已取消 - 可访问至 {date}",
+      "cancelled_access_expired": "已取消 - 访问权限已过期",
+      "expired_renew_message": "已过期 - 续订以继续访问",
+      "cancel_subscription": "取消订阅",
+      "cancelling": "取消中...",
+      "renew_subscription": "续订订阅",
+      "no_active_subscription": "无活跃订阅",
+      "subscribe_unlock_message": "订阅以解锁高级功能",
+      "view_plans": "查看计划",
+      "subscription_cancelled_success": "订阅取消成功",
+      "failed_cancel_subscription": "取消订阅失败"
+    },
+    "support": {
+      "help_center": "帮助中心",
+      "frequently_asked_questions": "常见问题",
+      "phone_support": "电话支持",
+      "email_support": "电子邮件支持",
+      "text_us": "给我们发短信",
+      "email_us": "给我们发电子邮件",
+      "copied": "已复制！",
+      "phone_copied_success": "电话号码已复制到剪贴板！",
+      "failed_copy_phone": "复制电话号码失败",
+      "faq": {
+        "how_get_paid": {
+          "question": "我如何获得报酬？",
+          "answer": "我们提供直接支付到您指定的银行账户。我们提供灵活的支付条款，允许您选择最适合您的选项。我们提供三种不同的支付条款：当天支付、30天支付和45天支付。支付条款的选择完全取决于您的偏好和财务需求。"
+        },
+        "verification_time": {
+          "question": "验证我的账户需要多长时间？",
+          "answer": "通常，该过程需要大约5-7个工作日完成。成功注册后，您可以期待收到一封电子邮件通知。"
+        },
+        "required_documents": {
+          "question": "注册需要哪些文件？",
+          "answer": "驾驶执照：如果您计划作为司机工作或在活动中操作车辆，有效的驾驶执照是必不可少的。确保您的执照是最新的，并符合您打算使用的车辆类型的必要标准。快递保险：如果您作为快递员工作，拥有快递保险很重要。这种保险通常涵盖您运输的物品可能遭受的任何损坏或损失。它为您和您的客户提供保护。责任保险：责任保险对于保护您和您的企业免受潜在的索赔或诉讼至关重要。它涵盖您在工作过程中对他人造成的损害或伤害。建议拥有责任保险以减轻任何财务风险。英国银行账户：出于各种原因，例如接收付款、管理财务以及确保与客户或雇主的顺利交易，通常需要拥有英国银行账户。拥有一个允许您高效进行商业交易的有效银行账户是必不可少的。智能手机：在当今的数字时代，智能手机是许多职业（包括快递服务）的必备工具。智能手机使您能够保持联系、访问必要的应用程序、与客户沟通、导航路线并高效管理您的工作。确保您拥有一部具有互联网连接和相关应用程序的智能手机，适用于您的工作领域。"
+        },
+        "restricted_accounts": {
+          "question": "为什么有些账户被限制？",
+          "answer": "在我们公司，我们非常重视客户的反馈。为了保持最高的服务标准并确保客户满意度，我们可能会根据负面反馈的历史对某些账户施加限制。这些限制是为了解决任何问题并提高我们服务的整体质量。"
+        },
+        "missed_job": {
+          "question": "如果我接受了一份工作但未能按约定参加会怎样？",
+          "answer": "我们非常重视准时和可靠性，对我们来说保持高水平的专业性很重要。如果您接受了一份工作但未能按约定参加，可能会被施加罚款。此罚款旨在提醒您履行承诺并优先满足我们客户的期望。"
+        },
+        "contact_team": {
+          "question": "我如何联系您的团队成员？",
+          "answer": "我们随时为您提供帮助。如果您有任何问题、疑虑或需要帮助，请不要犹豫，联系我们专门的团队。您可以通过 02035351953 联系我们。我们的团队将很高兴为您提供必要的支持和指导。"
+        }
+      }
+    },
+    "wallet": {
+      "add_new_card": "添加新卡",
+      "account_holder_name": "账户持有人姓名",
+      "account_number": "账户号码（8位数字）",
+      "sort_code": "分类代码（例如 12-34-56）",
+      "cancel": "取消",
+      "save": "保存",
+      "saving": "保存中...",
+      "loading": "加载中...",
+      "existing_cards": "现有卡",
+      "account_holder_required": "账户持有人姓名必填",
+      "account_number_required": "账户号码必填",
+      "must_be_8_digits": "必须为8位数字",
+      "sort_code_required": "分类代码必填",
+      "must_be_format": "必须为 12-34-56 格式",
+      "card_set_default": "支付卡已设为默认",
+      "failed_update_payment": "更新支付方式失败",
+      "error_updating_payment": "更新支付方式错误",
+      "card_deleted_success": "卡删除成功！",
+      "error_deleting_card": "删除卡错误",
+      "card_added_success": "卡添加成功！",
+      "failed_add_card": "添加卡失败",
+      "unexpected_error": "发生意外错误",
+      "failed_load_cards": "加载支付卡失败"
+    }
+  },
+  "PublicPages": {
+    "layout": {
+      "login": "登录",
+      "signup": "注册",
+      "language_selector": "语言",
+      "footer_brand": "Swipped",
+      "footer_desc": "在Swippped，我们为您的所有需求提供无缝解决方案。我们的目标是让每项服务都变得便捷、高效且毫不费力—帮助您快速可靠地解决问题。",
+      "nav_home": "首页",
+      "nav_collection": "取货",
+      "nav_shop": "商店",
+      "nav_order_food": "点餐",
+      "nav_sales": "销售",
+      "nav_about": "关于我们",
+      "nav_services": "服务",
+      "nav_partner": "与我们合作",
+      "footer_terms": "条款",
+      "footer_privacy": "隐私",
+      "footer_cookies": "Cookies",
+      "footer_copyright": "Swipped © {year}。保留所有权利。"
+    },
+    "home": {
+      "services_title": "服务",
+      "from_price": "${price} 起",
+      "continue": "继续",
+      "moving_delivery_title": "搬运与配送",
+      "moving_delivery_desc": "20分钟内送达您家门口。从小包裹到整车货物，我们的司机在全国范围内随时待命。几分钟内预订，20分钟内有人到达您家门口。",
+      "cleaning_title": "专业清洁",
+      "cleaning_desc": "20分钟内送达您家门口。从快速家居整理到深度清洁，我们值得信赖的清洁工在全国范围内随时待命。几分钟内预订，20分钟内有人到达您家门口。",
+      "locksmith_title": "锁匠服务",
+      "locksmith_desc": "20分钟内送达您家门口。被锁在门外或需要紧急锁具维修？我们的锁匠在全国范围内随时待命。几分钟内预订，20分钟内有人到达您家门口。",
+      "click_collect_title": "点击取货配送",
+      "click_collect_desc": "20分钟内送达您家门口。没有时间取您的订单？我们将从英国任何商店收集您的点击取货购物，并直接送到您家门口——快速且无忧。",
+      "hero_title": "基本服务，简单化",
+      "hero_subtitle": "简单化",
+      "rating_label": "5.0 评分",
+      "rating_from_clients": "来自满意客户的评分",
+      "hero_desc": "从购物和配送到故障和清洁 — 一切通过Swipped完成。",
+      "hero_desc_subtitle": "购物。预订。完成。",
+      "hero_desc_subtitle_words": {
+        "shop": "连接",
+        "book": "探索",
+        "done": "+ 更多"
+      },
+      "book_service": "预订服务",
+      "shop_now": "立即购买",
+      "ways_to_use_title": "使用 swipped 的方式",
+      "our_services": "您的本地专业人士",
+      "services_available": "{count} 项服务可用",
+      "showing_services_in": "在 {location} {flag} 显示服务",
+      "change": "更改",
+      "global_users": "全球用户: {count}",
+      "your_location": "您的位置: {count}",
+      "ecosystem_title": "Swipped 生态系统",
+      "services_live": "{count} 个服务在线",
+      "global_users_near_you": "{globalCount} 全球用户 • {nearYouCount} 附近用户",
+      "order_now": "立即订购",
+      "book_now": "立即预订",
+      "menu_title": "菜单",
+      "mini_apps_title": "迷你应用",
+      "service_available": "可用服务",
+      "global_users_label": "全球用户",
+      "local_users": "本地用户",
+      "categories": "类别",
+      "instant_deliveries": "即时配送",
+      "reservations": "预订",
+      "book_in_seconds": "秒速预订",
+      "services_label": "服务",
+      "view_all_mini_apps": "查看所有迷你应用",
+      "miniApps": {
+        "apps": {
+          "digitalLandExchange": "数字土地交换",
+          "swippedWorkforce": "Swipped 劳动力",
+          "swippedConnect": "Swipped 连接",
+          "swippedLiveStreaming": "Swipped 直播",
+          "swippedVirtualWorld": "Swipped Virtual World 🗺",
+          "charityDonations": "Swipped Donations"
+        },
+        "comingSoon": {
+          "title": "即将推出",
+          "message": "{appName} 即将推出！请关注更新。",
+          "defaultAppName": "此功能"
+        },
+        "add": "添加"
+      },
+      "promotional_slider": {
+        "slide1": {
+          "title": "Swipped 商业账户",
+          "desc": "使用 Swipped 商业账户将您的业务推向更高水平 — 充满工具和奖励，帮助您成长"
+        },
+        "slide2": {
+          "title": "让我们开始吧",
+          "desc": "使用 Swipped 将您的业务提升到新水平 — 旨在帮助您更快扩展、更好管理并赚取更多"
+        },
+        "slide3": {
+          "title": "与我们合作",
+          "desc": "几分钟内即可开始 — 注册并开始通过 Swipped 赚钱"
+        },
+        "slide4": {
+          "title": "只需轻扫一下",
+          "desc": "您的所有日常需求，在一个地方处理 — 无压力，无麻烦"
+        },
+        "slide5": {
+          "title": "Swipped Fulfilment",
+          "desc": "从任何地方销售 — 我们将为您带来客户，包装您的产品并为您发货"
+        },
+        "slide6": {
+          "title": "所有服务，一个平台",
+          "desc": "本地餐厅、商店和服务提供商，提供即时预订、快速配送和顺畅沟通"
+        },
+        "slide7": {
+          "title": "虚拟土地",
+          "desc": "拥有和交易虚拟土地资产，专为未来数字体验、长期价值和在 Swipped 生态系统内的集成而构建。"
+        },
+        "slide8": {
+          "title": "众筹",
+          "desc": "通过加入我们的众筹之旅，支持 Swipped 的发展，帮助构建互联服务和数字创新的未来。"
+        }
+      },
+      "services": {
+        "shop": {
+          "name": "商店",
+          "description": "随时随地获取您想要的东西。从日常必需品到最后一刻的礼物，我们将商店送到您家门口"
+        },
+        "restaurant": {
+          "name": "餐厅",
+          "description": "轻松地将您最喜爱的餐点直接送到您手中。浏览餐厅，探索新口味，只需轻点几下即可下单"
+        },
+        "supermarket": {
+          "name": "超市",
+          "description": "从您最喜爱的超市购买杂货和日常必需品。快速送货直达您家门口"
+        },
+        "swipped_rides": {
+          "name": "Taxi Rides",
+          "description": "按需预订安全、实惠的行程，配备经过验证的司机、实时跟踪和每次行程的透明定价。"
+        },
+        "restaurant_reservation": {
+          "name": "餐厅预订",
+          "description": "现在您可以直接在 Swipped 上预订您最喜爱的餐厅的桌子。无需电话，无需排队 — 只需轻点、预订并享受。"
+        },
+        "luggage_storage": {
+          "name": "行李寄存",
+          "description": "轻松无压力地旅行。将您的行李在我们这里存放几小时、几天甚至几周—适合您的任何计划。"
+        },
+        "dry_cleaning_pick_up": {
+          "name": "干洗取送",
+          "description": "无需离开家即可享受完美清洁的衣服。我们直接从您家门口收集您的衣物，进行专业干洗，然后新鲜地送回给您"
+        },
+        "recovery": {
+          "name": "故障救援服务",
+          "description": "在路上抛锚了？我们专门的救援团队只需一键之遥。无论您在哪里，我们的全国网络24/7运营，提供快速、安全、可靠的援助。"
+        },
+        "cleaning": {
+          "name": "清洁服务",
+          "description": "从住宅到商业空间再到 Airbnb 物业 — 我们都能为您服务。紧急呼叫或预约服务，我们的专业人员随时准备帮助。"
+        },
+        "locksmith": {
+          "name": "锁匠",
+          "description": "如果您被锁在外面或丢失了钥匙，我们的锁匠会直接到您那里。我们在全国范围内运营，提供24/7服务。"
+        },
+        "car_key_replacement": {
+          "name": "车钥匙更换",
+          "description": "丢失了车钥匙？无论您在哪里，我们都会为您更换。我们的专业技术人员直接到您的位置，现场切割和编程您的新钥匙，让您能够顺利回到路上。"
+        },
+        "removals": {
+          "name": "垃圾清理",
+          "description": "今天需要清理垃圾？我们随时可以提供帮助。我们快速可靠的清理团队可按需清理您家中、企业或花园中的不需要物品。从单个物品到满载清理"
+        },
+        "click_and_collect": {
+          "name": "点击取货",
+          "description": "从任何商店全国收集，直接送到您家。使用 Swipped，一切都变得触手可及且毫不费力。"
+        },
+        "van": {
+          "name": "快递服务",
+          "description": "快速发送 — 使用 Swipped 发送。从小包裹到家具和托盘，我们处理一切，拥有一个全国车队，随时准备立即为您提供帮助。"
+        },
+        "mot_resrevations": {
+          "name": "MOT 和服务",
+          "description": "通过认证的专业人士预订值得信赖的 MOT 测试和汽车服务，让您的车辆随时准备上路。"
+        },
+        "shisha_lounge": {
+          "name": "水烟休息室",
+          "description": "在最好的水烟休息室预订您的位置。预订您的桌子，与朋友一起享受轻松的夜晚。"
+        },
+        "spa": {
+          "name": "水疗护理",
+          "description": "通过即时预订的专业水疗护理、按摩和健康服务放松身心。"
+        },
+        "beauty": {
+          "name": "美容院",
+          "description": "在您附近值得信赖的专业人士处预订美发、美甲和皮肤护理的美容预约。"
+        },
+        "healthcare": {
+          "name": "医疗预约",
+          "description": "与值得信赖的提供者预订医疗预约。牙医、诊所、静脉滴注和更多健康服务。"
+        },
+        "events": {
+          "name": "活动服务",
+          "description": "预订专业活动服务。DJ 租赁、现场音乐、角色表演以及更多为您的特殊活动提供的服务。"
+        },
+        "entertainment": {
+          "name": "娱乐场所",
+          "description": "预订令人兴奋的娱乐体验。VR 体验、保龄球、卡拉 OK 房间和难忘的乐趣。"
+        }
+      },
+      "cards": {
+        "click_collect_title": "点击取货配送 – 20分钟内送达您家门口",
+        "click_collect_desc": "没有时间取您的订单？我们将从英国任何商店收集您的点击取货购物，并直接送到您家门口——快速且无忧。",
+        "moving_title": "搬运与配送 – 20分钟内送达您家门口",
+        "moving_desc": "我们让预订您需要的服务变得简单便捷。一旦您提出请求，我们值得信赖的服务提供商可以在20-60分钟内到达您身边，确保在您最需要时提供快速可靠的服务。",
+        "fast_delivery_title": "仅需60分钟。无需等待，无麻烦 – 快速、可靠的购物变得简单。",
+        "fast_delivery_desc": "从您喜爱的本地商店购物，几乎任何产品都能直接送到您家门口",
+        "rubbish_removal": "在Swippped，我们为您的所有需求提供无缝解决方案。我们的目标是让每项服务都变得便捷、高效且毫不费力—帮助您快速可靠地解决问题。"
+      },
+      "reliable": "可靠",
+      "solutions": "解决方案",
+      "contact": {
+        "title": "联系我们以获得快速可靠的支持",
+        "desc": "有问题或需要我们的服务？请填写下方表格，我们的团队将尽快回复您。",
+        "address": "伦敦，英国",
+        "phone": "02074867727",
+        "email": "swipped@customerservice.com",
+        "first_name_label": "名字",
+        "first_name_ph": "名字",
+        "last_name_label": "姓氏",
+        "last_name_ph": "姓氏",
+        "email_label": "电子邮件",
+        "email_ph": "电子邮件",
+        "phone_label": "电话",
+        "phone_ph": "电话",
+        "message_label": "消息",
+        "message_ph": "消息",
+        "submit": "提交"
+      },
+      "promo_eyebrow": "限时优惠",
+      "promo_discount": "八五折",
+      "promo_sub": "首次打车优惠 · 使用代码",
+      "promo_code": "SWIPPED15"
+    },
+    "booking": {
+      "continue": "继续",
+      "toast_success": "{category} 工作创建成功",
+      "toast_generic_error": "出现错误！",
+      "toast_failed_save": "保存工作失败",
+      "errors": {
+        "pickupAddressLine1": "需要填写取货地址",
+        "dropOffAddressLine1": "需要填写送货地址",
+        "distance": "请设置取货和送货地址",
+        "category": "需要选择类别",
+        "title": "需要填写工作标题",
+        "vanSize": "需要选择货车尺寸",
+        "movingItem": "需要填写搬运物品",
+        "make": "需要填写车辆品牌",
+        "model": "需要填写车辆型号",
+        "year": "需要填写车辆年份",
+        "howManyItems": "需要填写物品数量",
+        "howManyRooms": "需要填写房间数量",
+        "howManyBathrooms": "需要填写浴室数量",
+        "howManyHours": "需要填写小时数",
+        "typeOfPlace": "需要填写场所类型",
+        "typeOfKey": "需要填写钥匙类型",
+        "typeOfLock": "需要填写锁具类型",
+        "storeName": "需要填写商店名称",
+        "clickAndCollectIdNumber": "需要填写点击取货ID号",
+        "yourName": "需要填写您的姓名",
+        "contactNumber": "需要填写联系电话",
+        "invalid_contact": "无效的联系电话",
+        "pickupDate": "需要填写取货日期",
+        "pickupFixedTime": "如果时间不灵活，需要填写取货时间",
+        "dropOffDate": "需要填写送货日期",
+        "dropOffFixedTime": "如果时间不灵活，需要填写送货时间"
+      }
+    },
+    "jobDistanceForm": {
+      "loading_maps": "正在加载谷歌地图以获取地址建议...",
+      "enter_pickup": "输入取货地址",
+      "enter_dropoff": "输入送货地址",
+      "enter_your_location": "输入您的位置",
+      "placeholder_pickup": "输入取货地址",
+      "placeholder_dropoff": "输入送货地址",
+      "estimated_distance": "预计距离：{miles} 英里",
+      "calculating": "计算中...",
+      "another_services": "其他服务",
+      "pickup_badge": "✅ 取货：{address}",
+      "dropoff_badge": "✅ 送货：{address}",
+      "map_title": "在地图上选择位置",
+      "banner_title": "专业服务",
+      "banner_desc": "快速、可靠、专业",
+      "banner_available": "可用"
+    },
+    "detailForm": {
+      "job_title": "工作标题",
+      "job_title_ph": "工作标题...",
+      "van_type": "车辆类型",
+      "select_van_size": "选择车辆类型",
+      "bike": "自行车",
+      "motorbike": "摩托车",
+      "car": "汽车",
+      "small_van": "小型货车",
+      "medium_van": "中型货车",
+      "large_van": "大型货车",
+      "xl_van": "超大货车",
+      "moving_what": "您要搬运什么？",
+      "moving_what_ph": "例如，箱子、家具等",
+      "help_loading": "您会帮助装货吗？",
+      "two_men": "需要两人吗？",
+      "vehicle_make": "车辆品牌",
+      "vehicle_make_ph": "输入车辆品牌",
+      "select_vehicle_make": "选择车辆品牌",
+      "vehicle_model": "车辆型号",
+      "vehicle_model_ph": "输入车辆型号",
+      "select_vehicle_model": "选择车辆型号",
+      "vehicle_year": "车辆年份",
+      "vehicle_year_ph": "输入车辆年份",
+      "car_turn_on": "车辆可以启动吗？",
+      "how_many_items": "多少件物品",
+      "select": "选择",
+      "type_of_key": "钥匙类型",
+      "type_of_lock": "锁具类型",
+      "how_many_rooms": "多少卧室",
+      "how_many_bathrooms": "多少浴室",
+      "how_many_hours": "多少小时",
+      "type_of_property": "物业类型",
+      "has_cleaning_products": "您有清洁产品吗？",
+      "store_name": "商店名称",
+      "store_name_ph": "输入商店名称",
+      "click_collect_id": "点击取货ID号",
+      "click_collect_id_ph": "输入ID号",
+      "your_name": "您的姓名",
+      "your_name_ph": "输入您的姓名",
+      "contact_number": "联系电话",
+      "contact_number_ph": "输入联系电话",
+      "pickup_date": "取货日期",
+      "job_date": "工作日期",
+      "date_ph": "选择日期",
+      "time_ph": "选择时间",
+      "today": "今天",
+      "tomorrow": "明天",
+      "pickup_time_flexible": "取货时间是否灵活？",
+      "pickup_time": "取货时间",
+      "dropoff_date": "送货日期",
+      "dropoff_time_flexible": "送货时间是否灵活？",
+      "dropoff_time": "送货时间",
+      "notes": "备注（可选）",
+      "notes_ph": "关于您预订的额外细节..."
+    },
+    "checkout": {
+      "title": "结账",
+      "booking_summary": "预订摘要",
+      "pickup": "取货：",
+      "dropoff": "送货：",
+      "distance": "距离：",
+      "miles": "英里",
+      "date": "日期：",
+      "pickup_time": "取货时间：",
+      "loading_assistance": "装货协助：",
+      "two_men_service": "两人服务：",
+      "total": "总计：",
+      "payment_method": "支付方式",
+      "processing": "处理中...",
+      "pay_amount": "支付 {amount}",
+      "modal_title": "我的支付方式",
+      "payment_methods": {
+        "apple_pay": "Apple Pay",
+        "klarna": "使用 Klarna 分3次支付",
+        "add_card": "添加新卡"
+      },
+      "success_title": "预订确认！",
+      "success_desc": "您的预订已成功提交。您将很快收到一封确认电子邮件。",
+      "booking_id": "预订ID：#{id}"
+    },
+    "terms": {
+      "title": "条款和条件",
+      "last_updated": "最后更新：2024年12月",
+      "section_1_title": "1. 接受条款",
+      "section_1_content": "通过访问和使用 Swipped，您同意接受并遵守本协议的条款和规定。如果您不同意遵守上述内容，请勿使用此服务。",
+      "section_2_title": "2. 服务描述",
+      "section_2_content": "Swipped 是一个连接客户与服务供应商的平台，提供配送、清洁、锁匠服务等多种任务。我们作为中介，不对第三方供应商提供的服务质量直接负责。",
+      "section_3_title": "3. 用户责任",
+      "section_3_content": "用户负责提供准确的信息，尊重服务供应商，并确保安全的工作条件。必须按照预订确认的约定进行支付。",
+      "section_4_title": "4. 服务供应商责任",
+      "section_4_content": "服务供应商必须保持专业标准，按时到达，按描述完成服务，并在需要时保持适当的保险和许可证。",
+      "section_5_title": "5. 支付条款",
+      "section_5_content": "所有付款通过我们的平台安全处理。价格在预订确认前清晰显示。退款须遵守我们的退款政策，并在指定时间内提出请求。",
+      "section_6_title": "6. 责任限制",
+      "section_6_content": "Swipped 的责任在法律允许的范围内受限。我们不对因使用我们的平台或第三方提供的服务而产生的任何间接、偶然或后果性损害负责。",
+      "section_7_title": "7. 终止",
+      "section_7_content": "我们保留在任何情况下立即终止或暂停服务访问的权利，无需事先通知或承担责任，包括但不限于您违反条款的情况。",
+      "section_8_title": "8. 条款更改",
+      "section_8_content": "我们保留随时修改这些条款的权利。用户将通过电子邮件或平台通知收到重大更改的通知。继续使用服务即表示接受修改后的条款。",
+      "contact_info": "如对这些条款有任何疑问，请通过 legal@swipped.com 联系我们"
+    },
+    "privacy": {
+      "title": "隐私政策",
+      "last_updated": "最后更新：2024年12月",
+      "section_1_title": "1. 我们收集的信息",
+      "section_1_content": "我们收集您直接提供给我们的信息，例如创建账户、预订服务或联系我们时提供的信息。这包括您的姓名、电子邮件地址、电话号码和支付信息。",
+      "section_2_title": "2. 我们如何使用您的信息",
+      "section_2_content": "我们使用收集的信息来提供、维护和改进我们的服务，处理交易，向您发送技术通知和支持消息，并与您沟通有关服务和促销优惠的信息。",
+      "section_3_title": "3. 信息共享",
+      "section_3_content": "我们可能与代表我们执行服务的服务供应商共享您的信息，例如支付处理和客户支持。我们不会将您的个人信息出售或出租给第三方。",
+      "section_4_title": "4. 数据安全",
+      "section_4_content": "我们采取合理措施保护您的个人信息免受丢失、盗窃、滥用和未经授权的访问。然而，互联网上的传输方法并非100%安全。",
+      "section_5_title": "5. 数据保留",
+      "section_5_content": "只要您的账户处于活跃状态或需要为您提供服务，我们就会保留您的信息。我们也可能根据法律义务的需要保留和使用您的信息。",
+      "section_6_title": "6. 您的权利",
+      "section_6_content": "您有权访问、更新或删除您的个人信息。您也可以选择退出我们的某些通信。请联系我们以行使这些权利。",
+      "section_7_title": "7. Cookies 和跟踪",
+      "section_7_content": "我们使用 cookies 和类似的跟踪技术来跟踪我们服务上的活动并保存某些信息。您可以指示您的浏览器拒绝所有 cookies 或在发送 cookie 时提示。",
+      "section_8_title": "8. 第三方服务",
+      "section_8_content": "我们的服务可能包含指向第三方网站或服务的链接。我们对这些第三方的隐私做法不负责任。我们鼓励您阅读他们的隐私政策。",
+      "section_9_title": "9. 隐私政策变更",
+      "section_9_content": "我们可能不时更新我们的隐私政策。我们将通过在此页面上发布新的隐私政策并更新生效日期来通知您任何变更。",
+      "contact_info": "如对本隐私政策有任何疑问，请通过 privacy@swipped.com 联系我们"
+    },
+    "earningsCalculator": {
+      "title": "做自己的老板。设定自己的时间。赚自己的钱。",
+      "subtitle": "Swipped 是连接企业与值得信赖的提供商的平台。获得数千个日常机会。您需要的一切来赚取更多资金并发展您的业务。",
+      "calculate_title": "计算您的潜在收入",
+      "step1": {
+        "title": "您的时间表",
+        "question": "您提供哪些服务？",
+        "select_services": "选择服务",
+        "days_question": "您每周工作多少天？",
+        "edit": "编辑"
+      },
+      "step2": {
+        "title": "选择一个地区",
+        "question": "您主要在哪个地区工作？",
+        "edit": "编辑"
+      },
+      "step3": {
+        "title": "您的收入",
+        "label": "这是您可以赚取的金额",
+        "period": "/月"
+      },
+      "common": {
+        "service": "服务",
+        "services": "服务",
+        "days_per_week": "天/周",
+        "reset": "重置",
+        "continue": "继续",
+        "calculate": "计算",
+        "takes_30_seconds": "需要 30 秒",
+        "almost": "快完成了！"
+      }
+    },
+    "businessAccount": {
+      "back": "返回",
+      "title": "Swipped 商业账户",
+      "description": "立即注册 Swipped 商业信用账户，为您的企业解锁独家优惠。我们帮助改善您的现金流，使您的业务能够增长并提升到新水平 — 全部在 Swipped 平台内。请填写下面的表格立即开始！",
+      "apply_title": "申请商业账户",
+      "form": {
+        "first_name": "名字 *",
+        "last_name": "姓氏 *",
+        "company_name": "公司名称 *",
+        "company_number": "公司编号 *",
+        "email": "电子邮件 *",
+        "contact_number": "联系电话 *",
+        "limit_request": "限额请求 *",
+        "limit_1000": "£1,000",
+        "limit_3000": "£3,000",
+        "limit_5000": "£5,000",
+        "limit_custom": "自定义限额（最高 £25,000）",
+        "custom_limit_placeholder": "输入自定义限额",
+        "submit": "提交申请",
+        "submitting": "提交中..."
+      },
+      "errors": {
+        "first_name_required": "名字为必填项",
+        "last_name_required": "姓氏为必填项",
+        "company_number_required": "公司编号为必填项",
+        "company_name_required": "公司名称为必填项",
+        "email_required": "电子邮件为必填项",
+        "email_invalid": "请输入有效的电子邮件地址",
+        "contact_number_required": "联系电话为必填项",
+        "limit_request_required": "请选择限额请求",
+        "custom_limit_required": "自定义限额为必填项",
+        "custom_limit_invalid": "请输入有效金额",
+        "custom_limit_max": "自定义限额不能超过 £25,000"
+      },
+      "toast": {
+        "fill_required": "请正确填写所有必填字段",
+        "submit_success": "申请已成功提交！我们会尽快与您联系。",
+        "submit_failed": "提交申请失败。请重试。",
+        "error_occurred": "发生错误。请稍后重试。"
+      }
+    },
+    "fulfilment": {
+      "back": "返回",
+      "title": "我们正在推出 Swipped 卖家计划！",
+      "description": "从任何地方销售 — 我们将为您带来客户，包装您的产品，并将它们运送到世界各地。轻松扩展您品牌的全球影响力，并选择您想要扩展的国家。",
+      "launch_date": "将于 10-01-2026 推出。",
+      "form_instruction": "请填写下面的表格，我们团队的成员将与您联系。",
+      "features": {
+        "title": "Why Choose Swipped?",
+        "scale_anywhere": "Scale anywhere with a single tap — choose any county and let Swipped handle the rest.",
+        "sell_store_pack": "We sell your products, store your inventory, pack orders, and ship fast.",
+        "real_time_dashboard": "Real-time dashboard insights show your sales, growth, and profits.",
+        "weekly_payouts": "Weekly payouts are deposited straight into your bank to keep your business moving.",
+        "no_signup_fees": "No sign-up fees, only 15% per completed orders"
+      },
+      "form_title": "加入 Swipped 卖家计划",
+      "form": {
+        "name": "姓名 *",
+        "email": "电子邮件 *",
+        "contact_number": "联系电话 *",
+        "product_range": "产品范围 *",
+        "country_to_sell": "您想要销售的国家 *",
+        "select_product_range": "选择产品范围",
+        "select_country": "选择国家",
+        "submit": "提交申请",
+        "submitting": "提交中..."
+      },
+      "errors": {
+        "name_required": "姓名为必填项",
+        "email_required": "电子邮件为必填项",
+        "email_invalid": "请输入有效的电子邮件地址",
+        "contact_number_required": "联系电话为必填项",
+        "product_range_required": "产品范围为必填项",
+        "country_required": "国家为必填项"
+      },
+      "toast": {
+        "fill_required": "请正确填写所有必填字段",
+        "submit_success": "咨询已成功提交！我们会尽快与您联系。",
+        "submit_failed": "提交咨询失败。请重试。",
+        "error_occurred": "发生错误。请稍后重试。"
+      }
+    },
+    "swippedRides": {
+      "pickup": "Pickup",
+      "currentLocation": "Current Location",
+      "whereTo": "Where to?",
+      "home": "Home",
+      "work": "Work",
+      "savedPlaces": "Saved Places",
+      "requestRide": "Request Ride",
+      "chooseRide": "Choose Ride",
+      "swippedGo": "Swipped Go",
+      "swippedGoDesc": "Affordable, everyday rides",
+      "swippedComfort": "Swipped Comfort",
+      "swippedComfortDesc": "More space, quieter ride",
+      "swippedExecutive": "Swipped Executive",
+      "swippedExecutiveDesc": "Premium vehicles & drivers",
+      "confirmRide": "Confirm Ride",
+      "rideConfirmed": "Ride confirmed! This is a demo.",
+      "goBadge": "Best value",
+      "comfortBadge": "Popular",
+      "executiveBadge": "Premium",
+      "passenger": "Passenger",
+      "passengers": "Passengers",
+      "eta": "min"
+    }
+  },
+  "MapComponent": {
+    "pickup_title": "取货地点",
+    "dropoff_title": "送货地点",
+    "set_pickup_current": "设置取货（当前位置）",
+    "set_dropoff_current": "设置送货（当前位置）",
+    "clear_all": "全部清除",
+    "tip_title": "提示：",
+    "tip_description": "点击地图上的任意位置设置取货和送货地点，或使用上方按钮使用您的当前位置。",
+    "unable_get_location_pickup": "无法获取您的当前位置。请点击地图设置取货地点。",
+    "unable_get_location_dropoff": "无法获取您的当前位置。请点击地图设置送货地点。",
+    "geolocation_not_supported_pickup": "此浏览器不支持地理定位。请点击地图设置取货地点。",
+    "geolocation_not_supported_dropoff": "此浏览器不支持地理定位。请点击地图设置送货地点。",
+    "confirm_replace_locations": "取货和送货地点均已设置。点击“确定”设置为取货，点击“取消”设置为送货。"
+  },
+  "Services": {
+    "shop": {
+      "name": "您当地的商店",
+      "description": "随时随地获取您想要的东西。从日常必需品到最后一刻的礼物，我们将商店送到您家门口"
+    },
+    "restaurant": {
+      "name": "您当地的餐厅",
+      "description": "轻松直接收到您最喜爱的餐点。浏览餐厅，探索新口味，只需轻点几下即可下单"
+    },
+    "supermarket": {
+      "name": "您当地的超市",
+      "description": "从您最喜欢的超市购买杂货和日常必需品。快速送货直接到您家门口"
+    },
+    "Book a Table": {
+      "name": "预订餐桌",
+      "description": "您现在可以直接在 Swipped 上预订您最喜欢的餐厅的餐桌。无需电话，无需排队 — 只需轻点、预订和享受。"
+    },
+    "Click & Collect": {
+      "name": "Click & Collect 配送",
+      "description": "从商店取货和收集在线订单"
+    },
+    "Van": {
+      "name": "快递服务",
+      "description": "货车配送和运输服务"
+    },
+    "Recovery": {
+      "name": "故障救援服务",
+      "description": "车辆回收和拖车服务"
+    },
+    "Cleaning": {
+      "name": "清洁服务",
+      "description": "专业清洁服务"
+    },
+    "Locksmith": {
+      "name": "锁匠",
+      "description": "24/7 锁匠服务"
+    },
+    "Car Key Replacement": {
+      "name": "移动车钥匙更换",
+      "description": "车钥匙更换和编程"
+    },
+    "Removals": {
+      "name": "垃圾清理",
+      "description": "家具和垃圾清理"
+    },
+    "Luggage Storage": {
+      "name": "行李寄存",
+      "description": "安全的行李存储和管理服务"
+    },
+    "Dry Cleaning Pick-Up": {
+      "name": "干洗取件",
+      "description": "干洗收集和配送服务"
+    },
+    "MOT &  Repairs": {
+      "name": "预订车辆年检",
+      "description": "在认证中心预订您的车辆年检。在适合您的时间安排车辆检查。"
+    },
+    "Shisha lounges": {
+      "name": "水烟休息室预订",
+      "description": "在最好的水烟休息室预订您的位置。预订您的桌子，与朋友一起享受轻松的夜晚。"
+    },
+    "Spa": {
+      "name": "水疗预订",
+      "description": "预订您的水疗预约，给自己一个放松和恢复活力的日子。"
+    },
+    "Beauty": {
+      "name": "美容院预订",
+      "description": "在顶级美容院预订您的美容预约。从理发到护理，今天预订您的位置。"
+    }
+  },
+  "CheckoutVerify": {
+    "loading": "加载中...",
+    "verifying_subscription": "请稍等，我们正在验证您的订阅。",
+    "payment_successful": "支付成功！",
+    "thank_you_subscribing": "感谢您订阅我们的服务！🎉",
+    "subscription_activated": "您的订阅已成功激活，您现在可以访问所有高级功能。",
+    "subscription_details": "订阅详情",
+    "plan": "计划：",
+    "amount": "金额：",
+    "status": "状态：",
+    "active": "活跃",
+    "continue_dashboard": "继续前往仪表板",
+    "payment_cancelled": "支付取消",
+    "payment_cancelled_desc": "您的支付已取消。您的账户未被扣款。",
+    "try_again_desc": "您可以随时重试，或在需要帮助时联系支持。",
+    "try_again": "重试",
+    "back_dashboard": "返回仪表板",
+    "payment_error": "支付错误",
+    "payment_error_desc": "处理您的支付时发生错误。",
+    "contact_support_desc": "请重试或在问题持续时联系支持。"
+  },
+  "Pricing": {
+    "choose_plan": "选择您的计划",
+    "select_perfect_plan": "选择适合您需求的完美订阅计划，立即开始发展您的业务。",
+    "subscription_expires": "您的订阅将于 {date} 到期",
+    "subscription_expired": "您的订阅已过期。请续订以继续接受工作。",
+    "subscription_cancelled": "您的订阅已取消。",
+    "most_popular": "最受欢迎",
+    "monthly_access": "月度访问",
+    "half_year_access": "半年访问",
+    "yearly_access": "年度访问",
+    "monthly_access_desc": "为服务供应商提供1个月的访问权限以接受和管理工作。",
+    "half_year_access_desc": "为服务供应商提供6个月的访问权限，享受折扣价格以接受工作。",
+    "yearly_access_desc": "为服务供应商提供12个月的完整访问权限，以最佳价值接受无限工作。",
+    "access_all_jobs": "访问所有工作",
+    "accept_unlimited_jobs": "接受无限工作",
+    "mobile_app_access": "移动应用访问",
+    "email_notifications": "电子邮件通知",
+    "basic_support": "基本支持",
+    "priority_support": "优先支持",
+    "discounted_pricing": "折扣价格",
+    "best_value_pricing": "最佳价值价格",
+    "early_access_features": "提前访问新功能",
+    "current_plan": "当前计划",
+    "upgrade_plan": "升级计划",
+    "downgrade_not_allowed": "不允许降级",
+    "subscribe_now": "立即订阅",
+    "processing": "处理中...",
+    "per_month": "/月",
+    "per_6_months": "/6个月",
+    "per_year": "/年"
+  },
+  "VisitorPages": {
+    "layout": {
+      "role": "Basic account",
+      "menu_wallet": "Wallet Management",
+      "menu_support": "Support"
+    },
+    "feedback": {
+      "title": "评价您的体验",
+      "subtitle": "通过分享您的反馈帮助我们改进",
+      "job_details": {
+        "service_provider": "服务提供商",
+        "completed_on": "完成于"
+      },
+      "rating": {
+        "label": "您如何评价这项服务？",
+        "required": "*",
+        "poor": "差",
+        "fair": "一般",
+        "good": "好",
+        "very_good": "很好",
+        "excellent": "优秀"
+      },
+      "comments": {
+        "label": "附加评论（可选）",
+        "placeholder": "告诉我们您的体验...",
+        "character_count": "{count}/500 字符"
+      },
+      "actions": {
+        "skip": "跳过",
+        "submit": "提交反馈",
+        "processing": "处理中...",
+        "submitting": "提交中..."
+      },
+      "messages": {
+        "rating_required": "请在提交前选择评分",
+        "submit_success": "反馈提交成功",
+        "skip_success": "反馈跳过成功",
+        "submit_error": "反馈提交失败"
+      }
+    },
+    "support": {
+      "title": "Support",
+      "help_center": "Help Center",
+      "frequently_asked_questions": "Frequently Asked Questions",
+      "phone_support": "Phone Support",
+      "email_support": "Email Support",
+      "text_us": "Text Us",
+      "email_us": "Email Us",
+      "copied": "Copied!",
+      "phone_copied_success": "Phone number copied to clipboard!",
+      "failed_copy_phone": "Failed to copy phone number",
+      "faq": {
+        "how_get_paid": {
+          "question": "How do I pay for services?",
+          "answer": "You can pay for services using various payment methods including credit/debit cards, bank transfers, or digital wallets. Payment is typically processed securely through our platform when you place an order or book a service."
+        },
+        "verification_time": {
+          "question": "How long does it take to verify my account?",
+          "answer": "Account verification typically takes approximately 5-7 working days to complete. After successfully signing up, you can expect to receive an email notification once your account has been verified."
+        },
+        "required_documents": {
+          "question": "What information do I need to create an account?",
+          "answer": "To create an account, you'll need to provide basic information such as your name, email address, phone number, and address. You may also need to verify your identity depending on the services you wish to use. All information is kept secure and confidential."
+        },
+        "restricted_accounts": {
+          "question": "Why might my account be restricted?",
+          "answer": "Accounts may be restricted if there are issues with payment, violations of our terms of service, or concerns raised by service providers. If your account is restricted, you'll receive a notification explaining the reason and steps to resolve the issue."
+        },
+        "missed_job": {
+          "question": "What happens if I need to cancel an order?",
+          "answer": "You can cancel an order through your dashboard, but cancellation policies may vary depending on the service type and timing. Some services may have cancellation fees if cancelled close to the scheduled time. Check the specific terms when placing your order."
+        },
+        "contact_team": {
+          "question": "How can I contact a member of your team?",
+          "answer": "We are always here to assist you. If you have any questions, concerns, or require assistance, please don't hesitate to get in touch with our dedicated team. You can reach us at 02035351953 or email us at update@ivanplatform.com. Our team will be happy to provide you with the necessary support and guidance."
+        }
+      }
+    }
+  },
+  "ShopsPage": {
+    "title": "发现您的本地商店",
+    "subtitle": "60分钟内送达",
+    "subtitle_words": {
+      "delivered": "Delivered",
+      "within": "Within",
+      "sixty_minutes": "60 minutes"
+    },
+    "search_placeholder": "按名称搜索商店...",
+    "showing_shops": "显示 {count} 家商店",
+    "miles_from": "距离 {address} {radius} 英里",
+    "clear_location": "清除位置",
+    "choose_location": "选择位置",
+    "change": "更改",
+    "showing_shops_in": "显示 {location} {flag} 的商店",
+    "location_changed": "位置已更改为 {location} {flag}",
+    "no_shops_found": "未找到商店",
+    "no_shops_search": "请尝试调整您的搜索条件",
+    "no_shops_available": "目前没有可用的商店",
+    "products": "产品",
+    "miles_away": "英里远",
+    "view_products": "查看产品",
+    "failed_fetch_shops": "获取商店失败",
+    "error_fetching_shops": "获取商店时出错",
+    "closing_at": "{time} 关闭",
+    "closed": "已关闭",
+    "switch_to_restaurants": "切换到餐厅",
+    "switch_to_supermarkets": "切换到超市",
+    "switch_to_services": "切换到服务",
+    "new_badge": "新",
+    "free_delivery": "免费配送",
+    "open_closes": "营业中 • {time} 关闭",
+    "order_now": "立即订购"
+  },
+  "ShopProductsPage": {
+    "loading": "加载中...",
+    "shop_products": "商店产品",
+    "search_placeholder": "按名称、描述或类别搜索产品...",
+    "filters": "筛选器",
+    "price_range": "价格范围",
+    "min": "最低",
+    "max": "最高",
+    "availability": "可用性",
+    "in_stock_only": "仅库存商品",
+    "sort_by": "排序方式",
+    "name_asc": "名称：A到Z",
+    "name_desc": "名称：Z到A",
+    "price_asc": "价格：低到高",
+    "price_desc": "价格：高到低",
+    "newest_first": "最新优先",
+    "oldest_first": "最旧优先",
+    "category": "类别",
+    "all": "全部",
+    "clear_all_filters": "清除所有筛选器",
+    "showing_products": "显示 {count} 个产品",
+    "no_products_found": "未找到产品",
+    "no_products_search": "请尝试调整您的搜索条件",
+    "no_products_available": "目前没有可用的产品",
+    "in_stock": "{count} 有库存",
+    "out_of_stock": "缺货",
+    "add_to_cart": "加入购物车",
+    "remove_from_cart": "从购物车移除",
+    "out_of_stock_btn": "缺货",
+    "show_all_products": "显示所有产品",
+    "closing_at": "{time} 关闭",
+    "opens_at": "{time} 开门",
+    "closed": "已关闭",
+    "open_closes": "营业中 • {time} 关闭",
+    "new_badge": "新",
+    "show_favorites_only": "仅显示收藏",
+    "apply": "应用",
+    "clear_all": "清除全部",
+    "failed_fetch_products": "获取产品失败",
+    "error_fetching_products": "获取产品时出错",
+    "only_customers_cart": "只有客户可以将产品添加到购物车",
+    "product_out_of_stock": "产品缺货",
+    "product_removed_cart": "产品已从购物车移除",
+    "product_added_cart": "产品已添加到购物车",
+    "product_quantity_updated": "产品数量已在购物车中更新",
+    "failed_remove_product": "从购物车移除产品失败",
+    "failed_add_product": "添加产品到购物车失败",
+    "shop_closed_order": "该商店目前已关闭。请在营业时间内再来",
+    "link_copied": "链接已复制到剪贴板！",
+    "failed_copy_link": "复制链接失败"
+  },
+  "ProductDetailPage": {
+    "loading": "加载中...",
+    "product_not_found": "产品未找到",
+    "product_not_exist": "您要找的产品不存在。",
+    "back_to_shops": "返回商店",
+    "back": "返回",
+    "in_stock": "{count} 有库存",
+    "out_of_stock": "缺货",
+    "delivered_within_60_minutes": "60分钟内送达",
+    "description": "描述",
+    "product_details": "产品详情",
+    "weight": "重量",
+    "dimensions": "尺寸",
+    "in_cart": "在购物车中",
+    "out_of_stock_btn": "缺货",
+    "removing": "移除中...",
+    "remove_from_cart": "从购物车移除",
+    "view_cart": "查看购物车",
+    "adding": "添加中...",
+    "add_to_cart": "加入购物车",
+    "failed_load_product": "加载产品详情失败",
+    "only_customers_manage_cart": "只有客户可以管理购物车",
+    "product_out_of_stock": "产品缺货",
+    "product_removed_cart": "产品已从购物车移除",
+    "product_added_cart": "产品已添加到购物车",
+    "failed_remove_product": "从购物车移除产品失败",
+    "failed_add_product": "添加产品到购物车失败",
+    "shop_closed_order": "该商店目前已关闭。请在营业时间内再来",
+    "preparation_time": "准备时间",
+    "minutes": "分钟",
+    "calories": "卡路里",
+    "kcal": "千卡",
+    "dietary_info": "饮食信息",
+    "allergens": "过敏原"
+  },
+  "PurchasePage": {
+    "loading": "加载中...",
+    "loading_cart": "加载购物车中...",
+    "cart_empty": "您的购物车为空",
+    "add_products_to_cart": "添加一些产品到您的购物车以继续。",
+    "browse_products": "浏览产品",
+    "checkout": "结账",
+    "items": "商品",
+    "step_of": "第 {current} 步，共 {total} 步",
+    "cart_items": "购物车商品",
+    "shop_info": "店铺",
+    "view_shop": "查看店铺",
+    "delivery_address": "配送地址",
+    "delivery_address_placeholder": "输入产品将送达的配送地址",
+    "delivery_address_required": "配送地址是必需的",
+    "delivery_address_confirmed": "✓ 配送地址：{address}",
+    "loading_maps": "🔄 加载地图中...",
+    "continue_to_checkout": "继续结账",
+    "additional_notes": "配送附加说明",
+    "special_instructions_placeholder": "任何配送特殊说明（可选）...",
+    "order_summary": "订单摘要",
+    "subtotal": "小计",
+    "delivery_price": "配送费",
+    "calculating": "计算中...",
+    "distance": "距离",
+    "miles": "英里",
+    "total": "总计",
+    "back_to_location": "返回位置",
+    "place_order": "下单",
+    "processing": "处理中...",
+    "please_login": "请登录以查看购物车",
+    "failed_fetch_cart": "获取购物车商品失败",
+    "cart_updated_successfully": "购物车更新成功",
+    "failed_update_cart": "更新购物车失败",
+    "shop_closed_order": "该商店目前已关闭。请在营业时间内再来",
+    "item_removed_cart": "商品已从购物车移除",
+    "failed_remove_item": "移除商品失败",
+    "cart_empty_error": "您的购物车为空",
+    "order_created": "订单已创建！正在跳转到支付...",
+    "order_created_successfully": "订单创建成功！",
+    "failed_create_order": "创建订单失败",
+    "order_food": "订餐"
+  },
+  "RestaurantsPage": {
+    "title": "发现您的本地餐厅",
+    "subtitle_words": {
+      "delivered": "已送达",
+      "within": "在",
+      "sixty_minutes": "60分钟内"
+    },
+    "search_placeholder": "按名称搜索餐厅...",
+    "showing_restaurants": "显示 {count} 家餐厅",
+    "miles_from": "距离 {address} {radius} 英里",
+    "clear_location": "清除位置",
+    "choose_location": "选择位置",
+    "change": "更改",
+    "showing_restaurants_in": "显示 {location} {flag} 的餐厅",
+    "location_changed": "位置已更改为 {location} {flag}",
+    "no_restaurants_found": "未找到餐厅",
+    "miles_away": "英里远",
+    "view_menu": "查看菜单",
+    "failed_fetch_restaurants": "获取餐厅失败",
+    "error_fetching_restaurants": "获取餐厅时出错",
+    "closing_at": "{time} 关闭",
+    "closed": "已关闭",
+    "items": "项",
+    "items_count": "{count} 项",
+    "minimum_order": "最低：£{amount}",
+    "resturant_reservation": "餐厅预订"
+  },
+  "RestaurantMenuPage": {
+    "loading": "加载中...",
+    "restaurant_menu": "餐厅菜单",
+    "search_placeholder": "按名称搜索菜单项...",
+    "filters": "筛选",
+    "category": "类别",
+    "cuisine": "菜系",
+    "filter_by_cuisine": "按菜系筛选...",
+    "sort_by": "排序",
+    "name_asc": "名称：A到Z",
+    "name_desc": "名称：Z到A",
+    "price_asc": "价格：从低到高",
+    "price_desc": "价格：从高到低",
+    "clear_all_filters": "清除所有筛选",
+    "showing_items": "显示 {count} 项",
+    "no_items_found": "未找到菜单项",
+    "only_customers_cart": "只有客户可以将商品添加到购物车",
+    "item_unavailable": "商品不可用",
+    "item_removed_cart": "商品已从购物车移除",
+    "failed_remove_item": "移除商品失败",
+    "item_added_cart": "商品已添加到购物车",
+    "item_quantity_updated": "购物车中的商品数量已更新",
+    "failed_add_item": "添加到购物车失败",
+    "shop_closed_order": "该商店目前已关闭。请在营业时间内再来",
+    "failed_fetch_menu": "获取菜单项失败",
+    "error_fetching_menu": "获取菜单项时出错",
+    "menu_items": "菜单项",
+    "rating": "评分",
+    "unavailable": "不可用",
+    "closing_at": "{time} 关闭",
+    "opens_at": "{time} 开门",
+    "closed": "已关闭",
+    "new_badge": "新"
+  },
+  "ReservationPage": {
+    "booking": "餐桌预订",
+    "menu": "菜单",
+    "about_us": "关于我们",
+    "gallery": "画廊"
+  },
+  "ReservationsPage": {
+    "search_placeholder": "搜索餐厅...",
+    "no_restaurants_found": "未找到餐厅",
+    "reserve": "预订",
+    "failed_fetch_restaurants": "获取餐厅失败",
+    "error_fetching_restaurants": "获取餐厅时出错",
+    "new_badge": "新",
+    "change": "更改",
+    "showing_restaurants_in": "在 {location} {flag} 显示餐厅",
+    "select_service": "选择服务",
+    "cancel": "取消",
+    "continue_to_reservation": "继续预订",
+    "processing": "处理中...",
+    "rating": "评分",
+    "city": "城市",
+    "select_city": "选择城市",
+    "no_deposit_required": "无需押金",
+    "fill_required_fields": "请填写所有必填字段",
+    "select_future_date": "请选择未来日期",
+    "reservation_created": "预订创建成功",
+    "failed_create_reservation": "创建预订失败",
+    "failed_create_reservation_try_again": "创建预订失败。请重试。",
+    "please_select_service": "请选择服务以继续您的预订",
+    "selected": "已选择",
+    "select_mot_service": "选择 MOT 服务",
+    "select_spa_service": "选择水疗服务",
+    "select_shisha_service": "选择水烟服务",
+    "select_beauty_service": "选择美容服务",
+    "select_healthcare_service": "选择医疗服务",
+    "select_events_service": "选择活动服务",
+    "select_entertainment_service": "选择娱乐场所",
+    "select_restaurant_service": "选择您的菜系",
+    "select_shop_service": "选择商店类别"
+  },
+  "FeatureDescriptionModal": {
+    "defaultDescription": "Our service providers are ready to help you—day or night. Get a quote in just 60 seconds and solve your needs quickly and smoothly.",
+    "descriptions": {
+      "courier": "Our courier service offers fast, reliable delivery for parcels of all sizes — from small envelopes to larger items. Choose urgent same-day delivery or schedule a time that suits you. Whether it's a one-off job or regular deliveries, we make it simple and stress-free. Get a quote in just 60 seconds and solve your courier needs quickly and smoothly.",
+      "van": "Our courier service offers fast, reliable delivery for parcels of all sizes — from small envelopes to larger items. Choose urgent same-day delivery or schedule a time that suits you. Whether it's a one-off job or regular deliveries, we make it simple and stress-free. Get a quote in just 60 seconds and solve your courier needs quickly and smoothly.",
+      "luggageStorage": "Our luggage storage service lets you store your bags safely and conveniently at a location near you. Choose your closest drop-off point, or let us arrange pick-up and drop-off straight to your door. Whether it's for a few hours or a few weeks, we make it hassle-free. Get a quote in just 60 seconds and solve your luggage storage needs quickly and smoothly.",
+      "locksmith": "Our locksmith service connects you with trusted, fully vetted professionals in your area. Whether you need urgent help or prefer to schedule an appointment, we've got you covered. Get a quote in just 60 seconds and solve your locksmith needs quickly and smoothly.",
+      "professionalCleaning": "Our cleaning service connects you with trusted, fully vetted professionals who deliver exceptional results. Whether you need an urgent call-out or prefer to book a scheduled appointment, we make it simple and convenient. Get a quote in just 60 seconds and solve your cleaning needs quickly and smoothly.",
+      "cleaning": "Our cleaning service connects you with trusted, fully vetted professionals who deliver exceptional results. Whether you need an urgent call-out or prefer to book a scheduled appointment, we make it simple and convenient. Get a quote in just 60 seconds and solve your cleaning needs quickly and smoothly.",
+      "dryCleaningPickUp": "Our dry cleaning service offers convenient door-to-door collection and delivery, or you can choose to drop off and collect from your closest service provider. Fast, simple, and reliable—your clothes are in safe hands. Get a quote in just 60 seconds and solve your dry-cleaning needs quickly and smoothly.",
+      "breakdownAssistance": "Our nationwide breakdown assistance service is available 24/7, whether you need an urgent call-out or prefer to book an appointment. Wherever you are, we're ready to help get you moving again. Get a quote in just 60 seconds and solve your breakdown needs quickly and smoothly.",
+      "recovery": "Our nationwide breakdown assistance service is available 24/7, whether you need an urgent call-out or prefer to book an appointment. Wherever you are, we're ready to help get you moving again. Get a quote in just 60 seconds and solve your breakdown needs quickly and smoothly.",
+      "rubbishRemovals": "Our rubbish removal service can collect all types of waste — from furniture and household bags to garden waste and more. We're available 24/7 for emergency call-outs or scheduled appointments, making it easy to clear any clutter fast. Get a quote in just 60 seconds and solve your rubbish removal needs quickly and smoothly.",
+      "removals": "Our rubbish removal service can collect all types of waste — from furniture and household bags to garden waste and more. We're available 24/7 for emergency call-outs or scheduled appointments, making it easy to clear any clutter fast. Get a quote in just 60 seconds and solve your rubbish removal needs quickly and smoothly.",
+      "clickCollectDelivery": "Our Click & Collect delivery service lets us collect your online order directly from the store and deliver it straight to your home. Operating within business hours, we offer both urgent call-outs and scheduled appointments for your convenience. Get a quote in just 60 seconds and solve your Click & Collect delivery needs quickly and smoothly.",
+      "clickCollect": "Our Click & Collect delivery service lets us collect your online order directly from the store and deliver it straight to your home. Operating within business hours, we offer both urgent call-outs and scheduled appointments for your convenience. Get a quote in just 60 seconds and solve your Click & Collect delivery needs quickly and smoothly."
+    },
+    "features": {
+      "howItWorks": {
+        "label": "How It Works",
+        "description": "1. Get Your Quote in 60 Seconds\nEnter your location and answer a few quick questions about your request. We'll instantly generate the right quote tailored to your needs.\n\n2. Get Matched With a Local Professional\nOnce your payment is confirmed, we'll connect you to a nearby vetted specialist. You can communicate directly through the in-app calling and messaging system, and track job status, pickup, and arrival times in real-time.\n\n3. Job Completed — Leave a Rating\nAfter the service is finished, leave a review for your service provider to help us maintain quality and improve your experience."
+      },
+      "scheduled": {
+        "label": "Scheduled Appointments",
+        "description": "Need something later? Choose a date and time that suits you. Book in advance and your service provider will arrive exactly when you need them."
+      },
+      "emergency": {
+        "label": "24/7 Emergency Call-Outs",
+        "description": "Day or night, we're here. For urgent problems, we send a service provider to you immediately — no waiting until morning."
+      },
+      "monthly": {
+        "label": "Pay Monthly Available",
+        "description": "Spread the cost instead of paying everything upfront. Choose flexible monthly installments to make your service more affordable."
+      },
+      "trusted": {
+        "label": "Trusted & Verified Providers",
+        "description": "Every provider on Swipped is carefully checked, approved, and trusted—so you always get safe, reliable service."
+      },
+      "about": {
+        "label": "About Service"
+      }
+    }
+  }
+}

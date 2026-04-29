@@ -1,0 +1,822 @@
+openapi: 3.0.3
+info:
+  title: Swipped API
+  version: 1.0.0
+  description: |
+    ## Introduction
+    Unified API documentation for Swipped.
+
+    This document groups endpoints by business domain so API consumers can navigate
+    authentication, public discovery, and protected/admin operations more easily.
+
+    ## Base URL
+    - Live: `https://dev.swippped.com`
+    - Local: `http://localhost:3001`
+servers:
+  - url: https://dev.swippped.com
+    description: Live domain
+  - url: http://localhost:3001
+    description: Local development
+tags:
+  - name: Auth
+    description: Authentication and account recovery
+  - name: Public
+    description: Public endpoints used by landing and discovery flows
+  - name: Customer
+    description: Customer-facing authenticated APIs
+  - name: Service Provider
+    description: Service provider APIs
+  - name: Shop
+    description: Shop owner and shop management APIs
+  - name: Restaurant
+    description: Restaurant and reservation management APIs
+  - name: Admin
+    description: Protected/admin and operational endpoints
+x-tagGroups:
+  - name: Authentication
+    tags: [Auth]
+  - name: Public APIs
+    tags: [Public]
+  - name: Customer APIs
+    tags: [Customer]
+  - name: Service Provider APIs
+    tags: [Service Provider]
+  - name: Shop APIs
+    tags: [Shop]
+  - name: Restaurant APIs
+    tags: [Restaurant]
+  - name: Protected APIs
+    tags: [Admin]
+
+paths:
+  /api/activate:
+    get:
+      tags: [Auth]
+      summary: Read operation
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: &stdResponses
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenericSuccessResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /api/affiliate-businesses:
+    get: &defaultGet
+      tags: [Admin]
+      summary: Read operation
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/affiliate-dashboard:
+    get: *defaultGet
+  /api/affiliate-settings:
+    get: *defaultGet
+    put: &defaultPut
+      tags: [Admin]
+      summary: Update operation
+      requestBody: &defaultBody
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+      responses: *stdResponses
+  /api/all-categories:
+    get:
+      tags: [Public]
+      summary: Read operation
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/all-users:
+    get: *defaultGet
+  /api/all-users/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get: *defaultGet
+    patch: &defaultPatch
+      tags: [Admin]
+      summary: Partial update operation
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/auth/{nextauth}:
+    parameters:
+      - $ref: '#/components/parameters/NextauthParam'
+    get:
+      tags: [Auth]
+      summary: Read operation
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+    post: &defaultPost
+      tags: [Admin]
+      summary: Create/submit operation
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/business-account/apply:
+    post:
+      tags: [Public]
+      summary: Create/submit operation
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/calculate-price:
+    post: *defaultPost
+  /api/cart:
+    get: &customerGet
+      tags: [Customer]
+      summary: "Customer - Cart: Get cart"
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+    post: &customerPost
+      tags: [Customer]
+      summary: "Customer - Cart: Add or update cart item"
+      requestBody: *defaultBody
+      responses: *stdResponses
+    delete: &defaultDelete
+      tags: [Admin]
+      summary: Delete operation
+      responses: *stdResponses
+  /api/cart/checkout:
+    post:
+      tags: [Customer]
+      summary: "Customer - Cart: Checkout"
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/cart/count:
+    get:
+      tags: [Customer]
+      summary: "Customer - Cart: Get cart item count"
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/categories:
+    get: *defaultGet
+    post: *defaultPost
+  /api/categories/reorder:
+    patch: *defaultPatch
+  /api/categories/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get: *defaultGet
+    put: *defaultPut
+    delete: *defaultDelete
+  /api/change-password:
+    post:
+      tags: [Customer, Service Provider, Shop, Restaurant, Admin]
+      summary: "All Portals - Account: Change password"
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/chats:
+    get: *defaultGet
+    post: *defaultPost
+  /api/chats/support:
+    post: *customerPost
+  /api/chats/{chatId}:
+    parameters:
+      - $ref: '#/components/parameters/ChatIdParam'
+    get: *defaultGet
+  /api/chats/{chatId}/mark-read:
+    parameters:
+      - $ref: '#/components/parameters/ChatIdParam'
+    post: *defaultPost
+  /api/chats/{chatId}/messages:
+    parameters:
+      - $ref: '#/components/parameters/ChatIdParam'
+    get: *defaultGet
+    post: *defaultPost
+  /api/customer/jobs/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get:
+      tags: [Customer]
+      summary: "Customer - Jobs: Get job details"
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/customer/orders/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get:
+      tags: [Customer]
+      summary: "Customer - Orders: Get order details"
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/customer/orders/{id}/tip:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    post:
+      tags: [Customer]
+      summary: "Customer - Orders: Add tip"
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/delete-account:
+    delete: *defaultDelete
+  /api/deliveries/active:
+    get: *defaultGet
+  /api/deliveries/history:
+    get: *defaultGet
+  /api/delivery-analytics:
+    get: *defaultGet
+  /api/documents:
+    get: *defaultGet
+    post: *defaultPost
+  /api/documents/bulk-update:
+    post: *defaultPost
+  /api/documents/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    post: *defaultPost
+  /api/favorites:
+    get: *defaultGet
+    post: *defaultPost
+  /api/feedbacks/business/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get: *defaultGet
+  /api/feedbacks/pending:
+    get: *defaultGet
+  /api/feedbacks/submit:
+    post: *customerPost
+  /api/feedbacks/{id}/reply:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    patch: *defaultPatch
+  /api/forgot-password:
+    post:
+      tags: [Auth]
+      summary: Create/submit operation
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/health:
+    get:
+      tags: [Public]
+      summary: Read operation
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/invite-users:
+    post: *defaultPost
+  /api/jobs:
+    get: *defaultGet
+    post: *defaultPost
+  /api/jobs/accept:
+    post: *defaultPost
+  /api/jobs/cancel:
+    post: *defaultPost
+  /api/jobs/nearby:
+    get: *defaultGet
+  /api/jobs/payment:
+    post: *defaultPost
+  /api/jobs/payment-session:
+    post: *defaultPost
+  /api/jobs/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get: *defaultGet
+    post: *defaultPost
+    delete: *defaultDelete
+  /api/jobs/{id}/decline:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    post: *defaultPost
+  /api/jobs/{id}/tip:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    post: *defaultPost
+  /api/login:
+    post:
+      tags: [Auth]
+      summary: Create/submit operation
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/luggage/booking:
+    post: *defaultPost
+  /api/luggage-items:
+    get: *defaultGet
+    post: *defaultPost
+  /api/luggage-items/public:
+    get:
+      tags: [Public]
+      summary: Read operation
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/luggage-items/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get: *defaultGet
+    put: *defaultPut
+    delete: *defaultDelete
+  /api/luggage-locations:
+    get: *defaultGet
+    post: *defaultPost
+  /api/luggage-locations/public:
+    get:
+      tags: [Public]
+      summary: Read operation
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/luggage-locations/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get: *defaultGet
+    put: *defaultPut
+    delete: *defaultDelete
+  /api/notifications:
+    get:
+      tags: [Customer]
+      summary: "Customer - Notifications: List notifications"
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+    patch: &customerPatch
+      tags: [Customer]
+      summary: "Customer - Notifications: Mark/update notifications"
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/notifications/count:
+    get:
+      tags: [Customer]
+      summary: "Customer - Notifications: Get unread count"
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/openapi:
+    get:
+      tags: [Public]
+      summary: Read operation
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/orders:
+    get: &restaurantGet
+      tags: [Restaurant]
+      summary: "Restaurant - Orders: List orders"
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/orders/payment:
+    post: &restaurantPost
+      tags: [Restaurant]
+      summary: "Restaurant - Orders: Record payment"
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/orders/request-providers:
+    post: *restaurantPost
+  /api/orders/{id}/confirm:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    post:
+      tags: [Restaurant]
+      summary: "Restaurant - Orders: Confirm order"
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/orders/{id}/delivery-status:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    patch: &restaurantPatch
+      tags: [Restaurant]
+      summary: "Restaurant - Orders: Update delivery status"
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/payment-client-secret:
+    post: *defaultPost
+  /api/payouts:
+    get: *defaultGet
+  /api/payouts/pay:
+    post: *defaultPost
+  /api/pending-verifications:
+    get: *defaultGet
+  /api/plans:
+    get: *defaultGet
+  /api/products:
+    get: &shopGet
+      tags: [Shop]
+      summary: "Shop - Products: List products"
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+    post: &shopPost
+      tags: [Shop]
+      summary: "Shop - Products: Create product"
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/products/public:
+    get:
+      tags: [Public]
+      summary: Read operation
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/products/purchase:
+    post: *shopPost
+  /api/products/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get:
+      tags: [Shop]
+      summary: "Shop - Products: Get product details"
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+    patch: &shopPatch
+      tags: [Shop]
+      summary: "Shop - Products: Update product"
+      requestBody: *defaultBody
+      responses: *stdResponses
+    delete: &shopDelete
+      tags: [Shop]
+      summary: "Shop - Products: Delete product"
+      responses: *stdResponses
+  /api/profile:
+    get:
+      tags: [Customer, Service Provider, Shop, Restaurant, Admin]
+      summary: "All Portals - Profile: Get profile"
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+    post:
+      tags: [Customer, Service Provider, Shop, Restaurant, Admin]
+      summary: "All Portals - Profile: Update profile"
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/profile/update-email:
+    post:
+      tags: [Customer, Service Provider, Shop, Restaurant, Admin]
+      summary: "All Portals - Profile: Update email"
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/provider/jobs/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get: &providerGet
+      tags: [Service Provider]
+      summary: "Service Provider - Jobs: Get job details"
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/provider/orders/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get: *providerGet
+  /api/provider-dashboard:
+    get:
+      tags: [Service Provider]
+      summary: "Service Provider - Dashboard: Get dashboard data"
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/provider-onboard:
+    post: &providerPost
+      tags: [Service Provider]
+      summary: "Service Provider - Onboarding: Submit onboarding data"
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/providers:
+    get: *defaultGet
+    delete: *defaultDelete
+  /api/providers/location:
+    post: *providerPost
+  /api/providers/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get: *defaultGet
+    patch: *defaultPatch
+  /api/public-jobs:
+    post:
+      tags: [Public]
+      summary: Create/submit operation
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/record-payment:
+    post: *defaultPost
+  /api/register:
+    post:
+      tags: [Auth]
+      summary: Create/submit operation
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/reports:
+    get: *defaultGet
+    post: *defaultPost
+    patch: *defaultPatch
+  /api/reports/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get: *defaultGet
+  /api/reservations:
+    get:
+      tags: [Restaurant]
+      summary: "Restaurant - Reservations: List reservations"
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+    post:
+      tags: [Restaurant]
+      summary: "Restaurant - Reservations: Create reservation"
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/reservations/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get:
+      tags: [Restaurant]
+      summary: "Restaurant - Reservations: Get reservation details"
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/reservations/{id}/accept:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    post:
+      tags: [Restaurant]
+      summary: "Restaurant - Reservations: Accept reservation"
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/reservations/{id}/cancel:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    post:
+      tags: [Restaurant]
+      summary: "Restaurant - Reservations: Cancel reservation"
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/reservations/{id}/reject:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    post:
+      tags: [Restaurant]
+      summary: "Restaurant - Reservations: Reject reservation"
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/reset-password:
+    post:
+      tags: [Auth]
+      summary: Create/submit operation
+      requestBody: *defaultBody
+      responses: *stdResponses
+  /api/restaurants/{id}/check-delivery-radius:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    post: *restaurantPost
+  /api/services:
+    get: *defaultGet
+    post: *defaultPost
+  /api/services/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get: *defaultGet
+    put: *defaultPut
+    delete: *defaultDelete
+  /api/shop-owner-dashboard:
+    get: *shopGet
+  /api/shops:
+    get: *shopGet
+    patch: *shopPatch
+  /api/shops/activation-progress:
+    get: *shopGet
+  /api/shops/gallery:
+    get: *shopGet
+    post: *shopPost
+  /api/shops/gallery/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    delete: *shopDelete
+  /api/shops/me:
+    get: *shopGet
+    patch: *shopPatch
+  /api/shops/public:
+    get:
+      tags: [Public]
+      summary: Read operation
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/shops/public/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get:
+      tags: [Public]
+      summary: Read operation
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/shops/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get: *shopGet
+    patch: *shopPatch
+    delete: *shopDelete
+  /api/stats:
+    get:
+      tags: [Public]
+      summary: Read operation
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/stats/countries:
+    get:
+      tags: [Public]
+      summary: Read operation
+      parameters:
+        - $ref: '#/components/parameters/SearchParam'
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+      responses: *stdResponses
+  /api/stripe-connect:
+    get: *defaultGet
+    post: *defaultPost
+  /api/stripe-profile:
+    get: *defaultGet
+    post: *defaultPost
+    put: *defaultPut
+    delete: *defaultDelete
+  /api/subscription:
+    post: *defaultPost
+  /api/subscription/billing-history:
+    get: *defaultGet
+  /api/subscription/cancel:
+    post: *defaultPost
+  /api/subscription/create-session:
+    post: *defaultPost
+  /api/subscription/free-trial:
+    post: *defaultPost
+  /api/subscription/plans:
+    get: *defaultGet
+  /api/subscription/status:
+    get: *defaultGet
+  /api/subscription/webhook:
+    post: *defaultPost
+  /api/team-members:
+    get: *defaultGet
+    post: *defaultPost
+  /api/team-members/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    put: *defaultPut
+    delete: *defaultDelete
+  /api/transactions:
+    get: *defaultGet
+  /api/vehicle-types:
+    get: *defaultGet
+    post: *defaultPost
+  /api/vehicle-types/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get: *defaultGet
+    put: *defaultPut
+    delete: *defaultDelete
+  /api/visitor-dashboard:
+    get: *defaultGet
+  /api/wallets:
+    get: *defaultGet
+    post: *defaultPost
+  /api/wallets/{id}:
+    parameters:
+      - $ref: '#/components/parameters/IdParam'
+    get: *defaultGet
+    put: *defaultPut
+    delete: *defaultDelete
+
+components:
+  schemas:
+    GenericSuccessResponse:
+      type: object
+      additionalProperties: true
+      properties:
+        message:
+          type: string
+          nullable: true
+        data:
+          nullable: true
+    ErrorResponse:
+      type: object
+      additionalProperties: true
+      properties:
+        error:
+          type: string
+          nullable: true
+        message:
+          type: string
+          nullable: true
+  parameters:
+    IdParam:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: string
+    ChatIdParam:
+      name: chatId
+      in: path
+      required: true
+      schema:
+        type: string
+    NextauthParam:
+      name: nextauth
+      in: path
+      required: true
+      schema:
+        type: string
+    SearchParam:
+      name: search
+      in: query
+      required: false
+      schema:
+        type: string
+    PageParam:
+      name: page
+      in: query
+      required: false
+      schema:
+        type: integer
+        minimum: 1
+    LimitParam:
+      name: limit
+      in: query
+      required: false
+      schema:
+        type: integer
+        minimum: 1

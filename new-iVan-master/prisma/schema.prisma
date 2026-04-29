@@ -1,0 +1,643 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model users {
+  id               Int                 @id @default(autoincrement())
+  firstName        String
+  lastName         String?
+  email            String              @unique
+  phone            String?             @db.VarChar(20)
+  password         String?
+  role             String              @default("provider")
+  resetToken       String?
+  activationToken  String?
+  isActive         Boolean             @default(false)
+  isFirstTime      Boolean             @default(true)
+  isDeleted        Boolean?            @default(false)
+  deletedAt        DateTime?
+  status           String              @default("active") // active, suspended
+  settings         Json?
+  preferredLocale  String?
+  profilePicture   String?             @db.VarChar(500)
+  address1         String?
+  address2         String?
+  city             String?
+  postCode         String?
+  country          String?
+  latitude         Float?
+  longitude        Float?
+  createdById      Int?
+  createdByUser    users?              @relation("UserCreator", fields: [createdById], references: [id])
+  createdAt        DateTime            @default(now())
+  updatedAt        DateTime            @updatedAt
+  createdJobs      jobs[]              @relation("JobCreator")
+  acceptedJobs     jobs[]              @relation("JobAcceptor")
+  wallets          wallets[]
+  transaction      transaction[]
+  subscriptions    subscriptions[]
+  chatParticipants chat_participants[]
+  sentMessages     messages[]
+  createdProducts  products[]          @relation("ProductCreator")
+  productOrders    product_orders[]    @relation("ProductOrderUser")
+  confirmedOrders  product_orders[]    @relation("ShopOrderConfirmer")
+  deliveryOrders   product_orders[]    @relation("DeliveryProvider")
+  ownedShops       shops[]
+  cart             cart[]              @relation("UserCart")
+  favoriteProducts favorite_products[]
+  feedbacks        feedbacks[]
+  createdUsers     users[]             @relation("UserCreator")
+  notifications    notifications[]
+  providerVehicles provider_vehicles[]
+  userUsage        user_usage[]
+  customerProfile  customer_profile[]
+  connectedAccount   stripe_connect[]
+  reservations     reservations[] @relation("ReservationCustomer")
+  reports          reports[]      @relation("ReportReporter")
+  affiliatedShops  shops[]             @relation("AffiliateBusinesses")
+  affiliateOrders  product_orders[]    @relation("AffiliateOrders")
+}
+
+model jobs {
+  id                      String           @id @default(uuid())
+  title                   String
+  category                String
+  notes                   String?          @db.Text
+  status                  String           @default("active")
+  distance                Float?
+  price                   Float?
+  paymentTime             String?
+  vanSize                 String?
+  movingItem              String?
+  isHelpLoading           Boolean          @default(false)
+  isTwoMenRequired        Boolean          @default(false)
+  pickupPostCode          String?
+  pickupAddressLine1      String?
+  pickupAddressLine2      String?
+  pickupCity              String?
+  pickupDate              DateTime?
+  pickupFixedTime         DateTime?
+  isPickupTimeFlexible    Boolean          @default(false)
+  earliestPickupTime      DateTime?
+  latestPickupTime        DateTime?
+  isPickupASAP            Boolean          @default(false)
+  dropOffPostCode         String?
+  dropOffAddressLine1     String?
+  dropOffAddressLine2     String?
+  dropOffCity             String?
+  dropOffDate             DateTime?
+  dropOffFixedTime        DateTime?
+  isDropOffTimeFlexible   Boolean          @default(false)
+  earliestDropOffTime     DateTime?
+  latestDropOffTime       DateTime?
+  isDropOffASAP           Boolean          @default(false)
+  pickupLat               Float?
+  pickupLng               Float?
+  dropOffLat              Float?
+  dropOffLng              Float?
+  howManyItems            Int?
+  typeOfKey               String?
+  typeOfLock              String?
+  typeOfPlace             String?
+  make                    String?
+  model                   String?
+  year                    Int?
+  doesCarTurnOn           Boolean          @default(false)
+  howManyRooms            Int?
+  howManyBathrooms        Int?
+  howManyHours            Int?
+  hasCleaningProducts     Boolean          @default(false)
+  hasLogBook              Boolean          @default(false)
+  hasCarKey               Boolean          @default(false)
+  requireUrgent           Boolean          @default(false)
+  storeName               String?          @db.VarChar(255)
+  clickAndCollectIdNumber String?          @db.VarChar(50)
+  yourName                String?          @db.VarChar(100)
+  contactNumber           String?          @db.VarChar(20)
+  deliveryOrderId         String? // Link to product_orders if it's a delivery job
+  notificationSentAt      DateTime? // Track when notifications were sent
+  providerPaymentStatus   String?
+  deliveryMethod          String? // 'dropoff' or 'collection' for luggage bookings
+  tip                     Float?
+  createdAt               DateTime         @default(now())
+  updatedAt               DateTime         @updatedAt
+  completedAt             DateTime?
+  createdById             Int?
+  createdBy               users?           @relation("JobCreator", fields: [createdById], references: [id])
+  acceptedById            Int?
+  acceptedBy              users?           @relation("JobAcceptor", fields: [acceptedById], references: [id])
+  documents               documents[]
+  chat                    chats?
+  productOrders           product_orders[] @relation("ProductOrderJob")
+  reports                 reports[]
+}
+
+model documents {
+  id                String   @id @default(uuid())
+  name              String
+  status            String   @default("Waiting For Approval")
+  userId            Int?
+  category          String?
+  jobId             String?
+  job               jobs?    @relation(fields: [jobId], references: [id])
+  fileName          String?
+  reasonOfRejection String?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model wallets {
+  id                String   @id @default(uuid())
+  accountHolderName String?
+  accountNumber     String?
+  sortCode          String?
+  userId            Int
+  user              users    @relation(fields: [userId], references: [id])
+  default           Boolean  @default(false)
+  amount            Decimal? @default(0.0) @db.Decimal(10, 2)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model customer_profile {
+  id                 Int       @id @default(autoincrement())
+  stripeCustomerId   String
+  paymentMethodId    String
+  lastFourDigit      String
+  cardBrand          String
+  amount             Decimal?  @db.Decimal(10, 2) // Payout amount
+  userId             Int
+  default            Boolean   @default(false)
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+  user               users     @relation(fields: [userId], references: [id])  
+}
+
+model stripe_connect {
+  id                String   @id @default(uuid())
+  userId            Int
+  user              users    @relation(fields: [userId], references: [id])
+  accountId         String
+  accountStatus     String
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+model plans {
+  plan_id       Int             @id @default(autoincrement())
+  name          String          @unique
+  description   String?
+  price         Decimal         @db.Decimal(10, 2)
+  plan_region   String
+  trial_days    Int?
+  created_at    DateTime        @default(now())
+  updated_at    DateTime        @updatedAt
+  subscriptions subscriptions[]
+  transactions  transaction[]
+  planFeatures  plan_features[]
+}
+
+model transaction {
+  id                  Int      @id @default(autoincrement())
+  transaction_id      String   @unique
+  user_id             Int
+  plan_id             Int?
+  sender              users    @relation(fields: [user_id], references: [id])
+  plans               plans?   @relation(fields: [plan_id], references: [plan_id])
+  date                DateTime @default(now())
+  amount              Decimal  @db.Decimal(10, 2)
+  customer_profile_id String
+  type                String   @default("payment")
+  job_id              String?
+  order_id            String?
+  cardBrand           String?
+  lastFourDigit       String?
+}
+
+model subscriptions {
+  subscription_id Int       @id @default(autoincrement())
+  user_id         Int
+  plan_id         Int
+  start_date      DateTime
+  end_date        DateTime?
+  amount_charged  Decimal?  @db.Decimal(10, 2)
+  type            String?   @default("monthly")
+  status          String?   @default("active")
+  created_at      DateTime  @default(now())
+  updated_at      DateTime  @updatedAt
+  provider        users     @relation(fields: [user_id], references: [id])
+  plans           plans     @relation(fields: [plan_id], references: [plan_id])
+}
+
+model plan_features {
+  id          Int    @id @default(autoincrement())
+  planId      Int
+  featureName String
+  limitValue  Int
+  plans       plans  @relation(fields: [planId], references: [plan_id], onDelete: Cascade)
+}
+
+model user_usage {
+  id          Int    @id @default(autoincrement())
+  userId      Int
+  featureName String
+  usedValue   Int    @default(0)
+  limitValue  Int
+  user        users  @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model chats {
+  id           String              @id @default(uuid())
+  jobId        String?             @unique
+  job          jobs?               @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  type         String              @default("job") // "job" or "support"
+  createdAt    DateTime            @default(now())
+  updatedAt    DateTime            @updatedAt
+  messages     messages[]
+  participants chat_participants[]
+}
+
+model chat_participants {
+  id         Int       @id @default(autoincrement())
+  chatId     String
+  userId     Int
+  role       String
+  joinedAt   DateTime  @default(now())
+  lastReadAt DateTime?
+  chat       chats     @relation(fields: [chatId], references: [id], onDelete: Cascade)
+  user       users     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([chatId, userId])
+}
+
+model messages {
+  id          String   @id @default(uuid())
+  chatId      String
+  senderId    Int
+  content     String
+  messageType String   @default("text")
+  metadata    Json?
+  isRead      Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  chat        chats    @relation(fields: [chatId], references: [id], onDelete: Cascade)
+  sender      users    @relation(fields: [senderId], references: [id], onDelete: Cascade)
+}
+
+model products {
+  id             String              @id @default(uuid())
+  name           String
+  description    String?
+  price          Decimal             @db.Decimal(10, 2)
+  image          String?
+  images         Json?
+  category       String?
+  subcategory    String?
+  isActive       Boolean             @default(true)
+  stock          Int                 @default(0)
+  weight         Float?
+  dimensions     Json?
+  pickupAddress  String?
+  pickupCity     String?
+  pickupPostCode String?
+  pickupLat      Float?
+  pickupLng      Float?
+  // Restaurant-specific fields (optional, only used when shop type = "restaurant")
+  cuisine        String?             // Type of cuisine
+  menuCategory   String?             // Menu category: Starters, Main Dishes, Desserts, Drinks
+  isAvailable    Boolean             @default(true) // For out-of-stock items
+  preparationTime Int?               // in minutes
+  allergens      Json?               // Array of allergens
+  dietaryInfo    Json?               // e.g., ["vegetarian", "vegan", "gluten-free"]
+  calories       Int?
+  variants       Json?               // JSON object for product variants config
+  createdAt      DateTime            @default(now())
+  updatedAt      DateTime            @updatedAt
+  createdById    Int?
+  createdBy      users?              @relation("ProductCreator", fields: [createdById], references: [id])
+  shopId         String?
+  shop           shops?              @relation(fields: [shopId], references: [id])
+  cartItems      cart_items[]        @relation("CartProduct")
+  favorites      favorite_products[]
+}
+
+model favorite_products {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  productId String
+  createdAt DateTime @default(now())
+
+  user    users    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  product products @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, productId])
+  @@index([userId])
+  @@index([productId])
+}
+
+model shops {
+  id                String     @id @default(uuid())
+  name              String
+  image             String?
+  phone             String?    @db.VarChar(20)
+  address1          String?
+  address2          String?
+  city              String?
+  postCode          String?
+  country           String?
+  latitude          Float?
+  longitude         Float?
+  category          String?    
+  type              String     @default("shop") // "shop" or "restaurant"
+  status            String     @default("inactive") // inactive, active
+  shop_metadata     Json?      // Store opening hours, halal status, etc: { openingHours: [{ day: "monday", label: "Monday", open: "09:00", close: "17:00" }, ... ], halal: true }
+  // Restaurant-specific fields (optional, only used when type = "restaurant")
+  cuisine           String?    // Type of cuisine
+  rating            Float?     @default(0.0)
+  deliveryTime      String?    // e.g., "30-45 mins"
+  minimumOrder      Decimal?   @db.Decimal(10, 2)
+  acceptsReservations Boolean  @default(false)
+  createdAt         DateTime   @default(now())
+  updatedAt         DateTime   @updatedAt
+  createdById       Int
+  createdBy         users      @relation(fields: [createdById], references: [id])
+  affiliateId       Int?
+  affiliate         users?     @relation("AffiliateBusinesses", fields: [affiliateId], references: [id])
+  products          products[]
+  shopOrders        product_orders[] @relation("ShopOrders")
+  reservations      reservations[]
+  gallery           shop_gallery[]
+}
+
+model shop_gallery {
+  id        String   @id @default(uuid())
+  shopId    String
+  shop      shops    @relation(fields: [shopId], references: [id], onDelete: Cascade)
+  image     String   @db.VarChar(500)
+  caption   String?  @db.VarChar(255)
+  type      String   @default("gallery") // "gallery", "product", "menu"
+  productId String?  // Reference to product if type is "product" or "menu"
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([shopId])
+  @@index([shopId, order])
+  @@index([shopId, type])
+  @@index([type, productId])
+}
+
+model cart {
+  id        String           @id @default(uuid())
+  userId    Int
+  user      users            @relation("UserCart", fields: [userId], references: [id], onDelete: Cascade)
+  status    String           @default("active") // active, ordered, abandoned
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+  cartItems cart_items[]
+  orders    product_orders[] @relation("CartOrders")
+}
+
+model cart_items {
+  id        String   @id @default(uuid())
+  cartId    String
+  cart      cart     @relation(fields: [cartId], references: [id], onDelete: Cascade)
+  productId String?
+  product   products? @relation("CartProduct", fields: [productId], references: [id], onDelete: Cascade)
+  quantity  Int      @default(1)
+  metadata  Json?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([cartId, productId])
+}
+
+model product_orders {
+  id                     String    @id @default(uuid())
+  cartId                 String?
+  cart                   cart?     @relation("CartOrders", fields: [cartId], references: [id])
+  shopId                 String?
+  shop                   shops?    @relation("ShopOrders", fields: [shopId], references: [id])
+  userId                 Int
+  user                   users     @relation("ProductOrderUser", fields: [userId], references: [id])
+  jobId                  String?
+  job                    jobs?     @relation("ProductOrderJob", fields: [jobId], references: [id])
+  totalCartPrice         Decimal   @db.Decimal(10, 2)
+  deliveryPrice          Decimal   @db.Decimal(10, 2)
+  status                 String    @default("pending")
+  deliveryAddress        String?
+  deliveryCity           String?
+  deliveryPostCode       String?
+  deliveryLat            Float?
+  deliveryLng            Float?
+  notes                  String?
+  shopConfirmedAt        DateTime?
+  shopConfirmedById      Int?
+  shopConfirmedBy        users?    @relation("ShopOrderConfirmer", fields: [shopConfirmedById], references: [id])
+  deliveryProviderId     Int?
+  deliveryProvider       users?    @relation("DeliveryProvider", fields: [deliveryProviderId], references: [id])
+  affiliateId            Int?
+  affiliate              users?    @relation("AffiliateOrders", fields: [affiliateId], references: [id])
+  affiliateCommissionRate Decimal? @db.Decimal(5, 2)
+  affiliateCommissionAmount Decimal? @db.Decimal(10, 2)
+  affiliateCommissionStatus String?
+  affiliateCommissionPaidAt DateTime?
+  deliveryStatus         String    @default("pending")
+  shopOwnerPaymentStatus String?
+  providerAcceptedAt     DateTime?
+  deliveredAt            DateTime?
+  tip                    Float?
+  createdAt              DateTime  @default(now())
+  updatedAt              DateTime  @updatedAt
+}
+
+model services {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  price       Decimal  @db.Decimal(10, 2)
+  base_price  Decimal  @default(0.00) @db.Decimal(10, 2)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  /// Stable key matching `utils/helper.js` service ids (i18n + routing)
+  legacyKey    String? @unique
+  /// ordering | reservation | booking — when set, row can appear on public home API
+  homeSection  String? @db.VarChar(32)
+  sortOrder    Int     @default(0)
+  /// Optional label override for homepage cards (keeps `name` aligned with pricing DB lookups)
+  cardTitle    String? @db.VarChar(255)
+  listImage    String? @db.Text
+  sliderImage  String? @db.Text
+  previewVideo String? @db.Text
+  previewPoster String? @db.Text
+  routeHref   String? @db.VarChar(512)
+  /// e.g. `{ "onlyIn": ["GB"], "excludeIn": ["GB"] }`
+  locationFilter Json?
+}
+
+model affiliate_settings {
+  id                          Int      @id @default(autoincrement())
+  platformCommissionPercentage Decimal  @default(15.00) @db.Decimal(5, 2)
+  affiliateSharePercentage     Decimal  @default(10.00) @db.Decimal(5, 2)
+  createdAt                   DateTime @default(now())
+  updatedAt                   DateTime @updatedAt
+}
+
+model feedbacks {
+  id         String    @id @default(uuid())
+  feedback   String?   @db.Text
+  rating     Int?
+  itemType   String?
+  itemId     String?
+  businessId String?
+  orderId    String?
+  bookingId  String?
+  businessReply String? @db.Text
+  repliedAt  DateTime?
+  status     String?   @default("pending")
+  userId     Int?
+  user       users?    @relation(fields: [userId], references: [id])
+  feedbackAt DateTime?
+  createdAt  DateTime  @default(now())
+
+  @@index([businessId, status])
+  @@index([orderId])
+  @@index([bookingId])
+}
+
+model categories {
+  id            Int      @id @default(autoincrement())
+  name          String   @unique
+  image         String?
+  type          String?  @db.VarChar(20) // "shop" or "restaurant"
+  subcategories Json?    // JSON array of subcategory strings, e.g. ["Pain Relief", "Cold & Flu"]
+  position      Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model vehicle_types {
+  id               String              @id @default(uuid())
+  name             String
+  serviceId        String // Links to Courier
+  pricePerMile     Decimal             @db.Decimal(10, 2)
+  callOutCharge    Decimal             @db.Decimal(10, 2)
+  isActive         Boolean             @default(true)
+  createdAt        DateTime            @default(now())
+  updatedAt        DateTime            @updatedAt
+  providerVehicles provider_vehicles[]
+
+  @@unique([name, serviceId])
+}
+
+model provider_vehicles {
+  id            Int           @id @default(autoincrement())
+  userId        Int
+  vehicleTypeId String
+  user          users         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  vehicleType   vehicle_types @relation(fields: [vehicleTypeId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, vehicleTypeId])
+  @@index([userId])
+}
+
+model notifications {
+  id        Int       @id @default(autoincrement())
+  userId    Int
+  user      users     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type      String // chat, document_approved, document_rejected, payment, order, system
+  title     String
+  message   String?   @db.Text
+  status    String    @default("unread") // unread, read
+  readAt    DateTime?
+  metadata  Json? // Store additional data like chatId, documentId, jobId, etc.
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@index([userId, status])
+  @@index([userId, createdAt])
+}
+
+model luggage_items {
+  id        String   @id @default(uuid())
+  name      String   @unique
+  type      String   @default("luggage") // "luggage" or "Dry cleaning"
+  price     Decimal  @db.Decimal(10, 2)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model luggage_locations {
+  id        String   @id @default(uuid())
+  address1  String
+  city      String?
+  postCode  String?
+  latitude  Float
+  longitude Float
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model reservations {
+  id                String   @id @default(uuid())
+  restaurantId      String
+  restaurant        shops    @relation(fields: [restaurantId], references: [id])
+  customerId        Int
+  customer          users    @relation("ReservationCustomer", fields: [customerId], references: [id])
+  numberOfGuests    Int
+  reservationDate   DateTime
+  reservationTime   String   @db.VarChar(10) // Format: "19:00" or "19:00:00"
+  customerName      String
+  customerPhone     String   @db.VarChar(20)
+  customerEmail     String
+  status            String   @default("pending") // pending, accepted, rejected, completed, cancelled
+  depositAmount     Decimal  @default(1.00) @db.Decimal(10, 2)
+  depositPaid       Boolean  @default(false)
+  depositRefunded   Boolean  @default(false)
+  paymentIntentId   String?  // Stripe payment intent ID
+  refundId          String?  // Stripe refund ID if refunded
+  notes             String?  @db.Text
+  rejectedAt        DateTime?
+  acceptedAt        DateTime?
+  completedAt       DateTime?
+  cancelledAt       DateTime?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@index([restaurantId, status])
+  @@index([customerId])
+  @@index([reservationDate])
+}
+
+model reports {
+  id            String   @id @default(uuid())
+  jobId         String
+  job           jobs     @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  issueType     String
+  description   String   @db.Text
+  desiredAction String?  // refund, redo, partial_refund, just_report
+  notifyByEmail Boolean  @default(true)
+  notifyInApp  Boolean  @default(true)
+  evidenceFiles Json?   // Array of file paths
+  reportedById  Int
+  reportedBy    users    @relation("ReportReporter", fields: [reportedById], references: [id])
+  reportedByRole String  @default("visitor") // visitor, provider
+  status        String   @default("pending") // pending, in_review, resolved, rejected
+  adminNotes    String?  @db.Text
+  resolvedAt    DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([jobId])
+  @@index([reportedById])
+  @@index([status])
+  @@index([createdAt])
+}

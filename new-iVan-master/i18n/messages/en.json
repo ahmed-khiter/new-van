@@ -1,0 +1,2078 @@
+{
+  "Home": {
+    "title": "Swipped",
+    "tagLine": "Hire smarter, faster",
+    "description": "Swipped connects businesses with trusted providers for deliveries, cleaning, locksmiths, and more across the UK."
+  },
+  "Auth": {
+    "email": "Email",
+    "password": "Password",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "login": "Log in",
+    "signup": "Sign up",
+    "auto_login": "Auto login",
+    "join_the_membership": "Join the membership",
+    "already_have_account": "Already have an account? Log in",
+    "email_field_required": "Email field is required.",
+    "invalid_email": "Please enter a valid email.",
+    "password_min_length": "Password must be at least 6 characters.",
+    "first_name_min_length": "First name must be at least 2 characters.",
+    "last_name_min_length": "Last name must be at least 2 characters.",
+    "all_fields_required": "All fields are required.",
+    "registration_successful": "Registration successful!",
+    "registration_failed": "Registration failed. Please try again.",
+    "loading": "Loading...",
+    "invalid_credentials": "Invalid credentials.",
+    "user_not_found": "Please register before logging in.",
+    "device_limit_reached": "Your device limit has been reached.",
+    "logout": "Logout",
+    "logout_successful": "Logout successful!",
+    "logout_failed": "Logout failed. Please try again.",
+    "login_successful": "Login successful!",
+    "reset_email_sent": "A password reset link has been sent to your email.",
+    "send_reset_link": "Send Reset Link",
+    "back_to_login": "Back to login",
+    "sending": "Sending...",
+    "forgot_password": "Forgot Password?",
+    "reset_password": "Reset Password",
+    "reset_password_successful": "Password reset successful!",
+    "something_went_wrong": "Something went wrong. Please try again later.",
+    "new_password": "New Password",
+    "confirm_password": "Confirm Password",
+    "new_password_required": "New password is required",
+    "confirm_password_required": "Confirm password is required",
+    "passwords_must_match": "Passwords must match"
+  },
+  "AuthPages": {
+    "login": {
+      "title": "Login",
+      "subtitle": "Welcome Back to Swipped",
+      "modal_title": "Login to your Swipped account",
+      "email_label": "Email",
+      "password_label": "Password",
+      "submit": "Sign In",
+      "loading": "Loading...",
+      "forgot_password_hint": "Forgot your password?",
+      "forgot_password_link": "Reset it here.",
+      "signup_prompt": "New here?",
+      "signup_link": "Sign Up",
+      "success_toast": "Successful login",
+      "error_toast": "Invalid email or password"
+    },
+    "register": {
+      "title": "Sign Up",
+      "subtitle": "Join Swipped and start your journey today",
+      "first_name_label": "First Name",
+      "last_name_label": "Last Name",
+      "email_label": "Email",
+      "password_label": "Password",
+      "confirm_password_label": "Confirm Password",
+      "submit": "Create My Account",
+      "login_prompt": "Already have an account?",
+      "login_link": "Sign In",
+      "success_toast": "Registration successful! Your account is active. Please check your email.",
+      "error_toast": "Error, try again"
+    },
+    "forgotPassword": {
+      "title": "Forgot Password",
+      "subtitle": "Enter your email and we\u2019ll send you a reset link.",
+      "email_label": "Email",
+      "submit": "Forgot password",
+      "back_to_login": "Back to login",
+      "success_toast": "Reset link sent successfully",
+      "error_toast": "Failed to send reset link",
+      "generic_error_toast": "Something went wrong"
+    },
+    "resetPassword": {
+      "title": "Reset Your Password",
+      "new_password_label": "New Password",
+      "confirm_password_label": "Confirm Password",
+      "submit": "Reset Password",
+      "success_toast": "Password reset successfully",
+      "error_toast": "An error occurred"
+    },
+    "activate": {
+      "title": "Activating Account...",
+      "success_toast": "Your account has been activated.",
+      "error_toast": "Activation failed.",
+      "error_message": "Activation failed. Try again later.",
+      "generic_error_message": "An error occurred. Please try again."
+    }
+  },
+  "AdminPages": {
+    "dashboard": {
+      "open_jobs_title": "OPEN JOBS"
+    },
+    "changePassword": {
+      "title": "Change Password",
+      "password_label": "Password",
+      "confirm_password_label": "Confirm Password",
+      "save": "Save",
+      "loading": "Loading..."
+    },
+    "jobsList": {
+      "title": "Open Jobs",
+      "breadcrumb_home": "Home",
+      "breadcrumb_current": "Open Jobs",
+      "loading": "Loading...",
+      "add_job": "Add Job",
+      "table_number": "#",
+      "table_title": "Title",
+      "table_category": "Category",
+      "table_status": "Status",
+      "table_action": "Action",
+      "empty_text": "No open jobs. Open a new job.",
+      "empty_action_text": "Open A Job",
+      "confirm_delete": "Are you sure you want to delete this job?",
+      "toast_delete_success": "Job deleted successfully!",
+      "toast_delete_error_prefix": "Error deleting job:",
+      "toast_delete_generic_error": "Error deleting job. Please try again."
+    },
+    "providers": {
+      "title": "Providers",
+      "breadcrumb_home": "Home",
+      "breadcrumb_current": "Providers",
+      "loading": "Loading...",
+      "table_number": "#",
+      "table_name": "Name",
+      "table_email": "Email",
+      "table_action": "Action",
+      "no_providers": "No Provider found.",
+      "toast_delete_success": "Provider deleted successfully",
+      "toast_delete_failed": "Failed to delete provider",
+      "toast_unexpected_error": "An unexpected error occurred",
+      "wallet_modal_title": "Wallet Details",
+      "wallet_account_holder": "Account Holder:",
+      "wallet_account_number": "Account Number:",
+      "wallet_sort_code": "Sort Code:",
+      "wallet_amount": "Amount:",
+      "wallet_created_at": "Created At:",
+      "wallet_not_found": "No wallet found for this provider.",
+      "wallet_close": "Close"
+    },
+    "payouts": {
+      "pending_label": "Pending ({amount})",
+      "completed_label": "Completed ({amount})",
+      "loading": "Loading...",
+      "price_label": "Price: {amount}",
+      "completed_at": "Completed At: {date}",
+      "empty_pending": "No pending payouts yet.",
+      "empty_completed": "No completed payouts.",
+      "toast_fetch_failed": "Failed to fetch payouts.",
+      "filter_all": "All",
+      "filter_providers": "Providers",
+      "filter_shop_owners": "Shop Owners",
+      "type_job": "Provider Payout",
+      "type_order": "Shop Owner Payout",
+      "pay_to_label": "Pay To: {name}",
+      "recipient_unknown": "Unknown recipient",
+      "view_details": "View",
+      "pay_provider": "Pay Provider",
+      "pay_shop_owner": "Pay Shop Owner",
+      "wallet_modal_title": "Confirm Payout",
+      "wallet_pay_to": "Paying: {name}",
+      "wallet_amount_label": "Payout Amount: {amount}",
+      "wallet_account_holder": "Account Holder:",
+      "wallet_account_number": "Account Number:",
+      "wallet_sort_code": "Sort Code:",
+      "wallet_card_brand": "Card Brand:",
+      "wallet_card_number": "Card Number:",
+      "wallet_last_four": "Last 4 Digits:",
+      "wallet_amount": "Amount:",
+      "wallet_default_badge": "Default payout method",
+      "wallet_missing": "No wallet on file for this user.",
+      "wallet_cancel": "Cancel",
+      "wallet_confirm_button": "Confirm Payment",
+      "wallet_processing": "Processing...",
+      "wallet_success_toast": "Payout processed successfully.",
+      "wallet_error_toast": "Failed to process payout.",
+      "wallet_transfer_info": "Payment will be transferred to the user's connected bank account via Stripe.",
+      "not_available": "N/A"
+    },
+    "profile": {
+      "title": "Profile",
+      "loading": "Loading...",
+      "save": "Save",
+      "first_name_label": "First Name",
+      "last_name_label": "Last Name",
+      "email_label": "Email address",
+      "email_placeholder": "Enter email",
+      "toast_fetch_failed": "Failed to fetch user data",
+      "toast_update_failed": "Failed to update user"
+    },
+    "verifications": {
+      "title": "Verifications",
+      "breadcrumb_home": "Home",
+      "breadcrumb_current": "Verifications",
+      "loading": "Loading...",
+      "toast_fetch_failed": "Failed to fetch documents",
+      "tab_service": "Service Verification",
+      "tab_job": "Job Completion Proof",
+      "selected_count": "{count} document(s) selected",
+      "cancel": "Cancel",
+      "approve": "Approve",
+      "reject": "Reject",
+      "approving": "Approving...",
+      "rejecting": "Rejecting...",
+      "table_job_title": "Job Title",
+      "table_service_provider": "Service Provider",
+      "table_category_type": "Category / Type",
+      "table_documents": "Documents",
+      "table_document": "Document",
+      "table_view": "View",
+      "no_service_docs": "No service documents awaiting verification.",
+      "no_job_docs": "No job proof documents awaiting verification.",
+      "reject_modal_title": "Reject Documents",
+      "reject_reason_label": "Reason for Rejection",
+      "modal_cancel": "Cancel",
+      "modal_reject": "Reject"
+    },
+    "servicesList": {
+      "title": "Services Management",
+      "breadcrumb_home": "Home",
+      "breadcrumb_current": "Services",
+      "loading": "Loading...",
+      "add_service": "Add Service",
+      "edit_service": "Edit Service",
+      "table_number": "#",
+      "table_name": "Name",
+      "table_description": "Description",
+      "table_price_mile": "Price/Mile",
+      "table_status": "Status",
+      "table_action": "Action",
+      "empty_text": "No services found.",
+      "empty_action_text": "Add Service",
+      "confirm_delete": "Are you sure you want to delete this service?",
+      "toast_delete_success": "Service deleted successfully!",
+      "toast_delete_error_prefix": "Error deleting service:",
+      "toast_delete_generic_error": "Error deleting service. Please try again.",
+      "toast_update_success": "Service updated successfully!",
+      "toast_update_error": "Error updating service. Please try again.",
+      "toast_create_success": "Service created successfully!",
+      "toast_create_error": "Error creating service. Please try again.",
+      "toast_fetch_error": "Error fetching services. Please try again.",
+      "toast_generic_error": "Something went wrong. Please try again.",
+      "form_name": "Service Name",
+      "form_name_placeholder": "Enter service name",
+      "form_description": "Description",
+      "form_description_placeholder": "Enter service description",
+      "form_price_mile": "Price per Mile (£)",
+      "form_is_active": "Active",
+      "cancel": "Cancel",
+      "create": "Create",
+      "update": "Update"
+    },
+    "layout": {
+      "nav_dashboard": "Dashboard",
+      "nav_jobs": "Jobs",
+      "nav_providers": "Providers",
+      "nav_verifications": "Verifications",
+      "nav_payouts": "Payouts",
+      "menu_profile": "Profile",
+      "menu_change_password": "Change Password",
+      "menu_logout": "Logout",
+      "role": "Admin"
+    }
+  },
+  "OnBoardPages": {
+    "layout": {
+      "loading": "Loading..."
+    },
+    "lookingToProvide": {
+      "title": "Tell Us What You Offer — Select Your Service",
+      "toast_pending_exists": "You already have a pending service. Please wait for approval.",
+      "toast_already_approved": "This service is already approved.",
+      "toast_select_service": "Please select a service.",
+      "toast_generic_error": "Something went wrong. Please try again.",
+      "success_added": "Services added successfully!",
+      "success_updated": "Services updated successfully!",
+      "success_auto_approved": "Service approved! Your documents are already verified.",
+      "button_saving": "Saving...",
+      "button_continue": "Continue",
+      "status_Approved": "Approved",
+      "status_Pending": "Pending",
+      "status_Rejected": "Rejected"
+    },
+    "addressOnboarding": {
+      "provider_title": "Set Your Service Location",
+      "provider_description": "Tell us where you'll be providing your services so customers can find you.",
+      "provider_address_label": "Your Service Address",
+      "provider_address_placeholder": "Enter your service location address",
+      "shop_owner_title": "Set Your Shop Location",
+      "shop_owner_description": "Tell us where your shop is located so customers can find you.",
+      "shop_owner_address_label": "Your Shop Address",
+      "shop_owner_address_placeholder": "Enter your shop address",
+      "customer_title": "Complete Your Setup",
+      "customer_description": "Tell us where you're located so we can show you nearby services.",
+      "customer_address_label": "Your Address",
+      "customer_address_placeholder": "Enter your address",
+      "selected_location": "Selected Location",
+      "toast_address_required": "Please select an address to continue.",
+      "success_address_saved": "Address saved successfully!",
+      "toast_save_error": "Failed to save address. Please try again.",
+      "button_saving": "Saving...",
+      "button_continue": "Continue"
+    }
+  },
+  "ProviderPages": {
+    "layout": {
+      "nav_dashboard": "My Jobs",
+      "nav_jobs": "Jobs Search",
+      "nav_payouts": "Payouts",
+      "menu_profile": "Profile",
+      "menu_change_password": "Change Password",
+      "menu_address": "Address Book",
+      "menu_services": "Services & Verification",
+      "menu_support": "Support",
+      "menu_payments": "Payments",
+      "menu_wallet": "Wallet Management",
+      "menu_subscription_plans": "Subscription Plans",
+      "menu_billing_history": "Billing History",
+      "menu_logout": "Logout",
+      "toast_fetch_failed": "Failed to fetch user data",
+      "role": "Provider",
+      "upgrade": "Upgrade"
+    },
+    "changePassword": {
+      "title": "Change Password",
+      "password_label": "Password",
+      "confirm_password_label": "Confirm Password",
+      "save": "Save",
+      "loading": "Loading..."
+    },
+    "dashboard": {
+      "tab_inprogress": "In Progress ({count})",
+      "tab_completed": "Completed ({count})",
+      "tab_cancelled": "Cancelled ({count})",
+      "loading": "Loading...",
+      "price_label": "Price: {amount}",
+      "from_label": "From: {city}",
+      "btn_completing": "Completing...",
+      "btn_complete": "Complete",
+      "btn_completion_pending": "Completion Pending",
+      "btn_cancelling": "Cancelling...",
+      "btn_cancel": "Cancel",
+      "btn_view": "View",
+      "empty_inprogress": "No jobs in progress.",
+      "empty_completed": "No completed jobs yet.",
+      "empty_cancelled": "No cancelled jobs.",
+      "confirm_cancel": "Are you sure you want to cancel this job?",
+      "confirm_cancel_desc": "If you cancel this job there is a penalty of $20 which would be deducted from your next payout, we may also suspend your account if you cancel too many jobs",
+      "toast_complete_success": "Job completed successfully!",
+      "toast_complete_failed": "Failed to complete job",
+      "toast_complete_generic": "Something went wrong while completing job",
+      "toast_cancel_success": "Job cancelled successfully!",
+      "toast_cancel_failed": "Something went wrong while cancelling job.",
+      "toast_cancel_error": "Error cancelling job",
+      "upgrade_membership": "Upgrade your membership to view jobs for this service.",
+      "upgrade_membership_btn": "Upgrade Membership"
+    },
+    "jobs": {
+      "search_placeholder": "Search jobs...",
+      "filter_all": "All",
+      "count_label": "{count} Jobs Available",
+      "clear_filters": "Clear Filters",
+      "loading": "Loading...",
+      "view_book": "View & Book",
+      "empty": "No jobs available.",
+      "price_label": "Price: {amount}",
+      "from_label": "From: {city}",
+      "subscription_required": "Subscribe to a plan to start accepting jobs.",
+      "upgrade_plan": "Upgrade Plan"
+    },
+    "jobDetails": {
+      "title": "Job Details",
+      "accept": "Accept Job",
+      "payment": "Payment",
+      "payment_badge": "{time} Payment - ${price}",
+      "job_id": "JOB ID: {id}",
+      "date": "Date:",
+      "distance": "Distance:",
+      "miles": "Miles",
+      "mile": "Mile",
+      "pickup": "Pickup",
+      "pickup_between": "Pickup Between {start} - {end}",
+      "pickup_at": "at {time}",
+      "address_blurred_until_accept": "Address blurred until job is accepted",
+      "address_blurred": "Address blurred",
+      "blurred": "Blurred",
+      "dropoff": "Dropoff",
+      "between": "Between {start} - {end}",
+      "at": "At {time}",
+      "pickup_location": "PICKUP LOCATION",
+      "job_location": "JOB LOCATION",
+      "dropoff_location": "DROPOFF LOCATION",
+      "locations_blurred_until_accept": "Accept the job to unlock the full location",
+      "accept_confirm": "Are you sure you want to accept this job?",
+      "accept_warning": "Please note: Once accepted, this job must be completed. Failure to complete it may result in a penalty being applied to your account.",
+      "toast_accept_not_approved": "Service not approved.",
+      "toast_accept_success": "Job accepted successfully",
+      "toast_accept_failed": "Something went wrong while accepting the job.",
+      "toast_error_loading": "Error loading job details",
+      "loading": "Loading..."
+    },
+    "payouts": {
+      "pending_label": "Pending ({amount})",
+      "completed_label": "Completed ({amount})",
+      "loading": "Loading...",
+      "price_label": "Price: {amount}",
+      "type_job": "Job",
+      "type_order": "Order",
+      "pay_to_label": "Pay To: {name}",
+      "completed_at": "Completed At: {date}",
+      "empty_pending": "No pending payouts yet.",
+      "empty_completed": "No completed payouts."
+    },
+    "settings": {
+      "title": "Provider Settings",
+      "loading": "Loading...",
+      "select_prompt": "Please select a settings section from the menu."
+    },
+    "billingHistory": {
+      "title": "Billing History",
+      "loading": "Loading...",
+      "current_subscription": "Current Subscription",
+      "transaction_history": "Transaction History",
+      "no_billing_history": "No Billing History",
+      "no_subscriptions": "No transactions found.",
+      "view_details": "View Details",
+      "subscription_details": "Subscription Details",
+      "manage_subscription": "Manage your subscription and view billing information",
+      "table_headers": {
+        "date": "Date",
+        "plan": "Plan",
+        "amount": "Amount",
+        "transaction_id": "Transaction ID"
+      },
+      "transaction_date": "Transaction Date",
+      "failed_fetch_billing": "Failed to fetch billing history"
+    },
+    "subscription": {
+      "title": "Subscription",
+      "loading": "Loading...",
+      "current_plan": "Current Plan",
+      "amount": "Amount",
+      "type": "Type",
+      "start_date": "Start Date",
+      "end_date": "End Date",
+      "ongoing": "Ongoing",
+      "active": "Active",
+      "upgraded": "Upgraded",
+      "cancelled": "Cancelled",
+      "expired": "Expired",
+      "no_subscription": "No Subscription",
+      "active_subscription_message": "Active subscription with full access",
+      "cancelled_access_until": "Cancelled - access until {date}",
+      "cancelled_access_expired": "Cancelled - access expired",
+      "expired_renew_message": "Expired - renew to continue access",
+      "cancel_subscription": "Cancel Subscription",
+      "cancelling": "Cancelling...",
+      "renew_subscription": "Renew Subscription",
+      "no_active_subscription": "No Active Subscription",
+      "subscribe_unlock_message": "Subscribe to unlock premium features",
+      "view_plans": "View Plans",
+      "subscription_cancelled_success": "Subscription cancelled successfully",
+      "failed_cancel_subscription": "Failed to cancel subscription",
+      "confirm_cancel_subscription": "Are you sure you want to cancel your subscription?"
+    },
+    "support": {
+      "help_center": "Help Center",
+      "frequently_asked_questions": "Frequently Asked Questions",
+      "phone_support": "Phone Support",
+      "email_support": "Email Support",
+      "text_us": "Text Us",
+      "email_us": "Email Us",
+      "copied": "Copied!",
+      "phone_copied_success": "Phone number copied to clipboard!",
+      "failed_copy_phone": "Failed to copy phone number",
+      "live_chat": "Live Chat",
+      "chat_with_us": "Chat with us",
+      "faq": {
+        "how_get_paid": {
+          "question": "How do I get paid?",
+          "answer": "We offer direct payment into your designated bank account. We provide flexible payment terms, allowing you to choose the option that suits you best. We offer three different payment terms: same-day payment, 30-day payment, and 45-day payment. The choice of payment term is entirely up to you, based on your preferences and financial needs."
+        },
+        "verification_time": {
+          "question": "How long does it take to verify my account?",
+          "answer": "Typically, the process takes approximately 5-7 working days to complete. After successfully signing up, you can expect to receive an email notification."
+        },
+        "required_documents": {
+          "question": "What documents do I need to sign up?",
+          "answer": "Driving Licence: A valid driving licence is essential if you plan to work as a driver or operate a vehicle as part of your activities. Make sure your licence is up-to-date and meets the necessary criteria for the type of vehicle you intend to use. Courier Insurance: If you're working as a courier, it's important to have courier insurance. This type of insurance typically covers you for any potential damage or loss to the items you're transporting. It provides protection for both you and your clients. Liability Insurance: Liability insurance is crucial for protecting yourself and your business against potential claims or lawsuits. It covers damages or injuries caused to others during the course of your work. It's recommended to have liability insurance to mitigate any financial risks. UK Bank Account: Having a UK bank account is often required for various reasons, such as receiving payments, managing finances, and ensuring smooth transactions with clients or employers. It's essential to have a valid bank account that allows you to conduct business transactions efficiently. Smartphone: In today's digital age, a smartphone is an essential tool for many professions, including Couriers. A smartphone enables you to stay connected, access necessary apps, communicate with clients, navigate routes, and manage your work efficiently. Make sure you have a smartphone with internet connectivity and relevant apps for your line of work."
+        },
+        "restricted_accounts": {
+          "question": "Why are some accounts restricted?",
+          "answer": "At our company, we value feedback from our customers immensely. In order to maintain the highest standards of service and ensure customer satisfaction, we may impose restrictions on certain accounts based on a history of negative feedback. These restrictions are put in place to address any issues and improve the overall quality of our services."
+        },
+        "missed_job": {
+          "question": "What happens if I accept a job but fail to attend as agreed?",
+          "answer": "We take punctuality and reliability seriously, and it is important for us to maintain a high level of professionalism. If you accept a job but do not attend as agreed upon, a penalty may be imposed. This penalty serves as a reminder to honor your commitments and prioritize meeting the expectations of our customers."
+        },
+        "contact_team": {
+          "question": "How can I contact a member of your team?",
+          "answer": "We are always here to assist you. If you have any questions, concerns, or require assistance, please don't hesitate to get in touch with our dedicated team. You can reach us at 02035351953. Our team will be happy to provide you with the necessary support and guidance."
+        }
+      }
+    },
+    "wallet": {
+      "add_new_card": "Add New Card",
+      "account_holder_name": "Account Holder Name",
+      "account_number": "Account Number (8 digits)",
+      "sort_code": "Sort Code (e.g. 12-34-56)",
+      "cancel": "Cancel",
+      "save": "Save",
+      "saving": "Saving...",
+      "loading": "Loading...",
+      "existing_cards": "Existing Cards",
+      "account_holder_required": "Account holder name is required",
+      "account_number_required": "Account number is required",
+      "must_be_8_digits": "Must be 8 digits",
+      "sort_code_required": "Sort code is required",
+      "must_be_format": "Must be in format 12-34-56",
+      "card_set_default": "Payment card set as default",
+      "failed_update_payment": "Failed to update payment method",
+      "error_updating_payment": "Error updating payment method",
+      "card_deleted_success": "Card deleted successfully!",
+      "error_deleting_card": "Error deleting card",
+      "card_added_success": "Card added successfully!",
+      "failed_add_card": "Failed to add card",
+      "unexpected_error": "An unexpected error occurred",
+      "failed_load_cards": "Failed to load payment cards"
+    },
+    "profile": {
+      "title": "Profile",
+      "shop_profile_title": "Shop Profile",
+      "loading": "Loading...",
+      "save": "Save",
+      "saving": "Saving...",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "email_address": "Email address",
+      "language": "Language",
+      "first_name_label": "First Name",
+      "last_name_label": "Last Name",
+      "email_label": "Email address",
+      "first_name_placeholder": "Enter your first name",
+      "last_name_placeholder": "Enter your last name",
+      "email_placeholder": "Enter your email address",
+      "select_language": "Select Language",
+      "shop_name_label": "Shop Name",
+      "shop_image_label": "Shop Image",
+      "address_label": "Address",
+      "shop_address_label": "Shop Address",
+      "address_placeholder": "Enter your address",
+      "shop_address_placeholder": "Enter shop address",
+      "selected_location": "Selected Location",
+      "selected_shop_location": "Selected Shop Location",
+      "validation": {
+        "first_name_required": "First Name is required",
+        "first_name_min_length": "First Name must be at least 3 characters",
+        "last_name_required": "Last Name is required",
+        "last_name_min_length": "Last Name must be at least 3 characters",
+        "email_required": "Email is required",
+        "email_valid": "Email must be valid"
+      },
+      "errors": {
+        "failed_fetch_user": "Failed to fetch user data",
+        "failed_update_user": "Failed to update user"
+      },
+      "toast_fetch_failed": "Failed to fetch user data",
+      "toast_update_failed": "Failed to update user"
+    }
+  },
+  "VisitorPages": {
+    "layout": {
+      "role": "Basic account",
+      "menu_wallet": "Wallet Management",
+      "menu_support": "Support"
+    },
+    "feedback": {
+      "title": "Rate Your Experience",
+      "subtitle": "Help us improve by sharing your feedback",
+      "job_details": {
+        "service_provider": "Service Provider",
+        "completed_on": "Completed on"
+      },
+      "rating": {
+        "label": "How would you rate this service?",
+        "required": "*",
+        "poor": "Poor",
+        "fair": "Fair",
+        "good": "Good",
+        "very_good": "Very Good",
+        "excellent": "Excellent"
+      },
+      "comments": {
+        "label": "Additional Comments (Optional)",
+        "placeholder": "Tell us about your experience...",
+        "character_count": "{count}/500 characters"
+      },
+      "actions": {
+        "skip": "Skip",
+        "submit": "Submit Feedback",
+        "processing": "Processing...",
+        "submitting": "Submitting..."
+      },
+      "messages": {
+        "rating_required": "Please select a rating before submitting",
+        "submit_success": "Feedback submitted successfully",
+        "skip_success": "Feedback skipped successfully",
+        "submit_error": "Failed to submit feedback"
+      }
+    },
+    "support": {
+      "title": "Support",
+      "help_center": "Help Center",
+      "frequently_asked_questions": "Frequently Asked Questions",
+      "phone_support": "Phone Support",
+      "email_support": "Email Support",
+      "text_us": "Text Us",
+      "email_us": "Email Us",
+      "copied": "Copied!",
+      "phone_copied_success": "Phone number copied to clipboard!",
+      "failed_copy_phone": "Failed to copy phone number",
+      "live_chat": "Live Chat",
+      "chat_with_us": "Chat with us",
+      "faq": {
+        "how_get_paid": {
+          "question": "How do I pay for services?",
+          "answer": "You can pay for services using various payment methods including credit/debit cards, bank transfers, or digital wallets. Payment is typically processed securely through our platform when you place an order or book a service."
+        },
+        "verification_time": {
+          "question": "How long does it take to verify my account?",
+          "answer": "Account verification typically takes approximately 5-7 working days to complete. After successfully signing up, you can expect to receive an email notification once your account has been verified."
+        },
+        "required_documents": {
+          "question": "What information do I need to create an account?",
+          "answer": "To create an account, you'll need to provide basic information such as your name, email address, phone number, and address. You may also need to verify your identity depending on the services you wish to use. All information is kept secure and confidential."
+        },
+        "restricted_accounts": {
+          "question": "Why might my account be restricted?",
+          "answer": "Accounts may be restricted if there are issues with payment, violations of our terms of service, or concerns raised by service providers. If your account is restricted, you'll receive a notification explaining the reason and steps to resolve the issue."
+        },
+        "missed_job": {
+          "question": "What happens if I need to cancel an order?",
+          "answer": "You can cancel an order through your dashboard, but cancellation policies may vary depending on the service type and timing. Some services may have cancellation fees if cancelled close to the scheduled time. Check the specific terms when placing your order."
+        },
+        "contact_team": {
+          "question": "How can I contact a member of your team?",
+          "answer": "We are always here to assist you. If you have any questions, concerns, or require assistance, please don't hesitate to get in touch with our dedicated team. You can reach us at 02035351953 or email us at update@ivanplatform.com. Our team will be happy to provide you with the necessary support and guidance."
+        }
+      }
+    }
+  },
+  "RestaurantPages": {
+    "layout": {
+      "role": "Restaurant Owner",
+      "menu_wallet": "Wallet Management",
+      "menu_subscription_plans": "Subscription Plans",
+      "menu_billing_history": "Billing History"
+    },
+    "billingHistory": {
+      "title": "Billing History",
+      "loading": "Loading...",
+      "current_subscription": "Current Subscription",
+      "transaction_history": "Transaction History",
+      "no_billing_history": "No Billing History",
+      "no_subscriptions": "No transactions found.",
+      "view_details": "View Details",
+      "subscription_details": "Subscription Details",
+      "manage_subscription": "Manage your subscription and view billing information",
+      "table_headers": {
+        "date": "Date",
+        "plan": "Plan",
+        "amount": "Amount",
+        "transaction_id": "Transaction ID"
+      },
+      "transaction_date": "Transaction Date",
+      "failed_fetch_billing": "Failed to fetch billing history"
+    },
+    "subscription": {
+      "title": "Subscription",
+      "loading": "Loading...",
+      "current_plan": "Current Plan",
+      "amount": "Amount",
+      "type": "Type",
+      "start_date": "Start Date",
+      "end_date": "End Date",
+      "ongoing": "Ongoing",
+      "active": "Active",
+      "upgraded": "Upgraded",
+      "cancelled": "Cancelled",
+      "expired": "Expired",
+      "no_subscription": "No Subscription",
+      "active_subscription_message": "Active subscription with full access",
+      "cancelled_access_until": "Cancelled - access until {date}",
+      "cancelled_access_expired": "Cancelled - access expired",
+      "expired_renew_message": "Expired - renew to continue access",
+      "cancel_subscription": "Cancel Subscription",
+      "cancelling": "Cancelling...",
+      "renew_subscription": "Renew Subscription",
+      "no_active_subscription": "No Active Subscription",
+      "subscribe_unlock_message": "Subscribe to unlock premium features",
+      "view_plans": "View Plans",
+      "subscription_cancelled_success": "Subscription cancelled successfully",
+      "failed_cancel_subscription": "Failed to cancel subscription",
+      "confirm_cancel_subscription": "Are you sure you want to cancel your subscription?"
+    },
+    "payouts": {
+      "pending_label": "Pending ({amount})",
+      "completed_label": "Completed ({amount})",
+      "loading": "Loading...",
+      "price_label": "Price: {amount}",
+      "type_job": "Job",
+      "type_order": "Order",
+      "pay_to_label": "Pay To: {name}",
+      "completed_at": "Completed At: {date}",
+      "empty_pending": "No pending payouts yet.",
+      "empty_completed": "No completed payouts."
+    },
+    "support": {
+      "title": "Support",
+      "help_center": "Help Center",
+      "frequently_asked_questions": "Frequently Asked Questions",
+      "phone_support": "Phone Support",
+      "email_support": "Email Support",
+      "text_us": "Text Us",
+      "email_us": "Email Us",
+      "copied": "Copied!",
+      "phone_copied_success": "Phone number copied to clipboard!",
+      "failed_copy_phone": "Failed to copy phone number",
+      "live_chat": "Live Chat",
+      "chat_with_us": "Chat with us",
+      "faq": {
+        "how_get_paid": {
+          "question": "How do I receive payments for orders?",
+          "answer": "We offer direct payment into your designated bank account. Payments are processed based on your completed orders. You can track your earnings and payouts through the dashboard."
+        },
+        "verification_time": {
+          "question": "How long does it take to verify my restaurant?",
+          "answer": "Restaurant verification typically takes approximately 5-7 working days to complete. We review your business details, menu items, and food safety compliance. You'll receive an email notification once verified."
+        },
+        "required_documents": {
+          "question": "What documents do I need to register my restaurant?",
+          "answer": "You'll need: Business registration documents, Food hygiene certificate, Proof of liability insurance, UK bank account details for payments, and valid photo ID of the business owner. All documents are kept secure and confidential."
+        },
+        "restricted_accounts": {
+          "question": "Why might my restaurant account be restricted?",
+          "answer": "Accounts may be restricted due to customer complaints, food safety concerns, or violations of our terms of service. If your account is restricted, you'll receive a notification explaining the reason and steps to resolve the issue."
+        },
+        "missed_job": {
+          "question": "What happens if I miss or cancel an order?",
+          "answer": "We take order fulfillment seriously. If you accept an order but fail to fulfill it, a penalty may be imposed. Frequent cancellations or missed orders may result in account restrictions. Please update your availability settings to avoid this."
+        },
+        "contact_team": {
+          "question": "How can I contact the support team?",
+          "answer": "We are always here to assist you. If you have any questions, concerns, or require assistance, please don't hesitate to get in touch with our dedicated team. You can reach us at 02035351953 or email us at update@ivanplatform.com."
+        }
+      }
+    }
+  },
+  "ShopOwnerPages": {
+    "layout": {
+      "role": "Shop Owner",
+      "menu_wallet": "Wallet Management",
+      "menu_subscription_plans": "Subscription Plans",
+      "menu_billing_history": "Billing History"
+    },
+    "billingHistory": {
+      "title": "Billing History",
+      "loading": "Loading...",
+      "current_subscription": "Current Subscription",
+      "transaction_history": "Transaction History",
+      "no_billing_history": "No Billing History",
+      "no_subscriptions": "No transactions found.",
+      "view_details": "View Details",
+      "subscription_details": "Subscription Details",
+      "manage_subscription": "Manage your subscription and view billing information",
+      "table_headers": {
+        "date": "Date",
+        "plan": "Plan",
+        "amount": "Amount",
+        "transaction_id": "Transaction ID"
+      },
+      "transaction_date": "Transaction Date",
+      "failed_fetch_billing": "Failed to fetch billing history"
+    },
+    "subscription": {
+      "title": "Subscription",
+      "loading": "Loading...",
+      "current_plan": "Current Plan",
+      "amount": "Amount",
+      "type": "Type",
+      "start_date": "Start Date",
+      "end_date": "End Date",
+      "ongoing": "Ongoing",
+      "active": "Active",
+      "upgraded": "Upgraded",
+      "cancelled": "Cancelled",
+      "expired": "Expired",
+      "no_subscription": "No Subscription",
+      "active_subscription_message": "Active subscription with full access",
+      "cancelled_access_until": "Cancelled - access until {date}",
+      "cancelled_access_expired": "Cancelled - access expired",
+      "expired_renew_message": "Expired - renew to continue access",
+      "cancel_subscription": "Cancel Subscription",
+      "cancelling": "Cancelling...",
+      "renew_subscription": "Renew Subscription",
+      "no_active_subscription": "No Active Subscription",
+      "subscribe_unlock_message": "Subscribe to unlock premium features",
+      "view_plans": "View Plans",
+      "subscription_cancelled_success": "Subscription cancelled successfully",
+      "failed_cancel_subscription": "Failed to cancel subscription",
+      "confirm_cancel_subscription": "Are you sure you want to cancel your subscription?"
+    },
+    "payouts": {
+      "pending_label": "Pending ({amount})",
+      "completed_label": "Completed ({amount})",
+      "loading": "Loading...",
+      "price_label": "Price: {amount}",
+      "type_job": "Job",
+      "type_order": "Order",
+      "pay_to_label": "Pay To: {name}",
+      "completed_at": "Completed At: {date}",
+      "empty_pending": "No pending payouts yet.",
+      "empty_completed": "No completed payouts."
+    },
+    "support": {
+      "title": "Support",
+      "help_center": "Help Center",
+      "frequently_asked_questions": "Frequently Asked Questions",
+      "phone_support": "Phone Support",
+      "email_support": "Email Support",
+      "text_us": "Text Us",
+      "email_us": "Email Us",
+      "copied": "Copied!",
+      "phone_copied_success": "Phone number copied to clipboard!",
+      "failed_copy_phone": "Failed to copy phone number",
+      "live_chat": "Live Chat",
+      "chat_with_us": "Chat with us",
+      "faq": {
+        "how_get_paid": {
+          "question": "How do I receive payments for orders?",
+          "answer": "We offer direct payment into your designated bank account. Payments are processed based on your completed orders and product sales. You can track your earnings and payouts through the dashboard."
+        },
+        "verification_time": {
+          "question": "How long does it take to verify my shop?",
+          "answer": "Shop verification typically takes approximately 5-7 working days to complete. We review your business details and product listings. You'll receive an email notification once verified."
+        },
+        "required_documents": {
+          "question": "What documents do I need to register my shop?",
+          "answer": "You'll need: Business registration documents, Proof of liability insurance, UK bank account details for payments, and valid photo ID of the business owner. All documents are kept secure and confidential."
+        },
+        "restricted_accounts": {
+          "question": "Why might my shop account be restricted?",
+          "answer": "Accounts may be restricted due to customer complaints, product quality concerns, or violations of our terms of service. If your account is restricted, you'll receive a notification explaining the reason and steps to resolve the issue."
+        },
+        "missed_job": {
+          "question": "What happens if I miss or cancel an order?",
+          "answer": "We take order fulfillment seriously. If you accept an order but fail to fulfill it, a penalty may be imposed. Frequent cancellations or missed orders may result in account restrictions. Please keep your product inventory updated to avoid this."
+        },
+        "contact_team": {
+          "question": "How can I contact the support team?",
+          "answer": "We are always here to assist you. If you have any questions, concerns, or require assistance, please don't hesitate to get in touch with our dedicated team. You can reach us at 02035351953 or email us at update@ivanplatform.com."
+        }
+      }
+    }
+  },
+  "PublicPages": {
+    "layout": {
+      "login": "Login",
+      "signup": "Sign Up",
+      "language_selector": "Language",
+      "footer_brand": "Swipped",
+      "footer_desc": "At Swippped, we provide seamless solutions to all your needs. Our goal is to make every service convenient, efficient, and effortless—helping you resolve issues quickly and reliably.",
+      "nav_home": "Home",
+      "nav_collection": "Collection",
+      "nav_shop": "Stores",
+      "nav_order_food": "Order food",
+      "nav_sales": "Sales",
+      "nav_about": "About Us",
+      "nav_services": "Services",
+      "nav_partner": "Partner with us",
+      "footer_terms": "Terms",
+      "footer_privacy": "Privacy",
+      "footer_cookies": "Cookies",
+      "footer_copyright": "Swipped © {year}. All Rights Reserved."
+    },
+    "home": {
+      "services_title": "Services",
+      "from_price": "From ${price}",
+      "continue": "Continue",
+      "moving_delivery_title": "Moving & Delivery",
+      "moving_delivery_desc": "At Your Door in 20 Minutes From small parcels to full van loads, our drivers are ready nationwide. Book in minutes and have someone at your door within 20 minutes.",
+      "cleaning_title": "Professional Cleaning",
+      "cleaning_desc": "At Your Door in 20 Minutes From quick home spruce-ups to deep cleans, our trusted cleaners are ready nationwide. Book in minutes and have someone at your door within 20 minutes.",
+      "locksmith_title": "Locksmith Services",
+      "locksmith_desc": "At Your Door in 20 Minutes Locked out or need urgent lock repairs? Our locksmiths are ready nationwide. Book in minutes and have someone at your door within 20 minutes.",
+      "click_collect_title": "Click & Collect Delivery",
+      "click_collect_desc": "At Your Door in 20 Minutes No time to pick up your order? We’ll collect your click-and-collect shopping from any UK store and deliver it straight to your door—fast and hassle-free.",
+      "hero_title": "One World One Ecosystem",
+      "hero_subtitle": "Made Simple",
+      "rating_label": "5.0 Rating",
+      "rating_from_clients": "Rating from Happy Clients",
+      "hero_desc": "From shopping and delivery to breakdowns and cleaning — get it all done with Swipped.",
+      "hero_desc_subtitle": "Shop. Book. Done.",
+      "hero_desc_subtitle_words": {
+        "shop": "Connect",
+        "book": "Explore",
+        "done": "+ More"
+      },
+      "book_service": "BOOK A SERVICE",
+      "shop_now": "Stores",
+      "ways_to_use_title": "Ways To Use Swipped",
+      "our_services": "Services We Offer",
+      "services_available": "{count} Services Available",
+      "showing_services_in": "Showing Services in {location} {flag}",
+      "change": "Change",
+      "global_users": "Global Users: {count}",
+      "your_location": "Your Location: {count}",
+      "ecosystem_title": "Swipped Network",
+      "services_live": "{count} Services Live",
+      "global_users_near_you": "{globalCount} Global Users • {nearYouCount} Near You",
+      "order_now": "Order Now",
+      "book_now": "Book Now",
+      "menu_title": "Menu",
+      "mini_apps_title": "Mini Apps",
+      "service_available": "Service Available",
+      "global_users_label": "Global Users",
+      "local_users": "Local Users",
+      "categories": "Categories",
+      "instant_deliveries": "Instant Deliveries",
+      "reservations": "Reservations",
+      "book_in_seconds": "Book in Seconds",
+      "instant_dispatch": "Instant Dispatch",
+      "services_label": "Services",
+      "view_all_mini_apps": "View All Mini Apps",
+      "promo_eyebrow": "Limited time offer",
+      "promo_discount": "15% off",
+      "promo_sub": "your first taxi ride · use code",
+      "promo_code": "SWIPPED15",
+      "miniApps": {
+        "apps": {
+          "digitalLandExchange": "Digital Land Exchange",
+          "swippedWorkforce": "Swipped Workforce",
+          "swippedConnect": "Swipped Connect",
+          "swippedLiveStreaming": "Swipped Live Streaming",
+          "swippedVirtualWorld": "Swipped Virtual World",
+          "charityDonations": "Swipped Donations",
+          "invoiceGenerator": "Invoice Generator",
+          "swippedGamingArena": "Swipped Gaming Arena"
+        },
+        "comingSoon": {
+          "title": "Coming Soon",
+          "message": "{appName} is coming soon! Stay tuned for updates.",
+          "defaultAppName": "This feature"
+        },
+        "add": "Add"
+      },
+      "promotional_slider": {
+        "slide1": {
+          "title": "Swipped Business",
+          "desc": "Payments, expenses, and earnings — all in one place."
+        },
+        "slide2": {
+          "title": "Let's get you started",
+          "desc": "Scale faster, manage better, and earn more."
+        },
+        "slide3": {
+          "title": "Partner with us",
+          "desc": "Grow your business and reach more customers."
+        },
+        "slide4": {
+          "title": "Just a swipe away",
+          "desc": "Every service you need, one tap away."
+        },
+        "slide5": {
+          "title": "Fulfilment",
+          "desc": "Store, pack, and ship — we handle logistics."
+        },
+        "slide6": {
+          "title": "One platform",
+          "desc": "Access everything instantly, wherever you are."
+        },
+        "slide7": {
+          "title": "Virtual Land",
+          "desc": "Own digital assets built for the future."
+        },
+        "slide8": {
+          "title": "Crowdfunding",
+          "desc": "Back the future of connected services."
+        }
+      },
+      "service_selection": {
+        "title": "Choose a Service",
+        "subtitle": "Select the service you need help with",
+        "select_button": "Select",
+        "loading_text": "Redirecting to booking..."
+      },
+      "services": {
+        "shop": {
+          "name": "Retail Stores",
+          "description": "Shop from local stores and markets, ordering everyday items with fast delivery and real-time availability near you."
+        },
+        "restaurant": {
+          "name": "Restaurants",
+          "description": "Order food from local restaurants and get fresh meals delivered fast, with live updates and seamless checkout."
+        },
+        "supermarket": {
+          "name": "Supermarkets",
+          "description": "Get groceries delivered straight to your door from nearby supermarkets, saving time with quick ordering and fast delivery."
+        },
+        "swipped_rides": {
+          "name": "Taxi Rides",
+          "description": "Book safe, affordable rides on demand, with verified drivers, live tracking, and transparent pricing for every journey."
+        },
+        "restaurant_reservation": {
+          "name": "Restaurant booking",
+          "description": "Reserve tables at popular restaurants instantly, avoiding queues and securing your spot at the best places near you."
+        },
+        "luggage_storage": {
+          "name": "Luggage Storage",
+          "description": "Store your luggage safely at nearby locations, perfect for travel days, shopping trips, or exploring hands-free."
+        },
+        "dry_cleaning_pick_up": {
+          "name": "Dry Cleaning Pickup",
+          "description": "Schedule dry cleaning pickup and delivery, keeping your clothes fresh without visiting a store or waiting in lines."
+        },
+        "recovery": {
+          "name": "Breakdown Assistance",
+          "description": "Stranded on the road? Get fast, reliable vehicle recovery anytime, anywhere, with trusted drivers ready to assist you 24/7."
+        },
+        "cleaning": {
+          "name": "Professional Cleaning",
+          "description": "Book trusted cleaners for homes or offices, delivered on your schedule, with professional results and hassle-free booking in minutes."
+        },
+        "locksmith": {
+          "name": "Locksmith Services",
+          "description": "Locked out or need new keys? Book trusted locksmiths instantly for fast, secure, and professional assistance near you."
+        },
+        "car_key_replacement": {
+          "name": "Car Key Replacement",
+          "description": "Lost or damaged car keys? Get mobile key replacement services delivered to your location, saving time and stress."
+        },
+        "removals": {
+          "name": "Rubbish Removals",
+          "description": "Remove unwanted waste quickly with licensed collectors, offering fast pickups, fair pricing, and responsible disposal services."
+        },
+        "click_and_collect": {
+          "name": "Click & Collect Delivery",
+          "description": "Nationwide collection from any store, delivered straight to your home. With Swipped, everything becomes accessible and effortless."
+        },
+        "van": {
+          "name": "Courier Services",
+          "description": "Send packages quickly and securely with local couriers, offering real-time tracking, same-day delivery, and flexible pickup options."
+        },
+        "mot_resrevations": {
+          "name": "MOT & Repairs",
+          "description": "Book trusted MOT tests and car servicing with certified professionals to keep your vehicle road ready."
+        },
+        "shisha_lounge": {
+          "name": "Shisha lounges",
+          "description": "Reserve your spot at the best Shisha lounges. Book your table and enjoy a relaxing evening with friends."
+        },
+        "spa": {
+          "name": "Spa treatments ",
+          "description": "Relax and unwind with professional spa treatments, massages, and wellness services booked instantly."
+        },
+        "beauty": {
+          "name": "Beauty salon",
+          "description": "Book beauty appointments for hair, nails, and skin treatments with trusted professionals near you."
+        },
+        "healthcare": {
+          "name": "Healthcare appointments",
+          "description": "Book healthcare appointments with trusted providers. Dentist, clinic, IV drip, and more health services."
+        },
+        "events": {
+          "name": "Events services",
+          "description": "Book professional event services. DJ hire, live music, character appearances, and more for your special events."
+        },
+        "entertainment": {
+          "name": "Entertainment venues",
+          "description": "Book exciting entertainment experiences. VR experiences, bowling, karaoke rooms, and unforgettable fun."
+        }
+      },
+      "cards": {
+        "click_collect_title": "Click & Collect Delivery – At Your Door in 20 Minutes",
+        "click_collect_desc": "No time to pick up your order? We'll collect your click-and-collect shopping from any UK store and deliver it straight to your door—fast and hassle-free.",
+        "moving_title": "Moving & Delivery – At Your Door in 20 Minutes",
+        "moving_desc": "We make it simple and convenient to book the services you need. Once you place a request, our trusted service providers can reach you within 20–60 minutes, ensuring fast and reliable help when you need it most.",
+        "fast_delivery_title": "Just 60 minutes. No waiting, no hassle – just fast, reliable shopping made simple.",
+        "fast_delivery_desc": "Shop from your favorite local stores and get nearly any product delivered straight to your door in",
+        "rubbish_removal": "At Swippped, we provide seamless solutions to all your needs. Our goal is to make every service convenient, efficient, and effortless—helping you resolve issues quickly and reliably."
+      },
+      "reliable": "Reliable",
+      "solutions": "Solutions",
+      "contact": {
+        "title": "Connect With Us for Quick and Reliable Support",
+        "desc": "Have a question or need one of our services? Fill out the form below and our team will get back to you promptly.",
+        "address": "London, UK",
+        "phone": "02074867727",
+        "email": "swipped@customerservice.com",
+        "first_name_label": "First Name",
+        "first_name_ph": "First Name",
+        "last_name_label": "Last Name",
+        "last_name_ph": "Last Name",
+        "email_label": "Email",
+        "email_ph": "Email",
+        "phone_label": "Phone",
+        "phone_ph": "Phone",
+        "message_label": "Message",
+        "message_ph": "Message",
+        "submit": "Submit"
+      }
+    },
+    "booking": {
+      "continue": "Continue",
+      "takes_30_seconds": "Takes 30 seconds",
+      "toast_success": "{category} job created successfully",
+      "toast_generic_error": "Something went wrong!",
+      "toast_failed_save": "Failed to save job",
+      "errors": {
+        "pickupAddressLine1": "Pickup Address is required",
+        "dropOffAddressLine1": "Dropoff Address is required",
+        "distance": "Please set pickup and dropoff addresses",
+        "category": "Category is required",
+        "title": "Job Title is required",
+        "vanSize": "Van Size is required",
+        "movingItem": "Moving Item is required",
+        "make": "Car Make is required",
+        "model": "Car Model is required",
+        "year": "Car Year is required",
+        "howManyItems": "Number of items is required",
+        "howManyRooms": "Number of rooms is required",
+        "howManyBathrooms": "Number of bathrooms is required",
+        "howManyHours": "Number of hours is required",
+        "typeOfPlace": "Type of place is required",
+        "typeOfKey": "Key type is required",
+        "typeOfLock": "Lock type is required",
+        "storeName": "Store name is required",
+        "clickAndCollectIdNumber": "Click & Collect ID number is required",
+        "yourName": "Your name is required",
+        "contactNumber": "Contact number is required",
+        "invalid_contact": "Invalid contact number",
+        "pickupDate": "Pick Up Date is required",
+        "pickupFixedTime": "Pick Up Time is required if not flexible",
+        "dropOffDate": "Drop Off Date is required",
+        "dropOffFixedTime": "Drop Off Time is required if not flexible"
+      }
+    },
+    "jobDistanceForm": {
+      "loading_maps": "Loading Google Maps for address suggestions...",
+      "enter_pickup": "Enter Pickup",
+      "enter_dropoff": "Enter Dropoff",
+      "enter_your_location": "Enter your location",
+      "placeholder_pickup": "Enter pickup address",
+      "placeholder_dropoff": "Enter dropoff address",
+      "estimated_distance": "Estimated distance: {miles} miles",
+      "estimated_distance_label": "Estimated distance:",
+      "calculating": "Calculating...",
+      "select_location_to_calculate": "Select location to calculate distance",
+      "another_services": "available services",
+      "pickup_badge": "✅ Pickup: {address}",
+      "dropoff_badge": "✅ Dropoff: {address}",
+      "map_title": "Select Locations on Map",
+      "banner_title": "Professional Service",
+      "banner_desc": "Fast, reliable, and professional",
+      "banner_available": "Available"
+    },
+    "detailForm": {
+      "job_title": "Job Title",
+      "job_title_ph": "Job title...",
+      "van_type": "Type of vehicle",
+      "select_van_size": "Select Vehicle Type",
+      "bike": "Bike",
+      "motorbike": "Motorbike",
+      "car": "Car",
+      "small_van": "Small van",
+      "medium_van": "Medium van",
+      "large_van": "Large van",
+      "xl_van": "XL van",
+      "moving_what": "What are you moving?",
+      "moving_what_ph": "e.g., Boxes, Furniture, etc.",
+      "help_loading": "Are you going to help in loading?",
+      "two_men": "Are 2 men required?",
+      "vehicle_make": "Vehicle Make",
+      "vehicle_make_ph": "Enter vehicle make",
+      "select_vehicle_make": "Select Vehicle Make",
+      "vehicle_model": "Vehicle Model",
+      "vehicle_model_ph": "Enter vehicle model",
+      "select_vehicle_model": "Select Vehicle Model",
+      "vehicle_year": "Vehicle Year",
+      "vehicle_year_ph": "Enter vehicle year",
+      "car_turn_on": "Does the car turn on?",
+      "how_many_items": "How Many Items",
+      "select": "Select",
+      "type_of_key": "Type Of Key",
+      "type_of_lock": "Type Of Lock",
+      "how_many_rooms": "How many Bedrooms",
+      "how_many_bathrooms": "How many Bathrooms",
+      "how_many_hours": "How Many Hours",
+      "type_of_property": "Type Of Property",
+      "has_cleaning_products": "Do you have cleaning products?",
+      "store_name": "Store Name",
+      "store_name_ph": "Enter Store Name",
+      "click_collect_id": "Click & Collect ID Number",
+      "click_collect_id_ph": "Enter ID Number",
+      "your_name": "Your Name",
+      "your_name_ph": "Enter Your Name",
+      "contact_number": "Contact Number",
+      "contact_number_ph": "Enter Contact Number",
+      "pickup_date": "Pick Up Date",
+      "job_date": "Job Date",
+      "date_ph": "Select date",
+      "time_ph": "Select time",
+      "today": "Today",
+      "tomorrow": "Tomorrow",
+      "pickup_time_flexible": "Is pickup time flexible?",
+      "pickup_time": "Pickup Time",
+      "dropoff_date": "Drop Off Date",
+      "dropoff_time_flexible": "Is dropoff time flexible?",
+      "dropoff_time": "Dropoff Time",
+      "require_urgent": "Do you require someone to come to your location urgently?",
+      "notes": "Notes (Optional)",
+      "notes_ph": "Additional details about your booking..."
+    },
+    "checkout": {
+      "title": "Checkout",
+      "booking_summary": "Booking Summary",
+      "pickup": "Pickup:",
+      "dropoff": "Dropoff:",
+      "distance": "Distance:",
+      "miles": "miles",
+      "date": "Date:",
+      "pickup_time": "Pickup Time:",
+      "loading_assistance": "Loading Assistance:",
+      "two_men_service": "Two Men Service:",
+      "total": "Total:",
+      "payment_method": "Payment Method",
+      "processing": "Processing...",
+      "pay_amount": "Pay {amount}",
+      "modal_title": "My Payment Methods",
+      "payment_methods": {
+        "apple_pay": "Apple Pay",
+        "klarna": "Pay in 3 with Klarna",
+        "add_card": "Add a new card"
+      },
+      "success_title": "Booking Confirmed!",
+      "success_desc": "Your booking has been successfully submitted. You will receive a confirmation email shortly.",
+      "booking_id": "Booking ID: #{id}"
+    },
+    "terms": {
+      "title": "Terms and Conditions",
+      "last_updated": "Last updated: December 2024",
+      "section_1_title": "1. Acceptance of Terms",
+      "section_1_content": "By accessing and using Swipped, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.",
+      "section_2_title": "2. Service Description",
+      "section_2_content": "Swipped is a platform that connects customers with service providers for various tasks including delivery, cleaning, locksmith services, and more. We act as an intermediary and are not directly responsible for the quality of services provided by third-party providers.",
+      "section_3_title": "3. User Responsibilities",
+      "section_3_content": "Users are responsible for providing accurate information, treating service providers with respect, and ensuring safe working conditions. Payment must be made as agreed upon booking confirmation.",
+      "section_4_title": "4. Service Provider Responsibilities",
+      "section_4_content": "Service providers must maintain professional standards, arrive on time, complete services as described, and maintain appropriate insurance and licenses where required.",
+      "section_5_title": "5. Payment Terms",
+      "section_5_content": "All payments are processed securely through our platform. Prices are clearly displayed before booking confirmation. Refunds are subject to our refund policy and must be requested within the specified timeframe.",
+      "section_6_title": "6. Limitation of Liability",
+      "section_6_content": "Swipped's liability is limited to the extent permitted by law. We are not liable for any indirect, incidental, or consequential damages arising from the use of our platform or services provided by third parties.",
+      "section_7_title": "7. Termination",
+      "section_7_content": "We reserve the right to terminate or suspend access to our service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.",
+      "section_8_title": "8. Changes to Terms",
+      "section_8_content": "We reserve the right to modify these terms at any time. Users will be notified of significant changes via email or platform notifications. Continued use of the service constitutes acceptance of modified terms.",
+      "contact_info": "For questions about these terms, please contact us at legal@swipped.com"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "last_updated": "Last updated: December 2024",
+      "section_1_title": "1. Information We Collect",
+      "section_1_content": "We collect information you provide directly to us, such as when you create an account, book a service, or contact us. This includes your name, email address, phone number, and payment information.",
+      "section_2_title": "2. How We Use Your Information",
+      "section_2_content": "We use the information we collect to provide, maintain, and improve our services, process transactions, send you technical notices and support messages, and communicate with you about services and promotional offers.",
+      "section_3_title": "3. Information Sharing",
+      "section_3_content": "We may share your information with service providers who perform services on our behalf, such as payment processing and customer support. We do not sell or rent your personal information to third parties.",
+      "section_4_title": "4. Data Security",
+      "section_4_content": "We take reasonable measures to help protect your personal information from loss, theft, misuse, and unauthorized access. However, no method of transmission over the internet is 100% secure.",
+      "section_5_title": "5. Data Retention",
+      "section_5_content": "We retain your information for as long as your account is active or as needed to provide you services. We may also retain and use your information as necessary to comply with our legal obligations.",
+      "section_6_title": "6. Your Rights",
+      "section_6_content": "You have the right to access, update, or delete your personal information. You may also opt out of certain communications from us. Contact us to exercise these rights.",
+      "section_7_title": "7. Cookies and Tracking",
+      "section_7_content": "We use cookies and similar tracking technologies to track activity on our service and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.",
+      "section_8_title": "8. Third-Party Services",
+      "section_8_content": "Our service may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties. We encourage you to read their privacy policies.",
+      "section_9_title": "9. Changes to Privacy Policy",
+      "section_9_content": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the effective date.",
+      "contact_info": "For questions about this privacy policy, please contact us at privacy@swipped.com"
+    },
+    "about": {
+      "title": "About Us",
+      "subtitle": "Your trusted partner for essential services across the UK",
+      "section_1_title": "Who We Are",
+      "section_1_content": "Swipped is a leading service platform connecting customers with trusted service providers across the United Kingdom. We specialize in making essential services—from delivery and cleaning to locksmith services and more—accessible, convenient, and reliable. Our mission is to simplify your life by providing fast, professional services at your doorstep.",
+      "section_2_title": "Our Mission",
+      "section_2_content": "At Swipped, we believe that getting help when you need it should be simple, fast, and stress-free. Whether you need a delivery, professional cleaning, locksmith services, or any other essential service, we're here to connect you with vetted, reliable professionals who can assist you within minutes. Our goal is to make every service convenient, efficient, and effortless—helping you resolve issues quickly and reliably.",
+      "section_3_title": "What We Offer",
+      "section_3_content": "Swipped offers a comprehensive range of services including moving and delivery, professional cleaning, locksmith services, car key replacement, Breakdown Assistances, click & collect delivery, and rubbish removals. Our platform connects you with qualified service providers who are ready to help at a moment's notice, typically within 20-60 minutes of your booking.",
+      "section_4_title": "Why Choose Swipped",
+      "section_4_content": "We pride ourselves on reliability, speed, and quality. All our service providers are vetted and verified to ensure they meet our high standards. With Swipped, you can book services in minutes, track your service in real-time, and have peace of mind knowing that professionals are on their way. We also offer competitive pricing and transparent payment processing, so you always know what you're paying for.",
+      "section_5_title": "Our Commitment",
+      "section_5_content": "Customer satisfaction is at the heart of everything we do. We're committed to providing exceptional service, maintaining the highest standards of professionalism, and continuously improving our platform to better serve you. Your trust and satisfaction are our top priorities, and we work tirelessly to ensure every interaction with Swipped exceeds your expectations.",
+      "contact_info": "For more information or inquiries, please contact us at swipped@customerservice.com or call us at 02074867727"
+    },
+    "partnerWithUs": {
+      "title": "Partner With Us",
+      "subtitle": "Join Swipped and grow your business with us. Choose the partnership that fits you best.",
+      "restaurants": {
+        "title": "For Restaurants",
+        "description": "Restaurants can sign up and grow their business by meeting customer demand on our app. It's quick and simple to set up, and we provide everything you need — including drivers for deliveries and a reservation system for dine-in services. Enjoy a hassle-free experience with no sign-up fees and just a 15% charge per booking.",
+        "feature1": "Quick and simple setup",
+        "feature1Info": "Quick and simple setup for your restaurant. Add your restaurant, upload your menu, and go live in just a few minutes. No technical skills, long forms, or complicated onboarding. Start receiving orders, reservations, and customers instantly — the platform is designed to make everything effortless.",
+        "feature2": "Drivers for deliveries included",
+        "feature2Info": "We handle all deliveries for your restaurant. Our platform takes care of everything from pickup to drop-off, so you never need to hire drivers or manage dispatching. Orders are delivered fast and tracked in real time, giving your customers a smooth experience and keeping your operations stress-free.",
+        "feature3": "Reservation system for dine-in services",
+        "feature3Info": "Accept dine-in reservations instantly through our platform. Customers can book a table at your restaurant in seconds, with real-time scheduling and instant confirmation. Increase foot traffic, reduce no-shows, and fill more tables without lifting a finger.",
+        "feature4": "No sign-up fees, only 15% per booking",
+        "feature4Info": "You only pay when you get results, making it risk-free and completely performance-based. We even include a 2-month free trial, so you can test the platform, receive bookings, and see real results before you commit. No upfront costs, just a simple 15% fee per booking.",
+        "infoDescription": "Quick and simple setup for your restaurant. Add your restaurant, upload your menu, and go live in just a few minutes. No technical skills, long forms, or complicated onboarding. Start receiving orders, reservations, and customers instantly — the platform is designed to make everything effortless. We handle all deliveries for your restaurant. Our platform takes care of everything from pickup to drop-off, so you never need to hire drivers or manage dispatching. Orders are delivered fast and tracked in real time, giving your customers a smooth experience and keeping your operations stress-free. Accept dine-in reservations instantly through our platform. Customers can book a table at your restaurant in seconds, with real-time scheduling and instant confirmation. Increase foot traffic, reduce no-shows, and fill more tables without lifting a finger. You only pay when you get results, making it risk-free and completely performance-based. We even include a 2-month free trial, so you can test the platform, receive bookings, and see real results before you commit."
+      },
+      "shopOwners": {
+        "title": "For Shop Owners",
+        "description": "Shop owners can join our platform and boost sales by connecting directly with customer demand. Take advantage of our affiliate system and enjoy free publicity with zero effort. Getting started is quick and easy — no sign-up fees, just a smooth setup process. We handle deliveries for you, making it completely hassle-free. Pay only a 15% fee per order and start growing your business today.",
+        "feature1": "Connect directly with customer demand",
+        "feature1Info": "Quick and simple setup for your shop. Add your shop, upload your products, and go live in just a few minutes. No technical skills, long forms, or complicated onboarding. Start receiving orders and customers instantly — the platform is designed to make everything effortless. Connect directly with customers who are ready to buy.",
+        "feature2": "Affiliate system for free publicity",
+        "feature2Info": "Shoppers can browse, buy, and receive their items quickly and easily. You get more orders, more visibility, and more returning customers — without doing the heavy lifting. Our affiliate system provides free publicity and helps you reach more customers through content creators and social sharing.",
+        "feature3": "We handle all deliveries for you",
+        "feature3Info": "We handle all deliveries for your shop. Our platform takes care of everything from pickup to drop-off, so you never need to hire drivers or manage dispatching. Orders are delivered fast and tracked in real time, giving your customers a smooth experience and keeping your operations stress-free.",
+        "feature4": "No sign-up fees, only 15% per order",
+        "feature4Info": "You only pay when you get results, making it risk-free and completely performance-based. We even include a 2-month free trial, so you can test the platform, receive bookings, and see real results before you commit. No upfront costs, just a simple 15% fee per order.",
+        "infoDescription": "Quick and simple setup for your shop. Add your shop, upload your products, and go live in just a few minutes. No technical skills, long forms, or complicated onboarding. Start receiving orders and customers instantly — the platform is designed to make everything effortless. We handle all deliveries for your shop. Our platform takes care of everything from pickup to drop-off, so you never need to hire drivers or manage dispatching. Orders are delivered fast and tracked in real time, giving your customers a smooth experience and keeping your operations stress-free. Shoppers can browse, buy, and receive their items quickly and easily. You get more orders, more visibility, and more returning customers — without doing the heavy lifting. You only pay when you get results, making it risk-free and completely performance-based. We even include a 2-month free trial, so you can test the platform, receive bookings, and see real results before you commit."
+      },
+      "contentCreators": {
+        "title": "For Content Creators",
+        "description": "Content creators can join our platform and turn their influence into income. Share posts, promote local businesses, and earn through our affiliate system — it's simple and rewarding. Getting started takes minutes with no sign-up fees. Build your audience, collaborate with brands, and start earning today with Swipped.",
+        "feature1": "Turn your influence into income",
+        "feature2": "Promote local businesses",
+        "feature3": "Earn through our affiliate system",
+        "feature4": "No sign-up fees, quick setup"
+      },
+      "serviceProviders": {
+        "title": "For Service Providers",
+        "description": "Service providers can join our platform and grow their business by connecting directly with customers who need their services. Enjoy instant visibility through our built-in affiliate system — free publicity with no extra work. Getting started is simple and fast — no sign-up fees, just an easy setup. We handle the bookings and payments, so you can focus on the job. Pay only a 15% fee per completed order and start earning more today.",
+        "feature1": "Connect directly with customers who need your services",
+        "feature1Info": "Connect directly with customers who need your services right now. Get booked, get paid, and manage your work effortlessly. No waiting, no complicated processes — just direct connections with customers who are ready to book your services immediately.",
+        "feature2": "Instant visibility through built-in affiliate system",
+        "feature2Info": "Our social platform turns every post, share, and interaction into free exposure for your business. Customers can discover you through content, reviews, and recommendations — not just ads. Grow your reach, attract followers, and get booked directly from the feed. Enjoy instant visibility without any extra marketing effort on your part.",
+        "feature3": "We handle bookings and payments for you",
+        "feature3Info": "Customers book and pay directly through the platform, and we take care of the admin work, confirmations, reminders, and secure transactions. No chasing customers, no cash handling, and no complicated setup. You focus on the job — we manage everything else.",
+        "feature4": "No sign-up fees, only 15% per completed order",
+        "feature4Info": "You only pay when you get results, making it risk-free and completely performance-based. We even include a 2-month free trial, so you can test the platform, receive bookings, and see real results before you commit. No upfront costs, no hidden fees — just a simple 15% fee per completed order.",
+        "infoDescription": "Connect directly with customers who need your services right now. Get booked, get paid, and manage your work effortlessly. Our social platform turns every post, share, and interaction into free exposure for your business. Customers can discover you through content, reviews, and recommendations — not just ads. Grow your reach, attract followers, and get booked directly from the feed. Customers book and pay directly through the platform, and we take care of the admin work, confirmations, reminders, and secure transactions. No chasing customers, no cash handling, and no complicated setup. You focus on the job — we manage everything else. You only pay when you get results, making it risk-free and completely performance-based. We even include a 2-month free trial, so you can test the platform, receive bookings, and see real results before you commit."
+      },
+      "reservationSystem": {
+        "title": "Reservation System",
+        "description": "Our reservation system helps you grow your business completely free of charge. Get more visibility, attract new customers, and increase revenue with Swipped.",
+        "whyJoinTitle": "Why join Swipped?",
+        "feature1": "All payments go directly to your business",
+        "feature1Info": "Receive payments straight into your own account with full control and transparency. Swipped does not hold your money — you stay in charge of your revenue at all times.",
+        "feature2": "Stay organised with easy reservation management",
+        "feature2Info": "Manage bookings, availability, and customer details in one simple dashboard. Get instant notifications and keep your schedule running smoothly without stress.",
+        "feature3": "Reach more customers effortlessly",
+        "feature3Info": "Tap into Swipped's growing network and attract new clients without spending on expensive advertising. Let customers find and book you in seconds.",
+        "feature5": "Zero sign-up fees and no booking fees",
+        "feature5Info": "Join completely free with no hidden costs. Keep more of what you earn while growing your business risk-free."
+      },
+      "cta": {
+        "title": "Ready to Get Started?",
+        "description": "Join thousands of partners already growing their business with Swipped. Sign up today and start your journey with us.",
+        "button": "Sign Up Now"
+      }
+    },
+    "earningsCalculator": {
+      "title": "Be your own boss. Set your own hours. Make your own money.",
+      "subtitle": "Swipped is the platform that connects businesses with trusted providers. Get access to thousands of daily opportunities. Everything you need to make more money and grow your business.",
+      "calculate_title": "Calculate your potential earnings",
+      "step1": {
+        "title": "Your schedule",
+        "question": "What services do you provide?",
+        "select_services": "Select services",
+        "days_question": "How many days per week do you work?",
+        "edit": "Edit"
+      },
+      "step2": {
+        "title": "Select a region",
+        "question": "What region do you work the most in?",
+        "edit": "Edit"
+      },
+      "step3": {
+        "title": "Your earnings",
+        "label": "Here is how much you can earn",
+        "period": "/mo"
+      },
+      "common": {
+        "service": "service",
+        "services": "services",
+        "days_per_week": "days/week",
+        "reset": "Reset",
+        "continue": "Continue",
+        "calculate": "Calculate",
+        "takes_30_seconds": "Takes 30 seconds",
+        "almost": "Almost!"
+      }
+    },
+    "businessAccount": {
+      "back": "Back",
+      "title": "Swipped Business",
+      "description": "Sign up today for a Swipped Business Credit Account and unlock exclusive benefits for your business. We help improve your cash flow so your operations can grow and move to the next level — all within the Swipped platform. Complete the form below to get started today!",
+      "apply_title": "Apply for Business Account",
+      "form": {
+        "first_name": "First Name *",
+        "last_name": "Last Name *",
+        "company_name": "Company Name *",
+        "company_number": "Company Number *",
+        "email": "Email *",
+        "contact_number": "Contact Number *",
+        "limit_request": "Limit Request *",
+        "limit_1000": "£1,000",
+        "limit_3000": "£3,000",
+        "limit_5000": "£5,000",
+        "limit_custom": "Custom limit (max £25,000)",
+        "custom_limit_placeholder": "Enter custom limit",
+        "submit": "Submit Application",
+        "submitting": "Submitting..."
+      },
+      "errors": {
+        "first_name_required": "First name is required",
+        "last_name_required": "Last name is required",
+        "company_number_required": "Company number is required",
+        "company_name_required": "Company name is required",
+        "email_required": "Email is required",
+        "email_invalid": "Please enter a valid email address",
+        "contact_number_required": "Contact number is required",
+        "limit_request_required": "Please select a limit request",
+        "custom_limit_required": "Custom limit is required",
+        "custom_limit_invalid": "Please enter a valid amount",
+        "custom_limit_max": "Custom limit cannot exceed £25,000"
+      },
+      "toast": {
+        "fill_required": "Please fill in all required fields correctly",
+        "submit_success": "Application submitted successfully! We'll be in touch soon.",
+        "submit_failed": "Failed to submit application. Please try again.",
+        "error_occurred": "An error occurred. Please try again later."
+      }
+    },
+    "fulfilment": {
+      "back": "Back",
+      "title": "We are launching the Swipped Sellers Program!",
+      "description": "Sell from anywhere — we'll bring you customers, package your products, and ship them worldwide. Grow your brand's global footprint with ease and choose the countries you want to scale in.",
+      "launch_date": "Launching on 08-08-2026.",
+      "form_instruction": "Fill in the form below and a member of our team will get in touch.",
+      "features": {
+        "title": "Why Choose Swipped?",
+        "scale_anywhere": "Scale anywhere with a single tap — choose any country and let Swipped handle the rest.",
+        "sell_store_pack": "We sell your products, store your inventory, pack orders, and ship fast.",
+        "real_time_dashboard": "Real-time dashboard insights show your sales, growth, and profits.",
+        "weekly_payouts": "Weekly payouts are deposited straight into your bank to keep your business moving.",
+        "no_signup_fees": "No sign-up fees, only 15% per completed orders"
+      },
+      "form_title": "Join the Swipped Sellers Program",
+      "form": {
+        "name": "Name *",
+        "email": "Email *",
+        "contact_number": "Contact Number *",
+        "product_range": "Product Range *",
+        "country_to_sell": "Country you want to sell in *",
+        "select_product_range": "Select product range",
+        "select_country": "Select country",
+        "submit": "Submit application",
+        "submitting": "Submitting..."
+      },
+      "errors": {
+        "name_required": "Name is required",
+        "email_required": "Email is required",
+        "email_invalid": "Please enter a valid email address",
+        "contact_number_required": "Contact number is required",
+        "product_range_required": "Product range is required",
+        "country_required": "Country is required"
+      },
+      "toast": {
+        "fill_required": "Please fill in all required fields correctly",
+        "submit_success": "Inquiry submitted successfully! We'll be in touch soon.",
+        "submit_failed": "Failed to submit inquiry. Please try again.",
+        "error_occurred": "An error occurred. Please try again later."
+      }
+    },
+    "swippedRides": {
+      "pickup": "Pickup location",
+      "currentLocation": "Current Location",
+      "whereTo": "Where to?",
+      "whereToTitle": "Where to?",
+      "whereToSubtitle": "Enter your destination to get started",
+      "home": "Home",
+      "work": "Work",
+      "savedPlaces": "Saved",
+      "recentSearches": "Recent",
+      "continue": "Continue",
+      "chooseRide": "Choose Ride",
+      "driversNearby": "Drivers nearby",
+      "nearbyCount": "{count} nearby",
+      "priceDetails": "Price details",
+      "safetyNote": "Safety features & trip sharing included",
+      "destination": "Destination",
+      "swippedBike": "Bike",
+      "swippedBikeDesc": "Fast & affordable",
+      "swippedComfort": "Comfort",
+      "swippedComfortDesc": "Comfy ride, more space",
+      "confirmRide": "Confirm Ride",
+      "rideConfirmed": "Ride confirmed! This is a demo.",
+      "comfortBadge": "Popular",
+      "payWith": "Pay with",
+      "applePay": "Apple Pay",
+      "changePayment": "Change",
+      "eta": "min"
+    }
+  },
+  "MapComponent": {
+    "pickup_title": "Pickup Location",
+    "dropoff_title": "Dropoff Location",
+    "set_pickup_current": "Set Pickup (Current Location)",
+    "set_dropoff_current": "Set Dropoff (Current Location)",
+    "clear_all": "Clear All",
+    "tip_title": "Tip:",
+    "tip_description": "Click anywhere on the map to set pickup and dropoff locations, or use the buttons above to use your current location.",
+    "unable_get_location_pickup": "Unable to get your current location. Please click on the map to set pickup location.",
+    "unable_get_location_dropoff": "Unable to get your current location. Please click on the map to set dropoff location.",
+    "geolocation_not_supported_pickup": "Geolocation is not supported by this browser. Please click on the map to set pickup location.",
+    "geolocation_not_supported_dropoff": "Geolocation is not supported by this browser. Please click on the map to set dropoff location.",
+    "confirm_replace_locations": "Both pickup and dropoff locations are set. Click OK to set as pickup, Cancel to set as dropoff."
+  },
+  "Services": {
+    "shop": {
+      "name": "Retail Stores",
+      "description": "Grab what you want, when you want it. From everyday essentials to last-minute gifts, we bring the shop to your door"
+    },
+    "restaurant": {
+      "name": "Restaurants",
+      "description": "Get your favourite meals delivered straight to you with ease. Browse restaurants, explore new flavours, and place your order in just a few taps"
+    },
+    "supermarket": {
+      "name": "Supermarkets",
+      "description": "Shop for groceries and everyday essentials from your favorite supermarkets. Fast delivery straight to your door"
+    },
+    "Taxi Rides": {
+      "name": "Taxi Rides",
+      "description": "Book your ride with Taxi Rides. Coming soon - convenient, reliable transportation at your fingertips."
+    },
+    "Book a Table": {
+      "name": "Restaurant booking",
+      "description": "You can now book a table at your favorite restaurant directly on Swipped. No calls, no queues — just tap, reserve, and enjoy."
+    },
+    "Click & Collect": {
+      "name": "Click & Collect Delivery",
+      "description": "Pickup and collection of online orders"
+    },
+    "Van": {
+      "name": "Deliveries & Couriers",
+      "description": "Van delivery and transportation services"
+    },
+    "Recovery": {
+      "name": "Breakdown Assistance",
+      "description": "Vehicle recovery and towing services"
+    },
+    "Cleaning": {
+      "name": "Professional Cleaning",
+      "description": "Fast, reliable cleaning"
+    },
+    "Locksmith": {
+      "name": "Lock & Key Replacement",
+      "description": "24/7 locksmith services"
+    },
+    "Car Key Replacement": {
+      "name": "Car key replacement",
+      "description": "Car key replacement and programming"
+    },
+    "Removals": {
+      "name": "Rubbish removals",
+      "description": "Furniture and rubbish removal"
+    },
+    "Luggage Storage": {
+      "name": "Luggage Storage",
+      "description": "Secure luggage storage and management"
+    },
+    "Dry Cleaning Pick-Up": {
+      "name": "Dry Cleaning Pick-Up",
+      "description": "Dry cleaning collection and delivery"
+    },
+    "MOT & Repairs": {
+      "name": "MOT & Repairs",
+      "description": "Book trusted MOT tests and car servicing with certified professionals to keep your vehicle road ready."
+    },
+    "Shisha lounges": {
+      "name": "Shisha lounges",
+      "description": "Reserve your spot at the best Shisha lounges. Book your table and enjoy a relaxing evening with friends."
+    },
+    "Spa": {
+      "name": "Spa treatments ",
+      "description": "Relax and unwind with professional spa treatments, massages, and wellness services booked instantly."
+    },
+    "Beauty": {
+      "name": "Beauty appointments",
+      "description": "Book beauty appointments for hair, nails, and skin treatments with trusted professionals near you."
+    },
+    "Healthcare": {
+      "name": "Healthcare appointments",
+      "description": "Book healthcare appointments with trusted providers. Dentist, clinic, IV drip, and more health services."
+    },
+    "Events": {
+      "name": "Events services",
+      "description": "Book professional event services. DJ hire, live music, character appearances, and more for your special events."
+    },
+    "Entertainment": {
+      "name": "Entertainment venues",
+      "description": "Book exciting entertainment experiences. VR experiences, bowling, karaoke rooms, and unforgettable fun."
+    }
+  },
+  "CheckoutVerify": {
+    "loading": "Loading...",
+    "verifying_subscription": "Please wait while we verify your subscription.",
+    "payment_successful": "Payment Successful!",
+    "thank_you_subscribing": "Thank you for subscribing to our service! 🎉",
+    "subscription_activated": "Your subscription has been activated successfully and you can now access all premium features.",
+    "subscription_details": "Subscription Details",
+    "plan": "Plan:",
+    "amount": "Amount:",
+    "status": "Status:",
+    "active": "Active",
+    "continue_dashboard": "Continue to Dashboard",
+    "payment_cancelled": "Payment Cancelled",
+    "payment_cancelled_desc": "Your payment was cancelled. No charges have been made to your account.",
+    "try_again_desc": "You can try again anytime or contact support if you need assistance.",
+    "try_again": "Try Again",
+    "back_dashboard": "Back to Dashboard",
+    "payment_error": "Payment Error",
+    "payment_error_desc": "There was an error processing your payment.",
+    "contact_support_desc": "Please try again or contact support if the problem persists."
+  },
+  "Pricing": {
+    "choose_plan": "Choose Your Plan",
+    "select_perfect_plan": "Select the perfect subscription plan that fits your needs and start growing your business today.",
+    "subscription_expires": "Your subscription will expire on {date}",
+    "subscription_expired": "Your subscription has expired. Please renew to continue accepting jobs.",
+    "subscription_cancelled": "Your subscription has been cancelled.",
+    "most_popular": "Most Popular",
+    "monthly_access": "Monthly Access",
+    "monthly": "Monthly",
+    "half_year_access": "Half-Year Access",
+    "yearly_access": "Yearly Access",
+    "yearly": "Yearly",
+    "free_trial": "60-Day Free Trial",
+    "monthly_access_desc": "1-month access for service providers to accept and manage jobs.",
+    "half_year_access_desc": "6-month access with discounted pricing for service providers to accept jobs.",
+    "yearly_access_desc": "12-month full access for service providers to accept unlimited jobs at the best value.",
+    "access_all_jobs": "Access to all jobs",
+    "accept_unlimited_jobs": "Accept unlimited jobs",
+    "mobile_app_access": "Mobile app access",
+    "email_notifications": "Email notifications",
+    "basic_support": "Basic support",
+    "priority_support": "Priority support",
+    "discounted_pricing": "Discounted pricing",
+    "best_value_pricing": "Best value pricing",
+    "early_access_features": "Early access to new features",
+    "current_plan": "Current Plan",
+    "upgrade_plan": "Upgrade Plan",
+    "downgrade_not_allowed": "Downgrade Not Allowed",
+    "subscribe_now": "Subscribe Now",
+    "processing": "Processing...",
+    "per_month": "/month",
+    "per_6_months": "/6 months",
+    "per_year": "/year"
+  },
+  "ShopsPage": {
+    "title": "Discover Your Local Stores",
+    "subtitle": "Delivered within 60 minutes",
+    "subtitle_words": {
+      "delivered": "Delivered",
+      "within": "Within",
+      "sixty_minutes": "60 minutes"
+    },
+    "search_placeholder": "Search shops by name...",
+    "showing_shops": "Showing {count} shops",
+    "miles_from": "{radius} miles from {address}",
+    "clear_location": "Clear Location",
+    "choose_location": "Choose Location",
+    "change": "Change",
+    "showing_shops_in": "Showing Shops in {location} {flag}",
+    "location_changed": "Location changed to {location} {flag}",
+    "no_shops_found": "No Shops Found",
+    "no_shops_search": "Try adjusting your search criteria",
+    "no_shops_available": "No shops are currently available",
+    "products": "products",
+    "miles_away": "miles away",
+    "view_products": "View Products",
+    "failed_fetch_shops": "Failed to fetch shops",
+    "error_fetching_shops": "Failed to fetch shops",
+    "closing_at": "Closing at {time}",
+    "opens_at": "Opens {time}",
+    "closed": "Closed",
+    "switch_to_restaurants": "Switch to Restaurants",
+    "switch_to_supermarkets": "Switch to Supermarkets",
+    "switch_to_services": "Switch to Services",
+    "new_badge": "NEW",
+    "free_delivery": "Free delivery",
+    "open_closes": "Open • Closes {time}",
+    "order_now": "Order Now"
+  },
+  "ShopProductsPage": {
+    "loading": "Loading...",
+    "shop_products": "Shop Products",
+    "products": "Products",
+    "search_placeholder": "Search product",
+    "filters": "Filters",
+    "price_range": "Price Range",
+    "min": "Min",
+    "max": "Max",
+    "availability": "Availability",
+    "in_stock_only": "In Stock Only",
+    "sort_by": "Sort By",
+    "name_asc": "Name: A to Z",
+    "name_desc": "Name: Z to A",
+    "price_asc": "Price: Low to High",
+    "price_desc": "Price: High to Low",
+    "newest_first": "Newest First",
+    "oldest_first": "Oldest First",
+    "category": "Category",
+    "all": "All",
+    "clear_all_filters": "Clear All Filters",
+    "showing_products": "Showing {count} products",
+    "no_products_found": "No Products Found",
+    "no_products_search": "Try adjusting your search criteria",
+    "no_products_available": "No products are currently available",
+    "in_stock": "{count} in stock",
+    "out_of_stock": "Out of stock",
+    "add_to_cart": "Add to Cart",
+    "remove_from_cart": "Remove from Cart",
+    "out_of_stock_btn": "Out of Stock",
+    "show_all_products": "Show all products",
+    "closing_at": "Closing at {time}",
+    "opens_at": "Opens {time}",
+    "closed": "Closed",
+    "open_closes": "Open • Closes {time}",
+    "new_badge": "NEW",
+    "show_favorites_only": "Show favorites only",
+    "apply": "Apply",
+    "clear_all": "Clear All",
+    "failed_fetch_products": "Failed to fetch products",
+    "error_fetching_products": "Failed to fetch products",
+    "only_customers_cart": "Only customers can add products to cart",
+    "product_out_of_stock": "Product is out of stock",
+    "please_select_size": "Please select a size first",
+    "product_removed_cart": "Product removed from cart",
+    "product_added_cart": "Product added to cart",
+    "product_quantity_updated": "Product quantity updated in cart",
+    "failed_remove_product": "Failed to remove product from cart",
+    "failed_add_product": "Failed to add product to cart",
+    "shop_closed_order": "This shop is currently closed. Please come back during opening hours",
+    "link_copied": "Link copied to clipboard!",
+    "failed_copy_link": "Failed to copy link"
+  },
+  "ProductDetailPage": {
+    "loading": "Loading...",
+    "product_not_found": "Product Not Found",
+    "product_not_exist": "The product you're looking for doesn't exist.",
+    "back_to_shops": "Back to Shops",
+    "back": "Back",
+    "in_stock": "{count} in stock",
+    "out_of_stock": "Out of stock",
+    "delivered_within_60_minutes": "Delivered within 60 minutes",
+    "description": "Description",
+    "product_details": "Product Details",
+    "weight": "Weight",
+    "dimensions": "Dimensions",
+    "in_cart": "In Cart",
+    "out_of_stock_btn": "Out of Stock",
+    "removing": "Removing...",
+    "remove_from_cart": "Remove from Cart",
+    "view_cart": "View Cart",
+    "adding": "Adding...",
+    "add_to_cart": "Add to Cart",
+    "failed_load_product": "Failed to load product details",
+    "only_customers_manage_cart": "Only customers can manage cart",
+    "product_out_of_stock": "Product is out of stock",
+    "product_removed_cart": "Product removed from cart",
+    "product_added_cart": "Product added to cart",
+    "failed_remove_product": "Failed to remove product from cart",
+    "failed_add_product": "Failed to add product to cart",
+    "shop_closed_order": "This shop is currently closed. Please come back during opening hours",
+    "preparation_time": "Preparation Time",
+    "minutes": "minutes",
+    "calories": "Calories",
+    "kcal": "kcal",
+    "dietary_info": "Dietary Information",
+    "allergens": "Allergens"
+  },
+  "PurchasePage": {
+    "loading": "Loading...",
+    "loading_cart": "Loading cart...",
+    "cart_empty": "Your Cart is Empty",
+    "add_products_to_cart": "Add some items to your cart to continue.",
+    "browse_products": "Browse Products",
+    "checkout": "Checkout",
+    "items": "items",
+    "step_of": "Step {current} of {total}",
+    "cart_items": "Cart Items",
+    "shop_info": "Shop",
+    "view_shop": "View shop",
+    "delivery_address": "Delivery Address",
+    "delivery_address_placeholder": "Enter delivery address where products will be delivered",
+    "delivery_address_required": "Delivery address is required",
+    "delivery_address_confirmed": "✓ Delivery address: {address}",
+    "loading_maps": "🔄 Loading maps...",
+    "continue_to_checkout": "Continue to Checkout",
+    "additional_notes": "Additional Notes for Delivery",
+    "special_instructions_placeholder": "Any special instructions for delivery (optional)...",
+    "order_summary": "Order Summary",
+    "subtotal": "Subtotal",
+    "delivery_price": "Delivery Price",
+    "calculating": "Calculating...",
+    "distance": "Distance",
+    "miles": "miles",
+    "total": "Total",
+    "back_to_location": "Back to Location",
+    "place_order": "Place Order",
+    "processing": "Processing...",
+    "please_login": "Please log in to view cart",
+    "failed_fetch_cart": "Failed to fetch cart items",
+    "cart_updated_successfully": "Cart updated successfully",
+    "failed_update_cart": "Failed to update cart",
+    "shop_closed_order": "This shop is currently closed. Please come back during opening hours",
+    "item_removed_cart": "Item removed from cart",
+    "failed_remove_item": "Failed to remove item",
+    "cart_empty_error": "Your cart is empty",
+    "order_created": "Order created! Redirecting to payment...",
+    "order_created_successfully": "Order created successfully!",
+    "failed_create_order": "Failed to create order",
+    "order_food": "Order Food"
+  },
+  "RestaurantsPage": {
+    "title": "Discover Your Local Restaurants",
+    "subtitle_words": {
+      "delivered": "Delivered",
+      "within": "Within",
+      "sixty_minutes": "60 minutes"
+    },
+    "search_placeholder": "Search restaurants by name...",
+    "showing_restaurants": "Showing {count} restaurants",
+    "miles_from": "{radius} miles from {address}",
+    "clear_location": "Clear Location",
+    "choose_location": "Choose Location",
+    "change": "Change",
+    "showing_restaurants_in": "Showing Restaurants in {location} {flag}",
+    "location_changed": "Location changed to {location} {flag}",
+    "no_restaurants_found": "No Restaurants Found",
+    "miles_away": "miles away",
+    "view_menu": "View Menu",
+    "failed_fetch_restaurants": "Failed to fetch restaurants",
+    "error_fetching_restaurants": "Failed to fetch restaurants",
+    "closing_at": "Closing at {time}",
+    "closed": "Closed",
+    "opens_at": "Opens {time}",
+    "items": "items",
+    "items_count": "{count} items",
+    "minimum_order": "Min: £{amount}",
+    "switch_to_stores": "Switch to Stores",
+    "resturant_reservation": "Book a Table",
+    "switch_to_supermarkets": "Switch to Supermarkets",
+    "switch_to_services": "Switch to Services",
+    "new_badge": "NEW",
+    "dine_in": "Dine-in",
+    "free_delivery": "Free delivery",
+    "open_closes": "Open • Closes {time}",
+    "order_now": "Order Now",
+    "delivery_dine_in_title": "Delivery & Dine-in",
+    "delivery_dine_in_message": "This restaurant offers delivery, and you can also book a table directly through our platform using our Book a Table service."
+  },
+  "RestaurantMenuPage": {
+    "loading": "Loading...",
+    "restaurant_menu": "Restaurant Menu",
+    "menu": "Takeaway Menu",
+    "search_placeholder": "Search menu items by name...",
+    "filters": "Filters",
+    "category": "Category",
+    "cuisine": "Cuisine",
+    "filter_by_cuisine": "Filter by cuisine...",
+    "sort_by": "Sort By",
+    "name_asc": "Name: A to Z",
+    "name_desc": "Name: Z to A",
+    "price_asc": "Price: Low to High",
+    "price_desc": "Price: High to Low",
+    "clear_all_filters": "Clear All Filters",
+    "showing_items": "Showing {count} items",
+    "no_items_found": "No Menu Items Found",
+    "only_customers_cart": "Only customers can add items to cart",
+    "item_unavailable": "Item is unavailable",
+    "item_removed_cart": "Item removed from cart",
+    "failed_remove_item": "Failed to remove item",
+    "item_added_cart": "Item added to cart",
+    "item_quantity_updated": "Item quantity updated in cart",
+    "failed_add_item": "Failed to add item to cart",
+    "shop_closed_order": "This shop is currently closed. Please come back during opening hours",
+    "failed_fetch_menu": "Failed to fetch menu items",
+    "error_fetching_menu": "Failed to fetch menu items",
+    "menu_items": "Menu Items",
+    "rating": "Rating",
+    "unavailable": "Unavailable",
+    "closing_at": "Closing at {time}",
+    "opens_at": "Opens {time}",
+    "closed": "Closed",
+    "open_closes": "Open • Closes {time}",
+    "new_badge": "NEW",
+    "link_copied": "Link copied to clipboard!",
+    "failed_copy_link": "Failed to copy link",
+    "menu_category": "Menu Category",
+    "all_categories": "All Categories",
+    "all": "All"
+  },
+  "ReservationPage": {
+    "link_copied": "Link copied to clipboard!",
+    "failed_copy_link": "Failed to copy link",
+    "restaurant_no_reservations": "This restaurant does not accept reservations.",
+    "restaurant_not_found": "Restaurant not found.",
+    "failed_load_restaurant": "Failed to load restaurant details.",
+    "fill_required_fields": "Please fill in all required fields.",
+    "select_future_date": "Please select a future date.",
+    "reservation_created": "Reservation created successfully! Check your email for confirmation.",
+    "failed_create_reservation": "Failed to create reservation.",
+    "failed_create_reservation_try_again": "Failed to create reservation. Please try again.",
+    "booking": "Booking",
+    "menu": "Menu",
+    "services": "Services",
+    "about_us": "About Us",
+    "gallery": "Gallery",
+    "address": "Address",
+    "opening_hours": "Opening Hours",
+    "opening_time": "Opening Time",
+    "closing_time": "Closing Time",
+    "daily": "Daily",
+    "contact_number": "Contact Number",
+    "halal_status": "Halal Status",
+    "halal": "Halal",
+    "date": "Date",
+    "time": "Time",
+    "select_time": "Select a time",
+    "number_of_guests": "Number of Guests",
+    "number_of_patients": "Number of Patients",
+    "guest": "Guest",
+    "guests": "Guests",
+    "patient": "Patient",
+    "patients": "Patients",
+    "name": "Name",
+    "phone_number": "Phone Number",
+    "email": "Email",
+    "special_requests": "Special Requests (Optional)",
+    "special_requests_placeholder": "Any special dietary requirements or requests...",
+    "processing": "Processing...",
+    "book_reservation": "Book Reservation",
+    "takes_30_seconds": "Takes 30 seconds",
+    "day": "Day",
+    "closed": "Closed",
+    "no_opening_hours_set": "No opening hours set",
+    "days": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    },
+    "feedback": "Feedback",
+    "write_review": "Write a Review",
+    "add_review": "Add Your Review",
+    "reviews": "Reviews",
+    "no_reviews_yet": "No reviews yet. Be the first to review!",
+    "loading": "Loading...",
+    "cancel": "Cancel",
+    "characters": "characters"
+  },
+  "ReservationsPage": {
+    "search_placeholder": "Search restaurants...",
+    "no_restaurants_found": "No restaurants found",
+    "reserve": "Reserve",
+    "takes_30_seconds": "Takes 30 seconds",
+    "failed_fetch_restaurants": "Failed to fetch restaurants",
+    "error_fetching_restaurants": "Error fetching restaurants",
+    "new_badge": "NEW",
+    "change": "Change",
+    "showing_restaurants_in": "Showing Restaurants in {location} {flag}",
+    "select_service": "Select Service",
+    "cancel": "Cancel",
+    "continue_to_reservation": "Continue to Reservation",
+    "processing": "Processing...",
+    "rating": "Rating",
+    "city": "City",
+    "select_city": "Select City",
+    "no_deposit_required": "No Deposit Required",
+    "fill_required_fields": "Please fill in all required fields",
+    "select_future_date": "Please select a future date",
+    "reservation_created": "Reservation created successfully",
+    "failed_create_reservation": "Failed to create reservation",
+    "failed_create_reservation_try_again": "Failed to create reservation. Please try again.",
+    "please_select_service": "Please select a service to continue with your reservation",
+    "selected": "Selected",
+    "select_mot_service": "Select MOT Service",
+    "select_spa_service": "Select Spa Service",
+    "select_shisha_service": "Select Shisha Service",
+    "select_beauty_service": "Select Beauty Service",
+    "select_healthcare_service": "Select Healthcare Service",
+    "select_events_service": "Select Events Service",
+    "select_entertainment_service": "Select Entertainment Venue",
+    "select_restaurant_service": "Select your cuisine",
+    "select_shop_service": "Select shop category"
+  },
+  "FeatureDescriptionModal": {
+    "defaultDescription": "Our service providers are ready to help you—day or night. Get a quote in just 60 seconds and solve your needs quickly and smoothly.",
+    "descriptions": {
+      "courier": "Our courier service offers fast, reliable delivery for parcels of all sizes — from small envelopes to larger items. Choose urgent same-day delivery or schedule a time that suits you. Whether it's a one-off job or regular deliveries, we make it simple and stress-free. Get a quote in just 60 seconds and solve your courier needs quickly and smoothly.",
+      "van": "Our courier service offers fast, reliable delivery for parcels of all sizes — from small envelopes to larger items. Choose urgent same-day delivery or schedule a time that suits you. Whether it's a one-off job or regular deliveries, we make it simple and stress-free. Get a quote in just 60 seconds and solve your courier needs quickly and smoothly.",
+      "luggageStorage": "Our luggage storage service lets you store your bags safely and conveniently at a location near you. Choose your closest drop-off point, or let us arrange pick-up and drop-off straight to your door. Whether it's for a few hours or a few weeks, we make it hassle-free. Get a quote in just 60 seconds and solve your luggage storage needs quickly and smoothly.",
+      "locksmith": "Our locksmith service connects you with trusted, fully vetted professionals in your area. Whether you need urgent help or prefer to schedule an appointment, we've got you covered. Get a quote in just 60 seconds and solve your locksmith needs quickly and smoothly.",
+      "professionalCleaning": "Our cleaning service connects you with trusted, fully vetted professionals who deliver exceptional results. Whether you need an urgent call-out or prefer to book a scheduled appointment, we make it simple and convenient. Get a quote in just 60 seconds and solve your cleaning needs quickly and smoothly.",
+      "cleaning": "Our cleaning service connects you with trusted, fully vetted professionals who deliver exceptional results. Whether you need an urgent call-out or prefer to book a scheduled appointment, we make it simple and convenient. Get a quote in just 60 seconds and solve your cleaning needs quickly and smoothly.",
+      "dryCleaningPickUp": "Our dry cleaning service offers convenient door-to-door collection and delivery, or you can choose to drop off and collect from your closest service provider. Fast, simple, and reliable—your clothes are in safe hands. Get a quote in just 60 seconds and solve your dry-cleaning needs quickly and smoothly.",
+      "breakdownAssistance": "Our nationwide breakdown assistance service is available 24/7, whether you need an urgent call-out or prefer to book an appointment. Wherever you are, we're ready to help get you moving again. Get a quote in just 60 seconds and solve your breakdown needs quickly and smoothly.",
+      "recovery": "Our nationwide breakdown assistance service is available 24/7, whether you need an urgent call-out or prefer to book an appointment. Wherever you are, we're ready to help get you moving again. Get a quote in just 60 seconds and solve your breakdown needs quickly and smoothly.",
+      "rubbishRemovals": "Our rubbish removal service can collect all types of waste — from furniture and household bags to garden waste and more. We're available 24/7 for emergency call-outs or scheduled appointments, making it easy to clear any clutter fast. Get a quote in just 60 seconds and solve your rubbish removal needs quickly and smoothly.",
+      "removals": "Our rubbish removal service can collect all types of waste — from furniture and household bags to garden waste and more. We're available 24/7 for emergency call-outs or scheduled appointments, making it easy to clear any clutter fast. Get a quote in just 60 seconds and solve your rubbish removal needs quickly and smoothly.",
+      "clickCollectDelivery": "Our Click & Collect delivery service lets us collect your online order directly from the store and deliver it straight to your home. Operating within business hours, we offer both urgent call-outs and scheduled appointments for your convenience. Get a quote in just 60 seconds and solve your Click & Collect delivery needs quickly and smoothly.",
+      "clickCollect": "Our Click & Collect delivery service lets us collect your online order directly from the store and deliver it straight to your home. Operating within business hours, we offer both urgent call-outs and scheduled appointments for your convenience. Get a quote in just 60 seconds and solve your Click & Collect delivery needs quickly and smoothly."
+    },
+    "features": {
+      "howItWorks": {
+        "label": "How It Works",
+        "description": "1. Get Your Quote in 60 Seconds\nEnter your location and answer a few quick questions about your request. We'll instantly generate the right quote tailored to your needs.\n\n2. Get Matched With a Local Professional\nOnce your payment is confirmed, we'll connect you to a nearby vetted specialist. You can communicate directly through the in-app calling and messaging system, and track job status, pickup, and arrival times in real-time.\n\n3. Job Completed — Leave a Rating\nAfter the service is finished, leave a review for your service provider to help us maintain quality and improve your experience."
+      },
+      "scheduled": {
+        "label": "Scheduled Appointments",
+        "description": "Need something later? Choose a date and time that suits you. Book in advance and your service provider will arrive exactly when you need them."
+      },
+      "emergency": {
+        "label": "24/7 Emergency Call-Outs",
+        "description": "Day or night, we're here. For urgent problems, we send a service provider to you immediately — no waiting until morning."
+      },
+      "monthly": {
+        "label": "Pay Monthly Available",
+        "description": "Spread the cost instead of paying everything upfront. Choose flexible monthly installments to make your service more affordable."
+      },
+      "trusted": {
+        "label": "Trusted & Verified",
+        "description": "Every provider on Swipped is carefully checked, approved, and trusted—so you always get safe, reliable service."
+      },
+      "about": {
+        "label": "About Service"
+      }
+    }
+  },
+  "DeliveryInfo": {
+    "on_time_promise": "From You",
+    "delivered_by": "Delivery System"
+  }
+}

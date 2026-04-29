@@ -1,0 +1,1680 @@
+{
+  "Home": {
+    "title": "Swipped",
+    "tagLine": "استأجر بذكاء وسرعة",
+    "description": "يربط Swipped الشركات بمقدمي خدمات موثوقين للتوصيل، التنظيف، خدمات الأقفال وأكثر في جميع أنحاء المملكة المتحدة."
+  },
+  "Auth": {
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "first_name": "الاسم الأول",
+    "last_name": "الاسم الأخير",
+    "login": "تسجيل الدخول",
+    "signup": "التسجيل",
+    "auto_login": "تسجيل الدخول التلقائي",
+    "join_the_membership": "انضم إلى العضوية",
+    "already_have_account": "هل لديك حساب بالفعل؟ سجل الدخول",
+    "email_field_required": "حقل البريد الإلكتروني مطلوب.",
+    "invalid_email": "يرجى إدخال بريد إلكتروني صالح.",
+    "password_min_length": "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل.",
+    "first_name_min_length": "يجب أن يتكون الاسم الأول من حرفين على الأقل.",
+    "last_name_min_length": "يجب أن يتكون الاسم الأخير من حرفين على الأقل.",
+    "all_fields_required": "جميع الحقول مطلوبة.",
+    "registration_successful": "تم التسجيل بنجاح!",
+    "registration_failed": "فشل التسجيل. يرجى المحاولة مرة أخرى.",
+    "loading": "جارٍ التحميل...",
+    "invalid_credentials": "بيانات تسجيل الدخول غير صحيحة.",
+    "user_not_found": "يرجى التسجيل قبل تسجيل الدخول.",
+    "device_limit_reached": "تم الوصول إلى الحد الأقصى للأجهزة.",
+    "logout": "تسجيل الخروج",
+    "logout_successful": "تم تسجيل الخروج بنجاح!",
+    "logout_failed": "فشل تسجيل الخروج. يرجى المحاولة مرة أخرى.",
+    "login_successful": "تم تسجيل الدخول بنجاح!",
+    "reset_email_sent": "تم إرسال رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني.",
+    "send_reset_link": "إرسال رابط إعادة التعيين",
+    "back_to_login": "العودة إلى تسجيل الدخول",
+    "sending": "جارٍ الإرسال...",
+    "forgot_password": "هل نسيت كلمة المرور؟",
+    "reset_password": "إعادة تعيين كلمة المرور",
+    "reset_password_successful": "تم إعادة تعيين كلمة المرور بنجاح!",
+    "something_went_wrong": "حدث خطأ ما. يرجى المحاولة مرة أخرى لاحقًا.",
+    "new_password": "كلمة المرور الجديدة",
+    "confirm_password": "تأكيد كلمة المرور",
+    "new_password_required": "كلمة المرور الجديدة مطلوبة",
+    "confirm_password_required": "تأكيد كلمة المرور مطلوب",
+    "passwords_must_match": "يجب أن تتطابق كلمتا المرور"
+  },
+  "AuthPages": {
+    "login": {
+      "title": "مرحبًا بك مرة أخرى في Swipped",
+      "modal_title": "سجل الدخول إلى حسابك في Swipped",
+      "subtitle": "سجل الدخول إلى Swipped وتبسيط عملية التوظيف الخاصة بك",
+      "email_label": "البريد الإلكتروني",
+      "password_label": "كلمة المرور",
+      "submit": "تسجيل الدخول",
+      "loading": "جارٍ التحميل...",
+      "forgot_password_hint": "هل نسيت كلمة المرور؟",
+      "forgot_password_link": "إعادة تعيينها هنا.",
+      "signup_prompt": "جديد هنا؟",
+      "signup_link": "التسجيل",
+      "success_toast": "تم تسجيل الدخول بنجاح",
+      "error_toast": "البريد الإلكتروني أو كلمة المرور غير صحيحة"
+    },
+    "register": {
+      "title": "التسجيل",
+      "subtitle": "انضم إلى Swipped وابدأ رحلتك اليوم",
+      "first_name_label": "الاسم الأول",
+      "last_name_label": "الاسم الأخير",
+      "email_label": "البريد الإلكتروني",
+      "password_label": "كلمة المرور",
+      "confirm_password_label": "تأكيد كلمة المرور",
+      "submit": "إنشاء حسابي",
+      "login_prompt": "هل لديك حساب بالفعل؟",
+      "login_link": "تسجيل الدخول",
+      "success_toast": "تم التسجيل بنجاح! يرجى التحقق من بريدك الإلكتروني لتفعيل حسابك.",
+      "error_toast": "خطأ، حاول مرة أخرى"
+    },
+    "forgotPassword": {
+      "title": "نسيت كلمة المرور",
+      "email_label": "البريد الإلكتروني",
+      "submit": "نسيت كلمة المرور",
+      "back_to_login": "العودة إلى تسجيل الدخول",
+      "success_toast": "تم إرسال رابط إعادة التعيين بنجاح",
+      "error_toast": "فشل إرسال رابط إعادة التعيين",
+      "generic_error_toast": "حدث خطأ ما"
+    },
+    "resetPassword": {
+      "title": "إعادة تعيين كلمة المرور الخاصة بك",
+      "new_password_label": "كلمة المرور الجديدة",
+      "confirm_password_label": "تأكيد كلمة المرور",
+      "submit": "إعادة تعيين كلمة المرور",
+      "success_toast": "تم إعادة تعيين كلمة المرور بنجاح",
+      "error_toast": "حدث خطأ"
+    },
+    "activate": {
+      "title": "جارٍ تفعيل الحساب...",
+      "success_toast": "تم تفعيل حسابك.",
+      "error_toast": "فشل التفعيل.",
+      "error_message": "فشل التفعيل. حاول مرة أخرى لاحقًا.",
+      "generic_error_message": "حدث خطأ. يرجى المحاولة مرة أخرى."
+    }
+  },
+  "AdminPages": {
+    "dashboard": {
+      "open_jobs_title": "الوظائف المفتوحة"
+    },
+    "changePassword": {
+      "title": "تغيير كلمة المرور",
+      "password_label": "كلمة المرور",
+      "confirm_password_label": "تأكيد كلمة المرور",
+      "save": "حفظ",
+      "loading": "جارٍ التحميل..."
+    },
+    "jobsList": {
+      "title": "الوظائف المفتوحة",
+      "breadcrumb_home": "الرئيسية",
+      "breadcrumb_current": "الوظائف المفتوحة",
+      "loading": "جارٍ التحميل...",
+      "add_job": "إضافة وظيفة",
+      "table_number": "#",
+      "table_title": "العنوان",
+      "table_category": "الفئة",
+      "table_status": "الحالة",
+      "table_action": "الإجراء",
+      "empty_text": "لا توجد وظائف مفتوحة. افتح وظيفة جديدة.",
+      "empty_action_text": "فتح وظيفة",
+      "confirm_delete": "هل أنت متأكد أنك تريد حذف هذه الوظيفة؟",
+      "toast_delete_success": "تم حذف الوظيفة بنجاح!",
+      "toast_delete_error_prefix": "خطأ في حذف الوظيفة:",
+      "toast_delete_generic_error": "خطأ في حذف الوظيفة. يرجى المحاولة مرة أخرى."
+    },
+    "providers": {
+      "title": "مقدمو الخدمات",
+      "breadcrumb_home": "الرئيسية",
+      "breadcrumb_current": "مقدمو الخدمات",
+      "loading": "جارٍ التحميل...",
+      "table_number": "#",
+      "table_name": "الاسم",
+      "table_email": "البريد الإلكتروني",
+      "table_action": "الإجراء",
+      "no_providers": "لم يتم العثور على مقدمي خدمات.",
+      "toast_delete_success": "تم حذف مقدم الخدمة بنجاح",
+      "toast_delete_failed": "فشل حذف مقدم الخدمة",
+      "toast_unexpected_error": "حدث خطأ غير متوقع",
+      "wallet_modal_title": "تفاصيل المحفظة",
+      "wallet_account_holder": "صاحب الحساب:",
+      "wallet_account_number": "رقم الحساب:",
+      "wallet_sort_code": "رمز الفرز:",
+      "wallet_amount": "المبلغ:",
+      "wallet_created_at": "تم الإنشاء في:",
+      "wallet_not_found": "لم يتم العثور على محفظة لهذا المقدم.",
+      "wallet_close": "إغلاق"
+    },
+    "payouts": {
+      "pending_label": "معلق ({amount})",
+      "completed_label": "مكتمل ({amount})",
+      "loading": "جارٍ التحميل...",
+      "price_label": "السعر: {amount}",
+      "completed_by": "الوظيفة أكملها: {name}",
+      "completed_at": "مكتمل: {date}",
+      "empty_pending": "لا توجد مدفوعات معلقة بعد.",
+      "empty_completed": "لا توجد مدفوعات مكتملة."
+    },
+    "profile": {
+      "title": "الملف الشخصي",
+      "loading": "جارٍ التحميل...",
+      "save": "حفظ",
+      "first_name_label": "الاسم الأول",
+      "last_name_label": "الاسم الأخير",
+      "email_label": "عنوان البريد الإلكتروني",
+      "email_placeholder": "أدخل البريد الإلكتروني",
+      "toast_fetch_failed": "فشل جلب بيانات المستخدم",
+      "toast_update_failed": "فشل تحديث المستخدم"
+    },
+    "verifications": {
+      "title": "التحققات",
+      "breadcrumb_home": "الرئيسية",
+      "breadcrumb_current": "التحققات",
+      "loading": "جارٍ التحميل...",
+      "toast_fetch_failed": "فشل جلب المستندات",
+      "tab_service": "التحقق من الخدمات",
+      "tab_job": "إثبات إكمال الوظيفة",
+      "selected_count": "{count} مستند(ات) مختارة",
+      "cancel": "إلغاء",
+      "approve": "الموافقة",
+      "reject": "الرفض",
+      "approving": "جارٍ الموافقة...",
+      "rejecting": "جارٍ الرفض...",
+      "table_job_title": "عنوان الوظيفة",
+      "table_service_provider": "مقدم الخدمة",
+      "table_category_type": "الفئة / النوع",
+      "table_documents": "المستندات",
+      "table_document": "المستند",
+      "table_view": "عرض",
+      "no_service_docs": "لا توجد مستندات خدمات في انتظار التحقق.",
+      "no_job_docs": "لا توجد مستندات إثبات وظيفة في انتظار التحقق.",
+      "reject_modal_title": "رفض المستندات",
+      "reject_reason_label": "سبب الرفض",
+      "modal_cancel": "إلغاء",
+      "modal_reject": "رفض"
+    },
+    "layout": {
+      "nav_dashboard": "لوحة التحكم",
+      "nav_jobs": "الوظائف",
+      "nav_providers": "مقدمو الخدمات",
+      "nav_verifications": "التحققات",
+      "nav_payouts": "المدفوعات",
+      "menu_profile": "الملف الشخصي",
+      "menu_change_password": "تغيير كلمة المرور",
+      "menu_logout": "تسجيل الخروج"
+    }
+  },
+  "OnBoardPages": {
+    "layout": {
+      "loading": "جارٍ التحميل..."
+    },
+    "lookingToProvide": {
+      "title": "أخبرنا بما تقدمه — اختر خدمتك",
+      "toast_pending_exists": "لديك بالفعل خدمة في انتظار الموافقة. يرجى انتظار الموافقة.",
+      "toast_already_approved": "هذه الخدمة تمت الموافقة عليها بالفعل.",
+      "toast_select_service": "يرجى اختيار خدمة.",
+      "toast_generic_error": "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
+      "success_added": "تمت إضافة الخدمات بنجاح!",
+      "success_updated": "تم تحديث الخدمات بنجاح!",
+      "success_auto_approved": "تمت الموافقة على الخدمة! وثائقك تم التحقق منها بالفعل.",
+      "button_saving": "جارٍ الحفظ...",
+      "button_continue": "متابعة",
+      "status_Approved": "تمت الموافقة",
+      "status_Pending": "معلق",
+      "status_Rejected": "مرفوض"
+    },
+    "addressOnboarding": {
+      "provider_title": "حدد موقع خدمتك",
+      "provider_description": "أخبرنا أين ستقدم خدماتك حتى يتمكن العملاء من العثور عليك.",
+      "provider_address_label": "عنوان خدمتك",
+      "provider_address_placeholder": "أدخل عنوان موقع خدمتك",
+      "shop_owner_title": "حدد موقع متجرك",
+      "shop_owner_description": "أخبرنا أين يقع متجرك حتى يتمكن العملاء من العثور عليك.",
+      "shop_owner_address_label": "عنوان متجرك",
+      "shop_owner_address_placeholder": "أدخل عنوان متجرك",
+      "customer_title": "أكمل إعدادك",
+      "customer_description": "أخبرنا أين تقع حتى نتمكن من إظهار الخدمات القريبة لك.",
+      "customer_address_label": "عنوانك",
+      "customer_address_placeholder": "أدخل عنوانك",
+      "selected_location": "الموقع المحدد",
+      "toast_address_required": "يرجى اختيار عنوان للمتابعة.",
+      "success_address_saved": "تم حفظ العنوان بنجاح!",
+      "toast_save_error": "فشل في حفظ العنوان. يرجى المحاولة مرة أخرى.",
+      "button_saving": "جارٍ الحفظ...",
+      "button_continue": "متابعة"
+    }
+  },
+  "ProviderPages": {
+    "layout": {
+      "nav_dashboard": "لوحة التحكم",
+      "nav_jobs": "الوظائف",
+      "nav_payouts": "المدفوعات",
+      "menu_profile": "الملف الشخصي",
+      "menu_change_password": "تغيير كلمة المرور",
+      "menu_address": "دفتر العناوين",
+      "menu_services": "الخدمات والتحقق",
+      "menu_support": "الدعم",
+      "menu_payments": "المدفوعات",
+      "menu_subscription_plans": "خطط الاشتراك",
+      "menu_billing_history": "سجل الفواتير",
+      "menu_logout": "تسجيل الخروج",
+      "toast_fetch_failed": "فشل جلب بيانات المستخدم"
+    },
+    "changePassword": {
+      "title": "تغيير كلمة المرور",
+      "password_label": "كلمة المرور",
+      "confirm_password_label": "تأكيد كلمة المرور",
+      "save": "حفظ",
+      "loading": "جارٍ التحميل..."
+    },
+    "dashboard": {
+      "tab_inprogress": "قيد التقدم ({count})",
+      "tab_completed": "مكتمل ({count})",
+      "tab_cancelled": "ملغاة ({count})",
+      "loading": "جارٍ التحميل...",
+      "price_label": "السعر: {amount}",
+      "from_label": "من: {city}",
+      "btn_completing": "جارٍ الإكمال...",
+      "btn_complete": "إكمال",
+      "btn_completion_pending": "الإكمال معلق",
+      "btn_cancelling": "جارٍ الإلغاء...",
+      "btn_cancel": "إلغاء",
+      "btn_view": "عرض",
+      "empty_inprogress": "لا توجد وظائف قيد التقدم.",
+      "empty_completed": "لا توجد وظائف مكتملة بعد.",
+      "empty_cancelled": "لا توجد وظائف ملغاة.",
+      "confirm_cancel": "هل أنت متأكد أنك تريد إلغاء هذه الوظيفة؟",
+      "confirm_cancel_desc": "إذا قمت بإلغاء هذه الوظيفة، ستكون هناك غرامة قدرها $20 سيتم خصمها من دفعك التالي، كما يمكننا تعليق حسابك إذا قمت بإلغاء عدد كبير من الوظائف",
+      "toast_complete_success": "تم إكمال الوظيفة بنجاح!",
+      "toast_complete_failed": "فشل إكمال الوظيفة",
+      "toast_complete_generic": "حدث خطأ ما أثناء إكمال الوظيفة",
+      "toast_cancel_success": "تم إلغاء الوظيفة بنجاح!",
+      "toast_cancel_failed": "حدث خطأ ما أثناء إلغاء الوظيفة.",
+      "toast_cancel_error": "خطأ في إلغاء الوظيفة",
+      "upgrade_membership": "قم بترقية عضويتك لعرض وظائف هذه الخدمة.",
+      "upgrade_membership_btn": "ترقية العضوية"
+    },
+    "jobs": {
+      "search_placeholder": "البحث عن وظائف...",
+      "filter_all": "الكل",
+      "count_label": "{count} وظيفة متاحة",
+      "clear_filters": "مسح الفلاتر",
+      "loading": "جارٍ التحميل...",
+      "view_book": "عرض وحجز",
+      "empty": "لا توجد وظائف متاحة.",
+      "price_label": "السعر: {amount}",
+      "from_label": "من: {city}"
+    },
+    "jobDetails": {
+      "title": "تفاصيل الوظيفة",
+      "accept": "قبول الوظيفة",
+      "payment": "الدفع",
+      "payment_badge": "دفع {time} - ${price}",
+      "job_id": "معرف الوظيفة: {id}",
+      "date": "التاريخ:",
+      "distance": "المسافة:",
+      "miles": "أميال",
+      "mile": "ميل",
+      "pickup": "الاستلام",
+      "pickup_between": "الاستلام بين {start} - {end}",
+      "pickup_at": "في {time}",
+      "address_blurred_until_accept": "العنوان غير واضح حتى يتم قبول الوظيفة",
+      "address_blurred": "عنوان غير واضح",
+      "blurred": "غير واضح",
+      "dropoff": "التوصيل",
+      "between": "بين {start} - {end}",
+      "at": "في {time}",
+      "pickup_location": "موقع الاستلام",
+      "job_location": "موقع المهمة",
+      "dropoff_location": "موقع التوصيل",
+      "locations_blurred_until_accept": "اقبل الوظيفة لفتح الموقع الكامل",
+      "accept_confirm": "هل أنت متأكد أنك تريد قبول هذه الوظيفة؟",
+      "accept_warning": "يرجى ملاحظة: بمجرد قبول هذه الوظيفة، يجب إكمالها. عدم إكمالها قد يؤدي إلى تطبيق غرامة على حسابك.",
+      "toast_accept_not_approved": "الخدمة غير معتمدة.",
+      "toast_accept_success": "تم قبول الوظيفة بنجاح",
+      "toast_accept_failed": "حدث خطأ ما أثناء قبول الوظيفة.",
+      "toast_error_loading": "خطأ في تحميل تفاصيل الوظيفة",
+      "loading": "جارٍ التحميل..."
+    },
+    "payouts": {
+      "pending_label": "معلق ({amount})",
+      "completed_label": "مكتمل ({amount})",
+      "loading": "جارٍ التحميل...",
+      "price_label": "السعر: {amount}",
+      "completed_at": "مكتمل: {date}",
+      "empty_pending": "لا توجد مدفوعات معلقة بعد.",
+      "empty_completed": "لا توجد مدفوعات مكتملة."
+    },
+    "profile": {
+      "title": "الملف الشخصي",
+      "loading": "جارٍ التحميل...",
+      "first_name": "الاسم الأول",
+      "last_name": "الاسم الأخير",
+      "email_address": "عنوان البريد الإلكتروني",
+      "language": "اللغة",
+      "first_name_placeholder": "الاسم الأول",
+      "last_name_placeholder": "الاسم الأخير",
+      "email_placeholder": "أدخل البريد الإلكتروني",
+      "select_language": "اختر اللغة",
+      "save": "حفظ",
+      "saving": "جارٍ التحميل...",
+      "validation": {
+        "first_name_required": "الاسم الأول مطلوب",
+        "first_name_min_length": "يجب أن يتكون الاسم الأول من 3 أحرف على الأقل",
+        "last_name_required": "الاسم الأخير مطلوب",
+        "last_name_min_length": "يجب أن يتكون الاسم الأخير من 3 أحرف على الأقل",
+        "email_required": "البريد الإلكتروني مطلوب",
+        "email_valid": "يجب أن يكون البريد الإلكتروني صالحًا"
+      },
+      "errors": {
+        "failed_fetch_user": "فشل جلب بيانات المستخدم",
+        "failed_update_user": "فشل تحديث المستخدم"
+      }
+    },
+    "settings": {
+      "title": "إعدادات مقدم الخدمة",
+      "loading": "جارٍ التحميل...",
+      "select_prompt": "يرجى اختيار قسم إعدادات من القائمة."
+    },
+    "billingHistory": {
+      "title": "سجل الفواتير",
+      "loading": "جارٍ التحميل...",
+      "current_subscription": "الاشتراك الحالي",
+      "transaction_history": "سجل المعاملات",
+      "no_billing_history": "لا يوجد سجل فواتير",
+      "no_subscriptions": "لم يتم العثور على معاملات.",
+      "view_details": "عرض التفاصيل",
+      "subscription_details": "تفاصيل الاشتراك",
+      "manage_subscription": "إدارة اشتراكك وعرض معلومات الفواتير",
+      "table_headers": {
+        "date": "التاريخ",
+        "plan": "الخطة",
+        "amount": "المبلغ",
+        "transaction_id": "معرف المعاملة"
+      },
+      "transaction_date": "تاريخ المعاملة",
+      "failed_fetch_billing": "فشل جلب سجل الفواتير"
+    },
+    "subscription": {
+      "title": "الاشتراك",
+      "loading": "جارٍ التحميل...",
+      "current_plan": "الخطة الحالية",
+      "amount": "المبلغ",
+      "type": "النوع",
+      "start_date": "تاريخ البدء",
+      "end_date": "تاريخ الانتهاء",
+      "ongoing": "مستمر",
+      "active": "نشط",
+      "upgraded": "تم الترقية",
+      "cancelled": "ملغى",
+      "expired": "منتهي الصلاحية",
+      "no_subscription": "لا يوجد اشتراك",
+      "active_subscription_message": "اشتراك نشط مع وصول كامل",
+      "cancelled_access_until": "ملغى - الوصول حتى {date}",
+      "cancelled_access_expired": "ملغى - انتهى الوصول",
+      "expired_renew_message": "منتهي الصلاحية - جدد لمتابعة الوصول",
+      "cancel_subscription": "إلغاء الاشتراك",
+      "cancelling": "جارٍ الإلغاء...",
+      "renew_subscription": "تجديد الاشتراك",
+      "no_active_subscription": "لا يوجد اشتراك نشط",
+      "subscribe_unlock_message": "اشترك لفتح الميزات المميزة",
+      "view_plans": "عرض الخطط",
+      "subscription_cancelled_success": "تم إلغاء الاشتراك بنجاح",
+      "failed_cancel_subscription": "فشل إلغاء الاشتراك"
+    },
+    "support": {
+      "help_center": "مركز المساعدة",
+      "frequently_asked_questions": "الأسئلة الشائعة",
+      "phone_support": "الدعم الهاتفي",
+      "email_support": "الدعم عبر البريد الإلكتروني",
+      "text_us": "أرسل لنا رسالة",
+      "email_us": "أرسل لنا بريدًا إلكترونيًا",
+      "copied": "تم النسخ!",
+      "phone_copied_success": "تم نسخ رقم الهاتف إلى الحافظة!",
+      "failed_copy_phone": "فشل نسخ رقم الهاتف",
+      "faq": {
+        "how_get_paid": {
+          "question": "كيف أتلقى الدفع؟",
+          "answer": "نقدم الدفع المباشر إلى حسابك البنكي المحدد. نحن نقدم شروط دفع مرنة، مما يتيح لك اختيار الخيار الذي يناسبك. نقدم ثلاثة شروط دفع مختلفة: الدفع في نفس اليوم، الدفع خلال 30 يومًا، والدفع خلال 45 يومًا. يعتمد اختيار شرط الدفع بالكامل على تفضيلاتك واحتياجاتك المالية."
+        },
+        "verification_time": {
+          "question": "كم من الوقت يستغرق التحقق من حسابي؟",
+          "answer": "عادةً ما تستغرق العملية حوالي 5-7 أيام عمل لتكتمل. بعد التسجيل بنجاح، يمكنك توقع تلقي إشعار عبر البريد الإلكتروني."
+        },
+        "required_documents": {
+          "question": "ما هي المستندات المطلوبة للتسجيل؟",
+          "answer": "رخصة القيادة: رخصة قيادة صالحة ضرورية إذا كنت تخطط للعمل كسائق أو تشغيل مركبة كجزء من أنشطتك. تأكد من أن رخصتك محدثة وتفي بالمعايير اللازمة لنوع المركبة التي تنوي استخدامها. التأمين على البريد: إذا كنت تعمل كساعي، فمن المهم أن يكون لديك تأمين على البريد. يغطي هذا النوع من التأمين عادةً أي أضرار أو خسائر محتملة للأغراض التي تنقلها. يوفر الحماية لك ولعملائك. التأمين على المسؤولية: التأمين على المسؤولية أمر بالغ الأهمية لحمايتك وأعمالك من المطالبات أو الدعاوى القضائية المحتملة. يغطي الأضرار أو الإصابات التي تسببها للآخرين أثناء عملك. يوصى بأن يكون لديك تأمين على المسؤولية للتخفيف من أي مخاطر مالية. حساب بنكي في المملكة المتحدة: غالبًا ما يكون وجود حساب بنكي في المملكة المتحدة ضروريًا لأسباب مختلفة، مثل تلقي المدفوعات، إدارة الأمور المالية، وضمان إجراء المعاملات بسلاسة مع العملاء أو أصحاب العمل. من الضروري أن يكون لديك حساب بنكي صالح يتيح لك إجراء المعاملات التجارية بكفاءة. هاتف ذكي: في العصر الرقمي الحالي، يعد الهاتف الذكي أداة أساسية للعديد من المهن، بما في ذلك خدمات البريد. يتيح لك الهاتف الذكي البقاء متصلاً، والوصول إلى التطبيقات الضرورية، والتواصل مع العملاء، والتنقل في المسارات، وإدارة عملك بكفاءة. تأكد من أن لديك هاتفًا ذكيًا مع اتصال بالإنترنت وتطبيقات ذات صلة بخط عملك."
+        },
+        "restricted_accounts": {
+          "question": "لماذا يتم تقييد بعض الحسابات؟",
+          "answer": "في شركتنا، نقدر بشدة تعليقات عملائنا. للحفاظ على أعلى معايير الخدمة وضمان رضا العملاء، قد نفرض قيودًا على حسابات معينة بناءً على سجل التعليقات السلبية. يتم فرض هذه القيود لمعالجة أي مشكلات وتحسين الجودة العامة لخدماتنا."
+        },
+        "missed_job": {
+          "question": "ماذا يحدث إذا قبلت وظيفة ولم أحضر كما تم الاتفاق؟",
+          "answer": "نحن نأخذ الالتزام بالمواعيد والموثوقية على محمل الجد، ومن المهم بالنسبة لنا الحفاظ على مستوى عالٍ من الاحترافية. إذا قبلت وظيفة ولم تحضر كما تم الاتفاق، يمكن فرض غرامة. تعمل هذه الغرامة كتذكير للوفاء بالتزاماتك وإعطاء الأولوية لتلبية توقعات عملائنا."
+        },
+        "contact_team": {
+          "question": "كيف يمكنني التواصل مع أحد أعضاء فريقكم؟",
+          "answer": "نحن هنا دائمًا لمساعدتك. إذا كانت لديك أي أسئلة أو مخاوف أو تحتاج إلى مساعدة، فلا تتردد في التواصل مع فريقنا المخصص. يمكنك الاتصال بنا على 02035351953. سيكون فريقنا سعيدًا بتقديم الدعم والإرشاد اللازمين."
+        }
+      }
+    },
+    "wallet": {
+      "add_new_card": "إضافة بطاقة جديدة",
+      "account_holder_name": "اسم صاحب الحساب",
+      "account_number": "رقم الحساب (8 أرقام)",
+      "sort_code": "رمز الفرز (على سبيل المثال، 12-34-56)",
+      "cancel": "إلغاء",
+      "save": "حفظ",
+      "saving": "جارٍ الحفظ...",
+      "loading": "جارٍ التحميل...",
+      "existing_cards": "البطاقات الحالية",
+      "account_holder_required": "اسم صاحب الحساب مطلوب",
+      "account_number_required": "رقم الحساب مطلوب",
+      "must_be_8_digits": "يجب أن يكون 8 أرقام",
+      "sort_code_required": "رمز الفرز مطلوب",
+      "must_be_format": "يجب أن يكون بالصيغة 12-34-56",
+      "card_set_default": "تم تعيين بطاقة الدفع كافتراضية",
+      "failed_update_payment": "فشل تحديث طريقة الدفع",
+      "error_updating_payment": "خطأ في تحديث طريقة الدفع",
+      "card_deleted_success": "تم حذف البطاقة بنجاح!",
+      "error_deleting_card": "خطأ في حذف البطاقة",
+      "card_added_success": "تمت إضافة البطاقة بنجاح!",
+      "failed_add_card": "فشل إضافة البطاقة",
+      "unexpected_error": "حدث خطأ غير متوقع",
+      "failed_load_cards": "فشل تحميل بطاقات الدفع"
+    }
+  },
+  "PublicPages": {
+    "layout": {
+      "login": "تسجيل الدخول",
+      "signup": "التسجيل",
+      "language_selector": "اللغة",
+      "footer_brand": "Swipped",
+      "footer_desc": "في Swippped، نقدم حلولاً سلسة لجميع احتياجاتك. هدفنا هو جعل كل خدمة مريحة وفعالة وبسيطة—مساعدتك في حل المشاكل بسرعة وموثوقية.",
+      "nav_home": "الرئيسية",
+      "nav_collection": "الاستلام",
+      "nav_shop": "المتجر",
+      "nav_order_food": "طلب الطعام",
+      "nav_sales": "المبيعات",
+      "nav_about": "معلومات عنا",
+      "nav_services": "الخدمات",
+      "nav_partner": "كن شريكًا معنا",
+      "footer_terms": "الشروط",
+      "footer_privacy": "الخصوصية",
+      "footer_cookies": "ملفات تعريف الارتباط",
+      "footer_copyright": "Swipped © {year}. جميع الحقوق محفوظة."
+    },
+    "home": {
+      "services_title": "الخدمات",
+      "from_price": "من ${price}",
+      "continue": "متابعة",
+      "moving_delivery_title": "النقل والتوصيل",
+      "moving_delivery_desc": "على بابك في 20 دقيقة. من الطرود الصغيرة إلى الأحمال الكاملة للفانات، سائقونا جاهزون في جميع أنحاء البلاد. احجز في دقائق وسيكون هناك شخص على بابك في غضون 20 دقيقة.",
+      "cleaning_title": "التنظيف الاحترافي",
+      "cleaning_desc": "على بابك في 20 دقيقة. من التنظيف السريع للمنزل إلى التنظيف العميق، عمال النظافة الموثوقون لدينا جاهزون في جميع أنحاء البلاد. احجز في دقائق وسيكون هناك شخص على بابك في غضون 20 دقيقة.",
+      "locksmith_title": "خدمات الأقفال",
+      "locksmith_desc": "على بابك في 20 دقيقة. هل تم قفلك خارج المنزل أو تحتاج إلى إصلاحات عاجلة للأقفال؟ صانعو الأقفال لدينا جاهزون في جميع أنحاء البلاد. احجز في دقائق وسيكون هناك شخص على بابك في غضون 20 دقيقة.",
+      "click_collect_title": "الاستلام والتوصيل",
+      "click_collect_desc": "على بابك في 20 دقيقة. ليس لديك وقت لاستلام طلبك؟ سنقوم بجمع مشترياتك من المتاجر في أي متجر في المملكة المتحدة وتوصيلها مباشرة إلى بابك، بسرعة وخالية من المتاعب.",
+      "hero_title": "الخدمات الأساسية، مبسطة",
+      "hero_subtitle": "بسيطة",
+      "rating_label": "تقييم 5.0",
+      "rating_from_clients": "تقييم من العملاء الراضين",
+      "hero_desc": "من التسوق والتوصيل إلى الأعطال والتنظيف — احصل على كل شيء مع Swipped.",
+      "hero_desc_subtitle": "تسوق. احجز. انتهى.",
+      "hero_desc_subtitle_words": {
+        "shop": "اتصل",
+        "book": "استكشف",
+        "done": "+ المزيد"
+      },
+      "book_service": "حجز خدمة",
+      "shop_now": "تسوق الآن",
+      "ways_to_use_title": "طرق استخدام swipped",
+      "our_services": "المحترف المحلي الخاص بك",
+      "services_available": "{count} خدمة متاحة",
+      "showing_services_in": "عرض الخدمات في {location} {flag}",
+      "change": "تغيير",
+      "global_users": "المستخدمون العالميون: {count}",
+      "your_location": "موقعك: {count}",
+      "ecosystem_title": "نظام Swipped البيئي",
+      "services_live": "{count} خدمة نشطة",
+      "global_users_near_you": "{globalCount} مستخدم عالمي • {nearYouCount} بالقرب منك",
+      "order_now": "اطلب الآن",
+      "book_now": "احجز الآن",
+      "menu_title": "القائمة",
+      "mini_apps_title": "التطبيقات المصغرة",
+      "service_available": "خدمة متاحة",
+      "global_users_label": "المستخدمون العالميون",
+      "local_users": "المستخدمون المحليون",
+      "categories": "الفئات",
+      "instant_deliveries": "التوصيلات الفورية",
+      "reservations": "الحجوزات",
+      "book_in_seconds": "احجز في ثوانٍ",
+      "services_label": "الخدمات",
+      "view_all_mini_apps": "عرض جميع التطبيقات المصغرة",
+      "promo_eyebrow": "عرض لفترة محدودة",
+      "promo_discount": "خصم 15%",
+      "promo_sub": "على أول رحلة تاكسي · استخدم الكود",
+      "promo_code": "SWIPPED15",
+      "miniApps": {
+        "apps": {
+          "digitalLandExchange": "تبادل الأراضي الرقمي",
+          "swippedWorkforce": "قوة عمل Swipped",
+          "swippedConnect": "Swipped Connect",
+          "swippedLiveStreaming": "البث المباشر Swipped",
+          "swippedVirtualWorld": "Swipped Virtual World 🗺",
+          "charityDonations": "Swipped Donations"
+        },
+        "comingSoon": {
+          "title": "قريباً",
+          "message": "{appName} قريباً! ترقبوا التحديثات.",
+          "defaultAppName": "هذه الميزة"
+        },
+        "add": "إضافة"
+      },
+      "promotional_slider": {
+        "slide1": {
+          "title": "حساب Swipped التجاري",
+          "desc": "خذ عملك إلى المستوى التالي مع حساب Swipped التجاري — مليء بالأدوات والمكافآت لمساعدتك على النمو"
+        },
+        "slide2": {
+          "title": "لنبدأ",
+          "desc": "خذ عملك إلى المستوى التالي مع Swipped — مصمم لمساعدتك على التوسع بشكل أسرع، والإدارة بشكل أفضل، وكسب المزيد"
+        },
+        "slide3": {
+          "title": "كن شريكًا معنا",
+          "desc": "ابدأ في دقائق — سجل وابدأ في الكسب مع Swipped"
+        },
+        "slide4": {
+          "title": "على بعد نقرة واحدة",
+          "desc": "جميع احتياجاتك اليومية، معالجة في مكان واحد — بدون ضغط، بدون إزعاج"
+        },
+        "slide5": {
+          "title": "إتمام عملية التمرير",
+          "desc": "بيع من أي مكان — سنجلب لك العملاء، ونغلف منتجاتك، ونشحنها لك"
+        },
+        "slide6": {
+          "title": "جميع الخدمات، منصة واحدة",
+          "desc": "مطاعم محلية ومتاجر ومقدمي خدمات للحجوزات الفورية والتوصيل السريع والتواصل السلس"
+        },
+        "slide7": {
+          "title": "الأراضي الافتراضية",
+          "desc": "امتلك وتداول أصول الأراضي الافتراضية المصممة لتجارب رقمية مستقبلية، قيمة طويلة الأجل، والتكامل داخل نظام Swipped البيئي."
+        },
+        "slide8": {
+          "title": "التمويل الجماعي",
+          "desc": "ادعم نمو Swipped من خلال الانضمام إلى رحلة التمويل الجماعي لدينا ومساعدة في بناء مستقبل الخدمات المتصلة والابتكار الرقمي."
+        }
+      },
+      "services": {
+        "shop": {
+          "name": "المتاجر",
+          "description": "احصل على ما تريده، عندما تريده. من الضروريات اليومية إلى الهدايا في اللحظة الأخيرة، نأتي بالمتجر إلى بابك"
+        },
+        "restaurant": {
+          "name": "المطاعم",
+          "description": "احصل على وجباتك المفضلة مباشرة إليك بسهولة. تصفح المطاعم، استكشف النكهات الجديدة، واطلب في بضع نقرات فقط"
+        },
+        "supermarket": {
+          "name": "المتاجر الكبرى",
+          "description": "تسوق للبقالة والضروريات اليومية من متاجرك الكبرى المفضلة. توصيل سريع مباشرة إلى بابك"
+        },
+        "swipped_rides": {
+          "name": "Taxi Rides",
+          "description": "احجز رحلات آمنة وبأسعار معقولة عند الطلب، مع سائقين موثقين، تتبع مباشر، وأسعار شفافة لكل رحلة."
+        },
+        "restaurant_reservation": {
+          "name": "حجز المطعم",
+          "description": "يمكنك الآن حجز طاولة في مطعمك المفضل مباشرة على Swipped. لا مكالمات، لا طوابير — فقط اضغط، احجز، واستمتع."
+        },
+        "luggage_storage": {
+          "name": "تخزين الأمتعة",
+          "description": "سافر بخفة وبدون ضغط. احفظ حقائبك معنا لبضع ساعات، أو بضعة أيام، أو حتى بضعة أسابيع—أي شيء يناسب خططك."
+        },
+        "dry_cleaning_pick_up": {
+          "name": "التنظيف الجاف",
+          "description": "استمتع بملابس نظيفة تمامًا دون مغادرة منزلك. نجمع ملابسك مباشرة من عتبة بابك، وننظفها تنظيفًا جافًا احترافيًا، ونعيدها إليك طازجة"
+        },
+        "recovery": {
+          "name": "خدمة الاستعادة",
+          "description": "عالق على الطريق؟ فريق الاستعادة المخصص لدينا على بعد نقرة واحدة فقط. بغض النظر عن مكانك، تعمل شبكتنا على مستوى البلاد على مدار الساعة طوال أيام الأسبوع، لتوفير مساعدة سريعة وآمنة وموثوقة."
+        },
+        "cleaning": {
+          "name": "خدمة التنظيف",
+          "description": "من المنازل إلى المساحات التجارية إلى عقارات Airbnb — لدينا ما تحتاجه. استدعاء عاجل أو موعد مجدول، محترفونا جاهزون للمساعدة."
+        },
+        "locksmith": {
+          "name": "خدمات الأقفال",
+          "description": "إذا كنت محبوسًا خارجًا أو فقدت مفاتيحك، سيأتي أقفالونا إليك مباشرة. نعمل على مستوى البلاد ونقدم المساعدة على مدار الساعة طوال أيام الأسبوع."
+        },
+        "car_key_replacement": {
+          "name": "استبدال مفاتيح السيارات",
+          "description": "فقدت مفتاح سيارتك؟ سنستبدله أينما كنت. يأتي فنيونا المتخصصون مباشرة إلى موقعك، ويقطع وبرمج مفتاحك الجديد على الفور حتى تتمكن من العودة إلى الطريق دون أي متاعب."
+        },
+        "removals": {
+          "name": "إزالة النفايات",
+          "description": "تحتاج إلى إزالة النفايات اليوم؟ يمكننا المساعدة في أي وقت. فرق الإزالة السريعة والموثوقة لدينا متاحة عند الطلب لتنظيف العناصر غير المرغوب فيها من منزلك أو عملك أو حديقتك. من العناصر الفردية إلى إزالة الأحمال الكاملة"
+        },
+        "click_and_collect": {
+          "name": "الاستلام والتوصيل",
+          "description": "جمع على مستوى البلاد من أي متجر، يتم توصيله مباشرة إلى منزلك. مع Swipped، يصبح كل شيء في متناول اليد وبدون جهد."
+        },
+        "van": {
+          "name": "خدمة البريد",
+          "description": "أرسله بسرعة — أرسله مع Swipped. من الطرود الصغيرة إلى الأثاث والمنصات، نتعامل مع كل شيء مع أسطول على مستوى البلاد جاهز لمساعدتك على الفور."
+        },
+        "mot_resrevations": {
+          "name": "فحص MOT والخدمة",
+          "description": "احجز فحوصات MOT وخدمة السيارات الموثوقة مع المحترفين المعتمدين للحفاظ على سيارتك جاهزة للطريق."
+        },
+        "shisha_lounge": {
+          "name": "أماكن الشيشة",
+          "description": "احجز مكانك في أفضل أماكن الشيشة. احجز طاولتك واستمتع بأمسية مريحة مع الأصدقاء."
+        },
+        "spa": {
+          "name": "علاجات السبا",
+          "description": "استرخ واستمتع بعلاجات السبا الاحترافية والتدليك وخدمات العافية المحجوزة على الفور."
+        },
+        "beauty": {
+          "name": "صالون التجميل",
+          "description": "احجز مواعيد التجميل للشعر والأظافر وعلاجات البشرة مع المحترفين الموثوقين بالقرب منك."
+        },
+        "healthcare": {
+          "name": "المواعيد الطبية",
+          "description": "احجز موعد طبي مع مقدمي رعاية صحية موثوقين. طبيب أسنان وعيادة وخدمات صحية أخرى."
+        },
+        "events": {
+          "name": "خدمات الأحداث",
+          "description": "احجز خدمات احترافية للأحداث. توفير الموسيقى والفنانين والشخصيات للفعاليات الخاصة بك."
+        },
+        "entertainment": {
+          "name": "أماكن الترفيه",
+          "description": "احجز تجارب ترفيهية مثيرة. تجارب الواقع الافتراضي والبولينج وغرف الكاراوكي."
+        }
+      },
+      "cards": {
+        "click_collect_title": "الاستلام والتوصيل – على بابك في 20 دقيقة",
+        "click_collect_desc": "ليس لديك وقت لاستلام طلبك؟ سنقوم بجمع مشترياتك من المتاجر في أي متجر في المملكة المتحدة وتوصيلها مباشرة إلى بابك، بسرعة وخالية من المتاعب.",
+        "moving_title": "النقل والتوصيل – على بابك في 20 دقيقة",
+        "moving_desc": "نجعل من السهل والملائم حجز الخدمات التي تحتاجها. بمجرد تقديم طلب، يمكن لمقدمي الخدمات الموثوقين لدينا الوصول إليك في غضون 20-60 دقيقة، مما يضمن مساعدة سريعة وموثوقة عندما تحتاجها أكثر.",
+        "fast_delivery_title": "فقط 60 دقيقة. لا انتظار، لا إزعاج – تسوق سريع وموثوق مبسط.",
+        "fast_delivery_desc": "تسوق من متاجرك المحلية المفضلة واحصل على أي منتج تقريباً يتم توصيله مباشرة إلى بابك في",
+        "rubbish_removal": "في Swippped، نقدم حلولاً سلسة لجميع احتياجاتك. هدفنا هو جعل كل خدمة مريحة وفعالة وبسيطة—مساعدتك في حل المشاكل بسرعة وموثوقية."
+      },
+      "reliable": "موثوق",
+      "solutions": "حلول",
+      "contact": {
+        "title": "تواصل معنا للحصول على دعم سريع وموثوق",
+        "desc": "هل لديك سؤال أو تحتاج إلى إحدى خدماتنا؟ املأ النموذج أدناه وسيرد فريقنا بسرعة.",
+        "address": "لندن، المملكة المتحدة",
+        "phone": "02074867727",
+        "email": "swipped@customerservice.com",
+        "first_name_label": "الاسم الأول",
+        "first_name_ph": "الاسم الأول",
+        "last_name_label": "الاسم الأخير",
+        "last_name_ph": "الاسم الأخير",
+        "email_label": "البريد الإلكتروني",
+        "email_ph": "البريد الإلكتروني",
+        "phone_label": "الهاتف",
+        "phone_ph": "الهاتف",
+        "message_label": "الرسالة",
+        "message_ph": "الرسالة",
+        "submit": "إرسال"
+      }
+    },
+    "booking": {
+      "continue": "متابعة",
+      "toast_success": "تم إنشاء وظيفة {category} بنجاح",
+      "toast_generic_error": "حدث خطأ ما!",
+      "toast_failed_save": "فشل حفظ الوظيفة",
+      "errors": {
+        "pickupAddressLine1": "عنوان الاستلام مطلوب",
+        "dropOffAddressLine1": "عنوان التوصيل مطلوب",
+        "distance": "يرجى تحديد عناوين الاستلام والتوصيل",
+        "category": "الفئة مطلوبة",
+        "title": "عنوان الوظيفة مطلوب",
+        "vanSize": "حجم الفان مطلوب",
+        "movingItem": "العنصر المراد نقله مطلوب",
+        "make": "ماركة المركبة مطلوبة",
+        "model": "طراز المركبة مطلوب",
+        "year": "سنة المركبة مطلوبة",
+        "howManyItems": "عدد العناصر مطلوب",
+        "howManyRooms": "عدد الغرف مطلوب",
+        "howManyBathrooms": "عدد الحمامات مطلوب",
+        "howManyHours": "عدد الساعات مطلوب",
+        "typeOfPlace": "نوع المكان مطلوب",
+        "typeOfKey": "نوع المفتاح مطلوب",
+        "typeOfLock": "نوع القفل مطلوب",
+        "storeName": "اسم المتجر مطلوب",
+        "clickAndCollectIdNumber": "رقم معرف الاستلام مطلوب",
+        "yourName": "اسمك مطلوب",
+        "contactNumber": "رقم الاتصال مطلوب",
+        "invalid_contact": "رقم اتصال غير صالح",
+        "pickupDate": "تاريخ الاستلام مطلوب",
+        "pickupFixedTime": "وقت الاستلام مطلوب إذا لم يكن مرنًا",
+        "dropOffDate": "تاريخ التوصيل مطلوب",
+        "dropOffFixedTime": "وقت التوصيل مطلوب إذا لم يكن مرنًا"
+      }
+    },
+    "jobDistanceForm": {
+      "loading_maps": "جارٍ تحميل خرائط جوجل لاقتراحات العناوين...",
+      "enter_pickup": "أدخل عنوان الاستلام",
+      "enter_dropoff": "أدخل عنوان التوصيل",
+      "enter_your_location": "أدخل موقعك",
+      "placeholder_pickup": "أدخل عنوان الاستلام",
+      "placeholder_dropoff": "أدخل عنوان التوصيل",
+      "estimated_distance": "المسافة المقدرة: {miles} أميال",
+      "calculating": "جارٍ الحساب...",
+      "another_services": "خدمات أخرى",
+      "pickup_badge": "✅ الاستلام: {address}",
+      "dropoff_badge": "✅ التوصيل: {address}",
+      "map_title": "اختر المواقع على الخريطة",
+      "banner_title": "خدمة احترافية",
+      "banner_desc": "سريعة، موثوقة، واحترافية",
+      "banner_available": "متوفرة"
+    },
+    "detailForm": {
+      "job_title": "عنوان الوظيفة",
+      "job_title_ph": "عنوان الوظيفة...",
+      "van_type": "نوع المركبة",
+      "select_van_size": "اختر نوع المركبة",
+      "bike": "دراجة",
+      "motorbike": "دراجة نارية",
+      "car": "سيارة",
+      "small_van": "فان صغير",
+      "medium_van": "فان متوسط",
+      "large_van": "فان كبير",
+      "xl_van": "فان إكس إل",
+      "moving_what": "ماذا تنقل؟",
+      "moving_what_ph": "مثال: صناديق، أثاث، إلخ.",
+      "help_loading": "هل ستساعد في التحميل؟",
+      "two_men": "هل يتطلب الأمر شخصين؟",
+      "vehicle_make": "ماركة المركبة",
+      "vehicle_make_ph": "أدخل ماركة المركبة",
+      "select_vehicle_make": "اختر ماركة المركبة",
+      "vehicle_model": "طراز المركبة",
+      "vehicle_model_ph": "أدخل طراز المركبة",
+      "select_vehicle_model": "اختر طراز المركبة",
+      "vehicle_year": "سنة المركبة",
+      "vehicle_year_ph": "أدخل سنة المركبة",
+      "car_turn_on": "هل تعمل السيارة؟",
+      "how_many_items": "كم عدد العناصر؟",
+      "select": "اختر",
+      "type_of_key": "نوع المفتاح",
+      "type_of_lock": "نوع القفل",
+      "how_many_rooms": "كم عدد غرف النوم؟",
+      "how_many_bathrooms": "كم عدد الحمامات؟",
+      "how_many_hours": "كم عدد الساعات؟",
+      "type_of_property": "نوع العقار",
+      "has_cleaning_products": "هل لديك منتجات تنظيف؟",
+      "store_name": "اسم المتجر",
+      "store_name_ph": "أدخل اسم المتجر",
+      "click_collect_id": "رقم معرف الاستلام",
+      "click_collect_id_ph": "أدخل رقم المعرف",
+      "your_name": "اسمك",
+      "your_name_ph": "أدخل اسمك",
+      "contact_number": "رقم الاتصال",
+      "contact_number_ph": "أدخل رقم الاتصال",
+      "pickup_date": "تاريخ الاستلام",
+      "job_date": "تاريخ المهمة",
+      "date_ph": "اختر التاريخ",
+      "time_ph": "اختر الوقت",
+      "today": "اليوم",
+      "tomorrow": "غداً",
+      "pickup_time_flexible": "هل وقت الاستلام مرن؟",
+      "pickup_time": "وقت الاستلام",
+      "dropoff_date": "تاريخ التوصيل",
+      "dropoff_time_flexible": "هل وقت التوصيل مرن؟",
+      "dropoff_time": "وقت التوصيل",
+      "notes": "ملاحظات (اختياري)",
+      "notes_ph": "تفاصيل إضافية حول حجزك..."
+    },
+    "checkout": {
+      "title": "الدفع",
+      "booking_summary": "ملخص الحجز",
+      "pickup": "الاستلام:",
+      "dropoff": "التوصيل:",
+      "distance": "المسافة:",
+      "miles": "أميال",
+      "date": "التاريخ:",
+      "pickup_time": "وقت الاستلام:",
+      "loading_assistance": "مساعدة التحميل:",
+      "two_men_service": "خدمة شخصين:",
+      "total": "الإجمالي:",
+      "payment_method": "طريقة الدفع",
+      "processing": "جارٍ المعالجة...",
+      "pay_amount": "ادفع {amount}",
+      "modal_title": "طرق الدفع الخاصة بي",
+      "payment_methods": {
+        "apple_pay": "Apple Pay",
+        "klarna": "الدفع على 3 دفعات مع Klarna",
+        "add_card": "إضافة بطاقة جديدة"
+      },
+      "success_title": "تم تأكيد الحجز!",
+      "success_desc": "تم إرسال حجزك بنجاح. ستتلقى بريدًا إلكترونيًا للتأكيد قريبًا.",
+      "booking_id": "معرف الحجز: #{id}"
+    },
+    "terms": {
+      "title": "الشروط والأحكام",
+      "last_updated": "آخر تحديث: ديسمبر 2024",
+      "section_1_title": "1. قبول الشروط",
+      "section_1_content": "من خلال الوصول إلى Swipped واستخدامه، فإنك تقبل وتوافق على الالتزام بشروط وأحكام هذا الاتفاق. إذا كنت لا توافق على ما سبق، يرجى عدم استخدام هذه الخدمة.",
+      "section_2_title": "2. وصف الخدمة",
+      "section_2_content": "Swipped هي منصة تربط العملاء بمقدمي الخدمات لمهام متنوعة، بما في ذلك التوصيل، التنظيف، خدمات الأقفال، وغيرها. نحن نعمل كوسيط ولسنا مسؤولين مباشرة عن جودة الخدمات التي يقدمها أطراف ثالثة.",
+      "section_3_title": "3. مسؤوليات المستخدم",
+      "section_3_content": "المستخدمون مسؤولون عن تقديم معلومات دقيقة، معاملة مقدمي الخدمات باحترام، وضمان ظروف عمل آمنة. يجب إجراء الدفع كما تم الاتفاق عليه في تأكيد الحجز.",
+      "section_4_title": "4. مسؤوليات مقدم الخدمة",
+      "section_4_content": "يجب على مقدمي الخدمات الحفاظ على المعايير المهنية، الوصول في الوقت المحدد، إكمال الخدمات كما هو موصوف، والحفاظ على التأمينات والتراخيص اللازمة عند الاقتضاء.",
+      "section_5_title": "5. شروط الدفع",
+      "section_5_content": "تتم معالجة جميع المدفوعات بشكل آمن من خلال منصتنا. يتم عرض الأسعار بوضوح قبل تأكيد الحجز. تخضع المبالغ المستردة لسياسة استرداد الأموال الخاصة بنا ويجب طلبها خلال الفترة المحددة.",
+      "section_6_title": "6. تحديد المسؤولية",
+      "section_6_content": "مسؤولية Swipped محدودة إلى الحد الذي يسمح به القانون. نحن لسنا مسؤولين عن الأضرار غير المباشرة أو العرضية أو التبعية الناتجة عن استخدام منصتنا أو الخدمات التي يقدمها أطراف ثالثة.",
+      "section_7_title": "7. الإنهاء",
+      "section_7_content": "نحتفظ بالحق في إنهاء أو تعليق الوصول إلى خدمتنا على الفور، دون إشعار مسبق أو مسؤولية، لأي سبب كان، بما في ذلك، على سبيل المثال لا الحصر، إذا انتهكت الشروط.",
+      "section_8_title": "8. التغييرات في الشروط",
+      "section_8_content": "نحتفظ بالحق في تعديل هذه الشروط في أي وقت. سيتم إخطار المستخدمين بالتغييرات الجوهرية عبر البريد الإلكتروني أو الإشعارات على المنصة. يشكل استمرار استخدام الخدمة قبولًا للشروط المعدلة.",
+      "contact_info": "للأسئلة حول هذه الشروط، يرجى التواصل معنا على legal@swipped.com"
+    },
+    "privacy": {
+      "title": "سياسة الخصوصية",
+      "last_updated": "آخر تحديث: ديسمبر 2024",
+      "section_1_title": "1. المعلومات التي نجمعها",
+      "section_1_content": "نجمع المعلومات التي تقدمها لنا مباشرة، مثل عند إنشاء حساب، حجز خدمة، أو التواصل معنا. يشمل ذلك اسمك، عنوان بريدك الإلكتروني، رقم هاتفك، ومعلومات الدفع.",
+      "section_2_title": "2. كيف نستخدم معلوماتك",
+      "section_2_content": "نستخدم المعلومات التي نجمعها لتوفير خدماتنا، صيانتها، وتحسينها، معالجة المعاملات، إرسال إشعارات فنية ورسائل دعم، والتواصل معك بشأن الخدمات والعروض الترويجية.",
+      "section_3_title": "3. مشاركة المعلومات",
+      "section_3_content": "قد نشارك معلوماتك مع مقدمي الخدمات الذين يؤدون خدمات نيابة عنا، مثل معالجة الدفع ودعم العملاء. لا نبيع أو نؤجر معلوماتك الشخصية لأطراف ثالثة.",
+      "section_4_title": "4. أمان البيانات",
+      "section_4_content": "نتخذ تدابير معقولة للمساعدة في حماية معلوماتك الشخصية من الضياع، السرقة، سوء الاستخدام، والوصول غير المصرح به. ومع ذلك، لا يوجد طريقة نقل عبر الإنترنت آمنة بنسبة 100%.",
+      "section_5_title": "5. الاحتفاظ بالبيانات",
+      "section_5_content": "نحتفظ بمعلوماتك طالما أن حسابك نشط أو حسب الحاجة لتقديم الخدمات لك. يجوز لنا أيضًا الاحتفاظ بمعلوماتك واستخدامها حسب الضرورة للوفاء بالتزاماتنا القانونية.",
+      "section_6_title": "6. حقوقك",
+      "section_6_content": "لديك الحق في الوصول إلى معلوماتك الشخصية أو تحديثها أو حذفها. يمكنك أيضًا اختيار عدم تلقي بعض الاتصالات منا. تواصل معنا لممارسة هذه الحقوق.",
+      "section_7_title": "7. ملفات تعريف الارتباط والتتبع",
+      "section_7_content": "نستخدم ملفات تعريف الارتباط وتقنيات التتبع المشابهة لتتبع النشاط على خدمتنا والاحتفاظ بمعلومات معينة. يمكنك ضبط متصفحك لرفض جميع ملفات تعريف الارتباط أو للإشارة عند إرسال ملف تعريف ارتباط.",
+      "section_8_title": "8. خدمات الأطراف الثالثة",
+      "section_8_content": "قد تحتوي خدمتنا على روابط لمواقع أو خدمات أطراف ثالثة. نحن لسنا مسؤولين عن ممارسات الخصوصية لهذه الأطراف الثالثة. نوصي بقراءة سياسات الخصوصية الخاصة بهم.",
+      "section_9_title": "9. التغييرات في سياسة الخصوصية",
+      "section_9_content": "قد نحدث سياسة الخصوصية الخاصة بنا من وقت لآخر. سنخطرك بأي تغييرات عن طريق نشر سياسة الخصوصية الجديدة على هذه الصفحة وتحديث تاريخ السريان.",
+      "contact_info": "للأسئلة حول سياسة الخصوصية هذه، يرجى التواصل معنا على privacy@swipped.com"
+    },
+    "partnerWithUs": {
+      "title": "شراكة معنا",
+      "subtitle": "انضم إلى Swipped ونمّ عملك معنا. اختر الشراكة التي تناسبك بشكل أفضل.",
+      "restaurants": {
+        "title": "للمطاعم",
+        "description": "يمكن للمطاعم التسجيل ونمو أعمالها من خلال تلبية طلب العملاء على تطبيقنا. الإعداد سريع وبسيط، ونوفر لك كل ما تحتاجه — بما في ذلك السائقين للتوصيلات ونظام الحجوزات لخدمات تناول الطعام. استمتع بتجربة خالية من المتاعب بدون رسوم تسجيل ورسوم 15% فقط لكل حجز.",
+        "feature1": "إعداد سريع وبسيط",
+        "feature1Info": "إعداد سريع وبسيط لمطعمك.\nأضف مطعمك، ارفع قائمة الطعام الخاصة بك، وابدأ العمل في دقائق قليلة. لا حاجة لمهارات تقنية أو نماذج طويلة أو إعداد معقد. ابدأ في استقبال الطلبات والحجوزات والعملاء على الفور — المنصة مصممة لجعل كل شيء بلا جهد.",
+        "feature2": "سائقون للتوصيلات متضمنون",
+        "feature2Info": "نتولى جميع التوصيلات لمطعمك.\nمنصتنا تعتني بكل شيء من الاستلام إلى التسليم، لذلك لن تحتاج أبدًا لتوظيف سائقين أو إدارة الإرسال. يتم تسليم الطلبات بسرعة وتتبعها في الوقت الفعلي، مما يمنح عملاءك تجربة سلسة ويبقي عملياتك خالية من الإجهاد.",
+        "feature3": "نظام حجوزات لخدمات تناول الطعام",
+        "feature3Info": "اقبل حجوزات تناول الطعام على الفور من خلال منصتنا.\nيمكن للعملاء حجز طاولة في مطعمك في ثوانٍ، مع جدولة في الوقت الفعلي وتأكيد فوري. زد حركة المرور، قلل من عدم الحضور، واملأ المزيد من الطاولات دون بذل جهد.",
+        "feature4": "لا رسوم تسجيل، 15% فقط لكل حجز",
+        "feature4Info": "تدفع فقط عندما تحصل على النتائج، مما يجعله خاليًا من المخاطر وقائمًا بالكامل على الأداء. نحن نقدم حتى فترة تجريبية مجانية لمدة شهرين، حتى تتمكن من اختبار المنصة، واستقبال الحجوزات، ورؤية النتائج الحقيقية قبل الالتزام. لا تكاليف مقدمة، فقط رسوم بسيطة 15% لكل حجز.",
+        "infoDescription": "إعداد سريع وبسيط لمطعمك.\nأضف مطعمك، ارفع قائمة الطعام الخاصة بك، وابدأ العمل في دقائق قليلة. لا حاجة لمهارات تقنية أو نماذج طويلة أو إعداد معقد. ابدأ في استقبال الطلبات والحجوزات والعملاء على الفور — المنصة مصممة لجعل كل شيء بلا جهد.\nنتولى جميع التوصيلات لمطعمك.\nمنصتنا تعتني بكل شيء من الاستلام إلى التسليم، لذلك لن تحتاج أبدًا لتوظيف سائقين أو إدارة الإرسال. يتم تسليم الطلبات بسرعة وتتبعها في الوقت الفعلي، مما يمنح عملاءك تجربة سلسة ويبقي عملياتك خالية من الإجهاد.\nاقبل حجوزات تناول الطعام على الفور من خلال منصتنا.\nيمكن للعملاء حجز طاولة في مطعمك في ثوانٍ، مع جدولة في الوقت الفعلي وتأكيد فوري. زد حركة المرور، قلل من عدم الحضور، واملأ المزيد من الطاولات دون بذل جهد.\nتدفع فقط عندما تحصل على النتائج، مما يجعله خاليًا من المخاطر وقائمًا بالكامل على الأداء. نحن نقدم حتى فترة تجريبية مجانية لمدة شهرين، حتى تتمكن من اختبار المنصة، واستقبال الحجوزات، ورؤية النتائج الحقيقية قبل الالتزام."
+      },
+      "shopOwners": {
+        "title": "لأصحاب المتاجر",
+        "description": "يمكن لأصحاب المتاجر الانضمام إلى منصتنا وزيادة المبيعات من خلال الاتصال المباشر بطلب العملاء. استفد من نظام الشراكة الخاص بنا واستمتع بالدعاية المجانية بدون جهد. البدء سريع وسهل — لا رسوم تسجيل، فقط عملية إعداد سلسة. نتولى التوصيلات لك، مما يجعلها خالية تمامًا من المتاعب. ادفع فقط رسوم 15% لكل طلب وابدأ في نمو عملك اليوم.",
+        "feature1": "الاتصال المباشر بطلب العملاء",
+        "feature1Info": "إعداد سريع وبسيط لمتجرك.\nأضف متجرك، ارفع منتجاتك، وابدأ العمل في دقائق قليلة. لا حاجة لمهارات تقنية أو نماذج طويلة أو إعداد معقد. ابدأ في استقبال الطلبات والعملاء على الفور — المنصة مصممة لجعل كل شيء بلا جهد. اتصل مباشرة بالعملاء المستعدين للشراء.",
+        "feature2": "نظام شراكة للدعاية المجانية",
+        "feature2Info": "يمكن للمتسوقين تصفح وشراء واستلام عناصرهم بسرعة وسهولة. تحصل على المزيد من الطلبات والمزيد من الرؤية والمزيد من العملاء العائدين — دون بذل جهد كبير. يوفر نظام الشراكة الخاص بنا دعاية مجانية ويساعدك في الوصول إلى المزيد من العملاء من خلال منشئي المحتوى والمشاركة الاجتماعية.",
+        "feature3": "نتولى جميع التوصيلات لك",
+        "feature3Info": "نتولى جميع التوصيلات لمتجرك.\nمنصتنا تعتني بكل شيء من الاستلام إلى التسليم، لذلك لن تحتاج أبدًا لتوظيف سائقين أو إدارة الإرسال. يتم تسليم الطلبات بسرعة وتتبعها في الوقت الفعلي، مما يمنح عملاءك تجربة سلسة ويبقي عملياتك خالية من الإجهاد.",
+        "feature4": "لا رسوم تسجيل، 15% فقط لكل طلب",
+        "feature4Info": "تدفع فقط عندما تحصل على النتائج، مما يجعله خاليًا من المخاطر وقائمًا بالكامل على الأداء. نحن نقدم حتى فترة تجريبية مجانية لمدة شهرين، حتى تتمكن من اختبار المنصة، واستقبال الحجوزات، ورؤية النتائج الحقيقية قبل الالتزام. لا تكاليف مقدمة، فقط رسوم بسيطة 15% لكل طلب.",
+        "infoDescription": "إعداد سريع وبسيط لمتجرك.\nأضف متجرك، ارفع منتجاتك، وابدأ العمل في دقائق قليلة. لا حاجة لمهارات تقنية أو نماذج طويلة أو إعداد معقد. ابدأ في استقبال الطلبات والعملاء على الفور — المنصة مصممة لجعل كل شيء بلا جهد.\nنتولى جميع التوصيلات لمتجرك.\nمنصتنا تعتني بكل شيء من الاستلام إلى التسليم، لذلك لن تحتاج أبدًا لتوظيف سائقين أو إدارة الإرسال. يتم تسليم الطلبات بسرعة وتتبعها في الوقت الفعلي، مما يمنح عملاءك تجربة سلسة ويبقي عملياتك خالية من الإجهاد.\nيمكن للمتسوقين تصفح وشراء واستلام عناصرهم بسرعة وسهولة. تحصل على المزيد من الطلبات والمزيد من الرؤية والمزيد من العملاء العائدين — دون بذل جهد كبير.\nتدفع فقط عندما تحصل على النتائج، مما يجعله خاليًا من المخاطر وقائمًا بالكامل على الأداء. نحن نقدم حتى فترة تجريبية مجانية لمدة شهرين، حتى تتمكن من اختبار المنصة، واستقبال الحجوزات، ورؤية النتائج الحقيقية قبل الالتزام."
+      },
+      "serviceProviders": {
+        "title": "لمقدمي الخدمات",
+        "description": "يمكن لمقدمي الخدمات الانضمام إلى منصتنا ونمو أعمالهم من خلال الاتصال المباشر بالعملاء الذين يحتاجون خدماتهم. استمتع بالرؤية الفورية من خلال نظام الشراكة المدمج الخاص بنا — دعاية مجانية بدون عمل إضافي. البدء بسيط وسريع — لا رسوم تسجيل، فقط إعداد سهل. نتولى الحجوزات والمدفوعات، حتى تتمكن من التركيز على العمل. ادفع فقط رسوم 15% لكل طلب مكتمل وابدأ في كسب المزيد اليوم.",
+        "feature1": "الاتصال المباشر بالعملاء الذين يحتاجون خدماتك",
+        "feature1Info": "اتصل مباشرة بالعملاء الذين يحتاجون خدماتك الآن.\nاحصل على الحجوزات، احصل على الدفع، وأدر عملك بلا جهد. لا انتظار، لا عمليات معقدة — فقط اتصالات مباشرة مع العملاء المستعدين لحجز خدماتك على الفور.",
+        "feature2": "رؤية فورية من خلال نظام الشراكة المدمج",
+        "feature2Info": "تحول منصتنا الاجتماعية كل منشور ومشاركة وتفاعل إلى تعرض مجاني لعملك. يمكن للعملاء اكتشافك من خلال المحتوى والمراجعات والتوصيات — وليس فقط الإعلانات.\nنمّ وصولك، اجذب المتابعين، واحصل على الحجوزات مباشرة من الخلاصة. استمتع بالرؤية الفورية بدون أي جهد تسويقي إضافي من جانبك.",
+        "feature3": "نتولى الحجوزات والمدفوعات لك",
+        "feature3Info": "يحجز العملاء ويدفعون مباشرة من خلال المنصة، ونحن نعتني بالأعمال الإدارية والتأكيدات والتذكيرات والمعاملات الآمنة. لا مطاردة للعملاء، لا معالجة نقدية، ولا إعداد معقد. أنت تركز على العمل — نحن ندير كل شيء آخر.",
+        "feature4": "لا رسوم تسجيل، 15% فقط لكل طلب مكتمل",
+        "feature4Info": "تدفع فقط عندما تحصل على النتائج، مما يجعله خاليًا من المخاطر وقائمًا بالكامل على الأداء. نحن نقدم حتى فترة تجريبية مجانية لمدة شهرين، حتى تتمكن من اختبار المنصة، واستقبال الحجوزات، ورؤية النتائج الحقيقية قبل الالتزام. لا تكاليف مقدمة، لا رسوم خفية — فقط رسوم بسيطة 15% لكل طلب مكتمل.",
+        "infoDescription": "اتصل مباشرة بالعملاء الذين يحتاجون خدماتك الآن.\nاحصل على الحجوزات، احصل على الدفع، وأدر عملك بلا جهد.\nتحول منصتنا الاجتماعية كل منشور ومشاركة وتفاعل إلى تعرض مجاني لعملك. يمكن للعملاء اكتشافك من خلال المحتوى والمراجعات والتوصيات — وليس فقط الإعلانات.\nنمّ وصولك، اجذب المتابعين، واحصل على الحجوزات مباشرة من الخلاصة.\nيحجز العملاء ويدفعون مباشرة من خلال المنصة، ونحن نعتني بالأعمال الإدارية والتأكيدات والتذكيرات والمعاملات الآمنة. لا مطاردة للعملاء، لا معالجة نقدية، ولا إعداد معقد. أنت تركز على العمل — نحن ندير كل شيء آخر.\nتدفع فقط عندما تحصل على النتائج، مما يجعله خاليًا من المخاطر وقائمًا بالكامل على الأداء. نحن نقدم حتى فترة تجريبية مجانية لمدة شهرين، حتى تتمكن من اختبار المنصة، واستقبال الحجوزات، ورؤية النتائج الحقيقية قبل الالتزام."
+      },
+      "reservationSystem": {
+        "title": "نظام الحجوزات",
+        "description": "يساعدك نظام الحجوزات لدينا على تنمية عملك مجانًا تمامًا. احصل على المزيد من الظهور، واجذب عملاء جدد، وزد إيراداتك مع Swipped.",
+        "whyJoinTitle": "لماذا تنضم إلى Swipped؟",
+        "feature1": "جميع المدفوعات تذهب مباشرة إلى عملك",
+        "feature1Info": "تلقَّ المدفوعات مباشرة في حسابك الخاص مع التحكم الكامل والشفافية. Swipped لا يحتفظ بأموالك — أنت تبقى مسؤولاً عن إيراداتك في جميع الأوقات.",
+        "feature2": "ابقَ منظمًا مع إدارة حجوزات سهلة",
+        "feature2Info": "أدِر الحجوزات والتوافر وتفاصيل العملاء في لوحة تحكم واحدة بسيطة. احصل على إشعارات فورية وحافظ على جدولك يسير بسلاسة بدون توتر.",
+        "feature3": "الوصول إلى المزيد من العملاء بسهولة",
+        "feature3Info": "استفد من شبكة Swipped المتنامية واجذب عملاء جدد بدون إنفاق على الإعلانات المكلفة. دع العملاء يجدونك ويحجزون في ثوانٍ.",
+        "feature5": "بدون رسوم تسجيل وبدون رسوم حجز",
+        "feature5Info": "انضم مجانًا تمامًا بدون تكاليف خفية. احتفظ بالمزيد مما تكسبه بينما تنمّي عملك بدون مخاطر."
+      },
+      "cta": {
+        "title": "هل أنت مستعد للبدء؟",
+        "description": "انضم إلى آلاف الشركاء الذين ينمون أعمالهم بالفعل مع Swipped. سجل اليوم وابدأ رحلتك معنا.",
+        "button": "سجل الآن"
+      }
+    },
+    "earningsCalculator": {
+      "title": "كن مدير نفسك. حدد ساعاتك. اكسب أموالك.",
+      "subtitle": "Swipped هي المنصة التي تربط الشركات بمقدمي الخدمات الموثوقين. احصل على الوصول إلى آلاف الفرص اليومية. كل ما تحتاجه لكسب المزيد من المال وتنمية عملك.",
+      "calculate_title": "احسب أرباحك المحتملة",
+      "step1": {
+        "title": "جدولك",
+        "question": "ما الخدمات التي تقدمها؟",
+        "select_services": "اختر الخدمات",
+        "days_question": "كم يومًا في الأسبوع تعمل؟",
+        "edit": "تعديل"
+      },
+      "step2": {
+        "title": "اختر منطقة",
+        "question": "في أي منطقة تعمل أكثر؟",
+        "edit": "تعديل"
+      },
+      "step3": {
+        "title": "أرباحك",
+        "label": "إليك المبلغ الذي يمكنك كسبه",
+        "period": "/شهر"
+      },
+      "common": {
+        "service": "خدمة",
+        "services": "خدمات",
+        "days_per_week": "أيام/أسبوع",
+        "reset": "إعادة تعيين",
+        "continue": "متابعة",
+        "calculate": "احسب",
+        "takes_30_seconds": "يستغرق 30 ثانية",
+        "almost": "تقريبًا!"
+      }
+    },
+    "businessAccount": {
+      "back": "رجوع",
+      "title": "حساب Swipped التجاري",
+      "description": "سجل اليوم للحصول على حساب Swipped التجاري الائتماني وافتح فوائد حصرية لعملك. نساعد في تحسين التدفق النقدي الخاص بك حتى تتمكن عملياتك من النمو والانتقال إلى المستوى التالي — كل ذلك ضمن منصة Swipped. أكمل النموذج أدناه للبدء اليوم!",
+      "apply_title": "التقدم بطلب للحصول على حساب تجاري",
+      "form": {
+        "first_name": "الاسم الأول *",
+        "last_name": "اسم العائلة *",
+        "company_name": "اسم الشركة *",
+        "company_number": "رقم الشركة *",
+        "email": "البريد الإلكتروني *",
+        "contact_number": "رقم الاتصال *",
+        "limit_request": "طلب الحد *",
+        "limit_1000": "£1,000",
+        "limit_3000": "£3,000",
+        "limit_5000": "£5,000",
+        "limit_custom": "حد مخصص (الحد الأقصى £25,000)",
+        "custom_limit_placeholder": "أدخل الحد المخصص",
+        "submit": "إرسال الطلب",
+        "submitting": "جارٍ الإرسال..."
+      },
+      "errors": {
+        "first_name_required": "الاسم الأول مطلوب",
+        "last_name_required": "اسم العائلة مطلوب",
+        "company_number_required": "رقم الشركة مطلوب",
+        "company_name_required": "اسم الشركة مطلوب",
+        "email_required": "البريد الإلكتروني مطلوب",
+        "email_invalid": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+        "contact_number_required": "رقم الاتصال مطلوب",
+        "limit_request_required": "يرجى اختيار طلب حد",
+        "custom_limit_required": "الحد المخصص مطلوب",
+        "custom_limit_invalid": "يرجى إدخال مبلغ صحيح",
+        "custom_limit_max": "لا يمكن أن يتجاوز الحد المخصص £25,000"
+      },
+      "toast": {
+        "fill_required": "يرجى ملء جميع الحقول المطلوبة بشكل صحيح",
+        "submit_success": "تم إرسال الطلب بنجاح! سنتواصل معك قريبًا.",
+        "submit_failed": "فشل إرسال الطلب. يرجى المحاولة مرة أخرى.",
+        "error_occurred": "حدث خطأ. يرجى المحاولة مرة أخرى لاحقًا."
+      }
+    },
+    "fulfilment": {
+      "back": "رجوع",
+      "title": "نحن نطلق برنامج بائعي Swipped!",
+      "description": "بيع من أي مكان — سنجلب لك العملاء، ونعبئ منتجاتك، ونشحنها في جميع أنحاء العالم. نمّ بصمة علامتك التجارية العالمية بسهولة واختر البلدان التي تريد التوسع فيها.",
+      "launch_date": "الإطلاق في 10-01-2026.",
+      "form_instruction": "املأ النموذج أدناه وسيتواصل معك أحد أعضاء فريقنا.",
+      "features": {
+        "title": "Why Choose Swipped?",
+        "scale_anywhere": "Scale anywhere with a single tap — choose any county and let Swipped handle the rest.",
+        "sell_store_pack": "We sell your products, store your inventory, pack orders, and ship fast.",
+        "real_time_dashboard": "Real-time dashboard insights show your sales, growth, and profits.",
+        "weekly_payouts": "Weekly payouts are deposited straight into your bank to keep your business moving.",
+        "no_signup_fees": "No sign-up fees, only 15% per completed orders"
+      },
+      "form_title": "انضم إلى برنامج بائعي Swipped",
+      "form": {
+        "name": "الاسم *",
+        "email": "البريد الإلكتروني *",
+        "contact_number": "رقم الاتصال *",
+        "product_range": "نطاق المنتج *",
+        "country_to_sell": "البلد الذي تريد البيع فيه *",
+        "select_product_range": "اختر نطاق المنتج",
+        "select_country": "اختر البلد",
+        "submit": "إرسال الطلب",
+        "submitting": "جارٍ الإرسال..."
+      },
+      "errors": {
+        "name_required": "الاسم مطلوب",
+        "email_required": "البريد الإلكتروني مطلوب",
+        "email_invalid": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+        "contact_number_required": "رقم الاتصال مطلوب",
+        "product_range_required": "نطاق المنتج مطلوب",
+        "country_required": "البلد مطلوب"
+      },
+      "toast": {
+        "fill_required": "يرجى ملء جميع الحقول المطلوبة بشكل صحيح",
+        "submit_success": "تم إرسال الاستفسار بنجاح! سنتواصل معك قريبًا.",
+        "submit_failed": "فشل إرسال الاستفسار. يرجى المحاولة مرة أخرى.",
+        "error_occurred": "حدث خطأ. يرجى المحاولة مرة أخرى لاحقًا."
+      }
+    },
+    "swippedRides": {
+      "pickup": "Pickup",
+      "currentLocation": "Current Location",
+      "whereTo": "Where to?",
+      "home": "Home",
+      "work": "Work",
+      "savedPlaces": "Saved Places",
+      "requestRide": "Request Ride",
+      "chooseRide": "Choose Ride",
+      "swippedGo": "Swipped Go",
+      "swippedGoDesc": "Affordable, everyday rides",
+      "swippedComfort": "Swipped Comfort",
+      "swippedComfortDesc": "More space, quieter ride",
+      "swippedExecutive": "Swipped Executive",
+      "swippedExecutiveDesc": "Premium vehicles & drivers",
+      "confirmRide": "Confirm Ride",
+      "rideConfirmed": "Ride confirmed! This is a demo.",
+      "goBadge": "Best value",
+      "comfortBadge": "Popular",
+      "executiveBadge": "Premium",
+      "passenger": "Passenger",
+      "passengers": "Passengers",
+      "eta": "min"
+    }
+  },
+  "MapComponent": {
+    "pickup_title": "موقع الاستلام",
+    "dropoff_title": "موقع التوصيل",
+    "set_pickup_current": "تحديد الاستلام (الموقع الحالي)",
+    "set_dropoff_current": "تحديد التوصيل (الموقع الحالي)",
+    "clear_all": "مسح الكل",
+    "tip_title": "نصيحة:",
+    "tip_description": "انقر في أي مكان على الخريطة لتحديد مواقع الاستلام والتوصيل، أو استخدم الأزرار أعلاه لاستخدام موقعك الحالي.",
+    "unable_get_location_pickup": "تعذر الحصول على موقعك الحالي. يرجى النقر على الخريطة لتحديد موقع الاستلام.",
+    "unable_get_location_dropoff": "تعذر الحصول على موقعك الحالي. يرجى النقر على الخريطة لتحديد موقع التوصيل.",
+    "geolocation_not_supported_pickup": "الجيولوجيا غير مدعومة في هذا المتصفح. يرجى النقر على الخريطة لتحديد موقع الاستلام.",
+    "geolocation_not_supported_dropoff": "الجيولوجيا غير مدعومة في هذا المتصفح. يرجى النقر على الخريطة لتحديد موقع التوصيل.",
+    "confirm_replace_locations": "تم تحديد مواقع الاستلام والتوصيل بالفعل. انقر على موافق لتعيين كاستلام، إلغاء لتعيين كتوصيل."
+  },
+  "Services": {
+    "shop": {
+      "name": "متاجرك المحلية",
+      "description": "احصل على ما تريده، عندما تريده. من الضروريات اليومية إلى الهدايا اللحظية الأخيرة، نأتي بالمتجر إلى بابك"
+    },
+    "restaurant": {
+      "name": "مطاعمك المحلية",
+      "description": "احصل على وجباتك المفضلة مباشرة إليك بسهولة. تصفح المطاعم، واستكشف النكهات الجديدة، واطلب في بضع نقرات فقط"
+    },
+    "supermarket": {
+      "name": "متاجرك المحلية",
+      "description": "تسوق للبقالة والضروريات اليومية من متاجرك المفضلة. توصيل سريع مباشرة إلى بابك"
+    },
+    "Book a Table": {
+      "name": "احجز طاولة",
+      "description": "يمكنك الآن حجز طاولة في مطعمك المفضل مباشرة على Swipped. لا مكالمات، لا طوابير — فقط اضغط، احجز، واستمتع."
+    },
+    "Click & Collect": {
+      "name": "توصيل Click & Collect",
+      "description": "استلام وتوصيل الطلبات عبر الإنترنت من المتاجر"
+    },
+    "Van": {
+      "name": "خدمة البريد",
+      "description": "خدمات التوصيل والنقل بالفان"
+    },
+    "Recovery": {
+      "name": "خدمة الاستعادة",
+      "description": "خدمات استعادة وجر المركبات"
+    },
+    "Cleaning": {
+      "name": "خدمات التنظيف",
+      "description": "خدمات التنظيف الاحترافية"
+    },
+    "Locksmith": {
+      "name": "خدمات الأقفال",
+      "description": "خدمات الأقفال على مدار الساعة"
+    },
+    "Car Key Replacement": {
+      "name": "استبدال مفاتيح السيارات المتنقلة",
+      "description": "استبدال وبرمجة مفاتيح السيارات"
+    },
+    "Removals": {
+      "name": "إزالة النفايات",
+      "description": "إزالة الأثاث والنفايات"
+    },
+    "Luggage Storage": {
+      "name": "تخزين الأمتعة",
+      "description": "خدمات تخزين وإدارة الأمتعة الآمنة"
+    },
+    "Dry Cleaning Pick-Up": {
+      "name": "استلام التنظيف الجاف",
+      "description": "خدمات جمع وتوصيل التنظيف الجاف"
+    },
+    "Taxi Rides": {
+      "name": "رحلات Swipped",
+      "description": "احجز رحلتك مع Taxi Rides. قريباً - نقل مريح وموثوق في متناول يدك."
+    },
+    "MOT &  Repairs": {
+      "name": "حجز فحص المركبة",
+      "description": "احجز فحص مركبتك في مراكز معتمدة. حدد موعد فحص مركبتك في الوقت المناسب لك."
+    },
+    "Shisha lounges": {
+      "name": "حجز صالات الشيشة",
+      "description": "احجز مكانك في أفضل صالات الشيشة. احجز طاولتك واستمتع بأمسية مريحة مع الأصدقاء."
+    },
+    "Spa": {
+      "name": "حجز المنتجعات الصحية",
+      "description": "احجز موعدك في المنتجع الصحي وعامل نفسك بيوم من الاسترخاء والتجديد."
+    },
+    "Beauty": {
+      "name": "حجز صالونات التجميل",
+      "description": "احجز موعدك في أفضل صالونات التجميل. من قصات الشعر إلى العلاجات، احجز موعدك اليوم."
+    },
+    "Healthcare": {
+      "name": "المواعيد الطبية",
+      "description": "احجز موعد طبي مع مقدمي رعاية صحية موثوقين. طبيب أسنان وعيادة وخدمات صحية أخرى."
+    },
+    "Events": {
+      "name": "خدمات الأحداث",
+      "description": "احجز خدمات احترافية للأحداث. توفير الموسيقى والفنانين والشخصيات للفعاليات الخاصة بك."
+    },
+    "Entertainment": {
+      "name": "أماكن الترفيه",
+      "description": "احجز تجارب ترفيهية مثيرة. تجارب الواقع الافتراضي والبولينج وغرف الكاراوكي."
+    }
+  },
+  "CheckoutVerify": {
+    "loading": "جارٍ التحميل...",
+    "verifying_subscription": "يرجى الانتظار بينما نتحقق من اشتراكك.",
+    "payment_successful": "تم الدفع بنجاح!",
+    "thank_you_subscribing": "شكرًا لاشتراكك في خدمتنا! 🎉",
+    "subscription_activated": "تم تفعيل اشتراكك بنجاح ويمكنك الآن الوصول إلى جميع الميزات المميزة.",
+    "subscription_details": "تفاصيل الاشتراك",
+    "plan": "الخطة:",
+    "amount": "المبلغ:",
+    "status": "الحالة:",
+    "active": "نشط",
+    "continue_dashboard": "متابعة إلى لوحة التحكم",
+    "payment_cancelled": "تم إلغاء الدفع",
+    "payment_cancelled_desc": "تم إلغاء دفعتك. لم يتم فرض أي رسوم على حسابك.",
+    "try_again_desc": "يمكنك المحاولة مرة أخرى في أي وقت أو التواصل مع الدعم إذا كنت بحاجة إلى مساعدة.",
+    "try_again": "حاول مرة أخرى",
+    "back_dashboard": "العودة إلى لوحة التحكم",
+    "payment_error": "خطأ في الدفع",
+    "payment_error_desc": "حدث خطأ أثناء معالجة دفعتك.",
+    "contact_support_desc": "يرجى المحاولة مرة أخرى أو التواصل مع الدعم إذا استمرت المشكلة."
+  },
+  "Pricing": {
+    "choose_plan": "اختر خطتك",
+    "select_perfect_plan": "اختر خطة الاشتراك المثالية التي تناسب احتياجاتك وابدأ في تنمية أعمالك اليوم.",
+    "subscription_expires": "سينتهي اشتراكك في {date}",
+    "subscription_expired": "انتهى اشتراكك. يرجى التجديد لمتابعة قبول الوظائف.",
+    "subscription_cancelled": "تم إلغاء اشتراكك.",
+    "most_popular": "الأكثر شيوعًا",
+    "monthly_access": "الوصول الشهري",
+    "half_year_access": "الوصول النصف سنوي",
+    "yearly_access": "الوصول السنوي",
+    "monthly_access_desc": "وصول لمدة شهر واحد لمقدمي الخدمات لقبول وإدارة الوظائف.",
+    "half_year_access_desc": "وصول لمدة 6 أشهر بأسعار مخفضة لمقدمي الخدمات لقبول الوظائف.",
+    "yearly_access_desc": "وصول كامل لمدة 12 شهرًا لمقدمي الخدمات لقبول وظائف غير محدودة بأفضل سعر.",
+    "access_all_jobs": "الوصول إلى جميع الوظائف",
+    "accept_unlimited_jobs": "قبول وظائف غير محدودة",
+    "mobile_app_access": "الوصول إلى التطبيق المحمول",
+    "email_notifications": "إشعارات البريد الإلكتروني",
+    "basic_support": "الدعم الأساسي",
+    "priority_support": "الدعم ذو الأولوية",
+    "discounted_pricing": "تسعير مخفض",
+    "best_value_pricing": "أفضل سعر",
+    "early_access_features": "الوصول المبكر إلى الميزات الجديدة",
+    "current_plan": "الخطة الحالية",
+    "upgrade_plan": "ترقية الخطة",
+    "downgrade_not_allowed": "التخفيض غير مسموح",
+    "subscribe_now": "اشترك الآن",
+    "processing": "جارٍ المعالجة...",
+    "per_month": "/شهر",
+    "per_6_months": "/6 أشهر",
+    "per_year": "/سنة"
+  },
+  "VisitorPages": {
+    "layout": {
+      "role": "Basic account",
+      "menu_wallet": "Wallet Management",
+      "menu_support": "Support"
+    },
+    "feedback": {
+      "title": "قيم تجربتك",
+      "subtitle": "ساعدنا في التحسين من خلال مشاركة ملاحظاتك",
+      "job_details": {
+        "service_provider": "مقدم الخدمة",
+        "completed_on": "تم الانتهاء في"
+      },
+      "rating": {
+        "label": "كيف تقيم هذه الخدمة؟",
+        "required": "*",
+        "poor": "ضعيف",
+        "fair": "مقبول",
+        "good": "جيد",
+        "very_good": "جيد جداً",
+        "excellent": "ممتاز"
+      },
+      "comments": {
+        "label": "تعليقات إضافية (اختياري)",
+        "placeholder": "أخبرنا عن تجربتك...",
+        "character_count": "{count}/500 حرف"
+      },
+      "actions": {
+        "skip": "تخطي",
+        "submit": "إرسال الملاحظات",
+        "processing": "جارٍ المعالجة...",
+        "submitting": "جارٍ الإرسال..."
+      },
+      "messages": {
+        "rating_required": "يرجى اختيار تقييم قبل الإرسال",
+        "submit_success": "تم إرسال الملاحظات بنجاح",
+        "skip_success": "تم تخطي الملاحظات بنجاح",
+        "submit_error": "فشل في إرسال الملاحظات"
+      }
+    },
+    "support": {
+      "title": "Support",
+      "help_center": "Help Center",
+      "frequently_asked_questions": "Frequently Asked Questions",
+      "phone_support": "Phone Support",
+      "email_support": "Email Support",
+      "text_us": "Text Us",
+      "email_us": "Email Us",
+      "copied": "Copied!",
+      "phone_copied_success": "Phone number copied to clipboard!",
+      "failed_copy_phone": "Failed to copy phone number",
+      "faq": {
+        "how_get_paid": {
+          "question": "How do I pay for services?",
+          "answer": "You can pay for services using various payment methods including credit/debit cards, bank transfers, or digital wallets. Payment is typically processed securely through our platform when you place an order or book a service."
+        },
+        "verification_time": {
+          "question": "How long does it take to verify my account?",
+          "answer": "Account verification typically takes approximately 5-7 working days to complete. After successfully signing up, you can expect to receive an email notification once your account has been verified."
+        },
+        "required_documents": {
+          "question": "What information do I need to create an account?",
+          "answer": "To create an account, you'll need to provide basic information such as your name, email address, phone number, and address. You may also need to verify your identity depending on the services you wish to use. All information is kept secure and confidential."
+        },
+        "restricted_accounts": {
+          "question": "Why might my account be restricted?",
+          "answer": "Accounts may be restricted if there are issues with payment, violations of our terms of service, or concerns raised by service providers. If your account is restricted, you'll receive a notification explaining the reason and steps to resolve the issue."
+        },
+        "missed_job": {
+          "question": "What happens if I need to cancel an order?",
+          "answer": "You can cancel an order through your dashboard, but cancellation policies may vary depending on the service type and timing. Some services may have cancellation fees if cancelled close to the scheduled time. Check the specific terms when placing your order."
+        },
+        "contact_team": {
+          "question": "How can I contact a member of your team?",
+          "answer": "We are always here to assist you. If you have any questions, concerns, or require assistance, please don't hesitate to get in touch with our dedicated team. You can reach us at 02035351953 or email us at update@ivanplatform.com. Our team will be happy to provide you with the necessary support and guidance."
+        }
+      }
+    }
+  },
+  "ShopsPage": {
+    "title": "اكتشف متاجرك المحلية",
+    "subtitle": "يتم التسليم خلال 60 دقيقة",
+    "subtitle_words": {
+      "delivered": "Delivered",
+      "within": "Within",
+      "sixty_minutes": "60 minutes"
+    },
+    "search_placeholder": "البحث عن المتاجر بالاسم...",
+    "showing_shops": "عرض {count} متجر",
+    "miles_from": "{radius} ميل من {address}",
+    "clear_location": "مسح الموقع",
+    "choose_location": "اختر الموقع",
+    "change": "تغيير",
+    "showing_shops_in": "عرض المتاجر في {location} {flag}",
+    "location_changed": "تم تغيير الموقع إلى {location} {flag}",
+    "no_shops_found": "لم يتم العثور على متاجر",
+    "no_shops_search": "حاول تعديل معايير البحث",
+    "no_shops_available": "لا توجد متاجر متاحة حالياً",
+    "products": "منتجات",
+    "miles_away": "ميل بعيداً",
+    "view_products": "عرض المنتجات",
+    "failed_fetch_shops": "فشل في جلب المتاجر",
+    "error_fetching_shops": "فشل في جلب المتاجر",
+    "closing_at": "يغلق في {time}",
+    "closed": "مغلق",
+    "switch_to_restaurants": "التبديل إلى المطاعم",
+    "switch_to_supermarkets": "التبديل إلى محلات السوبر ماركت",
+    "switch_to_services": "التبديل إلى الخدمات",
+    "new_badge": "جديد",
+    "free_delivery": "توصيل مجاني",
+    "open_closes": "مفتوح • يغلق {time}",
+    "order_now": "اطلب الآن"
+  },
+  "ShopProductsPage": {
+    "loading": "جارٍ التحميل...",
+    "shop_products": "منتجات المتجر",
+    "search_placeholder": "البحث عن المنتجات بالاسم أو الوصف أو الفئة...",
+    "filters": "الفلاتر",
+    "price_range": "نطاق السعر",
+    "min": "الحد الأدنى",
+    "max": "الحد الأقصى",
+    "availability": "التوفر",
+    "in_stock_only": "المتاح فقط",
+    "sort_by": "ترتيب حسب",
+    "name_asc": "الاسم: أ إلى ي",
+    "name_desc": "الاسم: ي إلى أ",
+    "price_asc": "السعر: من الأقل للأعلى",
+    "price_desc": "السعر: من الأعلى للأقل",
+    "newest_first": "الأحدث أولاً",
+    "oldest_first": "الأقدم أولاً",
+    "category": "الفئة",
+    "all": "الكل",
+    "clear_all_filters": "مسح جميع الفلاتر",
+    "showing_products": "عرض {count} منتج",
+    "no_products_found": "لم يتم العثور على منتجات",
+    "no_products_search": "حاول تعديل معايير البحث",
+    "no_products_available": "لا توجد منتجات متاحة حالياً",
+    "in_stock": "{count} متاح",
+    "out_of_stock": "غير متوفر",
+    "add_to_cart": "إضافة إلى السلة",
+    "remove_from_cart": "إزالة من السلة",
+    "out_of_stock_btn": "غير متوفر",
+    "show_all_products": "عرض جميع المنتجات",
+    "closing_at": "يغلق في {time}",
+    "opens_at": "يفتح في {time}",
+    "closed": "مغلق",
+    "open_closes": "مفتوح • يغلق {time}",
+    "new_badge": "جديد",
+    "show_favorites_only": "عرض المفضلة فقط",
+    "apply": "تطبيق",
+    "clear_all": "مسح الكل",
+    "failed_fetch_products": "فشل في جلب المنتجات",
+    "error_fetching_products": "فشل في جلب المنتجات",
+    "only_customers_cart": "يمكن للعملاء فقط إضافة المنتجات إلى السلة",
+    "product_out_of_stock": "المنتج غير متوفر",
+    "product_removed_cart": "تم إزالة المنتج من السلة",
+    "product_added_cart": "تم إضافة المنتج إلى السلة",
+    "product_quantity_updated": "تم تحديث كمية المنتج في السلة",
+    "failed_remove_product": "فشل في إزالة المنتج من السلة",
+    "failed_add_product": "فشل في إضافة المنتج إلى السلة",
+    "shop_closed_order": "هذا المتجر مغلق حالياً. يرجى العودة خلال ساعات العمل",
+    "link_copied": "تم نسخ الرابط إلى الحافظة!",
+    "failed_copy_link": "فشل نسخ الرابط"
+  },
+  "ReservationPage": {
+    "link_copied": "تم نسخ الرابط إلى الحافظة!",
+    "failed_copy_link": "فشل نسخ الرابط",
+    "restaurant_no_reservations": "هذا المطعم لا يقبل الحجوزات.",
+    "restaurant_not_found": "لم يتم العثور على المطعم.",
+    "failed_load_restaurant": "فشل تحميل تفاصيل المطعم.",
+    "fill_required_fields": "يرجى ملء جميع الحقول المطلوبة.",
+    "select_future_date": "يرجى اختيار تاريخ مستقبلي.",
+    "reservation_created": "تم إنشاء الحجز بنجاح! تحقق من بريدك الإلكتروني للحصول على التأكيد.",
+    "failed_create_reservation": "فشل في إنشاء الحجز.",
+    "failed_create_reservation_try_again": "فشل في إنشاء الحجز. يرجى المحاولة مرة أخرى.",
+    "booking": "حجز طاولة",
+    "menu": "القائمة",
+    "services": "الخدمات",
+    "date": "التاريخ",
+    "time": "الوقت",
+    "select_time": "اختر وقتًا",
+    "number_of_guests": "عدد الضيوف",
+    "number_of_patients": "عدد المرضى",
+    "guest": "ضيف",
+    "guests": "ضيوف",
+    "patient": "مريض",
+    "patients": "مرضى",
+    "name": "الاسم",
+    "phone_number": "رقم الهاتف",
+    "email": "البريد الإلكتروني",
+    "special_requests": "طلبات خاصة (اختياري)",
+    "special_requests_placeholder": "أي متطلبات غذائية خاصة أو طلبات...",
+    "processing": "جارٍ المعالجة...",
+    "book_reservation": "احجز"
+  },
+  "ProductDetailPage": {
+    "loading": "جارٍ التحميل...",
+    "product_not_found": "المنتج غير موجود",
+    "product_not_exist": "المنتج الذي تبحث عنه غير موجود.",
+    "back_to_shops": "العودة إلى المتاجر",
+    "back": "رجوع",
+    "in_stock": "{count} متاح",
+    "out_of_stock": "غير متوفر",
+    "delivered_within_60_minutes": "يتم التسليم خلال 60 دقيقة",
+    "description": "الوصف",
+    "product_details": "تفاصيل المنتج",
+    "weight": "الوزن",
+    "dimensions": "الأبعاد",
+    "in_cart": "في السلة",
+    "out_of_stock_btn": "غير متوفر",
+    "removing": "جاري الإزالة...",
+    "remove_from_cart": "إزالة من السلة",
+    "view_cart": "عرض السلة",
+    "adding": "جاري الإضافة...",
+    "add_to_cart": "إضافة إلى السلة",
+    "failed_load_product": "فشل في تحميل تفاصيل المنتج",
+    "only_customers_manage_cart": "يمكن للعملاء فقط إدارة السلة",
+    "product_out_of_stock": "المنتج غير متوفر",
+    "product_removed_cart": "تم إزالة المنتج من السلة",
+    "product_added_cart": "تم إضافة المنتج إلى السلة",
+    "failed_remove_product": "فشل في إزالة المنتج من السلة",
+    "failed_add_product": "فشل في إضافة المنتج إلى السلة",
+    "shop_closed_order": "هذا المتجر مغلق حالياً. يرجى العودة خلال ساعات العمل",
+    "preparation_time": "وقت التحضير",
+    "minutes": "دقائق",
+    "calories": "السعرات الحرارية",
+    "kcal": "سعرة حرارية",
+    "dietary_info": "المعلومات الغذائية",
+    "allergens": "مسببات الحساسية"
+  },
+  "PurchasePage": {
+    "loading": "جارٍ التحميل...",
+    "loading_cart": "جارٍ تحميل السلة...",
+    "cart_empty": "سلتك فارغة",
+    "add_products_to_cart": "أضف بعض المنتجات إلى سلتك للمتابعة.",
+    "browse_products": "تصفح المنتجات",
+    "checkout": "الدفع",
+    "items": "عناصر",
+    "step_of": "الخطوة {current} من {total}",
+    "cart_items": "عناصر السلة",
+    "shop_info": "المتجر",
+    "view_shop": "عرض المتجر",
+    "delivery_address": "عنوان التسليم",
+    "delivery_address_placeholder": "أدخل عنوان التسليم حيث سيتم تسليم المنتجات",
+    "delivery_address_required": "عنوان التسليم مطلوب",
+    "delivery_address_confirmed": "✓ عنوان التسليم: {address}",
+    "loading_maps": "🔄 جارٍ تحميل الخرائط...",
+    "continue_to_checkout": "المتابعة إلى الدفع",
+    "additional_notes": "ملاحظات إضافية للتسليم",
+    "special_instructions_placeholder": "أي تعليمات خاصة للتسليم (اختياري)...",
+    "order_summary": "ملخص الطلب",
+    "subtotal": "المجموع الفرعي",
+    "delivery_price": "سعر التسليم",
+    "calculating": "جارٍ الحساب...",
+    "distance": "المسافة",
+    "miles": "ميل",
+    "total": "المجموع",
+    "back_to_location": "العودة إلى الموقع",
+    "place_order": "تأكيد الطلب",
+    "processing": "جارٍ المعالجة...",
+    "please_login": "يرجى تسجيل الدخول لعرض السلة",
+    "failed_fetch_cart": "فشل في جلب عناصر السلة",
+    "cart_updated_successfully": "تم تحديث السلة بنجاح",
+    "failed_update_cart": "فشل في تحديث السلة",
+    "shop_closed_order": "هذا المتجر مغلق حالياً. يرجى العودة خلال ساعات العمل",
+    "item_removed_cart": "تم إزالة العنصر من السلة",
+    "failed_remove_item": "فشل في إزالة العنصر",
+    "cart_empty_error": "سلتك فارغة",
+    "order_created": "تم إنشاء الطلب! جارٍ التوجيه إلى الدفع...",
+    "order_created_successfully": "تم إنشاء الطلب بنجاح!",
+    "failed_create_order": "فشل في إنشاء الطلب",
+    "order_food": "اطلب طعام"
+  },
+  "RestaurantsPage": {
+    "title": "اكتشف مطاعمك المحلية",
+    "subtitle_words": {
+      "delivered": "تم التوصيل",
+      "within": "خلال",
+      "sixty_minutes": "60 دقيقة"
+    },
+    "search_placeholder": "البحث عن المطاعم بالاسم...",
+    "showing_restaurants": "عرض {count} مطعم",
+    "miles_from": "{radius} ميل من {address}",
+    "clear_location": "مسح الموقع",
+    "choose_location": "اختر الموقع",
+    "change": "تغيير",
+    "showing_restaurants_in": "عرض المطاعم في {location} {flag}",
+    "location_changed": "تم تغيير الموقع إلى {location} {flag}",
+    "no_restaurants_found": "لم يتم العثور على مطاعم",
+    "miles_away": "ميل بعيداً",
+    "view_menu": "عرض القائمة",
+    "failed_fetch_restaurants": "فشل في جلب المطاعم",
+    "error_fetching_restaurants": "فشل في جلب المطاعم",
+    "closing_at": "يغلق في {time}",
+    "closed": "مغلق",
+    "items": "عناصر",
+    "items_count": "{count} عناصر",
+    "minimum_order": "الحد الأدنى: £{amount}",
+    "switch_to_stores": "التبديل إلى المتاجر",
+    "resturant_reservation": "حجز المطعم",
+    "switch_to_supermarkets": "التبديل إلى محلات السوبر ماركت",
+    "switch_to_services": "التبديل إلى الخدمات",
+    "new_badge": "جديد",
+    "dine_in": "تناول الطعام في المطعم",
+    "free_delivery": "توصيل مجاني",
+    "open_closes": "مفتوح • يغلق {time}",
+    "order_now": "اطلب الآن",
+    "delivery_dine_in_title": "التوصيل وتناول الطعام في المطعم",
+    "delivery_dine_in_message": "يقدم هذا المطعم خدمة التوصيل، ويمكنك أيضًا حجز طاولة مباشرة من خلال منصتنا باستخدام خدمة حجز المطاعم لدينا."
+  },
+  "RestaurantMenuPage": {
+    "loading": "جارٍ التحميل...",
+    "restaurant_menu": "قائمة المطعم",
+    "search_placeholder": "البحث عن عناصر القائمة بالاسم...",
+    "filters": "الفلاتر",
+    "category": "الفئة",
+    "cuisine": "المطبخ",
+    "filter_by_cuisine": "تصفية حسب المطبخ...",
+    "sort_by": "ترتيب حسب",
+    "name_asc": "الاسم: من أ إلى ي",
+    "name_desc": "الاسم: من ي إلى أ",
+    "price_asc": "السعر: من الأقل إلى الأعلى",
+    "price_desc": "السعر: من الأعلى إلى الأقل",
+    "clear_all_filters": "مسح جميع الفلاتر",
+    "showing_items": "عرض {count} عنصر",
+    "no_items_found": "لم يتم العثور على عناصر القائمة",
+    "only_customers_cart": "يمكن للعملاء فقط إضافة العناصر إلى السلة",
+    "item_unavailable": "العنصر غير متاح",
+    "item_removed_cart": "تم إزالة العنصر من السلة",
+    "failed_remove_item": "فشل في إزالة العنصر",
+    "item_added_cart": "تم إضافة العنصر إلى السلة",
+    "item_quantity_updated": "تم تحديث كمية العنصر في السلة",
+    "failed_add_item": "فشل في إضافة العنصر إلى السلة",
+    "shop_closed_order": "هذا المتجر مغلق حالياً. يرجى العودة خلال ساعات العمل",
+    "failed_fetch_menu": "فشل في جلب عناصر القائمة",
+    "error_fetching_menu": "فشل في جلب عناصر القائمة",
+    "menu_items": "عناصر القائمة",
+    "rating": "التقييم",
+    "unavailable": "غير متاح",
+    "closing_at": "يغلق في {time}",
+    "opens_at": "يفتح في {time}",
+    "closed": "مغلق",
+    "new_badge": "جديد"
+  },
+  "ReservationsPage": {
+    "search_placeholder": "ابحث عن المطاعم...",
+    "no_restaurants_found": "لم يتم العثور على مطاعم",
+    "reserve": "احجز",
+    "failed_fetch_restaurants": "فشل في جلب المطاعم",
+    "error_fetching_restaurants": "خطأ في جلب المطاعم",
+    "new_badge": "جديد",
+    "change": "تغيير",
+    "showing_restaurants_in": "عرض المطاعم في {location} {flag}",
+    "select_service": "اختر الخدمة",
+    "cancel": "إلغاء",
+    "continue_to_reservation": "المتابعة إلى الحجز",
+    "processing": "جاري المعالجة...",
+    "rating": "التقييم",
+    "city": "المدينة",
+    "select_city": "اختر المدينة",
+    "no_deposit_required": "لا يلزم دفع مقدم",
+    "fill_required_fields": "يرجى ملء جميع الحقول المطلوبة",
+    "select_future_date": "يرجى اختيار تاريخ في المستقبل",
+    "reservation_created": "تم إنشاء الحجز بنجاح",
+    "failed_create_reservation": "فشل في إنشاء الحجز",
+    "failed_create_reservation_try_again": "فشل في إنشاء الحجز. يرجى المحاولة مرة أخرى.",
+    "please_select_service": "يرجى اختيار خدمة للمتابعة مع حجزك",
+    "selected": "المحدد",
+    "select_mot_service": "اختر خدمة فحص المركبة",
+    "select_spa_service": "اختر خدمة السبا",
+    "select_shisha_service": "اختر خدمة الشيشة",
+    "select_beauty_service": "اختر خدمة التجميل",
+    "select_healthcare_service": "اختر خدمة الرعاية الصحية",
+    "select_events_service": "اختر خدمة الأحداث",
+    "select_entertainment_service": "اختر مكان الترفيه",
+    "select_restaurant_service": "اختر مطبخك",
+    "select_shop_service": "اختر فئة المتجر"
+  },
+  "FeatureDescriptionModal": {
+    "defaultDescription": "مقدمو الخدمات لدينا جاهزون لمساعدتك - ليلاً أو نهاراً. احصل على عرض أسعار في 60 ثانية فقط وحل احتياجاتك بسرعة وسلاسة.",
+    "descriptions": {
+      "courier": "تقدم خدمة البريد السريع لدينا توصيلاً سريعاً وموثوقاً للطرود بجميع الأحجام - من المغلفات الصغيرة إلى العناصر الأكبر. اختر التوصيل العاجل في نفس اليوم أو حدد وقتاً يناسبك. سواء كانت وظيفة لمرة واحدة أو توصيلات منتظمة، نجعلها بسيطة وخالية من الإجهاد. احصل على عرض أسعار في 60 ثانية فقط وحل احتياجات البريد السريع بسرعة وسلاسة.",
+      "van": "تقدم خدمة البريد السريع لدينا توصيلاً سريعاً وموثوقاً للطرود بجميع الأحجام - من المغلفات الصغيرة إلى العناصر الأكبر. اختر التوصيل العاجل في نفس اليوم أو حدد وقتاً يناسبك. سواء كانت وظيفة لمرة واحدة أو توصيلات منتظمة، نجعلها بسيطة وخالية من الإجهاد. احصل على عرض أسعار في 60 ثانية فقط وحل احتياجات البريد السريع بسرعة وسلاسة.",
+      "luggageStorage": "تتيح لك خدمة تخزين الأمتعة لدينا تخزين حقائبك بأمان ويسر في موقع قريب منك. اختر أقرب نقطة تسليم، أو دعنا نرتب الاستلام والتسليم مباشرة إلى بابك. سواء كان لبضع ساعات أو بضعة أسابيع، نجعلها خالية من المتاعب. احصل على عرض أسعار في 60 ثانية فقط وحل احتياجات تخزين الأمتعة بسرعة وسلاسة.",
+      "locksmith": "تربطك خدمة الأقفال لدينا بمحترفين موثوقين ومدققين بالكامل في منطقتك. سواء كنت بحاجة إلى مساعدة عاجلة أو تفضل تحديد موعد، نحن هنا لمساعدتك. احصل على عرض أسعار في 60 ثانية فقط وحل احتياجات الأقفال بسرعة وسلاسة.",
+      "professionalCleaning": "تربطك خدمة التنظيف لدينا بمحترفين موثوقين ومدققين بالكامل يقدمون نتائج استثنائية. سواء كنت بحاجة إلى استدعاء عاجل أو تفضل حجز موعد مجدول، نجعلها بسيطة وملائمة. احصل على عرض أسعار في 60 ثانية فقط وحل احتياجات التنظيف بسرعة وسلاسة.",
+      "cleaning": "تربطك خدمة التنظيف لدينا بمحترفين موثوقين ومدققين بالكامل يقدمون نتائج استثنائية. سواء كنت بحاجة إلى استدعاء عاجل أو تفضل حجز موعد مجدول، نجعلها بسيطة وملائمة. احصل على عرض أسعار في 60 ثانية فقط وحل احتياجات التنظيف بسرعة وسلاسة.",
+      "dryCleaningPickUp": "تقدم خدمة التنظيف الجاف لدينا استلاماً وتوصيلاً من الباب إلى الباب، أو يمكنك اختيار التسليم والاستلام من أقرب مقدم خدمة. سريع وبسيط وموثوق - ملابسك في أيدٍ آمنة. احصل على عرض أسعار في 60 ثانية فقط وحل احتياجات التنظيف الجاف بسرعة وسلاسة.",
+      "breakdownAssistance": "خدمة المساعدة في حالات الأعطال على مستوى البلاد متاحة على مدار الساعة طوال أيام الأسبوع، سواء كنت بحاجة إلى استدعاء عاجل أو تفضل حجز موعد. أينما كنت، نحن جاهزون لمساعدتك على المضي قدماً مرة أخرى. احصل على عرض أسعار في 60 ثانية فقط وحل احتياجات الأعطال بسرعة وسلاسة.",
+      "recovery": "خدمة المساعدة في حالات الأعطال على مستوى البلاد متاحة على مدار الساعة طوال أيام الأسبوع، سواء كنت بحاجة إلى استدعاء عاجل أو تفضل حجز موعد. أينما كنت، نحن جاهزون لمساعدتك على المضي قدماً مرة أخرى. احصل على عرض أسعار في 60 ثانية فقط وحل احتياجات الأعطال بسرعة وسلاسة.",
+      "rubbishRemovals": "يمكن لخدمة إزالة القمامة لدينا جمع جميع أنواع النفايات - من الأثاث وأكياس المنزل إلى نفايات الحديقة والمزيد. نحن متاحون على مدار الساعة طوال أيام الأسبوع للاستدعاءات الطارئة أو المواعيد المجدولة، مما يجعل من السهل إزالة أي فوضى بسرعة. احصل على عرض أسعار في 60 ثانية فقط وحل احتياجات إزالة القمامة بسرعة وسلاسة.",
+      "removals": "يمكن لخدمة إزالة القمامة لدينا جمع جميع أنواع النفايات - من الأثاث وأكياس المنزل إلى نفايات الحديقة والمزيد. نحن متاحون على مدار الساعة طوال أيام الأسبوع للاستدعاءات الطارئة أو المواعيد المجدولة، مما يجعل من السهل إزالة أي فوضى بسرعة. احصل على عرض أسعار في 60 ثانية فقط وحل احتياجات إزالة القمامة بسرعة وسلاسة.",
+      "clickCollectDelivery": "تتيح لك خدمة التوصيل من المتجر لدينا جمع طلبك عبر الإنترنت مباشرة من المتجر وتسليمه مباشرة إلى منزلك. تعمل خلال ساعات العمل، نقدم كلاً من الاستدعاءات العاجلة والمواعيد المجدولة لراحتك. احصل على عرض أسعار في 60 ثانية فقط وحل احتياجات التوصيل من المتجر بسرعة وسلاسة.",
+      "clickCollect": "تتيح لك خدمة التوصيل من المتجر لدينا جمع طلبك عبر الإنترنت مباشرة من المتجر وتسليمه مباشرة إلى منزلك. تعمل خلال ساعات العمل، نقدم كلاً من الاستدعاءات العاجلة والمواعيد المجدولة لراحتك. احصل على عرض أسعار في 60 ثانية فقط وحل احتياجات التوصيل من المتجر بسرعة وسلاسة."
+    },
+    "features": {
+      "howItWorks": {
+        "label": "كيف يعمل",
+        "description": "1. احصل على عرض الأسعار في 60 ثانية\nأدخل موقعك وأجب على بعض الأسئلة السريعة حول طلبك. سنقوم بإنشاء العرض المناسب المخصص لاحتياجاتك على الفور.\n\n2. احصل على مطابقة مع محترف محلي\nبمجرد تأكيد الدفع، سنربطك بأخصائي مدقق قريب. يمكنك التواصل مباشرة من خلال نظام الاتصال والمراسلة في التطبيق، وتتبع حالة الوظيفة ووقت الاستلام والوصول في الوقت الفعلي.\n\n3. اكتملت الوظيفة - اترك تقييماً\nبعد انتهاء الخدمة، اترك تقييماً لمقدم الخدمة لمساعدتنا في الحفاظ على الجودة وتحسين تجربتك."
+      },
+      "scheduled": {
+        "label": "المواعيد المجدولة",
+        "description": "تحتاج شيئاً لاحقاً؟ اختر تاريخاً ووقتاً يناسبك. احجز مسبقاً وسيصل مقدم الخدمة بالضبط عندما تحتاجه."
+      },
+      "emergency": {
+        "label": "الاستدعاءات الطارئة على مدار الساعة",
+        "description": "ليلاً أو نهاراً، نحن هنا. للمشاكل العاجلة، نرسل مقدم خدمة إليك فوراً - لا انتظار حتى الصباح."
+      },
+      "monthly": {
+        "label": "الدفع الشهري متاح",
+        "description": "وزع التكلفة بدلاً من دفع كل شيء مقدم. اختر أقساط شهرية مرنة لجعل خدمتك أكثر بأسعار معقولة."
+      },
+      "trusted": {
+        "label": "مقدمو الخدمات الموثوقون والمدققون",
+        "description": "يتم فحص كل مقدم خدمة على Swipped بعناية والموافقة عليه والثقة به - لذا تحصل دائماً على خدمة آمنة وموثوقة."
+      },
+      "about": {
+        "label": "حول الخدمة"
+      }
+    }
+  }
+}

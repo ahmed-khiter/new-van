@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 532.89 485.88">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #3d42cd;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 6.38px;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        opacity: .09;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #3d42cd;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-width: 10.64px;
+      }
+
+      .cls-4 {
+        stroke-width: 8px;
+      }
+
+      .cls-7 {
+        fill: #9aa2f0;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <rect class="cls-2" x="239.74" y="178.34" width="44.48" height="92.99" rx="22.24" ry="22.24"/>
+        <rect class="cls-7" x="176.54" y="197.03" width="170.88" height="148.59" rx="20.41" ry="20.41"/>
+        <path class="cls-6" d="M336.27,264.96l-68.92,15.18c-3.53.78-7.22.78-10.75,0l-68.92-15.18c-9.71-2.14-16.51-9.74-16.51-18.45v-30.45c0-10.51,9.8-19.03,21.89-19.03h137.83c12.09,0,21.89,8.52,21.89,19.03v30.45c0,8.71-6.8,16.31-16.51,18.45Z"/>
+        <rect class="cls-4" x="248.45" y="267.61" width="27.06" height="27.06" rx="13.53" ry="13.53"/>
+      </g>
+      <path class="cls-6" d="M41.27,439.11h0c0-22.79-18.48-41.27-41.27-41.27h0c22.79,0,41.27-18.48,41.27-41.27h0c0,22.79,18.48,41.27,41.27,41.27h0c-22.79,0-41.27,18.48-41.27,41.27Z"/>
+      <path class="cls-6" d="M491.62,82.55h0c0-22.79-18.48-41.27-41.27-41.27h0c22.79,0,41.27-18.48,41.27-41.27h0c0,22.79,18.48,41.27,41.27,41.27h0c-22.79,0-41.27,18.48-41.27,41.27Z"/>
+      <rect class="cls-5" x="41.27" y="41.27" width="441.41" height="441.41" rx="89.55" ry="89.55"/>
+      <g>
+        <rect class="cls-3" x="397.84" y="397.84" width="84.85" height="84.85" rx="42.42" ry="42.42"/>
+        <g>
+          <line class="cls-1" x1="440.26" y1="417.33" x2="440.26" y2="463.2"/>
+          <line class="cls-1" x1="463.2" y1="440.26" x2="417.33" y2="440.26"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

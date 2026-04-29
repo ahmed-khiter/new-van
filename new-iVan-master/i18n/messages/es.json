@@ -1,0 +1,1609 @@
+{
+  "Home": {
+    "title": "Swipped",
+    "tagLine": "Contrata de manera más inteligente y rápida",
+    "description": "Swipped conecta a empresas con proveedores confiables para entregas, limpieza, cerrajería y más en todo el Reino Unido."
+  },
+  "Auth": {
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "first_name": "Nombre",
+    "last_name": "Apellido",
+    "login": "Iniciar sesión",
+    "signup": "Registrarse",
+    "auto_login": "Inicio de sesión automático",
+    "join_the_membership": "Únete a la membresía",
+    "already_have_account": "¿Ya tienes una cuenta? Inicia sesión",
+    "email_field_required": "El campo de correo electrónico es obligatorio.",
+    "invalid_email": "Por favor, introduce un correo electrónico válido.",
+    "password_min_length": "La contraseña debe tener al menos 6 caracteres.",
+    "first_name_min_length": "El nombre debe tener al menos 2 caracteres.",
+    "last_name_min_length": "El apellido debe tener al menos 2 caracteres.",
+    "all_fields_required": "Todos los campos son obligatorios.",
+    "registration_successful": "¡Registro exitoso!",
+    "registration_failed": "El registro falló. Por favor, intenta de nuevo.",
+    "loading": "Cargando...",
+    "invalid_credentials": "Credenciales inválidas.",
+    "user_not_found": "Por favor, regístrate antes de iniciar sesión.",
+    "device_limit_reached": "Se ha alcanzado el límite de dispositivos.",
+    "logout": "Cerrar sesión",
+    "logout_successful": "¡Cierre de sesión exitoso!",
+    "logout_failed": "El cierre de sesión falló. Por favor, intenta de nuevo.",
+    "login_successful": "¡Inicio de sesión exitoso!",
+    "reset_email_sent": "Se ha enviado un enlace de restablecimiento de contraseña a tu correo electrónico.",
+    "send_reset_link": "Enviar enlace de restablecimiento",
+    "back_to_login": "Volver al inicio de sesión",
+    "sending": "Enviando...",
+    "forgot_password": "¿Olvidaste tu contraseña?",
+    "reset_password": "Restablecer contraseña",
+    "reset_password_successful": "¡Restablecimiento de contraseña exitoso!",
+    "something_went_wrong": "Algo salió mal. Por favor, intenta de nuevo más tarde.",
+    "new_password": "Nueva contraseña",
+    "confirm_password": "Confirmar contraseña",
+    "new_password_required": "Se requiere una nueva contraseña",
+    "confirm_password_required": "Se requiere confirmar la contraseña",
+    "passwords_must_match": "Las contraseñas deben coincidir"
+  },
+  "AuthPages": {
+    "login": {
+      "title": "Bienvenido de nuevo a Swipped",
+      "modal_title": "Inicia sesión en tu cuenta de Swipped",
+      "subtitle": "Inicia sesión en Swipped y optimiza tu proceso de contratación",
+      "email_label": "Correo electrónico",
+      "password_label": "Contraseña",
+      "submit": "Iniciar sesión",
+      "loading": "Cargando...",
+      "forgot_password_hint": "¿Olvidaste tu contraseña?",
+      "forgot_password_link": "Restablécela aquí.",
+      "signup_prompt": "¿Nuevo aquí?",
+      "signup_link": "Registrarse",
+      "success_toast": "Inicio de sesión exitoso",
+      "error_toast": "Correo electrónico o contraseña inválidos"
+    },
+    "register": {
+      "title": "Registrarse",
+      "subtitle": "Únete a Swipped y comienza tu viaje hoy",
+      "first_name_label": "Nombre",
+      "last_name_label": "Apellido",
+      "email_label": "Correo electrónico",
+      "password_label": "Contraseña",
+      "confirm_password_label": "Confirmar contraseña",
+      "submit": "Crear mi cuenta",
+      "login_prompt": "¿Ya tienes una cuenta?",
+      "login_link": "Iniciar sesión",
+      "success_toast": "¡Registro exitoso! Por favor, verifica tu correo electrónico para activar tu cuenta.",
+      "error_toast": "Error, intenta de nuevo"
+    },
+    "forgotPassword": {
+      "title": "Olvidé mi contraseña",
+      "email_label": "Correo electrónico",
+      "submit": "Olvidé mi contraseña",
+      "back_to_login": "Volver al inicio de sesión",
+      "success_toast": "Enlace de restablecimiento enviado con éxito",
+      "error_toast": "No se pudo enviar el enlace de restablecimiento",
+      "generic_error_toast": "Algo salió mal"
+    },
+    "resetPassword": {
+      "title": "Restablecer tu contraseña",
+      "new_password_label": "Nueva contraseña",
+      "confirm_password_label": "Confirmar contraseña",
+      "submit": "Restablecer contraseña",
+      "success_toast": "Contraseña restablecida con éxito",
+      "error_toast": "Ocurrió un error"
+    },
+    "activate": {
+      "title": "Activando cuenta...",
+      "success_toast": "Tu cuenta ha sido activada.",
+      "error_toast": "La activación falló.",
+      "error_message": "La activación falló. Intenta de nuevo más tarde.",
+      "generic_error_message": "Ocurrió un error. Por favor, intenta de nuevo."
+    }
+  },
+  "AdminPages": {
+    "dashboard": {
+      "open_jobs_title": "TRABAJOS ABIERTOS"
+    },
+    "changePassword": {
+      "title": "Cambiar contraseña",
+      "password_label": "Contraseña",
+      "confirm_password_label": "Confirmar contraseña",
+      "save": "Guardar",
+      "loading": "Cargando..."
+    },
+    "jobsList": {
+      "title": "Trabajos abiertos",
+      "breadcrumb_home": "Inicio",
+      "breadcrumb_current": "Trabajos abiertos",
+      "loading": "Cargando...",
+      "add_job": "Agregar trabajo",
+      "table_number": "#",
+      "table_title": "Título",
+      "table_category": "Categoría",
+      "table_status": "Estado",
+      "table_action": "Acción",
+      "empty_text": "No hay trabajos abiertos. Abre un nuevo trabajo.",
+      "empty_action_text": "Abrir un trabajo",
+      "confirm_delete": "¿Estás seguro de que quieres eliminar este trabajo?",
+      "toast_delete_success": "¡Trabajo eliminado con éxito!",
+      "toast_delete_error_prefix": "Error al eliminar el trabajo:",
+      "toast_delete_generic_error": "Error al eliminar el trabajo. Por favor, intenta de nuevo."
+    },
+    "providers": {
+      "title": "Proveedores",
+      "breadcrumb_home": "Inicio",
+      "breadcrumb_current": "Proveedores",
+      "loading": "Cargando...",
+      "table_number": "#",
+      "table_name": "Nombre",
+      "table_email": "Correo electrónico",
+      "table_action": "Acción",
+      "no_providers": "No se encontraron proveedores.",
+      "toast_delete_success": "Proveedor eliminado con éxito",
+      "toast_delete_failed": "No se pudo eliminar el proveedor",
+      "toast_unexpected_error": "Ocurrió un error inesperado",
+      "wallet_modal_title": "Detalles de la billetera",
+      "wallet_account_holder": "Titular de la cuenta:",
+      "wallet_account_number": "Número de cuenta:",
+      "wallet_sort_code": "Código de clasificación:",
+      "wallet_amount": "Monto:",
+      "wallet_created_at": "Creado en:",
+      "wallet_not_found": "No se encontró ninguna billetera para este proveedor.",
+      "wallet_close": "Cerrar"
+    },
+    "payouts": {
+      "pending_label": "Pendiente ({amount})",
+      "completed_label": "Completado ({amount})",
+      "loading": "Cargando...",
+      "price_label": "Precio: {amount}",
+      "completed_by": "Trabajo completado por: {name}",
+      "completed_at": "Completado: {date}",
+      "empty_pending": "Aún no hay pagos pendientes.",
+      "empty_completed": "No hay pagos completados."
+    },
+    "profile": {
+      "title": "Perfil",
+      "loading": "Cargando...",
+      "save": "Guardar",
+      "first_name_label": "Nombre",
+      "last_name_label": "Apellido",
+      "email_label": "Dirección de correo electrónico",
+      "email_placeholder": "Ingresa el correo electrónico",
+      "toast_fetch_failed": "No se pudieron obtener los datos del usuario",
+      "toast_update_failed": "No se pudo actualizar el usuario"
+    },
+    "verifications": {
+      "title": "Verificaciones",
+      "breadcrumb_home": "Inicio",
+      "breadcrumb_current": "Verificaciones",
+      "loading": "Cargando...",
+      "toast_fetch_failed": "No se pudieron obtener los documentos",
+      "tab_service": "Verificación de servicios",
+      "tab_job": "Prueba de finalización de trabajo",
+      "selected_count": "{count} documento(s) seleccionado(s)",
+      "cancel": "Cancelar",
+      "approve": "Aprobar",
+      "reject": "Rechazar",
+      "approving": "Aprobando...",
+      "rejecting": "Rechazando...",
+      "table_job_title": "Título del trabajo",
+      "table_service_provider": "Proveedor de servicios",
+      "table_category_type": "Categoría / Tipo",
+      "table_documents": "Documentos",
+      "table_document": "Documento",
+      "table_view": "Ver",
+      "no_service_docs": "No hay documentos de servicio esperando verificación.",
+      "no_job_docs": "No hay documentos de prueba de trabajo esperando verificación.",
+      "reject_modal_title": "Rechazar documentos",
+      "reject_reason_label": "Motivo del rechazo",
+      "modal_cancel": "Cancelar",
+      "modal_reject": "Rechazar"
+    },
+    "layout": {
+      "nav_dashboard": "Panel de control",
+      "nav_jobs": "Trabajos",
+      "nav_providers": "Proveedores",
+      "nav_verifications": "Verificaciones",
+      "nav_payouts": "Pagos",
+      "menu_profile": "Perfil",
+      "menu_change_password": "Cambiar contraseña",
+      "menu_logout": "Cerrar sesión"
+    }
+  },
+  "OnBoardPages": {
+    "layout": {
+      "loading": "Cargando..."
+    },
+    "lookingToProvide": {
+      "title": "Dinos qué ofreces — Selecciona tu servicio",
+      "toast_pending_exists": "Ya tienes un servicio pendiente. Por favor, espera la aprobación.",
+      "toast_already_approved": "Este servicio ya está aprobado.",
+      "toast_select_service": "Por favor, selecciona un servicio.",
+      "toast_generic_error": "Algo salió mal. Por favor, intenta de nuevo.",
+      "success_added": "¡Servicios añadidos con éxito!",
+      "success_updated": "¡Servicios actualizados con éxito!",
+      "success_auto_approved": "¡Servicio aprobado! Tus documentos ya están verificados.",
+      "button_saving": "Guardando...",
+      "button_continue": "Continuar",
+      "status_Approved": "Aprobado",
+      "status_Pending": "Pendiente",
+      "status_Rejected": "Rechazado"
+    },
+    "addressOnboarding": {
+      "provider_title": "Establece la ubicación de tu servicio",
+      "provider_description": "Dinos dónde proporcionarás tus servicios para que los clientes puedan encontrarte.",
+      "provider_address_label": "Dirección de tu servicio",
+      "provider_address_placeholder": "Ingresa la dirección de ubicación del servicio",
+      "shop_owner_title": "Establece la ubicación de tu tienda",
+      "shop_owner_description": "Dinos dónde está ubicada tu tienda para que los clientes puedan encontrarte.",
+      "shop_owner_address_label": "Dirección de tu tienda",
+      "shop_owner_address_placeholder": "Ingresa la dirección de tu tienda",
+      "customer_title": "Completa tu configuración",
+      "customer_description": "Dinos dónde te encuentras para poder mostrarte servicios cercanos.",
+      "customer_address_label": "Tu dirección",
+      "customer_address_placeholder": "Ingresa tu dirección",
+      "selected_location": "Ubicación seleccionada",
+      "toast_address_required": "Por favor, selecciona una dirección para continuar.",
+      "success_address_saved": "¡Dirección guardada con éxito!",
+      "toast_save_error": "Error al guardar la dirección. Por favor, inténtalo de nuevo.",
+      "button_saving": "Guardando...",
+      "button_continue": "Continuar"
+    }
+  },
+  "ProviderPages": {
+    "layout": {
+      "nav_dashboard": "Panel de control",
+      "nav_jobs": "Trabajos",
+      "nav_payouts": "Pagos",
+      "menu_profile": "Perfil",
+      "menu_change_password": "Cambiar contraseña",
+      "menu_address": "Libreta de direcciones",
+      "menu_services": "Servicios y verificación",
+      "menu_support": "Soporte",
+      "menu_payments": "Pagos",
+      "menu_subscription_plans": "Planes de suscripción",
+      "menu_billing_history": "Historial de facturación",
+      "menu_logout": "Cerrar sesión",
+      "toast_fetch_failed": "No se pudieron obtener los datos del usuario"
+    },
+    "changePassword": {
+      "title": "Cambiar contraseña",
+      "password_label": "Contraseña",
+      "confirm_password_label": "Confirmar contraseña",
+      "save": "Guardar",
+      "loading": "Cargando..."
+    },
+    "dashboard": {
+      "tab_inprogress": "En progreso ({count})",
+      "tab_completed": "Completado ({count})",
+      "tab_cancelled": "Cancelado ({count})",
+      "loading": "Cargando...",
+      "price_label": "Precio: {amount}",
+      "from_label": "Desde: {city}",
+      "btn_completing": "Completando...",
+      "btn_complete": "Completar",
+      "btn_completion_pending": "Finalización pendiente",
+      "btn_cancelling": "Cancelando...",
+      "btn_cancel": "Cancelar",
+      "btn_view": "Ver",
+      "empty_inprogress": "No hay trabajos en progreso.",
+      "empty_completed": "Aún no hay trabajos completados.",
+      "empty_cancelled": "No hay trabajos cancelados.",
+      "confirm_cancel": "¿Estás seguro de que quieres cancelar este trabajo?",
+      "confirm_cancel_desc": "Si cancelas este trabajo, habrá una penalización de $20 que se deducirá de tu próximo pago, también podemos suspender tu cuenta si cancelas demasiados trabajos",
+      "toast_complete_success": "¡Trabajo completado con éxito!",
+      "toast_complete_failed": "No se pudo completar el trabajo",
+      "toast_complete_generic": "Algo salió mal al completar el trabajo",
+      "toast_cancel_success": "¡Trabajo cancelado con éxito!",
+      "toast_cancel_failed": "Algo salió mal al cancelar el trabajo.",
+      "toast_cancel_error": "Error al cancelar el trabajo"
+    },
+    "jobs": {
+      "search_placeholder": "Buscar trabajos...",
+      "filter_all": "Todos",
+      "count_label": "{count} Trabajos disponibles",
+      "clear_filters": "Borrar filtros",
+      "loading": "Cargando...",
+      "view_book": "Ver y reservar",
+      "empty": "No hay trabajos disponibles.",
+      "price_label": "Precio: {amount}",
+      "from_label": "Desde: {city}"
+    },
+    "jobDetails": {
+      "title": "Detalles del trabajo",
+      "accept": "Aceptar trabajo",
+      "payment": "Pago",
+      "payment_badge": "Pago {time} - ${price}",
+      "job_id": "ID del trabajo: {id}",
+      "date": "Fecha:",
+      "distance": "Distancia:",
+      "miles": "Millas",
+      "mile": "Milla",
+      "pickup": "Recogida",
+      "pickup_between": "Recogida entre {start} - {end}",
+      "pickup_at": "a las {time}",
+      "address_blurred_until_accept": "Dirección difuminada hasta que se acepte el trabajo",
+      "address_blurred": "Dirección difuminada",
+      "blurred": "Difuminado",
+      "dropoff": "Entrega",
+      "between": "Entre {start} - {end}",
+      "at": "A las {time}",
+      "pickup_location": "UBICACIÓN DE RECOGIDA",
+      "job_location": "UBICACIÓN DEL TRABAJO",
+      "dropoff_location": "UBICACIÓN DE ENTREGA",
+      "locations_blurred_until_accept": "Acepta el trabajo para desbloquear la ubicación completa",
+      "accept_confirm": "¿Estás seguro de que quieres aceptar este trabajo?",
+      "accept_warning": "Tenga en cuenta: Una vez aceptado, este trabajo debe completarse. No completarlo puede resultar en una penalización en su cuenta.",
+      "toast_accept_not_approved": "Servicio no aprobado.",
+      "toast_accept_success": "Trabajo aceptado con éxito",
+      "toast_accept_failed": "Algo salió mal al aceptar el trabajo.",
+      "toast_error_loading": "Error al cargar los detalles del trabajo",
+      "loading": "Cargando..."
+    },
+    "payouts": {
+      "pending_label": "Pendiente ({amount})",
+      "completed_label": "Completado ({amount})",
+      "loading": "Cargando...",
+      "price_label": "Precio: {amount}",
+      "completed_at": "Completado: {date}",
+      "empty_pending": "Aún no hay pagos pendientes.",
+      "empty_completed": "No hay pagos completados."
+    },
+    "profile": {
+      "title": "Perfil",
+      "loading": "Cargando...",
+      "first_name": "Nombre",
+      "last_name": "Apellido",
+      "email_address": "Dirección de correo electrónico",
+      "language": "Idioma",
+      "first_name_placeholder": "Nombre",
+      "last_name_placeholder": "Apellido",
+      "email_placeholder": "Ingresa el correo electrónico",
+      "select_language": "Seleccionar idioma",
+      "save": "Guardar",
+      "saving": "Cargando...",
+      "validation": {
+        "first_name_required": "El nombre es obligatorio",
+        "first_name_min_length": "El nombre debe tener al menos 3 caracteres",
+        "last_name_required": "El apellido es obligatorio",
+        "last_name_min_length": "El apellido debe tener al menos 3 caracteres",
+        "email_required": "El correo electrónico es obligatorio",
+        "email_valid": "El correo electrónico debe ser válido"
+      },
+      "errors": {
+        "failed_fetch_user": "No se pudieron obtener los datos del usuario",
+        "failed_update_user": "No se pudo actualizar el usuario"
+      }
+    },
+    "settings": {
+      "title": "Configuración del proveedor",
+      "loading": "Cargando...",
+      "select_prompt": "Por favor, selecciona una sección de configuración desde el menú."
+    },
+    "billingHistory": {
+      "title": "Historial de facturación",
+      "loading": "Cargando...",
+      "current_subscription": "Suscripción actual",
+      "transaction_history": "Historial de transacciones",
+      "no_billing_history": "No hay historial de facturación",
+      "no_subscriptions": "No se encontraron transacciones.",
+      "view_details": "Ver detalles",
+      "subscription_details": "Detalles de la suscripción",
+      "manage_subscription": "Administra tu suscripción y consulta la información de facturación",
+      "table_headers": {
+        "date": "Fecha",
+        "plan": "Plan",
+        "amount": "Monto",
+        "transaction_id": "ID de transacción"
+      },
+      "transaction_date": "Fecha de transacción",
+      "failed_fetch_billing": "No se pudo obtener el historial de facturación"
+    },
+    "subscription": {
+      "title": "Suscripción",
+      "loading": "Cargando...",
+      "current_plan": "Plan actual",
+      "amount": "Monto",
+      "type": "Tipo",
+      "start_date": "Fecha de inicio",
+      "end_date": "Fecha de fin",
+      "ongoing": "En curso",
+      "active": "Activo",
+      "upgraded": "Actualizado",
+      "cancelled": "Cancelado",
+      "expired": "Expirado",
+      "no_subscription": "Sin suscripción",
+      "active_subscription_message": "Suscripción activa con acceso completo",
+      "cancelled_access_until": "Cancelado - acceso hasta {date}",
+      "cancelled_access_expired": "Cancelado - acceso expirado",
+      "expired_renew_message": "Expirado - renueva para continuar el acceso",
+      "cancel_subscription": "Cancelar suscripción",
+      "cancelling": "Cancelando...",
+      "renew_subscription": "Renovar suscripción",
+      "no_active_subscription": "Sin suscripción activa",
+      "subscribe_unlock_message": "Suscríbete para desbloquear funciones premium",
+      "view_plans": "Ver planes",
+      "subscription_cancelled_success": "Suscripción cancelada con éxito",
+      "failed_cancel_subscription": "No se pudo cancelar la suscripción"
+    },
+    "support": {
+      "help_center": "Centro de ayuda",
+      "frequently_asked_questions": "Preguntas frecuentes",
+      "phone_support": "Soporte telefónico",
+      "email_support": "Soporte por correo electrónico",
+      "text_us": "Envíanos un mensaje",
+      "email_us": "Envíanos un correo",
+      "copied": "¡Copiado!",
+      "phone_copied_success": "¡Número de teléfono copiado al portapapeles!",
+      "failed_copy_phone": "No se pudo copiar el número de teléfono",
+      "faq": {
+        "how_get_paid": {
+          "question": "¿Cómo recibo el pago?",
+          "answer": "Ofrecemos pago directo a tu cuenta bancaria designada. Proporcionamos términos de pago flexibles, permitiéndote elegir la opción que mejor se adapte a ti. Ofrecemos tres términos de pago diferentes: pago el mismo día, pago a 30 días y pago a 45 días. La elección del término de pago depende completamente de ti, según tus preferencias y necesidades financieras."
+        },
+        "verification_time": {
+          "question": "¿Cuánto tiempo toma verificar mi cuenta?",
+          "answer": "Por lo general, el proceso toma aproximadamente de 5 a 7 días hábiles para completarse. Después de registrarte con éxito, puedes esperar recibir una notificación por correo electrónico."
+        },
+        "required_documents": {
+          "question": "¿Qué documentos necesito para registrarme?",
+          "answer": "Licencia de conducir: Es esencial una licencia de conducir válida si planeas trabajar como conductor o operar un vehículo como parte de tus actividades. Asegúrate de que tu licencia esté actualizada y cumpla con los criterios necesarios para el tipo de vehículo que planeas usar. Seguro de mensajería: Si trabajas como mensajero, es importante tener un seguro de mensajería. Este tipo de seguro generalmente te cubre por cualquier daño o pérdida potencial de los artículos que transportas. Proporciona protección tanto para ti como para tus clientes. Seguro de responsabilidad civil: El seguro de responsabilidad civil es crucial para protegerte a ti y a tu negocio contra posibles reclamaciones o demandas. Cubre daños o lesiones causados a otros durante el curso de tu trabajo. Se recomienda tener un seguro de responsabilidad civil para mitigar cualquier riesgo financiero. Cuenta bancaria del Reino Unido: Tener una cuenta bancaria del Reino Unido a menudo es necesario por varias razones, como recibir pagos, administrar finanzas y garantizar transacciones fluidas con clientes o empleadores. Es esencial tener una cuenta bancaria válida que te permita realizar transacciones comerciales de manera eficiente. Teléfono inteligente: En la era digital actual, un teléfono inteligente es una herramienta esencial para muchas profesiones, incluidos los servicios de mensajería. Un teléfono inteligente te permite mantenerte conectado, acceder a aplicaciones necesarias, comunicarte con clientes, navegar por rutas y administrar tu trabajo de manera eficiente. Asegúrate de tener un teléfono inteligente con conexión a internet y aplicaciones relevantes para tu línea de trabajo."
+        },
+        "restricted_accounts": {
+          "question": "¿Por qué algunas cuentas están restringidas?",
+          "answer": "En nuestra empresa, valoramos enormemente los comentarios de nuestros clientes. Para mantener los más altos estándares de servicio y garantizar la satisfacción del cliente, podemos imponer restricciones en ciertas cuentas basadas en un historial de retroalimentación negativa. Estas restricciones se implementan para abordar cualquier problema y mejorar la calidad general de nuestros servicios."
+        },
+        "missed_job": {
+          "question": "¿Qué pasa si acepto un trabajo pero no asisto como se acordó?",
+          "answer": "Tomamos la puntualidad y la confiabilidad muy en serio, y es importante para nosotros mantener un alto nivel de profesionalismo. Si aceptas un trabajo pero no asistes según lo acordado, se puede imponer una penalización. Esta penalización sirve como un recordatorio para honrar tus compromisos y priorizar el cumplimiento de las expectativas de nuestros clientes."
+        },
+        "contact_team": {
+          "question": "¿Cómo puedo contactar a un miembro de su equipo?",
+          "answer": "Siempre estamos aquí para ayudarte. Si tienes alguna pregunta, inquietud o necesitas asistencia, no dudes en ponerte en contacto con nuestro equipo dedicado. Puedes contactarnos al 02035351953. Nuestro equipo estará encantado de proporcionarte el soporte y la orientación necesarios."
+        }
+      }
+    },
+    "wallet": {
+      "add_new_card": "Agregar nueva tarjeta",
+      "account_holder_name": "Nombre del titular de la cuenta",
+      "account_number": "Número de cuenta (8 dígitos)",
+      "sort_code": "Código de clasificación (por ejemplo, 12-34-56)",
+      "cancel": "Cancelar",
+      "save": "Guardar",
+      "saving": "Guardando...",
+      "loading": "Cargando...",
+      "existing_cards": "Tarjetas existentes",
+      "account_holder_required": "El nombre del titular de la cuenta es obligatorio",
+      "account_number_required": "El número de cuenta es obligatorio",
+      "must_be_8_digits": "Debe tener 8 dígitos",
+      "sort_code_required": "El código de clasificación es obligatorio",
+      "must_be_format": "Debe estar en el formato 12-34-56",
+      "card_set_default": "Tarjeta de pago establecida como predeterminada",
+      "failed_update_payment": "No se pudo actualizar el método de pago",
+      "error_updating_payment": "Error al actualizar el método de pago",
+      "card_deleted_success": "¡Tarjeta eliminada con éxito!",
+      "error_deleting_card": "Error al eliminar la tarjeta",
+      "card_added_success": "¡Tarjeta añadida con éxito!",
+      "failed_add_card": "No se pudo añadir la tarjeta",
+      "unexpected_error": "Ocurrió un error inesperado",
+      "failed_load_cards": "No se pudieron cargar las tarjetas de pago"
+    }
+  },
+  "PublicPages": {
+    "layout": {
+      "login": "Iniciar sesión",
+      "signup": "Registrarse",
+      "language_selector": "Idioma",
+      "footer_brand": "Swipped",
+      "footer_desc": "En Swippped, proporcionamos soluciones perfectas para todas tus necesidades. Nuestro objetivo es hacer que cada servicio sea conveniente, eficiente y sin esfuerzo—ayudándote a resolver problemas de manera rápida y confiable.",
+      "nav_home": "Inicio",
+      "nav_collection": "Recogida",
+      "nav_shop": "Tienda",
+      "nav_order_food": "Pedir comida",
+      "nav_sales": "Ventas",
+      "nav_about": "Sobre nosotros",
+      "nav_services": "Servicios",
+      "nav_partner": "Asóciate con nosotros",
+      "footer_terms": "Términos",
+      "footer_privacy": "Privacidad",
+      "footer_cookies": "Cookies",
+      "footer_copyright": "Swipped © {year}. Todos los derechos reservados."
+    },
+    "home": {
+      "services_title": "Servicios",
+      "from_price": "Desde ${price}",
+      "continue": "Continuar",
+      "moving_delivery_title": "Mudanzas y entregas",
+      "moving_delivery_desc": "En tu puerta en 20 minutos. Desde paquetes pequeños hasta cargas completas de furgoneta, nuestros conductores están listos en todo el país. Reserva en minutos y ten a alguien en tu puerta en 20 minutos.",
+      "cleaning_title": "Limpieza profesional",
+      "cleaning_desc": "En tu puerta en 20 minutos. Desde limpiezas rápidas en casa hasta limpiezas profundas, nuestros limpiadores confiables están listos en todo el país. Reserva en minutos y ten a alguien en tu puerta en 20 minutos.",
+      "locksmith_title": "Servicios de cerrajería",
+      "locksmith_desc": "En tu puerta en 20 minutos. ¿Te quedaste fuera o necesitas reparaciones urgentes de cerraduras? Nuestros cerrajeros están listos en todo el país. Reserva en minutos y ten a alguien en tu puerta en 20 minutos.",
+      "click_collect_title": "Recogida y entrega",
+      "click_collect_desc": "En tu puerta en 20 minutos. ¿No tienes tiempo para recoger tu pedido? Recogeremos tus compras de recogida en tienda desde cualquier tienda del Reino Unido y las entregaremos directamente en tu puerta, rápido y sin complicaciones.",
+      "hero_title": "Servicios esenciales, hechos simples",
+      "hero_subtitle": "Hechos simples",
+      "rating_label": "Calificación 5.0",
+      "rating_from_clients": "Calificación de clientes satisfechos",
+      "hero_desc": "Desde compras y entregas hasta averías y limpieza — consigue todo con Swipped.",
+      "hero_desc_subtitle": "Compra. Reserva. Listo.",
+      "hero_desc_subtitle_words": {
+        "shop": "Conectar",
+        "book": "Explorar",
+        "done": "+ Más"
+      },
+      "book_service": "RESERVAR UN SERVICIO",
+      "shop_now": "COMPRAR AHORA",
+      "ways_to_use_title": "Formas de usar swipped",
+      "our_services": "Tu profesional local",
+      "services_available": "{count} servicios disponibles",
+      "showing_services_in": "Mostrando Servicios en {location} {flag}",
+      "change": "Cambiar",
+      "global_users": "Usuarios globales: {count}",
+      "your_location": "Tu ubicación: {count}",
+      "ecosystem_title": "Ecosistema Swipped",
+      "services_live": "{count} Servicios Activos",
+      "global_users_near_you": "{globalCount} Usuarios Globales • {nearYouCount} Cerca de Ti",
+      "order_now": "Pedir ahora",
+      "book_now": "Reservar ahora",
+      "menu_title": "Menú",
+      "mini_apps_title": "Mini Aplicaciones",
+      "service_available": "Servicio Disponible",
+      "global_users_label": "Usuarios Globales",
+      "local_users": "Usuarios Locales",
+      "categories": "Categorías",
+      "instant_deliveries": "Entregas Instantáneas",
+      "reservations": "Reservas",
+      "book_in_seconds": "Reservar en Segundos",
+      "services_label": "Servicios",
+      "view_all_mini_apps": "Ver Todas las Mini Aplicaciones",
+      "promo_eyebrow": "Oferta por tiempo limitado",
+      "promo_discount": "15% de descuento",
+      "promo_sub": "en tu primer viaje en taxi · usa el código",
+      "promo_code": "SWIPPED15",
+      "miniApps": {
+        "apps": {
+          "digitalLandExchange": "Intercambio Digital de Tierras",
+          "swippedWorkforce": "Swipped Workforce",
+          "swippedConnect": "Swipped Connect",
+          "swippedLiveStreaming": "Swipped Transmisión en Vivo",
+          "swippedVirtualWorld": "Swipped Virtual World 🗺",
+          "charityDonations": "Swipped Donations"
+        },
+        "comingSoon": {
+          "title": "Próximamente",
+          "message": "¡{appName} estará disponible pronto! Mantente atento a las actualizaciones.",
+          "defaultAppName": "Esta función"
+        },
+        "add": "Agregar"
+      },
+      "promotional_slider": {
+        "slide1": {
+          "title": "Cuenta comercial Swipped",
+          "desc": "Lleve su negocio más lejos con una Cuenta Comercial Swipped — llena de herramientas y recompensas para ayudarlo a crecer"
+        },
+        "slide2": {
+          "title": "Empecemos",
+          "desc": "Lleve su negocio al siguiente nivel con Swipped — diseñado para ayudarlo a escalar más rápido, administrar mejor y ganar más"
+        },
+        "slide3": {
+          "title": "Asóciate con nosotros",
+          "desc": "Comience en minutos — regístrese y comience a ganar con Swipped"
+        },
+        "slide4": {
+          "title": "A solo un deslizamiento",
+          "desc": "Todas sus necesidades diarias, manejadas en un solo lugar — sin estrés, sin complicaciones"
+        },
+        "slide5": {
+          "title": "Swipped Fulfilment",
+          "desc": "Venda desde cualquier lugar — le traeremos clientes, empaquetaremos sus productos y los enviaremos por usted"
+        },
+        "slide6": {
+          "title": "Todos los servicios, una plataforma",
+          "desc": "Restaurantes locales, tiendas y proveedores de servicios para reservas instantáneas, entrega rápida y comunicación fluida"
+        },
+        "slide7": {
+          "title": "Tierra Virtual",
+          "desc": "Posee y comercia con activos de tierra virtual construidos para experiencias digitales futuras, valor a largo plazo e integración dentro del ecosistema Swipped."
+        },
+        "slide8": {
+          "title": "Crowdfunding",
+          "desc": "Apoya el crecimiento de Swipped uniéndote a nuestro viaje de crowdfunding y ayudando a construir el futuro de los servicios conectados y la innovación digital."
+        }
+      },
+      "services": {
+        "shop": {
+          "name": "Tiendas",
+          "description": "Consigue lo que quieras, cuando lo quieras. Desde artículos esenciales del día a día hasta regalos de última hora, llevamos la tienda a tu puerta"
+        },
+        "restaurant": {
+          "name": "Restaurantes",
+          "description": "Recibe tus comidas favoritas entregadas directamente con facilidad. Navega por restaurantes, explora nuevos sabores y realiza tu pedido con solo unos toques"
+        },
+        "supermarket": {
+          "name": "Supermercados",
+          "description": "Compra comestibles y artículos esenciales del día a día en tus supermercados favoritos. Entrega rápida directamente a tu puerta"
+        },
+        "swipped_rides": {
+          "name": "Taxi Rides",
+          "description": "Reserva viajes seguros y asequibles bajo demanda, con conductores verificados, seguimiento en vivo y precios transparentes para cada viaje."
+        },
+        "restaurant_reservation": {
+          "name": "Reserva de Restaurante",
+          "description": "Ahora puedes reservar una mesa en tu restaurante favorito directamente en Swipped. Sin llamadas, sin colas — solo toca, reserva y disfruta."
+        },
+        "luggage_storage": {
+          "name": "Almacenamiento de Equipaje",
+          "description": "Viaja ligero y sin estrés. Guarda tus maletas con nosotros durante unas horas, unos días o incluso unas semanas—lo que se adapte a tus planes."
+        },
+        "dry_cleaning_pick_up": {
+          "name": "Limpieza en Seco",
+          "description": "Disfruta de ropa perfectamente limpia sin salir de casa. Recogemos tus prendas directamente desde tu puerta, las limpiamos profesionalmente en seco y te las entregamos frescas"
+        },
+        "recovery": {
+          "name": "Servicio de recuperación",
+          "description": "¿Atrapado en la carretera? Nuestro equipo de recuperación dedicado está a solo un toque de distancia. No importa dónde estés, nuestra red nacional opera 24/7, brindando asistencia rápida, segura y confiable."
+        },
+        "cleaning": {
+          "name": "Servicio de limpieza",
+          "description": "Desde hogares hasta espacios comerciales y propiedades de Airbnb — te tenemos cubierto. Llamada urgente o cita programada, nuestros profesionales están listos para ayudar."
+        },
+        "locksmith": {
+          "name": "Cerrajería",
+          "description": "Si estás encerrado o has perdido tus llaves, nuestros cerrajeros vendrán directamente a ti. Operamos a nivel nacional y ofrecemos asistencia 24/7."
+        },
+        "car_key_replacement": {
+          "name": "Reemplazo de llaves de coche",
+          "description": "¿Perdiste la llave de tu coche? La reemplazaremos dondequiera que estés. Nuestros técnicos especialistas vienen directamente a tu ubicación, cortan y programan tu nueva llave en el acto para que puedas volver a la carretera sin problemas."
+        },
+        "removals": {
+          "name": "Retiro de basura",
+          "description": "¿Necesitas que se retire la basura hoy? Podemos ayudar en cualquier momento. Nuestros equipos de retiro rápidos y confiables están disponibles bajo demanda para limpiar artículos no deseados de tu hogar, negocio o jardín. Desde artículos individuales hasta cargas completas"
+        },
+        "click_and_collect": {
+          "name": "Recogida y entrega",
+          "description": "Recogida nacional de cualquier tienda, entregada directamente a tu hogar. Con Swipped, todo se vuelve accesible y sin esfuerzo."
+        },
+        "van": {
+          "name": "Servicio de mensajería",
+          "description": "Envíalo rápido — envíalo con Swipped. Desde paquetes pequeños hasta muebles y paletas, lo manejamos todo con una flota nacional lista para asistirte al instante."
+        },
+        "mot_resrevations": {
+          "name": "MOT y servicio",
+          "description": "Reserva pruebas MOT y servicios de automóviles de confianza con profesionales certificados para mantener tu vehículo listo para la carretera."
+        },
+        "shisha_lounge": {
+          "name": "Salones de shisha",
+          "description": "Reserva tu lugar en los mejores salones de shisha. Reserva tu mesa y disfruta de una noche relajante con amigos."
+        },
+        "spa": {
+          "name": "Tratamientos de spa",
+          "description": "Relájate y desconecta con tratamientos de spa profesionales, masajes y servicios de bienestar reservados al instante."
+        },
+        "beauty": {
+          "name": "Salón de belleza",
+          "description": "Reserva citas de belleza para cabello, uñas y tratamientos de piel con profesionales de confianza cerca de ti."
+        },
+        "healthcare": {
+          "name": "Citas de atención médica",
+          "description": "Reserva citas de atención médica con proveedores de confianza. Dentista, clínica, goteo intravenoso y más servicios de salud."
+        },
+        "events": {
+          "name": "Servicios de eventos",
+          "description": "Reserva servicios profesionales de eventos. Contratación de DJ, música en vivo, apariciones de personajes y más para tus eventos especiales."
+        },
+        "entertainment": {
+          "name": "Lugares de entretenimiento",
+          "description": "Reserva emocionantes experiencias de entretenimiento. Experiencias de realidad virtual, bolos, salas de karaoke y diversión inolvidable."
+        }
+      },
+      "cards": {
+        "click_collect_title": "Recogida y entrega – En tu puerta en 20 minutos",
+        "click_collect_desc": "¿No tienes tiempo para recoger tu pedido? Recogeremos tus compras de recogida en tienda desde cualquier tienda del Reino Unido y las entregaremos directamente en tu puerta, rápido y sin complicaciones.",
+        "moving_title": "Mudanzas y entregas – En tu puerta en 20 minutos",
+        "moving_desc": "Hacemos que sea simple y conveniente reservar los servicios que necesitas. Una vez que hagas una solicitud, nuestros proveedores de servicios de confianza pueden llegar a ti en 20-60 minutos, garantizando ayuda rápida y confiable cuando más la necesitas.",
+        "fast_delivery_title": "Solo 60 minutos. Sin esperas, sin complicaciones – compras rápidas y confiables hechas simples.",
+        "fast_delivery_desc": "Compra en tus tiendas locales favoritas y recibe casi cualquier producto entregado directamente en tu puerta en",
+        "rubbish_removal": "En Swippped, proporcionamos soluciones perfectas para todas tus necesidades. Nuestro objetivo es hacer que cada servicio sea conveniente, eficiente y sin esfuerzo—ayudándote a resolver problemas de manera rápida y confiable."
+      },
+      "reliable": "Confiable",
+      "solutions": "Soluciones",
+      "contact": {
+        "title": "Conéctate con nosotros para un soporte rápido y confiable",
+        "desc": "¿Tienes alguna pregunta o necesitas alguno de nuestros servicios? Completa el formulario a continuación y nuestro equipo te responderá rápidamente.",
+        "address": "Londres, Reino Unido",
+        "phone": "02074867727",
+        "email": "swipped@customerservice.com",
+        "first_name_label": "Nombre",
+        "first_name_ph": "Nombre",
+        "last_name_label": "Apellido",
+        "last_name_ph": "Apellido",
+        "email_label": "Correo electrónico",
+        "email_ph": "Correo electrónico",
+        "phone_label": "Teléfono",
+        "phone_ph": "Teléfono",
+        "message_label": "Mensaje",
+        "message_ph": "Mensaje",
+        "submit": "Enviar"
+      }
+    },
+    "booking": {
+      "continue": "Continuar",
+      "toast_success": "Trabajo de {category} creado con éxito",
+      "toast_generic_error": "¡Algo salió mal!",
+      "toast_failed_save": "No se pudo guardar el trabajo",
+      "errors": {
+        "pickupAddressLine1": "La dirección de recogida es obligatoria",
+        "dropOffAddressLine1": "La dirección de entrega es obligatoria",
+        "distance": "Por favor, establece las direcciones de recogida y entrega",
+        "category": "La categoría es obligatoria",
+        "title": "El título del trabajo es obligatorio",
+        "vanSize": "El tamaño de la furgoneta es obligatorio",
+        "movingItem": "El elemento a mover es obligatorio",
+        "make": "La marca del vehículo es obligatoria",
+        "model": "El modelo del vehículo es obligatorio",
+        "year": "El año del vehículo es obligatorio",
+        "howManyItems": "El número de elementos es obligatorio",
+        "howManyRooms": "El número de habitaciones es obligatorio",
+        "howManyBathrooms": "El número de baños es obligatorio",
+        "howManyHours": "El número de horas es obligatorio",
+        "typeOfPlace": "El tipo de lugar es obligatorio",
+        "typeOfKey": "El tipo de llave es obligatorio",
+        "typeOfLock": "El tipo de cerradura es obligatorio",
+        "storeName": "El nombre de la tienda es obligatorio",
+        "clickAndCollectIdNumber": "El número de ID de recogida es obligatorio",
+        "yourName": "Tu nombre es obligatorio",
+        "contactNumber": "El número de contacto es obligatorio",
+        "invalid_contact": "Número de contacto inválido",
+        "pickupDate": "La fecha de recogida es obligatoria",
+        "pickupFixedTime": "La hora de recogida es obligatoria si no es flexible",
+        "dropOffDate": "La fecha de entrega es obligatoria",
+        "dropOffFixedTime": "La hora de entrega es obligatoria si no es flexible"
+      }
+    },
+    "jobDistanceForm": {
+      "loading_maps": "Cargando Google Maps para sugerencias de direcciones...",
+      "enter_pickup": "Ingresa la dirección de recogida",
+      "enter_dropoff": "Ingresa la dirección de entrega",
+      "enter_your_location": "Ingresa tu ubicación",
+      "placeholder_pickup": "Ingresa la dirección de recogida",
+      "placeholder_dropoff": "Ingresa la dirección de entrega",
+      "estimated_distance": "Distancia estimada: {miles} millas",
+      "calculating": "Calculando...",
+      "another_services": "Otros servicios",
+      "pickup_badge": "✅ Recogida: {address}",
+      "dropoff_badge": "✅ Entrega: {address}",
+      "map_title": "Seleccionar ubicaciones en el mapa",
+      "banner_title": "Servicio profesional",
+      "banner_desc": "Rápido, confiable y profesional",
+      "banner_available": "Disponible"
+    },
+    "detailForm": {
+      "job_title": "Título del trabajo",
+      "job_title_ph": "Título del trabajo...",
+      "van_type": "Tipo de vehículo",
+      "select_van_size": "Seleccionar tipo de vehículo",
+      "bike": "Bicicleta",
+      "motorbike": "Motocicleta",
+      "car": "Coche",
+      "small_van": "Furgoneta pequeña",
+      "medium_van": "Furgoneta mediana",
+      "large_van": "Furgoneta grande",
+      "xl_van": "Furgoneta XL",
+      "moving_what": "¿Qué estás moviendo?",
+      "moving_what_ph": "Por ejemplo, cajas, muebles, etc.",
+      "help_loading": "¿Vas a ayudar con la carga?",
+      "two_men": "¿Se requieren dos personas?",
+      "vehicle_make": "Marca del vehículo",
+      "vehicle_make_ph": "Ingresa la marca del vehículo",
+      "select_vehicle_make": "Seleccionar marca del vehículo",
+      "vehicle_model": "Modelo del vehículo",
+      "vehicle_model_ph": "Ingresa el modelo del vehículo",
+      "select_vehicle_model": "Seleccionar modelo del vehículo",
+      "vehicle_year": "Año del vehículo",
+      "vehicle_year_ph": "Ingresa el año del vehículo",
+      "car_turn_on": "¿El coche enciende?",
+      "how_many_items": "¿Cuántos elementos?",
+      "select": "Seleccionar",
+      "type_of_key": "Tipo de llave",
+      "type_of_lock": "Tipo de cerradura",
+      "how_many_rooms": "¿Cuántos Dormitorios?",
+      "how_many_bathrooms": "¿Cuántos Baños?",
+      "how_many_hours": "¿Cuántas horas?",
+      "type_of_property": "Tipo de propiedad",
+      "has_cleaning_products": "¿Tienes productos de limpieza?",
+      "store_name": "Nombre de la tienda",
+      "store_name_ph": "Ingresa el nombre de la tienda",
+      "click_collect_id": "Número de ID de recogida",
+      "click_collect_id_ph": "Ingresa el número de ID",
+      "your_name": "Tu nombre",
+      "your_name_ph": "Ingresa tu nombre",
+      "contact_number": "Número de contacto",
+      "contact_number_ph": "Ingresa el número de contacto",
+      "pickup_date": "Fecha de recogida",
+      "job_date": "Fecha del trabajo",
+      "date_ph": "Seleccionar fecha",
+      "time_ph": "Seleccionar hora",
+      "today": "Hoy",
+      "tomorrow": "Mañana",
+      "pickup_time_flexible": "¿Es flexible la hora de recogida?",
+      "pickup_time": "Hora de recogida",
+      "dropoff_date": "Fecha de entrega",
+      "dropoff_time_flexible": "¿Es flexible la hora de entrega?",
+      "dropoff_time": "Hora de entrega",
+      "notes": "Notas (Opcional)",
+      "notes_ph": "Detalles adicionales sobre tu reserva..."
+    },
+    "checkout": {
+      "title": "Pago",
+      "booking_summary": "Resumen de la reserva",
+      "pickup": "Recogida:",
+      "dropoff": "Entrega:",
+      "distance": "Distancia:",
+      "miles": "millas",
+      "date": "Fecha:",
+      "pickup_time": "Hora de recogida:",
+      "loading_assistance": "Asistencia de carga:",
+      "two_men_service": "Servicio de dos personas:",
+      "total": "Total:",
+      "payment_method": "Método de pago",
+      "processing": "Procesando...",
+      "pay_amount": "Pagar {amount}",
+      "modal_title": "Mis métodos de pago",
+      "payment_methods": {
+        "apple_pay": "Apple Pay",
+        "klarna": "Pagar en 3 con Klarna",
+        "add_card": "Agregar una nueva tarjeta"
+      },
+      "success_title": "¡Reserva confirmada!",
+      "success_desc": "Tu reserva ha sido enviada con éxito. Recibirás un correo electrónico de confirmación en breve.",
+      "booking_id": "ID de reserva: #{id}"
+    },
+    "terms": {
+      "title": "Términos y Condiciones",
+      "last_updated": "Última actualización: Diciembre 2024",
+      "section_1_title": "1. Aceptación de los Términos",
+      "section_1_content": "Al acceder y usar Swipped, aceptas y te comprometes a cumplir con los términos y disposiciones de este acuerdo. Si no estás de acuerdo con lo anterior, por favor no uses este servicio.",
+      "section_2_title": "2. Descripción del Servicio",
+      "section_2_content": "Swipped es una plataforma que conecta a los clientes con proveedores de servicios para diversas tareas, incluidas entregas, limpieza, servicios de cerrajería y más. Actuamos como intermediarios y no somos directamente responsables de la calidad de los servicios proporcionados por terceros.",
+      "section_3_title": "3. Responsabilidades del Usuario",
+      "section_3_content": "Los usuarios son responsables de proporcionar información precisa, tratar a los proveedores de servicios con respeto y garantizar condiciones de trabajo seguras. El pago debe realizarse según lo acordado en la confirmación de la reserva.",
+      "section_4_title": "4. Responsabilidades del Proveedor de Servicios",
+      "section_4_content": "Los proveedores de servicios deben mantener estándares profesionales, llegar a tiempo, completar los servicios según lo descrito y mantener los seguros y licencias necesarios cuando sea requerido.",
+      "section_5_title": "5. Términos de Pago",
+      "section_5_content": "Todos los pagos se procesan de forma segura a través de nuestra plataforma. Los precios se muestran claramente antes de la confirmación de la reserva. Los reembolsos están sujetos a nuestra política de reembolsos y deben solicitarse dentro del plazo especificado.",
+      "section_6_title": "6. Limitación de Responsabilidad",
+      "section_6_content": "La responsabilidad de Swipped está limitada en la medida permitida por la ley. No somos responsables de daños indirectos, incidentales o consecuentes derivados del uso de nuestra plataforma o de los servicios proporcionados por terceros.",
+      "section_7_title": "7. Terminación",
+      "section_7_content": "Nos reservamos el derecho de terminar o suspender el acceso a nuestro servicio de inmediato, sin previo aviso ni responsabilidad, por cualquier motivo, incluido, entre otros, si incumples los Términos.",
+      "section_8_title": "8. Cambios en los Términos",
+      "section_8_content": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Los usuarios serán notificados de cambios significativos por correo electrónico o notificaciones en la plataforma. El uso continuado del servicio constituye la aceptación de los términos modificados.",
+      "contact_info": "Para preguntas sobre estos términos, contáctanos en legal@swipped.com"
+    },
+    "privacy": {
+      "title": "Política de Privacidad",
+      "last_updated": "Última actualización: Diciembre 2024",
+      "section_1_title": "1. Información que Recopilamos",
+      "section_1_content": "Recopilamos información que nos proporcionas directamente, como cuando creas una cuenta, reservas un servicio o nos contactas. Esto incluye tu nombre, dirección de correo electrónico, número de teléfono e información de pago.",
+      "section_2_title": "2. Cómo Usamos tu Información",
+      "section_2_content": "Usamos la información que recopilamos para proporcionar, mantener y mejorar nuestros servicios, procesar transacciones, enviarte notificaciones técnicas y mensajes de soporte, y comunicarnos contigo sobre servicios y ofertas promocionales.",
+      "section_3_title": "3. Compartir Información",
+      "section_3_content": "Podemos compartir tu información con proveedores de servicios que realizan servicios en nuestro nombre, como el procesamiento de pagos y soporte al cliente. No vendemos ni alquilamos tu información personal a terceros.",
+      "section_4_title": "4. Seguridad de los Datos",
+      "section_4_content": "Tomamos medidas razonables para ayudar a proteger tu información personal contra pérdida, robo, mal uso y acceso no autorizado. Sin embargo, ningún método de transmisión por internet es 100% seguro.",
+      "section_5_title": "5. Retención de Datos",
+      "section_5_content": "Retenemos tu información mientras tu cuenta esté activa o según sea necesario para proporcionarte servicios. También podemos retener y usar tu información según sea necesario para cumplir con nuestras obligaciones legales.",
+      "section_6_title": "6. Tus Derechos",
+      "section_6_content": "Tienes derecho a acceder, actualizar o eliminar tu información personal. También puedes optar por no recibir ciertas comunicaciones de nuestra parte. Contáctanos para ejercer estos derechos.",
+      "section_7_title": "7. Cookies y Seguimiento",
+      "section_7_content": "Usamos cookies y tecnologías de seguimiento similares para rastrear la actividad en nuestro servicio y retener cierta información. Puedes configurar tu navegador para rechazar todas las cookies o para indicar cuando se envía una cookie.",
+      "section_8_title": "8. Servicios de Terceros",
+      "section_8_content": "Nuestro servicio puede contener enlaces a sitios web o servicios de terceros. No somos responsables de las prácticas de privacidad de estos terceros. Te recomendamos que leas sus políticas de privacidad.",
+      "section_9_title": "9. Cambios en la Política de Privacidad",
+      "section_9_content": "Podemos actualizar nuestra Política de Privacidad de vez en cuando. Te notificaremos de cualquier cambio publicando la nueva Política de Privacidad en esta página y actualizando la fecha de entrada en vigor.",
+      "contact_info": "Para preguntas sobre esta política de privacidad, contáctanos en privacy@swipped.com"
+    },
+    "earningsCalculator": {
+      "title": "Sé tu propio jefe. Establece tus propias horas. Gana tu propio dinero.",
+      "subtitle": "Swipped es la plataforma que conecta empresas con proveedores de confianza. Obtén acceso a miles de oportunidades diarias. Todo lo que necesitas para ganar más dinero y hacer crecer tu negocio.",
+      "calculate_title": "Calcula tus ganancias potenciales",
+      "step1": {
+        "title": "Tu horario",
+        "question": "¿Qué servicios ofreces?",
+        "select_services": "Seleccionar servicios",
+        "days_question": "¿Cuántos días a la semana trabajas?",
+        "edit": "Editar"
+      },
+      "step2": {
+        "title": "Selecciona una región",
+        "question": "¿En qué región trabajas más?",
+        "edit": "Editar"
+      },
+      "step3": {
+        "title": "Tus ganancias",
+        "label": "Aquí está cuánto puedes ganar",
+        "period": "/mes"
+      },
+      "common": {
+        "service": "servicio",
+        "services": "servicios",
+        "days_per_week": "días/semana",
+        "reset": "Restablecer",
+        "continue": "Continuar",
+        "calculate": "Calcular",
+        "takes_30_seconds": "Toma 30 segundos",
+        "almost": "¡Casi!"
+      }
+    },
+    "businessAccount": {
+      "back": "Atrás",
+      "title": "Cuenta Comercial Swipped",
+      "description": "Regístrate hoy para una Cuenta de Crédito Comercial Swipped y desbloquea beneficios exclusivos para tu negocio. Ayudamos a mejorar tu flujo de efectivo para que tus operaciones puedan crecer y pasar al siguiente nivel — todo dentro de la plataforma Swipped. ¡Completa el formulario a continuación para comenzar hoy!",
+      "apply_title": "Solicitar Cuenta Comercial",
+      "form": {
+        "first_name": "Nombre *",
+        "last_name": "Apellido *",
+        "company_name": "Nombre de la Empresa *",
+        "company_number": "Número de Empresa *",
+        "email": "Correo Electrónico *",
+        "contact_number": "Número de Contacto *",
+        "limit_request": "Solicitud de Límite *",
+        "limit_1000": "£1,000",
+        "limit_3000": "£3,000",
+        "limit_5000": "£5,000",
+        "limit_custom": "Límite personalizado (máx. £25,000)",
+        "custom_limit_placeholder": "Ingrese límite personalizado",
+        "submit": "Enviar Solicitud",
+        "submitting": "Enviando..."
+      },
+      "errors": {
+        "first_name_required": "El nombre es obligatorio",
+        "last_name_required": "El apellido es obligatorio",
+        "company_number_required": "El número de empresa es obligatorio",
+        "company_name_required": "El nombre de la empresa es obligatorio",
+        "email_required": "El correo electrónico es obligatorio",
+        "email_invalid": "Por favor ingrese una dirección de correo electrónico válida",
+        "contact_number_required": "El número de contacto es obligatorio",
+        "limit_request_required": "Por favor seleccione una solicitud de límite",
+        "custom_limit_required": "El límite personalizado es obligatorio",
+        "custom_limit_invalid": "Por favor ingrese un monto válido",
+        "custom_limit_max": "El límite personalizado no puede exceder £25,000"
+      },
+      "toast": {
+        "fill_required": "Por favor complete correctamente todos los campos obligatorios",
+        "submit_success": "¡Solicitud enviada con éxito! Nos pondremos en contacto pronto.",
+        "submit_failed": "Error al enviar la solicitud. Por favor intente nuevamente.",
+        "error_occurred": "Ocurrió un error. Por favor intente nuevamente más tarde."
+      }
+    },
+    "fulfilment": {
+      "back": "Atrás",
+      "title": "¡Estamos lanzando el Programa de Vendedores Swipped!",
+      "description": "Vende desde cualquier lugar — te traeremos clientes, empaquetaremos tus productos y los enviaremos a todo el mundo. Haz crecer la presencia global de tu marca con facilidad y elige los países en los que quieres expandirte.",
+      "launch_date": "Lanzamiento el 10-01-2026.",
+      "form_instruction": "Complete el formulario a continuación y un miembro de nuestro equipo se pondrá en contacto.",
+      "features": {
+        "title": "Why Choose Swipped?",
+        "scale_anywhere": "Scale anywhere with a single tap — choose any county and let Swipped handle the rest.",
+        "sell_store_pack": "We sell your products, store your inventory, pack orders, and ship fast.",
+        "real_time_dashboard": "Real-time dashboard insights show your sales, growth, and profits.",
+        "weekly_payouts": "Weekly payouts are deposited straight into your bank to keep your business moving.",
+        "no_signup_fees": "No sign-up fees, only 15% per completed orders"
+      },
+      "form_title": "Únete al Programa de Vendedores Swipped",
+      "form": {
+        "name": "Nombre *",
+        "email": "Correo Electrónico *",
+        "contact_number": "Número de Contacto *",
+        "product_range": "Gama de Productos *",
+        "country_to_sell": "País en el que desea vender *",
+        "select_product_range": "Seleccionar gama de productos",
+        "select_country": "Seleccionar país",
+        "submit": "Enviar solicitud",
+        "submitting": "Enviando..."
+      },
+      "errors": {
+        "name_required": "El nombre es obligatorio",
+        "email_required": "El correo electrónico es obligatorio",
+        "email_invalid": "Por favor ingrese una dirección de correo electrónico válida",
+        "contact_number_required": "El número de contacto es obligatorio",
+        "product_range_required": "La gama de productos es obligatoria",
+        "country_required": "El país es obligatorio"
+      },
+      "toast": {
+        "fill_required": "Por favor complete correctamente todos los campos obligatorios",
+        "submit_success": "¡Consulta enviada con éxito! Nos pondremos en contacto pronto.",
+        "submit_failed": "Error al enviar la consulta. Por favor intente nuevamente.",
+        "error_occurred": "Ocurrió un error. Por favor intente nuevamente más tarde."
+      }
+    },
+    "swippedRides": {
+      "pickup": "Pickup",
+      "currentLocation": "Current Location",
+      "whereTo": "Where to?",
+      "home": "Home",
+      "work": "Work",
+      "savedPlaces": "Saved Places",
+      "requestRide": "Request Ride",
+      "chooseRide": "Choose Ride",
+      "swippedGo": "Swipped Go",
+      "swippedGoDesc": "Affordable, everyday rides",
+      "swippedComfort": "Swipped Comfort",
+      "swippedComfortDesc": "More space, quieter ride",
+      "swippedExecutive": "Swipped Executive",
+      "swippedExecutiveDesc": "Premium vehicles & drivers",
+      "confirmRide": "Confirm Ride",
+      "rideConfirmed": "Ride confirmed! This is a demo.",
+      "goBadge": "Best value",
+      "comfortBadge": "Popular",
+      "executiveBadge": "Premium",
+      "passenger": "Passenger",
+      "passengers": "Passengers",
+      "eta": "min"
+    }
+  },
+  "MapComponent": {
+    "pickup_title": "Ubicación de recogida",
+    "dropoff_title": "Ubicación de entrega",
+    "set_pickup_current": "Establecer recogida (Ubicación actual)",
+    "set_dropoff_current": "Establecer entrega (Ubicación actual)",
+    "clear_all": "Borrar todo",
+    "tip_title": "Consejo:",
+    "tip_description": "Haz clic en cualquier lugar del mapa para establecer las ubicaciones de recogida y entrega, o usa los botones de arriba para usar tu ubicación actual.",
+    "unable_get_location_pickup": "No se pudo obtener tu ubicación actual. Por favor, haz clic en el mapa para establecer la ubicación de recogida.",
+    "unable_get_location_dropoff": "No se pudo obtener tu ubicación actual. Por favor, haz clic en el mapa para establecer la ubicación de entrega.",
+    "geolocation_not_supported_pickup": "La geolocalización no es compatible con este navegador. Por favor, haz clic en el mapa para establecer la ubicación de recogida.",
+    "geolocation_not_supported_dropoff": "La geolocalización no es compatible con este navegador. Por favor, haz clic en el mapa para establecer la ubicación de entrega.",
+    "confirm_replace_locations": "Las ubicaciones de recogida y entrega ya están establecidas. Haz clic en Aceptar para establecer como recogida, Cancelar para establecer como entrega."
+  },
+  "Services": {
+    "shop": {
+      "name": "Tus tiendas locales",
+      "description": "Consigue lo que quieras, cuando lo quieras. Desde artículos esenciales diarios hasta regalos de último minuto, llevamos la tienda a tu puerta"
+    },
+    "restaurant": {
+      "name": "Tus restaurantes locales",
+      "description": "Recibe tus comidas favoritas directamente con facilidad. Navega por restaurantes, explora nuevos sabores y realiza tu pedido con solo unos toques"
+    },
+    "supermarket": {
+      "name": "Tus supermercados locales",
+      "description": "Compra comestibles y artículos esenciales diarios en tus supermercados favoritos. Entrega rápida directamente a tu puerta"
+    },
+    "Book a Table": {
+      "name": "Reservar una mesa",
+      "description": "Ahora puedes reservar una mesa en tu restaurante favorito directamente en Swipped. Sin llamadas, sin colas — solo toca, reserva y disfruta."
+    },
+    "Click & Collect": {
+      "name": "Entrega Click & Collect",
+      "description": "Recogida y entrega de pedidos en línea desde tiendas"
+    },
+    "Van": {
+      "name": "Servicio de mensajería",
+      "description": "Servicios de entrega y transporte en furgoneta"
+    },
+    "Recovery": {
+      "name": "Servicio de recuperación",
+      "description": "Servicios de recuperación y remolque de vehículos"
+    },
+    "Cleaning": {
+      "name": "Servicios de limpieza",
+      "description": "Servicios de limpieza profesional"
+    },
+    "Locksmith": {
+      "name": "Cerrajería",
+      "description": "Servicios de cerrajería 24/7"
+    },
+    "Car Key Replacement": {
+      "name": "Reemplazo de llaves de coche móvil",
+      "description": "Reemplazo y programación de llaves de coche"
+    },
+    "Removals": {
+      "name": "Retiro de basura",
+      "description": "Retiro de muebles y basura"
+    },
+    "Luggage Storage": {
+      "name": "Almacenamiento de equipaje",
+      "description": "Servicios seguros de almacenamiento y gestión de equipaje"
+    },
+    "Dry Cleaning Pick-Up": {
+      "name": "Recogida de limpieza en seco",
+      "description": "Servicios de recogida y entrega de limpieza en seco"
+    },
+    "Taxi Rides": {
+      "name": "Taxi Rides",
+      "description": "Reserve su viaje con Taxi Rides. Próximamente: transporte conveniente y confiable al alcance de su mano."
+    },
+    "MOT &  Repairs": {
+      "name": "Reservar ITV",
+      "description": "Reserve su prueba de ITV en centros certificados. Programe la inspección de su vehículo en un momento que le convenga."
+    },
+    "Shisha lounges": {
+      "name": "Reservas de Salones de Shisha",
+      "description": "Reserve su lugar en los mejores salones de shisha. Reserve su mesa y disfrute de una noche relajante con amigos."
+    },
+    "Spa": {
+      "name": "Reservas de Spa",
+      "description": "Reserve su cita en el spa y regálese un día de relajación y rejuvenecimiento."
+    },
+    "Beauty": {
+      "name": "Reservas de Salones de Belleza",
+      "description": "Reserve su cita de belleza en los mejores salones. Desde cortes de pelo hasta tratamientos, reserve su cita hoy."
+    },
+    "Healthcare": {
+      "name": "Citas Médicas",
+      "description": "Reserve una cita médica con proveedores de salud de confianza. Dentista, clínica, suero intravenoso y otros servicios."
+    },
+    "Events": {
+      "name": "Servicios de Eventos",
+      "description": "Reserve servicios profesionales para eventos. DJ, música en vivo, personajes y más para sus eventos especiales."
+    },
+    "Entertainment": {
+      "name": "Lugares de Entretenimiento",
+      "description": "Reserve experiencias de entretenimiento emocionantes. Experiencias de realidad virtual, boliche, salas de karaoke."
+    }
+  },
+  "CheckoutVerify": {
+    "loading": "Cargando...",
+    "verifying_subscription": "Por favor, espera mientras verificamos tu suscripción.",
+    "payment_successful": "¡Pago exitoso!",
+    "thank_you_subscribing": "¡Gracias por suscribirte a nuestro servicio! 🎉",
+    "subscription_activated": "Tu suscripción ha sido activada con éxito y ahora puedes acceder a todas las funciones premium.",
+    "subscription_details": "Detalles de la suscripción",
+    "plan": "Plan:",
+    "amount": "Monto:",
+    "status": "Estado:",
+    "active": "Activo",
+    "continue_dashboard": "Continuar al panel de control",
+    "payment_cancelled": "Pago cancelado",
+    "payment_cancelled_desc": "Tu pago fue cancelado. No se han realizado cargos en tu cuenta.",
+    "try_again_desc": "Puedes intentarlo de nuevo en cualquier momento o contactar con soporte si necesitas asistencia.",
+    "try_again": "Intentar de nuevo",
+    "back_dashboard": "Volver al panel de control",
+    "payment_error": "Error de pago",
+    "payment_error_desc": "Hubo un error al procesar tu pago.",
+    "contact_support_desc": "Por favor, intenta de nuevo o contacta con soporte si el problema persiste."
+  },
+  "Pricing": {
+    "choose_plan": "Elige tu plan",
+    "select_perfect_plan": "Selecciona el plan de suscripción perfecto que se adapte a tus necesidades y comienza a hacer crecer tu negocio hoy.",
+    "subscription_expires": "Tu suscripción vencerá el {date}",
+    "subscription_expired": "Tu suscripción ha expirado. Por favor, renueva para seguir aceptando trabajos.",
+    "subscription_cancelled": "Tu suscripción ha sido cancelada.",
+    "most_popular": "Más popular",
+    "monthly_access": "Acceso mensual",
+    "half_year_access": "Acceso semestral",
+    "yearly_access": "Acceso anual",
+    "monthly_access_desc": "Acceso de 1 mes para que los proveedores de servicios acepten y gestionen trabajos.",
+    "half_year_access_desc": "Acceso de 6 meses con precios descontados para que los proveedores de servicios acepten trabajos.",
+    "yearly_access_desc": "Acceso completo de 12 meses para que los proveedores de servicios acepten trabajos ilimitados al mejor precio.",
+    "access_all_jobs": "Acceso a todos los trabajos",
+    "accept_unlimited_jobs": "Aceptar trabajos ilimitados",
+    "mobile_app_access": "Acceso a la aplicación móvil",
+    "email_notifications": "Notificaciones por correo electrónico",
+    "basic_support": "Soporte básico",
+    "priority_support": "Soporte prioritario",
+    "discounted_pricing": "Precios descontados",
+    "best_value_pricing": "Mejor precio",
+    "early_access_features": "Acceso anticipado a nuevas funciones",
+    "current_plan": "Plan actual",
+    "upgrade_plan": "Actualizar plan",
+    "downgrade_not_allowed": "No se permite degradar",
+    "subscribe_now": "Suscribirse ahora",
+    "processing": "Procesando...",
+    "per_month": "/mes",
+    "per_6_months": "/6 meses",
+    "per_year": "/año"
+  },
+  "VisitorPages": {
+    "layout": {
+      "role": "Basic account",
+      "menu_wallet": "Wallet Management",
+      "menu_support": "Support"
+    },
+    "feedback": {
+      "title": "Califica tu experiencia",
+      "subtitle": "Ayúdanos a mejorar compartiendo tus comentarios",
+      "job_details": {
+        "service_provider": "Proveedor de servicio",
+        "completed_on": "Completado el"
+      },
+      "rating": {
+        "label": "¿Cómo calificarías este servicio?",
+        "required": "*",
+        "poor": "Malo",
+        "fair": "Regular",
+        "good": "Bueno",
+        "very_good": "Muy bueno",
+        "excellent": "Excelente"
+      },
+      "comments": {
+        "label": "Comentarios adicionales (opcional)",
+        "placeholder": "Cuéntanos sobre tu experiencia...",
+        "character_count": "{count}/500 caracteres"
+      },
+      "actions": {
+        "skip": "Omitir",
+        "submit": "Enviar comentarios",
+        "processing": "Procesando...",
+        "submitting": "Enviando..."
+      },
+      "messages": {
+        "rating_required": "Por favor selecciona una calificación antes de enviar",
+        "submit_success": "Comentarios enviados exitosamente",
+        "skip_success": "Comentarios omitidos exitosamente",
+        "submit_error": "Error al enviar comentarios"
+      }
+    },
+    "support": {
+      "title": "Support",
+      "help_center": "Help Center",
+      "frequently_asked_questions": "Frequently Asked Questions",
+      "phone_support": "Phone Support",
+      "email_support": "Email Support",
+      "text_us": "Text Us",
+      "email_us": "Email Us",
+      "copied": "Copied!",
+      "phone_copied_success": "Phone number copied to clipboard!",
+      "failed_copy_phone": "Failed to copy phone number",
+      "faq": {
+        "how_get_paid": {
+          "question": "How do I pay for services?",
+          "answer": "You can pay for services using various payment methods including credit/debit cards, bank transfers, or digital wallets. Payment is typically processed securely through our platform when you place an order or book a service."
+        },
+        "verification_time": {
+          "question": "How long does it take to verify my account?",
+          "answer": "Account verification typically takes approximately 5-7 working days to complete. After successfully signing up, you can expect to receive an email notification once your account has been verified."
+        },
+        "required_documents": {
+          "question": "What information do I need to create an account?",
+          "answer": "To create an account, you'll need to provide basic information such as your name, email address, phone number, and address. You may also need to verify your identity depending on the services you wish to use. All information is kept secure and confidential."
+        },
+        "restricted_accounts": {
+          "question": "Why might my account be restricted?",
+          "answer": "Accounts may be restricted if there are issues with payment, violations of our terms of service, or concerns raised by service providers. If your account is restricted, you'll receive a notification explaining the reason and steps to resolve the issue."
+        },
+        "missed_job": {
+          "question": "What happens if I need to cancel an order?",
+          "answer": "You can cancel an order through your dashboard, but cancellation policies may vary depending on the service type and timing. Some services may have cancellation fees if cancelled close to the scheduled time. Check the specific terms when placing your order."
+        },
+        "contact_team": {
+          "question": "How can I contact a member of your team?",
+          "answer": "We are always here to assist you. If you have any questions, concerns, or require assistance, please don't hesitate to get in touch with our dedicated team. You can reach us at 02035351953 or email us at update@ivanplatform.com. Our team will be happy to provide you with the necessary support and guidance."
+        }
+      }
+    }
+  },
+  "ShopsPage": {
+    "title": "Descubre tus tiendas locales",
+    "subtitle": "Entregado en 60 minutos",
+    "subtitle_words": {
+      "delivered": "Delivered",
+      "within": "Within",
+      "sixty_minutes": "60 minutes"
+    },
+    "search_placeholder": "Buscar tiendas por nombre...",
+    "showing_shops": "Mostrando {count} tiendas",
+    "miles_from": "{radius} millas desde {address}",
+    "clear_location": "Limpiar ubicación",
+    "choose_location": "Elegir ubicación",
+    "change": "Cambiar",
+    "showing_shops_in": "Mostrando tiendas en {location} {flag}",
+    "location_changed": "Ubicación cambiada a {location} {flag}",
+    "no_shops_found": "No se encontraron tiendas",
+    "no_shops_search": "Intenta ajustar tus criterios de búsqueda",
+    "no_shops_available": "No hay tiendas disponibles actualmente",
+    "products": "productos",
+    "miles_away": "millas de distancia",
+    "view_products": "Ver productos",
+    "failed_fetch_shops": "Error al obtener tiendas",
+    "error_fetching_shops": "Error al obtener tiendas",
+    "closing_at": "Cierra a las {time}",
+    "closed": "Cerrado",
+    "switch_to_restaurants": "Cambiar a restaurantes",
+    "switch_to_supermarkets": "Cambiar a supermercados",
+    "switch_to_services": "Cambiar a servicios",
+    "new_badge": "NUEVO",
+    "free_delivery": "Entrega gratuita",
+    "open_closes": "Abierto • Cierra {time}",
+    "order_now": "Ordenar ahora"
+  },
+  "ShopProductsPage": {
+    "loading": "Cargando...",
+    "shop_products": "Productos de la tienda",
+    "search_placeholder": "Buscar productos por nombre, descripción o categoría...",
+    "filters": "Filtros",
+    "price_range": "Rango de precios",
+    "min": "Mín",
+    "max": "Máx",
+    "availability": "Disponibilidad",
+    "in_stock_only": "Solo en stock",
+    "sort_by": "Ordenar por",
+    "name_asc": "Nombre: A a Z",
+    "name_desc": "Nombre: Z a A",
+    "price_asc": "Precio: Bajo a Alto",
+    "price_desc": "Precio: Alto a Bajo",
+    "newest_first": "Más recientes primero",
+    "oldest_first": "Más antiguos primero",
+    "category": "Categoría",
+    "all": "Todos",
+    "clear_all_filters": "Limpiar todos los filtros",
+    "showing_products": "Mostrando {count} productos",
+    "no_products_found": "No se encontraron productos",
+    "no_products_search": "Intenta ajustar tus criterios de búsqueda",
+    "no_products_available": "No hay productos disponibles actualmente",
+    "in_stock": "{count} en stock",
+    "out_of_stock": "Agotado",
+    "add_to_cart": "Agregar al carrito",
+    "remove_from_cart": "Quitar del carrito",
+    "out_of_stock_btn": "Agotado",
+    "show_all_products": "Mostrar todos los productos",
+    "closing_at": "Cierra a las {time}",
+    "opens_at": "Abre a las {time}",
+    "closed": "Cerrado",
+    "open_closes": "Abierto • Cierra {time}",
+    "new_badge": "NUEVO",
+    "show_favorites_only": "Mostrar solo favoritos",
+    "apply": "Aplicar",
+    "clear_all": "Limpiar todo",
+    "failed_fetch_products": "Error al obtener productos",
+    "error_fetching_products": "Error al obtener productos",
+    "only_customers_cart": "Solo los clientes pueden agregar productos al carrito",
+    "product_out_of_stock": "El producto está agotado",
+    "product_removed_cart": "Producto eliminado del carrito",
+    "product_added_cart": "Producto agregado al carrito",
+    "product_quantity_updated": "Cantidad del producto actualizada en el carrito",
+    "failed_remove_product": "Error al eliminar producto del carrito",
+    "failed_add_product": "Error al agregar producto al carrito",
+    "shop_closed_order": "Esta tienda está actualmente cerrada. Por favor, vuelva durante el horario de apertura",
+    "link_copied": "¡Enlace copiado al portapapeles!",
+    "failed_copy_link": "Error al copiar enlace"
+  },
+  "ProductDetailPage": {
+    "loading": "Cargando...",
+    "product_not_found": "Producto No Encontrado",
+    "product_not_exist": "El producto que buscas no existe.",
+    "back_to_shops": "Volver a las Tiendas",
+    "back": "Atrás",
+    "in_stock": "{count} en stock",
+    "out_of_stock": "Agotado",
+    "delivered_within_60_minutes": "Entregado en 60 minutos",
+    "description": "Descripción",
+    "product_details": "Detalles del Producto",
+    "weight": "Peso",
+    "dimensions": "Dimensiones",
+    "in_cart": "En el Carrito",
+    "out_of_stock_btn": "Agotado",
+    "removing": "Eliminando...",
+    "remove_from_cart": "Quitar del Carrito",
+    "view_cart": "Ver Carrito",
+    "adding": "Agregando...",
+    "add_to_cart": "Agregar al Carrito",
+    "failed_load_product": "Error al cargar detalles del producto",
+    "only_customers_manage_cart": "Solo los clientes pueden gestionar el carrito",
+    "product_out_of_stock": "El producto está agotado",
+    "product_removed_cart": "Producto eliminado del carrito",
+    "product_added_cart": "Producto agregado al carrito",
+    "failed_remove_product": "Error al eliminar producto del carrito",
+    "failed_add_product": "Error al agregar producto al carrito",
+    "shop_closed_order": "Esta tienda está actualmente cerrada. Por favor, vuelva durante el horario de apertura",
+    "preparation_time": "Tiempo de Preparación",
+    "minutes": "minutos",
+    "calories": "Calorías",
+    "kcal": "kcal",
+    "dietary_info": "Información Dietética",
+    "allergens": "Alérgenos"
+  },
+  "PurchasePage": {
+    "loading": "Cargando...",
+    "loading_cart": "Cargando carrito...",
+    "cart_empty": "Tu Carrito está Vacío",
+    "add_products_to_cart": "Agrega algunos productos a tu carrito para continuar.",
+    "browse_products": "Explorar Productos",
+    "checkout": "Pagar",
+    "items": "artículos",
+    "step_of": "Paso {current} de {total}",
+    "cart_items": "Artículos del Carrito",
+    "shop_info": "Tienda",
+    "view_shop": "Ver tienda",
+    "delivery_address": "Dirección de Entrega",
+    "delivery_address_placeholder": "Ingresa la dirección de entrega donde se entregarán los productos",
+    "delivery_address_required": "La dirección de entrega es requerida",
+    "delivery_address_confirmed": "✓ Dirección de entrega: {address}",
+    "loading_maps": "🔄 Cargando mapas...",
+    "continue_to_checkout": "Continuar al Pago",
+    "additional_notes": "Notas Adicionales para la Entrega",
+    "special_instructions_placeholder": "Cualquier instrucción especial para la entrega (opcional)...",
+    "order_summary": "Resumen del Pedido",
+    "subtotal": "Subtotal",
+    "delivery_price": "Precio de Entrega",
+    "calculating": "Calculando...",
+    "distance": "Distancia",
+    "miles": "millas",
+    "total": "Total",
+    "back_to_location": "Volver a la Ubicación",
+    "place_order": "Realizar Pedido",
+    "processing": "Procesando...",
+    "please_login": "Por favor inicia sesión para ver el carrito",
+    "failed_fetch_cart": "Error al obtener artículos del carrito",
+    "cart_updated_successfully": "Carrito actualizado exitosamente",
+    "failed_update_cart": "Error al actualizar el carrito",
+    "shop_closed_order": "Esta tienda está actualmente cerrada. Por favor, vuelva durante el horario de apertura",
+    "item_removed_cart": "Artículo eliminado del carrito",
+    "failed_remove_item": "Error al eliminar artículo",
+    "cart_empty_error": "Tu carrito está vacío",
+    "order_created": "¡Pedido creado! Redirigiendo al pago...",
+    "order_created_successfully": "¡Pedido creado exitosamente!",
+    "failed_create_order": "Error al crear el pedido",
+    "order_food": "Pedir comida"
+  },
+  "RestaurantsPage": {
+    "title": "Descubre Tus Restaurantes Locales",
+    "subtitle_words": {
+      "delivered": "Entregado",
+      "within": "Dentro de",
+      "sixty_minutes": "60 minutos"
+    },
+    "search_placeholder": "Buscar restaurantes por nombre...",
+    "showing_restaurants": "Mostrando {count} restaurantes",
+    "miles_from": "{radius} millas desde {address}",
+    "clear_location": "Limpiar Ubicación",
+    "choose_location": "Elegir Ubicación",
+    "change": "Cambiar",
+    "showing_restaurants_in": "Mostrando restaurantes en {location} {flag}",
+    "location_changed": "Ubicación cambiada a {location} {flag}",
+    "no_restaurants_found": "No Se Encontraron Restaurantes",
+    "miles_away": "millas de distancia",
+    "view_menu": "Ver Menú",
+    "failed_fetch_restaurants": "Error al obtener restaurantes",
+    "error_fetching_restaurants": "Error al obtener restaurantes",
+    "closing_at": "Cierra a las {time}",
+    "closed": "Cerrado",
+    "items": "artículos",
+    "items_count": "{count} artículos",
+    "minimum_order": "Mín: £{amount}",
+    "resturant_reservation": "Reserva de Restaurante"
+  },
+  "RestaurantMenuPage": {
+    "loading": "Cargando...",
+    "restaurant_menu": "Menú del Restaurante",
+    "search_placeholder": "Buscar platos por nombre...",
+    "filters": "Filtros",
+    "category": "Categoría",
+    "cuisine": "Cocina",
+    "filter_by_cuisine": "Filtrar por cocina...",
+    "sort_by": "Ordenar por",
+    "name_asc": "Nombre: A a Z",
+    "name_desc": "Nombre: Z a A",
+    "price_asc": "Precio: Bajo a Alto",
+    "price_desc": "Precio: Alto a Bajo",
+    "clear_all_filters": "Limpiar Todos los Filtros",
+    "showing_items": "Mostrando {count} artículos",
+    "no_items_found": "No Se Encontraron Artículos del Menú",
+    "only_customers_cart": "Solo los clientes pueden agregar artículos al carrito",
+    "item_unavailable": "El artículo no está disponible",
+    "item_removed_cart": "Artículo eliminado del carrito",
+    "failed_remove_item": "Error al eliminar artículo",
+    "item_added_cart": "Artículo agregado al carrito",
+    "item_quantity_updated": "Cantidad del artículo actualizada en el carrito",
+    "failed_add_item": "Error al agregar artículo al carrito",
+    "shop_closed_order": "Esta tienda está actualmente cerrada. Por favor, vuelva durante el horario de apertura",
+    "failed_fetch_menu": "Error al obtener artículos del menú",
+    "error_fetching_menu": "Error al obtener artículos del menú",
+    "menu_items": "Artículos del Menú",
+    "rating": "Calificación",
+    "unavailable": "No Disponible",
+    "closing_at": "Cierra a las {time}",
+    "opens_at": "Abre a las {time}",
+    "closed": "Cerrado",
+    "new_badge": "NUEVO"
+  },
+  "ReservationPage": {
+    "link_copied": "¡Enlace copiado al portapapeles!",
+    "failed_copy_link": "Error al copiar enlace",
+    "restaurant_no_reservations": "Este restaurante no acepta reservas.",
+    "restaurant_not_found": "Restaurante no encontrado.",
+    "failed_load_restaurant": "Error al cargar los detalles del restaurante.",
+    "fill_required_fields": "Por favor complete todos los campos requeridos.",
+    "select_future_date": "Por favor seleccione una fecha futura.",
+    "reservation_created": "¡Reserva creada con éxito! Revise su correo electrónico para confirmación.",
+    "failed_create_reservation": "Error al crear la reserva.",
+    "failed_create_reservation_try_again": "Error al crear la reserva. Por favor intente de nuevo.",
+    "booking": "Reserva de Mesa",
+    "menu": "Menú",
+    "services": "Servicios",
+    "about_us": "Acerca de nosotros",
+    "gallery": "Galería",
+    "date": "Fecha",
+    "time": "Hora",
+    "select_time": "Seleccione una hora",
+    "number_of_guests": "Número de Invitados",
+    "number_of_patients": "Número de Pacientes",
+    "guest": "Invitado",
+    "guests": "Invitados",
+    "patient": "Paciente",
+    "patients": "Pacientes",
+    "name": "Nombre",
+    "phone_number": "Número de Teléfono",
+    "email": "Correo Electrónico",
+    "special_requests": "Solicitudes Especiales (Opcional)",
+    "special_requests_placeholder": "Cualquier requisito dietético especial o solicitudes...",
+    "processing": "Procesando...",
+    "book_reservation": "Reservar"
+  },
+  "ReservationsPage": {
+    "search_placeholder": "Buscar restaurantes...",
+    "no_restaurants_found": "No se encontraron restaurantes",
+    "reserve": "Reservar",
+    "failed_fetch_restaurants": "Error al obtener restaurantes",
+    "error_fetching_restaurants": "Error al obtener restaurantes",
+    "new_badge": "NUEVO",
+    "change": "Cambiar",
+    "showing_restaurants_in": "Mostrando Restaurantes en {location} {flag}",
+    "select_service": "Seleccionar Servicio",
+    "cancel": "Cancelar",
+    "continue_to_reservation": "Continuar a la Reserva",
+    "processing": "Procesando...",
+    "rating": "Calificación",
+    "city": "Ciudad",
+    "select_city": "Seleccionar Ciudad",
+    "no_deposit_required": "No Se Requiere Depósito",
+    "fill_required_fields": "Por favor complete todos los campos requeridos",
+    "select_future_date": "Por favor seleccione una fecha futura",
+    "reservation_created": "Reserva creada exitosamente",
+    "failed_create_reservation": "Error al crear la reserva",
+    "failed_create_reservation_try_again": "Error al crear la reserva. Por favor intente nuevamente.",
+    "please_select_service": "Por favor seleccione un servicio para continuar con su reserva",
+    "selected": "Seleccionado",
+    "select_mot_service": "Seleccionar Servicio de MOT",
+    "select_spa_service": "Seleccionar Servicio de Spa",
+    "select_shisha_service": "Seleccionar Servicio de Shisha",
+    "select_beauty_service": "Seleccionar Servicio de Belleza",
+    "select_healthcare_service": "Seleccionar Servicio de Salud",
+    "select_events_service": "Seleccionar Servicio de Eventos",
+    "select_entertainment_service": "Seleccionar Lugar de Entretenimiento",
+    "select_restaurant_service": "Selecciona tu cocina",
+    "select_shop_service": "Seleccionar categoría de tienda"
+  },
+  "FeatureDescriptionModal": {
+    "defaultDescription": "Our service providers are ready to help you—day or night. Get a quote in just 60 seconds and solve your needs quickly and smoothly.",
+    "descriptions": {
+      "courier": "Our courier service offers fast, reliable delivery for parcels of all sizes — from small envelopes to larger items. Choose urgent same-day delivery or schedule a time that suits you. Whether it's a one-off job or regular deliveries, we make it simple and stress-free. Get a quote in just 60 seconds and solve your courier needs quickly and smoothly.",
+      "van": "Our courier service offers fast, reliable delivery for parcels of all sizes — from small envelopes to larger items. Choose urgent same-day delivery or schedule a time that suits you. Whether it's a one-off job or regular deliveries, we make it simple and stress-free. Get a quote in just 60 seconds and solve your courier needs quickly and smoothly.",
+      "luggageStorage": "Our luggage storage service lets you store your bags safely and conveniently at a location near you. Choose your closest drop-off point, or let us arrange pick-up and drop-off straight to your door. Whether it's for a few hours or a few weeks, we make it hassle-free. Get a quote in just 60 seconds and solve your luggage storage needs quickly and smoothly.",
+      "locksmith": "Our locksmith service connects you with trusted, fully vetted professionals in your area. Whether you need urgent help or prefer to schedule an appointment, we've got you covered. Get a quote in just 60 seconds and solve your locksmith needs quickly and smoothly.",
+      "professionalCleaning": "Our cleaning service connects you with trusted, fully vetted professionals who deliver exceptional results. Whether you need an urgent call-out or prefer to book a scheduled appointment, we make it simple and convenient. Get a quote in just 60 seconds and solve your cleaning needs quickly and smoothly.",
+      "cleaning": "Our cleaning service connects you with trusted, fully vetted professionals who deliver exceptional results. Whether you need an urgent call-out or prefer to book a scheduled appointment, we make it simple and convenient. Get a quote in just 60 seconds and solve your cleaning needs quickly and smoothly.",
+      "dryCleaningPickUp": "Our dry cleaning service offers convenient door-to-door collection and delivery, or you can choose to drop off and collect from your closest service provider. Fast, simple, and reliable—your clothes are in safe hands. Get a quote in just 60 seconds and solve your dry-cleaning needs quickly and smoothly.",
+      "breakdownAssistance": "Our nationwide breakdown assistance service is available 24/7, whether you need an urgent call-out or prefer to book an appointment. Wherever you are, we're ready to help get you moving again. Get a quote in just 60 seconds and solve your breakdown needs quickly and smoothly.",
+      "recovery": "Our nationwide breakdown assistance service is available 24/7, whether you need an urgent call-out or prefer to book an appointment. Wherever you are, we're ready to help get you moving again. Get a quote in just 60 seconds and solve your breakdown needs quickly and smoothly.",
+      "rubbishRemovals": "Our rubbish removal service can collect all types of waste — from furniture and household bags to garden waste and more. We're available 24/7 for emergency call-outs or scheduled appointments, making it easy to clear any clutter fast. Get a quote in just 60 seconds and solve your rubbish removal needs quickly and smoothly.",
+      "removals": "Our rubbish removal service can collect all types of waste — from furniture and household bags to garden waste and more. We're available 24/7 for emergency call-outs or scheduled appointments, making it easy to clear any clutter fast. Get a quote in just 60 seconds and solve your rubbish removal needs quickly and smoothly.",
+      "clickCollectDelivery": "Our Click & Collect delivery service lets us collect your online order directly from the store and deliver it straight to your home. Operating within business hours, we offer both urgent call-outs and scheduled appointments for your convenience. Get a quote in just 60 seconds and solve your Click & Collect delivery needs quickly and smoothly.",
+      "clickCollect": "Our Click & Collect delivery service lets us collect your online order directly from the store and deliver it straight to your home. Operating within business hours, we offer both urgent call-outs and scheduled appointments for your convenience. Get a quote in just 60 seconds and solve your Click & Collect delivery needs quickly and smoothly."
+    },
+    "features": {
+      "howItWorks": {
+        "label": "How It Works",
+        "description": "1. Get Your Quote in 60 Seconds\nEnter your location and answer a few quick questions about your request. We'll instantly generate the right quote tailored to your needs.\n\n2. Get Matched With a Local Professional\nOnce your payment is confirmed, we'll connect you to a nearby vetted specialist. You can communicate directly through the in-app calling and messaging system, and track job status, pickup, and arrival times in real-time.\n\n3. Job Completed — Leave a Rating\nAfter the service is finished, leave a review for your service provider to help us maintain quality and improve your experience."
+      },
+      "scheduled": {
+        "label": "Scheduled Appointments",
+        "description": "Need something later? Choose a date and time that suits you. Book in advance and your service provider will arrive exactly when you need them."
+      },
+      "emergency": {
+        "label": "24/7 Emergency Call-Outs",
+        "description": "Day or night, we're here. For urgent problems, we send a service provider to you immediately — no waiting until morning."
+      },
+      "monthly": {
+        "label": "Pay Monthly Available",
+        "description": "Spread the cost instead of paying everything upfront. Choose flexible monthly installments to make your service more affordable."
+      },
+      "trusted": {
+        "label": "Trusted & Verified Providers",
+        "description": "Every provider on Swipped is carefully checked, approved, and trusted—so you always get safe, reliable service."
+      },
+      "about": {
+        "label": "About Service"
+      }
+    }
+  }
+}
