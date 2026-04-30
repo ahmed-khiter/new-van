@@ -85,13 +85,6 @@ export default function HomePageScreen({
           </Pressable>
         </View>
 
-        <View style={styles.promoBanner}>
-          <Text style={styles.promoEyebrow}>Exclusive launch offer</Text>
-          <Text style={styles.promoTitle}>Get 30% OFF your first order</Text>
-          <Text style={styles.promoSub}>
-            Use code <Text style={styles.promoCode}>WELCOME30</Text>
-          </Text>
-        </View>
 
         <View style={styles.sectionPadding}>
           <View style={styles.headerRow}>

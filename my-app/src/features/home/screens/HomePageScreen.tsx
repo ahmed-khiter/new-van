@@ -146,13 +146,7 @@ export default function HomePageScreen({
           </View>
         ) : null}
 
-        <View style={styles.promoBanner}>
-          <Text style={styles.promoEyebrow}>Exclusive launch offer</Text>
-          <Text style={styles.promoTitle}>Get 30% OFF your first order</Text>
-          <Text style={styles.promoSub}>
-            Use code <Text style={styles.promoCode}>WELCOME30</Text>
-          </Text>
-        </View>
+
 
         <View style={styles.sectionPadding}>
           <View style={styles.headerRow}>
@@ -347,7 +341,7 @@ const styles = StyleSheet.create({
   },
   locationText: { color: "#ffffff", fontSize: 13, fontWeight: "700" },
   heroTitle: { marginTop: 16, fontSize: 34, lineHeight: 40, fontWeight: "900", color: "#1a1a2e" },
-  accent: { color: "#ff385c", fontStyle: "italic" },
+  accent: { color: "#ff74a6", fontStyle: "italic" },
   heroSubtitle: { marginTop: 10, color: "#777777", fontSize: 15, lineHeight: 22 },
   chips: { marginTop: 14, flexDirection: "row", gap: 8, flexWrap: "wrap" },
   chip: {
