@@ -15,6 +15,7 @@ type Props = {
   title: string;
   badge: string;
   badgeColor: string;
+  badgeTextColor?: string;
   subtitle: string;
   services: ServiceItem[];
   onPressService?: (service: ServiceItem) => void;
@@ -34,6 +35,7 @@ export default function ServiceCarousel({
   title,
   badge,
   badgeColor,
+  badgeTextColor = "#111827",
   subtitle,
   services,
   onPressService,
@@ -55,7 +57,7 @@ export default function ServiceCarousel({
       <View style={styles.header}>
         <Text style={styles.title}>{title}</Text>
         <View style={[styles.badge, { backgroundColor: badgeColor }]}>
-          <Text style={styles.badgeText}>{badge}</Text>
+          <Text style={[styles.badgeText, { color: badgeTextColor }]}>{badge}</Text>
         </View>
       </View>
       <Text style={styles.subtitle}>{subtitle}</Text>

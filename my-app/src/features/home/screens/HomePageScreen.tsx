@@ -1,25 +1,25 @@
+import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
+import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import {
-  Image,
-  Modal,
-  Pressable,
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
+    Image,
+    Modal,
+    Pressable,
+    SafeAreaView,
+    ScrollView,
+    StyleSheet,
+    Text,
+    View,
 } from "react-native";
-import { StatusBar } from "expo-status-bar";
-import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import ServiceCarousel from "../components/ServiceCarousel";
 import TypewriterPlaceholder from "../components/TypewriterPlaceholder";
 import {
-  COMING_SOON_ITEMS,
-  DEFAULT_LOCATION,
-  FEATURE_GRID,
-  HERO_IMAGES,
-  LOCATION_OPTIONS,
-  TYPEWRITER_PHRASES,
+    COMING_SOON_ITEMS,
+    DEFAULT_LOCATION,
+    FEATURE_GRID,
+    HERO_IMAGES,
+    LOCATION_OPTIONS,
+    TYPEWRITER_PHRASES,
 } from "../constants/homeContent";
 import { useHomeData } from "../hooks/useHomeData";
 
@@ -40,8 +40,14 @@ export default function HomePageScreen({
   const [currentLocation, setCurrentLocation] = useState(DEFAULT_LOCATION);
   const [pendingLocation, setPendingLocation] = useState(DEFAULT_LOCATION);
 
-  const { sections, totalServices, globalUserCount, locationUserCount, loading, error } =
-    useHomeData(currentLocation);
+  const {
+    sections,
+    totalServices,
+    globalUserCount,
+    locationUserCount,
+    loading,
+    error,
+  } = useHomeData(currentLocation);
 
   const openLocationPicker = () => {
     onOpenLocation?.();
@@ -61,7 +67,12 @@ export default function HomePageScreen({
 
   return (
     <SafeAreaView style={styles.root}>
-      <StatusBar style="dark" backgroundColor="#faf9f7" translucent={false} hidden={false} />
+      <StatusBar
+        style="dark"
+        backgroundColor="#faf9f7"
+        translucent={false}
+        hidden={false}
+      />
       <ScrollView contentContainerStyle={styles.content}>
         <View style={styles.hero}>
           <View style={styles.appHeader}>
@@ -76,14 +87,22 @@ export default function HomePageScreen({
                 <Ionicons name="search" size={18} color="#1a1a2e" />
               </Pressable>
               <Pressable style={styles.headerIconBtn}>
-                <Ionicons name="notifications-outline" size={18} color="#1a1a2e" />
+                <Ionicons
+                  name="notifications-outline"
+                  size={18}
+                  color="#1a1a2e"
+                />
               </Pressable>
             </View>
           </View>
 
           <View style={styles.heroFloating}>
             {HERO_IMAGES.map((uri, i) => (
-              <Image key={uri} source={{ uri }} style={[styles.floatImage, FLOAT_POSITIONS[i]]} />
+              <Image
+                key={uri}
+                source={{ uri }}
+                style={[styles.floatImage, FLOAT_POSITIONS[i]]}
+              />
             ))}
           </View>
 
@@ -104,8 +123,15 @@ export default function HomePageScreen({
 
           <View style={styles.chips}>
             {["Order", "Book", "Connect", "Earn"].map((chip, idx) => (
-              <View key={chip} style={[styles.chip, CHIP_COLORS[idx]]}>
-                <Text style={[styles.chipText, { color: CHIP_COLORS[idx].color }]}>{chip}</Text>
+              <View
+                key={chip}
+                style={[styles.chip, { backgroundColor: "#f3f3f7" }]}
+              >
+                <Text
+                  style={[styles.chipText, { color: CHIP_COLORS[idx].color }]}
+                >
+                  {chip}
+                </Text>
               </View>
             ))}
           </View>
@@ -128,7 +154,10 @@ export default function HomePageScreen({
 
           <Pressable style={styles.searchWrap} onPress={onExplorePress}>
             <Text style={styles.domain}>swipped.co.uk/</Text>
-            <TypewriterPlaceholder phrases={TYPEWRITER_PHRASES} style={styles.typewriter} />
+            <TypewriterPlaceholder
+              phrases={TYPEWRITER_PHRASES}
+              style={styles.typewriter}
+            />
             <View style={styles.exploreBtn}>
               <Text style={styles.exploreText}>Explore</Text>
             </View>
@@ -142,22 +171,33 @@ export default function HomePageScreen({
         ) : null}
         {error ? (
           <View style={[styles.stateBanner, styles.errorBanner]}>
-            <Text style={styles.errorText}>Could not sync data from API. Showing empty state.</Text>
+            <Text style={styles.errorText}>
+              Could not sync data from API. Showing empty state.
+            </Text>
           </View>
         ) : null}
-
-
 
         <View style={styles.sectionPadding}>
           <View style={styles.headerRow}>
             <Text style={styles.sectionTitle}>On Demand</Text>
-            <View style={[styles.badge, { backgroundColor: "#FCE7F3" }]}>
-              <Text style={styles.badgeText}>Delivered Within 60 Minutes</Text>
+
+            <View style={styles.badgeWrap}>
+              <MaterialCommunityIcons
+                name="motorbike"
+                size={13}
+                color="#DC2626"
+              />
+              <View style={styles.badge}>
+                <Text style={styles.badgeText}>
+                  DELIVERED WITHIN 60 MINUTES
+                </Text>
+              </View>
             </View>
           </View>
           <View style={styles.bikeRow}>
-            <MaterialCommunityIcons name="motorbike" size={20} color="#ec4899" />
-            <Text style={styles.sectionSub}>Products, food and groceries delivered to you.</Text>
+            <Text style={styles.sectionSub}>
+              Products, food and groceries delivered to you.
+            </Text>
           </View>
           <ServiceCarousel
             title=""
@@ -171,6 +211,7 @@ export default function HomePageScreen({
           <ServiceCarousel
             title="Book Now"
             badge="Book in Seconds"
+            badgeTextColor="#b06000"
             badgeColor="#FEF3C7"
             subtitle="Reserve a table, book a session or schedule an appointment."
             services={sections.reservation}
@@ -181,6 +222,7 @@ export default function HomePageScreen({
             title="Services"
             badge="Instant Dispatch"
             badgeColor="#D1FAE5"
+            badgeTextColor="#118c35"
             subtitle="Cleaning, repairs, deliveries and more, on demand."
             services={sections.booking}
             onPressService={(service) => onSelectService?.(service.id)}
@@ -189,17 +231,21 @@ export default function HomePageScreen({
 
         <View style={styles.headline}>
           <Text style={styles.headlineTitle}>
-            Everything in one place.{"\n"}Built for <Text style={styles.accent}>you</Text>.
+            Everything in one place.{"\n"}Built for{" "}
+            <Text style={styles.accent}>you</Text>.
           </Text>
           <Text style={styles.headlineSub}>
-            Order, book, connect, and earn from a single platform designed for daily life.
+            Order, book, connect, and earn from a single platform designed for
+            daily life.
           </Text>
         </View>
 
         <View style={styles.gridCard}>
           {FEATURE_GRID.map((item) => (
             <View key={item.id} style={styles.gridCell}>
-              <View style={[styles.gridIcon, { backgroundColor: item.color }]} />
+              <View
+                style={[styles.gridIcon, { backgroundColor: item.color }]}
+              />
               <Text style={styles.gridTitle}>{item.title}</Text>
               <Text style={styles.gridDesc}>{item.description}</Text>
             </View>
@@ -208,10 +254,16 @@ export default function HomePageScreen({
 
         <View style={styles.comingSection}>
           <Text style={styles.comingTitle}>Coming soon</Text>
-          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.comingTrack}>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.comingTrack}
+          >
             {COMING_SOON_ITEMS.map((item) => (
               <View key={item.id} style={styles.comingCard}>
-                <View style={[styles.comingIcon, { backgroundColor: item.color }]} />
+                <View
+                  style={[styles.comingIcon, { backgroundColor: item.color }]}
+                />
                 <Text style={styles.comingCardTitle}>{item.title}</Text>
                 <Text style={styles.comingCardDesc}>{item.description}</Text>
               </View>
@@ -237,7 +289,10 @@ export default function HomePageScreen({
           <View style={styles.modalCard}>
             <View style={styles.modalHeader}>
               <Text style={styles.modalTitle}>Choose your location</Text>
-              <Pressable style={styles.modalClose} onPress={closeLocationPicker}>
+              <Pressable
+                style={styles.modalClose}
+                onPress={closeLocationPicker}
+              >
                 <Ionicons name="close" size={18} color="#111827" />
               </Pressable>
             </View>
@@ -248,15 +303,25 @@ export default function HomePageScreen({
                 return (
                   <Pressable
                     key={option.code}
-                    style={[styles.countryItem, isActive && styles.countryItemActive]}
+                    style={[
+                      styles.countryItem,
+                      isActive && styles.countryItemActive,
+                    ]}
                     onPress={() => setPendingLocation(option)}
                   >
                     <View style={styles.countryLeft}>
                       <Text style={styles.countryCode}>{option.code}</Text>
                       <Text style={styles.countryName}>{option.name}</Text>
                     </View>
-                    <View style={[styles.countryCheck, isActive && styles.countryCheckActive]}>
-                      {isActive ? <Ionicons name="checkmark" size={14} color="#fff" /> : null}
+                    <View
+                      style={[
+                        styles.countryCheck,
+                        isActive && styles.countryCheckActive,
+                      ]}
+                    >
+                      {isActive ? (
+                        <Ionicons name="checkmark" size={14} color="#fff" />
+                      ) : null}
                     </View>
                   </Pressable>
                 );
@@ -270,7 +335,10 @@ export default function HomePageScreen({
                   {pendingLocation.code} {pendingLocation.name}
                 </Text>
               </View>
-              <Pressable style={styles.continueButton} onPress={confirmLocationPicker}>
+              <Pressable
+                style={styles.continueButton}
+                onPress={confirmLocationPicker}
+              >
                 <Text style={styles.continueButtonText}>Continue</Text>
               </Pressable>
             </View>
@@ -317,7 +385,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  headerTitle: { color: "#1a1a2e", fontSize: 18, fontWeight: "800", letterSpacing: 0.3 },
+  headerTitle: {
+    color: "#1a1a2e",
+    fontSize: 18,
+    fontWeight: "800",
+    letterSpacing: 0.3,
+  },
   hero: {
     backgroundColor: "#faf9f7",
     overflow: "hidden",
@@ -326,7 +399,14 @@ const styles = StyleSheet.create({
     paddingBottom: 28,
     minHeight: 420,
   },
-  heroFloating: { position: "absolute", left: 0, right: 0, top: 0, bottom: 0, opacity: 0.2 },
+  heroFloating: {
+    position: "absolute",
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    opacity: 0.2,
+  },
   floatImage: { position: "absolute", width: 90, height: 90, borderRadius: 18 },
   locationBadge: {
     marginTop: 8,
@@ -339,10 +419,21 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 6,
   },
-  locationText: { color: "#ffffff", fontSize: 13, fontWeight: "700" },
-  heroTitle: { marginTop: 16, fontSize: 34, lineHeight: 40, fontWeight: "900", color: "#1a1a2e" },
-  accent: { color: "#ff74a6", fontStyle: "italic" },
-  heroSubtitle: { marginTop: 10, color: "#777777", fontSize: 15, lineHeight: 22 },
+  locationText: { color: "#ffffff", fontSize: 9, fontWeight: "600" },
+  heroTitle: {
+    marginTop: 16,
+    fontSize: 24,
+    lineHeight: 30,
+    fontWeight: "700",
+    color: "#1a1a2e",
+  },
+  accent: { color: "#a853cf", fontStyle: "italic" },
+  heroSubtitle: {
+    marginTop: 10,
+    color: "#777777",
+    fontSize: 12,
+    lineHeight: 22,
+  },
   chips: { marginTop: 14, flexDirection: "row", gap: 8, flexWrap: "wrap" },
   chip: {
     paddingHorizontal: 10,
@@ -351,6 +442,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   chipText: {
+    fontFamily: "OpenSans_400Regular",
     color: "#111827",
     fontSize: 12,
     fontWeight: "700",
@@ -412,19 +504,58 @@ const styles = StyleSheet.create({
     padding: 16,
     backgroundColor: "#171717",
   },
-  promoEyebrow: { color: "rgba(255,255,255,0.6)", fontWeight: "700", fontSize: 11 },
-  promoTitle: { color: "#ffffff", fontWeight: "900", fontSize: 22, marginTop: 6 },
+  promoEyebrow: {
+    color: "rgba(255,255,255,0.6)",
+    fontWeight: "700",
+    fontSize: 11,
+  },
+  promoTitle: {
+    color: "#ffffff",
+    fontWeight: "900",
+    fontSize: 22,
+    marginTop: 6,
+  },
   promoSub: { color: "rgba(255,255,255,0.75)", marginTop: 4, fontSize: 13 },
   promoCode: { color: "#fff", fontWeight: "900" },
   sectionPadding: { paddingHorizontal: 16, marginTop: 18 },
-  headerRow: { flexDirection: "row", justifyContent: "space-between", gap: 8, alignItems: "center" },
-  sectionTitle: { fontSize: 21, fontWeight: "900", color: "#1a1a2e", textTransform: "uppercase" },
-  badge: { paddingHorizontal: 10, paddingVertical: 6, borderRadius: 999 },
-  badgeText: { fontWeight: "700", color: "#111827", fontSize: 12 },
+  headerRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    gap: 8,
+    alignItems: "center",
+  },
+  sectionTitle: {
+    fontSize: 21,
+    fontWeight: "900",
+    color: "#1a1a2e",
+    textTransform: "uppercase",
+  },
+  badgeWrap: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+  },
+  badge: {
+    paddingHorizontal: 12,
+    paddingVertical: 7,
+    borderRadius: 999,
+    backgroundColor: "#E5E7EB",
+  },
+  badgeText: {
+    fontWeight: "600",
+    color: "#DC2626",
+    fontSize: 11,
+    letterSpacing: 1.1,
+  },
   bikeRow: { flexDirection: "row", alignItems: "center", gap: 8, marginTop: 8 },
   sectionSub: { color: "#475569", fontSize: 14 },
   headline: { marginTop: 26, paddingHorizontal: 16 },
-  headlineTitle: { fontSize: 34, lineHeight: 40, color: "#1a1a2e", fontWeight: "900" },
+  headlineTitle: {
+    fontSize: 34,
+    lineHeight: 40,
+    color: "#1a1a2e",
+    fontWeight: "900",
+  },
   headlineSub: { marginTop: 8, color: "#6b7280", fontSize: 16, lineHeight: 24 },
   gridCard: {
     marginTop: 16,
@@ -466,7 +597,12 @@ const styles = StyleSheet.create({
   },
   comingIcon: { width: 32, height: 32, borderRadius: 10, marginBottom: 8 },
   comingCardTitle: { color: "#0f172a", fontWeight: "800", fontSize: 15 },
-  comingCardDesc: { color: "#64748b", marginTop: 4, fontSize: 12, lineHeight: 18 },
+  comingCardDesc: {
+    color: "#64748b",
+    marginTop: 4,
+    fontSize: 12,
+    lineHeight: 18,
+  },
   cta: {
     marginHorizontal: 16,
     marginTop: 22,
@@ -475,7 +611,12 @@ const styles = StyleSheet.create({
     padding: 16,
     alignItems: "center",
   },
-  ctaTitle: { color: "#1a1a2e", fontWeight: "900", fontSize: 30, textAlign: "center" },
+  ctaTitle: {
+    color: "#1a1a2e",
+    fontWeight: "900",
+    fontSize: 30,
+    textAlign: "center",
+  },
   ctaButton: {
     marginTop: 12,
     backgroundColor: "#1a1a2e",
@@ -546,7 +687,12 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     overflow: "hidden",
   },
-  countryName: { color: "#111827", fontSize: 14, fontWeight: "700", flexShrink: 1 },
+  countryName: {
+    color: "#111827",
+    fontSize: 14,
+    fontWeight: "700",
+    flexShrink: 1,
+  },
   countryCheck: {
     width: 24,
     height: 24,
@@ -571,8 +717,18 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
   },
-  footerLabel: { color: "#9ca3af", fontSize: 11, fontWeight: "700", textTransform: "uppercase" },
-  footerValue: { marginTop: 4, color: "#111827", fontSize: 14, fontWeight: "800" },
+  footerLabel: {
+    color: "#9ca3af",
+    fontSize: 11,
+    fontWeight: "700",
+    textTransform: "uppercase",
+  },
+  footerValue: {
+    marginTop: 4,
+    color: "#111827",
+    fontSize: 14,
+    fontWeight: "800",
+  },
   continueButton: {
     backgroundColor: "#ff4d77",
     borderRadius: 999,
