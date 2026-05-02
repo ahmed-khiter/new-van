@@ -11,6 +11,7 @@ import {
     Text,
     View,
 } from "react-native";
+import { HomePromoIcon } from "@/features/home/components/HomePromoIcons";
 import HomeScreenSkeleton from "@/features/home/components/HomeScreenSkeleton";
 import ServiceCarousel from "@/features/home/components/ServiceCarousel";
 import TypewriterPlaceholder from "@/features/home/components/TypewriterPlaceholder";
@@ -250,7 +251,9 @@ export default function HomeScreen({
             <View key={item.id} style={styles.gridCell}>
               <View
                 style={[styles.gridIcon, { backgroundColor: item.color }]}
-              />
+              >
+                <HomePromoIcon id={item.icon} size={22} />
+              </View>
               <Text style={styles.gridTitle}>{item.title}</Text>
               <Text style={styles.gridDesc}>{item.description}</Text>
             </View>
@@ -268,7 +271,9 @@ export default function HomeScreen({
               <View key={item.id} style={styles.comingCard}>
                 <View
                   style={[styles.comingIcon, { backgroundColor: item.color }]}
-                />
+                >
+                  <HomePromoIcon id={item.icon} size={20} />
+                </View>
                 <Text style={styles.comingCardTitle}>{item.title}</Text>
                 <Text style={styles.comingCardDesc}>{item.description}</Text>
               </View>
@@ -579,7 +584,14 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "rgba(0,0,0,0.07)",
   },
-  gridIcon: { width: 32, height: 32, borderRadius: 10, marginBottom: 8 },
+  gridIcon: {
+    width: 32,
+    height: 32,
+    borderRadius: 10,
+    marginBottom: 8,
+    alignItems: "center",
+    justifyContent: "center",
+  },
   gridTitle: { color: "#0f172a", fontWeight: "800", fontSize: 14 },
   gridDesc: { color: "#64748b", marginTop: 4, fontSize: 12, lineHeight: 18 },
   comingSection: { marginTop: 18, paddingLeft: 16 },
@@ -600,7 +612,14 @@ const styles = StyleSheet.create({
     borderColor: "#e5e7eb",
     padding: 12,
   },
-  comingIcon: { width: 32, height: 32, borderRadius: 10, marginBottom: 8 },
+  comingIcon: {
+    width: 32,
+    height: 32,
+    borderRadius: 10,
+    marginBottom: 8,
+    alignItems: "center",
+    justifyContent: "center",
+  },
   comingCardTitle: { color: "#0f172a", fontWeight: "800", fontSize: 15 },
   comingCardDesc: {
     color: "#64748b",

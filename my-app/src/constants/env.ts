@@ -15,6 +15,7 @@ export function getApiBaseUrl(): string {
     process.env.EXPO_PUBLIC_WEB_DEV_DIRECT_API === "true";
 
   if (Platform.OS === "web") {
+    // if (typeof window !== "undefined") return window.location.origin;
     if (typeof window !== "undefined") {
       // Browsers enforce CORS; Postman does not — same URL can work in Postman and fail in the app.
       // In dev, talk to scripts/proxy.js (npm run proxy) which forwards to API_ORIGIN and adds CORS headers.

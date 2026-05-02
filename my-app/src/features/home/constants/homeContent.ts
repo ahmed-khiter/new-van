@@ -44,24 +44,28 @@ export const FEATURE_GRID: PromoFeature[] = [
     title: "Global Reach",
     description: "Access services in multiple countries.",
     color: "#DBEAFE",
+    icon: "globe",
   },
   {
     id: "trusted",
     title: "Trusted Partners",
     description: "Verified providers and quality support.",
     color: "#FCE7F3",
+    icon: "heart",
   },
   {
     id: "fast",
     title: "Fast Response",
     description: "Instant dispatch and quick booking.",
     color: "#D1FAE5",
+    icon: "check",
   },
   {
     id: "rewards",
     title: "Rewards",
     description: "Earn points while using daily services.",
     color: "#EDE9FE",
+    icon: "star",
   },
 ];
 
@@ -71,17 +75,20 @@ export const COMING_SOON_ITEMS: PromoFeature[] = [
     title: "Luggage Storage",
     description: "Safe short-term storage near you.",
     color: "#FFF7ED",
+    icon: "briefcase",
   },
   {
     id: "smart-lockers",
     title: "Smart Lockers",
     description: "Secure pickup and drop-off points.",
     color: "#FEF3C7",
+    icon: "hexagon",
   },
   {
     id: "community",
     title: "Community Features",
     description: "Share, rate and follow local spots.",
     color: "#FCE4EC",
+    icon: "users",
   },
 ];

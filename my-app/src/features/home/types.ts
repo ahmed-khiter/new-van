@@ -28,11 +28,21 @@ export type ServiceItem = {
   };
 };
 
+export type HomePromoIconId =
+  | "globe"
+  | "heart"
+  | "check"
+  | "star"
+  | "briefcase"
+  | "hexagon"
+  | "users";
+
 export type PromoFeature = {
   id: string;
   title: string;
   description: string;
   color: string;
+  icon: HomePromoIconId;
 };
 
 export type HomeServicesResponse = {
