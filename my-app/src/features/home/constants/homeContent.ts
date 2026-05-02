@@ -1,4 +1,4 @@
-import type { Location, PromoFeature } from "@/src/shared/types/home";
+import type { Location, PromoFeature } from "@/features/home/types";
 
 export const TYPEWRITER_PHRASES = [
   "restaurants nearby",

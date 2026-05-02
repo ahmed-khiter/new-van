@@ -9,7 +9,7 @@ import {
   Text,
   View,
 } from "react-native";
-import type { ServiceItem } from "@/src/shared/types/home";
+import type { ServiceItem } from "@/features/home/types";
 
 type Props = {
   title: string;

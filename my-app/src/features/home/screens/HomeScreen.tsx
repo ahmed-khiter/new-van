@@ -11,8 +11,8 @@ import {
     Text,
     View,
 } from "react-native";
-import ServiceCarousel from "../components/ServiceCarousel";
-import TypewriterPlaceholder from "../components/TypewriterPlaceholder";
+import ServiceCarousel from "@/features/home/components/ServiceCarousel";
+import TypewriterPlaceholder from "@/features/home/components/TypewriterPlaceholder";
 import {
     COMING_SOON_ITEMS,
     DEFAULT_LOCATION,
@@ -20,8 +20,8 @@ import {
     HERO_IMAGES,
     LOCATION_OPTIONS,
     TYPEWRITER_PHRASES,
-} from "../constants/homeContent";
-import { useHomeData } from "../hooks/useHomeData";
+} from "@/features/home/constants/homeContent";
+import { useHomeData } from "@/features/home/hooks/useHomeData";
 
 type Props = {
   onOpenLocation?: () => void;
@@ -30,7 +30,7 @@ type Props = {
   onSelectService?: (serviceId: string) => void;
 };
 
-export default function HomePageScreen({
+export default function HomeScreen({
   onOpenLocation,
   onExplorePress,
   onGetStarted,

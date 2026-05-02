@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import { fetchHomeServices, fetchSession, fetchStats } from "../api/home.api";
-import type { HomeServicesResponse, Location } from "@/src/shared/types/home";
+import { fetchHomeServices, fetchSession, fetchStats } from "@/features/home/services/home.api";
+import type { HomeServicesResponse, Location } from "@/features/home/types";
 
 const EMPTY_SECTIONS: HomeServicesResponse = {
   ordering: [],

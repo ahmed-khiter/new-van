@@ -1,5 +1,1 @@
-import HomePageScreen from "@/src/features/home/screens/HomePageScreen";
-
-export default function Index() {
-  return <HomePageScreen />;
-}
+export { default } from "@/features/home/screens/HomeScreen";

@@ -1,5 +1,5 @@
-import { apiGet } from "@/src/shared/api/httpClient";
-import type { HomeServicesResponse, Location, StatsResponse } from "@/src/shared/types/home";
+import { apiGet } from "@/services/httpClient";
+import type { HomeServicesResponse, Location, StatsResponse } from "@/features/home/types";
 
 export function fetchSession() {
   return apiGet<Record<string, unknown>>("/api/auth/session");

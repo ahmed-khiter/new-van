@@ -1,4 +1,4 @@
-import { getApiBaseUrl } from "../config/env";
+import { getApiBaseUrl } from "@/constants/env";
 
 type RequestOptions = RequestInit & {
   params?: Record<string, string | number | undefined | null>;
