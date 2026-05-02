@@ -11,6 +11,7 @@ import {
     Text,
     View,
 } from "react-native";
+import HomeScreenSkeleton from "@/features/home/components/HomeScreenSkeleton";
 import ServiceCarousel from "@/features/home/components/ServiceCarousel";
 import TypewriterPlaceholder from "@/features/home/components/TypewriterPlaceholder";
 import {
@@ -64,6 +65,15 @@ export default function HomeScreen({
     setCurrentLocation(pendingLocation);
     setIsLocationModalVisible(false);
   };
+
+  if (loading) {
+    return (
+      <SafeAreaView style={styles.root}>
+        <StatusBar style="dark" backgroundColor="#faf9f7" translucent={false} hidden={false} />
+        <HomeScreenSkeleton />
+      </SafeAreaView>
+    );
+  }
 
   return (
     <SafeAreaView style={styles.root}>
@@ -164,11 +174,6 @@ export default function HomeScreen({
           </Pressable>
         </View>
 
-        {loading ? (
-          <View style={styles.stateBanner}>
-            <Text style={styles.stateText}>Loading latest services...</Text>
-          </View>
-        ) : null}
         {error ? (
           <View style={[styles.stateBanner, styles.errorBanner]}>
             <Text style={styles.errorText}>

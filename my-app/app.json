@@ -20,7 +20,7 @@
       "package": "com.myapp.mobile",
       "versionCode": 1,
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#1a1a2e",
         "foregroundImage": "./src/assets/images/android-icon-foreground.png",
         "backgroundImage": "./src/assets/images/android-icon-background.png",
         "monochromeImage": "./src/assets/images/android-icon-monochrome.png"
@@ -43,11 +43,11 @@
         "expo-splash-screen",
         {
           "image": "./src/assets/images/splash-icon.png",
-          "imageWidth": 200,
+          "imageWidth": 240,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "#1a1a2e",
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#1a1a2e"
           }
         }
       ]
