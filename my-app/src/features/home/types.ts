@@ -10,13 +10,22 @@ export type ServiceImageSet = {
   background?: string;
   slider?: string;
   list_service_img?: string;
+  preview_video?: string;
+  preview_poster?: string;
 };
 
 export type ServiceItem = {
   id: string;
+  dbId?: string;
   name: string;
+  description?: string;
+  basePrice?: number;
+  routeHref?: string;
   image?: string;
   images?: ServiceImageSet;
+  locationFilter?: {
+    excludeIn?: string[];
+  };
 };
 
 export type PromoFeature = {

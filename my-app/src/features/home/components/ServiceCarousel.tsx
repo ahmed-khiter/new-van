@@ -9,7 +9,14 @@ import {
   Text,
   View,
 } from "react-native";
+import { getApiBaseUrl } from "@/constants/env";
 import type { ServiceItem } from "@/features/home/types";
+
+function resolveUrl(path?: string): string | undefined {
+  if (!path) return undefined;
+  if (path.startsWith("http://") || path.startsWith("https://")) return path;
+  return `${getApiBaseUrl()}${path}`;
+}
 
 type Props = {
   title: string;
@@ -23,10 +30,10 @@ type Props = {
 
 function getServiceImage(service: ServiceItem): string {
   return (
-    service.image ||
-    service.images?.background ||
-    service.images?.slider ||
-    service.images?.list_service_img ||
+    resolveUrl(service.image) ||
+    resolveUrl(service.images?.list_service_img) ||
+    resolveUrl(service.images?.background) ||
+    resolveUrl(service.images?.slider) ||
     "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80"
   );
 }
