@@ -2,7 +2,7 @@ const http = require("http");
 const https = require("https");
 const url = require("url");
 
-const TARGET = "https://www.swippednetwork.com";
+const TARGET = "https://www.swippednetwork.com/";
 const PORT = 3001;
 
 const CORS_HEADERS = {

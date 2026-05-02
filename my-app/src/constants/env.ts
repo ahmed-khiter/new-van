@@ -3,12 +3,26 @@ import { Platform } from "react-native";
 
 const PROXY_PORT = 3001;
 
+/** Production API (no trailing slash; paths are joined in httpClient). */
+export const API_ORIGIN = "https://www.swippednetwork.com";
+
 export function getApiBaseUrl(): string {
   const fromEnv = process.env.EXPO_PUBLIC_API_BASE_URL?.trim().replace(/\/+$/, "");
 
-  // On web, requests are same-origin via the dev server proxy
+  // Optional: force direct API on web dev (will fail CORS unless the server allows your origin).
+  const webDevDirect =
+    process.env.EXPO_PUBLIC_WEB_DEV_DIRECT_API === "1" ||
+    process.env.EXPO_PUBLIC_WEB_DEV_DIRECT_API === "true";
+
   if (Platform.OS === "web") {
-    if (typeof window !== "undefined") return window.location.origin;
+    if (typeof window !== "undefined") {
+      // Browsers enforce CORS; Postman does not — same URL can work in Postman and fail in the app.
+      // In dev, talk to scripts/proxy.js (npm run proxy) which forwards to API_ORIGIN and adds CORS headers.
+      if (__DEV__ && !webDevDirect) {
+        return `http://${window.location.hostname}:${PROXY_PORT}`;
+      }
+      return fromEnv || API_ORIGIN;
+    }
     if (fromEnv) return fromEnv;
   }
 
@@ -27,5 +41,5 @@ export function getApiBaseUrl(): string {
     return fromEnv;
   }
 
-  return "https://www.swippednetwork.com";
+  return API_ORIGIN;
 }
