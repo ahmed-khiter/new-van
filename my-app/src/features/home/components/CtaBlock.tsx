@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#faf9f7",
   },
   title: {
-    fontSize: 28,
+    fontSize: 24,
     fontWeight: "900",
     color: "#1a1a2e",
     textAlign: "center",
@@ -42,8 +42,8 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
   },
   buttonText: {
-    fontSize: 15,
-    fontWeight: "900",
+    fontSize: 14,
+    fontWeight: "600",
     color: "#fff",
   },
 });

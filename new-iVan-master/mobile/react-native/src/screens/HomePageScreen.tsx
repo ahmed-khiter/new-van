@@ -309,7 +309,7 @@ const styles = StyleSheet.create({
     padding: 16,
     alignItems: "center",
   },
-  ctaTitle: { color: "#fff", fontWeight: "900", fontSize: 24, textAlign: "center" },
+  ctaTitle: { color: "#fff", fontWeight: "300", fontSize: 24, textAlign: "center" },
   ctaButton: {
     marginTop: 12,
     backgroundColor: "#22c55e",

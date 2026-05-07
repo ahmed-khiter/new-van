@@ -9,10 +9,10 @@ export default function PromoBanner() {
     <View style={styles.container}>
       <Image source={{ uri: PROMO_IMAGE_URL }} style={styles.backgroundImage} />
       <View style={styles.overlay} />
+      <View style={styles.badge}>
+        <Text style={styles.badgeText}>LIMITED TIME OFFER</Text>
+      </View>
       <View style={styles.content}>
-        <View style={styles.badge}>
-          <Text style={styles.badgeText}>LIMITED TIME OFFER</Text>
-        </View>
         <Text style={styles.priceText}>15% off</Text>
         <Text style={styles.subtitleText}>
           your first taxi ride · use code SWIPPED15
@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 4,
     borderRadius: 999,
+    zIndex: 1,
   },
   badgeText: {
     fontSize: 10,
@@ -66,7 +67,7 @@ const styles = StyleSheet.create({
     fontWeight: "900",
     color: "#fff",
     lineHeight: 48,
-    marginTop: 28,
+    marginTop: 0,
   },
   subtitleText: {
     fontSize: 13,
