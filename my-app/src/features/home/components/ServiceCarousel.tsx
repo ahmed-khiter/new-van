@@ -1,9 +1,7 @@
-import React, { useMemo, useState } from "react";
+import React from "react";
 import {
-  FlatList,
+  Dimensions,
   Image,
-  NativeScrollEvent,
-  NativeSyntheticEvent,
   Pressable,
   StyleSheet,
   Text,
@@ -47,17 +45,9 @@ export default function ServiceCarousel({
   services,
   onPressService,
 }: Props) {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const cardWidth = 236;
-  const gap = 12;
-
-  const dots = useMemo(() => Array.from({ length: services.length }), [services.length]);
-
-  const onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
-    const x = e.nativeEvent.contentOffset.x;
-    const index = Math.round(x / (cardWidth + gap));
-    setActiveIndex(Math.max(0, Math.min(services.length - 1, index)));
-  };
+  const screenWidth = Dimensions.get("window").width;
+  const cardWidth = (screenWidth - 48) / 2;
+  const displayServices = services.slice(0, 4);
 
   return (
     <View style={styles.wrapper}>
@@ -69,19 +59,11 @@ export default function ServiceCarousel({
       </View>
       <Text style={styles.subtitle}>{subtitle}</Text>
 
-      <FlatList
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        data={services}
-        keyExtractor={(item) => item.id}
-        contentContainerStyle={styles.listContent}
-        onScroll={onScroll}
-        scrollEventThrottle={16}
-        snapToInterval={cardWidth + gap}
-        decelerationRate="fast"
-        renderItem={({ item }) => (
+      <View style={styles.grid}>
+        {displayServices.map((item) => (
           <Pressable
-            style={styles.card}
+            key={item.id}
+            style={[styles.card, { width: cardWidth }]}
             onPress={() => onPressService?.(item)}
             android_ripple={{ color: "#ececec" }}
           >
@@ -89,12 +71,6 @@ export default function ServiceCarousel({
             <View style={styles.overlay} />
             <Text style={styles.cardTitle}>{item.name}</Text>
           </Pressable>
-        )}
-      />
-
-      <View style={styles.dotRow}>
-        {dots.map((_, i) => (
-          <View key={i} style={[styles.dot, i === activeIndex && styles.dotActive]} />
         ))}
       </View>
     </View>
@@ -114,28 +90,31 @@ const styles = StyleSheet.create({
   badge: { paddingHorizontal: 10, paddingVertical: 5, borderRadius: 999 },
   badgeText: { color: "#111827", fontSize: 12, fontWeight: "700" },
   subtitle: { color: "#4b5563", marginBottom: 12, fontSize: 14 },
-  listContent: { gap: 12, paddingRight: 18 },
+  grid: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 8,
+    marginTop: 12,
+  },
   card: {
-    width: 236,
-    height: 146,
-    borderRadius: 16,
+    height: 130,
+    borderRadius: 12,
     overflow: "hidden",
     backgroundColor: "#e5e7eb",
   },
-  image: { width: "100%", height: "100%" },
+  image: { width: "100%", height: "100%", resizeMode: "cover" },
   overlay: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: "rgba(0,0,0,0.22)",
+    backgroundColor: "rgba(0,0,0,0.35)",
   },
   cardTitle: {
     position: "absolute",
-    left: 12,
+    left: 10,
     bottom: 10,
     color: "#fff",
-    fontSize: 16,
-    fontWeight: "800",
+    fontSize: 12,
+    fontWeight: "700",
+    textTransform: "uppercase",
+    letterSpacing: 0.5,
   },
-  dotRow: { flexDirection: "row", alignItems: "center", gap: 8, marginTop: 10 },
-  dot: { width: 6, height: 6, borderRadius: 3, backgroundColor: "#d1d5db" },
-  dotActive: { width: 16, backgroundColor: "#111827" },
 });
