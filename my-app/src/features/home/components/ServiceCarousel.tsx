@@ -3,6 +3,7 @@ import {
   Dimensions,
   Image,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   View,
@@ -24,6 +25,7 @@ type Props = {
   subtitle: string;
   services: ServiceItem[];
   onPressService?: (service: ServiceItem) => void;
+  isCarousel?: boolean;
 };
 
 function getServiceImage(service: ServiceItem): string {
@@ -44,10 +46,11 @@ export default function ServiceCarousel({
   subtitle,
   services,
   onPressService,
+  isCarousel = true,
 }: Props) {
   const screenWidth = Dimensions.get("window").width;
   const cardWidth = (screenWidth - 48) / 2;
-  const displayServices = services.slice(0, 4);
+  const displayServicesGrid = services.slice(0, 4);
 
   return (
     <View style={styles.wrapper}>
@@ -59,20 +62,41 @@ export default function ServiceCarousel({
       </View>
       <Text style={styles.subtitle}>{subtitle}</Text>
 
-      <View style={styles.grid}>
-        {displayServices.map((item) => (
-          <Pressable
-            key={item.id}
-            style={[styles.card, { width: cardWidth }]}
-            onPress={() => onPressService?.(item)}
-            android_ripple={{ color: "#ececec" }}
-          >
-            <Image source={{ uri: getServiceImage(item) }} style={styles.image} />
-            <View style={styles.overlay} />
-            <Text style={styles.cardTitle}>{item.name}</Text>
-          </Pressable>
-        ))}
-      </View>
+      {isCarousel ? (
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.carouselContainer}
+        >
+          {services.map((item) => (
+            <Pressable
+              key={item.id}
+              style={styles.cardCarousel}
+              onPress={() => onPressService?.(item)}
+              android_ripple={{ color: "#ececec" }}
+            >
+              <Image source={{ uri: getServiceImage(item) }} style={styles.image} />
+              <View style={styles.overlay} />
+              <Text style={styles.cardTitleCarousel}>{item.name}</Text>
+            </Pressable>
+          ))}
+        </ScrollView>
+      ) : (
+        <View style={styles.grid}>
+          {displayServicesGrid.map((item) => (
+            <Pressable
+              key={item.id}
+              style={[styles.cardGrid, { width: cardWidth }]}
+              onPress={() => onPressService?.(item)}
+              android_ripple={{ color: "#ececec" }}
+            >
+              <Image source={{ uri: getServiceImage(item) }} style={styles.image} />
+              <View style={styles.overlay} />
+              <Text style={styles.cardTitleGrid}>{item.name}</Text>
+            </Pressable>
+          ))}
+        </View>
+      )}
     </View>
   );
 }
@@ -90,31 +114,63 @@ const styles = StyleSheet.create({
   badge: { paddingHorizontal: 10, paddingVertical: 5, borderRadius: 999 },
   badgeText: { color: "#111827", fontSize: 12, fontWeight: "700" },
   subtitle: { color: "#4b5563", marginBottom: 12, fontSize: 14 },
+  carouselContainer: {
+    gap: 12,
+    marginTop: 4,
+    paddingRight: 16,
+  },
   grid: {
     flexDirection: "row",
     flexWrap: "wrap",
     gap: 8,
     marginTop: 12,
   },
-  card: {
+  cardCarousel: {
+    width: 150,
+    height: 150,
+    borderRadius: 12,
+    overflow: "hidden",
+    backgroundColor: "#e5e7eb",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  cardGrid: {
     height: 130,
     borderRadius: 12,
     overflow: "hidden",
     backgroundColor: "#e5e7eb",
+    justifyContent: "flex-end",
+    alignItems: "center",
+    paddingBottom: 12,
   },
-  image: { width: "100%", height: "100%", resizeMode: "cover" },
+  image: { 
+    ...StyleSheet.absoluteFillObject,
+    width: "100%", 
+    height: "100%", 
+    resizeMode: "cover" 
+  },
   overlay: {
     ...StyleSheet.absoluteFillObject,
     backgroundColor: "rgba(0,0,0,0.35)",
   },
-  cardTitle: {
-    position: "absolute",
-    left: 10,
-    bottom: 10,
+  cardTitleCarousel: {
+    color: "#fff",
+    fontSize: 14,
+    fontWeight: "700",
+    textTransform: "uppercase",
+    letterSpacing: 0.5,
+    textAlign: "center",
+    paddingHorizontal: 8,
+    zIndex: 1,
+  },
+  cardTitleGrid: {
     color: "#fff",
     fontSize: 12,
     fontWeight: "700",
     textTransform: "uppercase",
     letterSpacing: 0.5,
+    textAlign: "center",
+    paddingHorizontal: 8,
+    zIndex: 1,
   },
 });

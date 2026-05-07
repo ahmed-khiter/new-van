@@ -22,6 +22,7 @@ export default function ServicesSection({
         subtitle="Products, food and groceries — delivered to you."
         services={sections.ordering}
         onPressService={(service) => onSelectService?.(service.id)}
+        isCarousel={false}
       />
 
       <ServiceCarousel

@@ -42,6 +42,7 @@ export type PromoFeature = {
   title: string;
   description: string;
   color: string;
+  iconColor: string;
   icon: HomePromoIconId;
 };
 
