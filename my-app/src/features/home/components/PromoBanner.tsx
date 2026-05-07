@@ -9,13 +9,12 @@ export default function PromoBanner() {
     <View style={styles.container}>
       <Image source={{ uri: PROMO_IMAGE_URL }} style={styles.backgroundImage} />
       <View style={styles.overlay} />
-      <View style={styles.badge}>
-        <Text style={styles.badgeText}>LIMITED TIME OFFER</Text>
-      </View>
       <View style={styles.content}>
+        <Text style={styles.eyebrow}>Limited time offer</Text>
         <Text style={styles.priceText}>15% off</Text>
         <Text style={styles.subtitleText}>
-          your first taxi ride · use code SWIPPED15
+          your first taxi ride · use code{" "}
+          <Text style={styles.codeText}>SWIPPED15</Text>
         </Text>
       </View>
     </View>
@@ -24,9 +23,8 @@ export default function PromoBanner() {
 
 const styles = StyleSheet.create({
   container: {
-    marginHorizontal: 16,
-    marginTop: 16,
-    borderRadius: 16,
+    marginHorizontal: 12,
+    borderRadius: 20,
     overflow: "hidden",
     height: 180,
   },
@@ -36,42 +34,37 @@ const styles = StyleSheet.create({
   },
   overlay: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: "rgba(0,0,0,0.45)",
+    backgroundColor: "rgba(0,0,0,0.50)",
   },
   content: {
     position: "absolute",
     bottom: 0,
     left: 0,
     right: 0,
-    padding: 16,
+    padding: 20,
   },
-  badge: {
-    position: "absolute",
-    top: 14,
-    left: 14,
-    backgroundColor: "rgba(255,255,255,0.18)",
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: 999,
-    zIndex: 1,
-  },
-  badgeText: {
-    fontSize: 10,
-    fontWeight: "700",
-    color: "#fff",
-    letterSpacing: 1,
-    textTransform: "uppercase",
+  eyebrow: {
+    fontSize: 11,
+    fontFamily: "OpenSans_600SemiBold",
+    color: "rgba(255,255,255,0.6)",
+    letterSpacing: 1.1,
+    marginBottom: 4,
   },
   priceText: {
-    fontSize: 42,
-    fontWeight: "900",
+    fontSize: 44,
+    fontFamily: "OpenSans_700Bold",
     color: "#fff",
     lineHeight: 48,
-    marginTop: 0,
+    letterSpacing: -1,
   },
   subtitleText: {
     fontSize: 13,
-    color: "rgba(255,255,255,0.8)",
+    color: "rgba(255,255,255,0.75)",
     marginTop: 4,
+  },
+  codeText: {
+    fontFamily: "OpenSans_700Bold",
+    color: "#fff",
+    backgroundColor: "rgba(255,255,255,0.15)",
   },
 });

@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
   },
   locationName: {
     fontSize: 13,
-    fontWeight: "600",
+    fontFamily: "OpenSans_600SemiBold",
     color: "#111827",
     marginLeft: 8,
     flex: 1,
@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
   },
   continueButtonText: {
     fontSize: 14,
-    fontWeight: "700",
+    fontFamily: "OpenSans_700Bold",
     color: "#fff",
   },
 });

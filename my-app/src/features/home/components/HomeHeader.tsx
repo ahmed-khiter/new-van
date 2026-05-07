@@ -5,13 +5,16 @@ import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 export default function HomeHeader() {
   return (
     <View style={styles.wrapper}>
-      <Text style={styles.brand}>SWIPPED.</Text>
+      <Text style={styles.brand}>swipped.</Text>
       <View style={styles.iconsContainer}>
         <Pressable style={styles.iconButton} android_ripple={{ color: "#f0f0f0" }}>
           <MaterialIcons name="shopping-cart" size={20} color="#1a1a2e" />
         </Pressable>
         <Pressable style={styles.iconButton} android_ripple={{ color: "#f0f0f0" }}>
           <MaterialIcons name="notifications" size={20} color="#1a1a2e" />
+        </Pressable>
+        <Pressable style={styles.iconButton} android_ripple={{ color: "#f0f0f0" }}>
+          <MaterialIcons name="language" size={20} color="#1a1a2e" />
         </Pressable>
         <Pressable style={styles.iconButton} android_ripple={{ color: "#f0f0f0" }}>
           <MaterialIcons name="person" size={20} color="#1a1a2e" />
@@ -32,14 +35,16 @@ const styles = StyleSheet.create({
     backgroundColor: "#faf9f7",
   },
   brand: {
-    fontSize: 18,
+    fontSize: 19,
     fontWeight: "800",
+    fontStyle: "italic",
+    letterSpacing: -1,
     color: "#1a1a2e",
   },
   iconsContainer: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 8,
+    gap: 4,
   },
   iconButton: {
     width: 36,
@@ -47,7 +52,7 @@ const styles = StyleSheet.create({
     borderRadius: 18,
     backgroundColor: "#fff",
     borderWidth: 1,
-    borderColor: "#ececec",
+    borderColor: "#dee2e6",
     alignItems: "center",
     justifyContent: "center",
   },

@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { View, Text, ScrollView, StyleSheet } from "react-native";
 import Feather from "@expo/vector-icons/Feather";
 import { FEATURE_GRID, COMING_SOON_ITEMS } from "@/features/home/constants/homeContent";
 
@@ -28,10 +28,7 @@ export default function FeatureHighlight() {
       {/* Headline */}
       <View style={styles.headlineContainer}>
         <Text style={styles.headlineText}>
-          Everything in one place.
-        </Text>
-        <Text style={styles.headlineText}>
-          Built for <Text style={styles.youText}>you.</Text>
+          Everything in one place.{"\n"}Built for you.
         </Text>
       </View>
 
@@ -41,43 +38,30 @@ export default function FeatureHighlight() {
         simplify your day.
       </Text>
 
-      {/* Feature List (2x2 Grid) */}
-      <View style={styles.featureListContainer}>
-        {FEATURE_GRID.map((feature) => (
-          <View key={feature.id} style={styles.featureItemGrid}>
-            {/* Icon Circle */}
-            <View
-              style={[
-                styles.iconCircle,
-                { backgroundColor: feature.color },
-              ]}
-            >
-              <Feather
-                name={feature.icon as any}
-                size={28}
-                color={feature.iconColor}
-              />
+      {/* Feature List — vertically stacked cells in a rounded card */}
+      <View style={styles.featureCard}>
+        {FEATURE_GRID.map((feature, index) => (
+          <View
+            key={feature.id}
+            style={[
+              styles.featureCell,
+              index < FEATURE_GRID.length - 1 && styles.featureCellBorder,
+            ]}
+          >
+            <View style={[styles.iconBubble, { backgroundColor: feature.color }]}>
+              <Feather name={feature.icon as any} size={22} color={feature.iconColor} />
             </View>
-
-            {/* Title */}
             <Text style={styles.featureTitle}>{t(feature.title)}</Text>
-
-            {/* Description */}
-            <Text style={styles.featureDescription}>
-              {t(feature.description)}
-            </Text>
+            <Text style={styles.featureDescription}>{t(feature.description)}</Text>
           </View>
         ))}
       </View>
 
-      {/* Coming Soon Section */}
+      {/* Coming Soon */}
       <View style={styles.comingSoonHeader}>
-        <Text style={styles.comingSoonTitle}>Coming Soon</Text>
-        <View style={styles.comingSoonBadge}>
-          <Text style={styles.comingSoonBadgeText}>STAY TUNED</Text>
-        </View>
+        <Text style={styles.comingSoonLabel}>Coming soon</Text>
       </View>
-      
+
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -85,10 +69,10 @@ export default function FeatureHighlight() {
       >
         {COMING_SOON_ITEMS.map((feature) => (
           <View key={feature.id} style={styles.comingSoonCard}>
-            <View style={[styles.iconCircle, { backgroundColor: feature.color }]}>
-              <Feather name={feature.icon as any} size={28} color={feature.iconColor} />
+            <View style={[styles.iconBubble, { backgroundColor: feature.color }]}>
+              <Feather name={feature.icon as any} size={22} color={feature.iconColor} />
             </View>
-            <Text style={styles.featureTitle}>{t(feature.title)}</Text>
+            <Text style={styles.comingSoonCardTitle}>{t(feature.title)}</Text>
             <Text style={styles.featureDescription}>{t(feature.description)}</Text>
           </View>
         ))}
@@ -99,101 +83,104 @@ export default function FeatureHighlight() {
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: 24,
-    paddingVertical: 32,
+    paddingHorizontal: 12,
+    paddingTop: 55,
+    paddingBottom: 40,
     backgroundColor: "#faf9f7",
   },
   headlineContainer: {
     alignItems: "center",
+    paddingHorizontal: 12,
   },
   headlineText: {
-    fontSize: 28,
+    fontSize: 30,
     fontWeight: "800",
-    color: "#111827",
-    lineHeight: 36,
+    color: "#1a1a2e",
+    lineHeight: 34,
     textAlign: "center",
-  },
-  youText: {
-    color: "#a853cf",
-    fontStyle: "italic",
+    letterSpacing: -1.05,
   },
   subtitleText: {
-    fontSize: 14,
+    fontSize: 15,
     color: "#6b7280",
     textAlign: "center",
-    marginTop: 12,
-    lineHeight: 22,
+    marginTop: 20,
+    lineHeight: 24,
+    paddingHorizontal: 12,
   },
-  featureListContainer: {
+  featureCard: {
     marginTop: 32,
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "space-between",
-    rowGap: 24,
+    gap:20,
+    borderRadius: 24,
+    borderWidth: 1,
+    borderColor: "rgba(0,0,0,0.1)",
+    overflow: "hidden",
+    backgroundColor: "#fff",
   },
-  featureItemGrid: {
-    width: "48%",
+  featureCell: {
     alignItems: "center",
+    paddingVertical: 32,
+    paddingHorizontal: 24,
   },
-  iconCircle: {
-    width: 56,
-    height: 56,
-    borderRadius: 28,
+  featureCellBorder: {
+    borderBottomWidth: 1,
+    borderBottomColor: "rgba(0,0,0,0.1)",
+  },
+  iconBubble: {
+    width: 52,
+    height: 52,
+    borderRadius: 16,
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: 12,
+    marginBottom: 9,
   },
   featureTitle: {
-    fontSize: 15,
-    fontWeight: "700",
-    color: "#111827",
+    fontSize: 16,
+    fontFamily: "OpenSans_700Bold",
+    color: "#1a1a2e",
     textAlign: "center",
-    marginBottom: 6,
+    letterSpacing: -0.16,
+    marginBottom: 8,
   },
   featureDescription: {
-    fontSize: 12,
+    fontSize: 13.5,
     color: "#6b7280",
     textAlign: "center",
-    lineHeight: 18,
-    maxWidth: "100%",
+    lineHeight: 21,
   },
   comingSoonHeader: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginTop: 48,
+    marginTop: 40,
     marginBottom: 16,
+    paddingHorizontal: 4,
   },
-  comingSoonTitle: {
-    fontSize: 22,
-    fontWeight: "800",
-    color: "#0f172a",
-  },
-  comingSoonBadge: {
-    backgroundColor: "#fef3c7",
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    borderRadius: 999,
-  },
-  comingSoonBadgeText: {
-    color: "#92400e",
-    fontSize: 12,
-    fontWeight: "700",
+  comingSoonLabel: {
+    fontSize: 13,
+    fontFamily: "OpenSans_600SemiBold",
+    color: "#9ca3af",
+    letterSpacing: 1.04,
+    textAlign: "center",
+    textTransform: "uppercase",
   },
   comingSoonScroll: {
     gap: 16,
-    paddingBottom: 16,
+    paddingBottom: 4,
   },
   comingSoonCard: {
-    width: 180,
+    width: 198,
     backgroundColor: "#fff",
-    padding: 16,
-    borderRadius: 16,
+    paddingHorizontal: 20,
+    paddingVertical: 24,
+    borderRadius: 18,
     alignItems: "center",
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.05,
-    shadowRadius: 3,
-    elevation: 2,
+    borderWidth: 1,
+    borderColor: "rgba(0,0,0,0.07)",
+    gap: 5,
+  },
+  comingSoonCardTitle: {
+    fontSize: 15,
+    fontFamily: "OpenSans_700Bold",
+    color: "#1a1a2e",
+    textAlign: "center",
+    marginBottom: 2,
   },
 });
