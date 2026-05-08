@@ -30,9 +30,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     paddingHorizontal: 16,
-    paddingTop: 12,
-    paddingBottom: 8,
-    backgroundColor: "#faf9f7",
+    paddingVertical: 10,
   },
   brand: {
     fontSize: 19,

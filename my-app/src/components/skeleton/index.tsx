@@ -13,8 +13,8 @@ const SCREEN_WIDTH = Dimensions.get("window").width;
 const SHIMMER_WIDTH = SCREEN_WIDTH * 0.7;
 
 // Warm skeleton tones matching the #faf9f7 app background
-const BASE_COLOR = "#e8e4de";
-const HIGHLIGHT_COLOR = "#f5f2ee";
+const BASE_COLOR = "#e5e7eb";
+const HIGHLIGHT_COLOR = "#f3f4f6";
 
 // ─── Shared shimmer context ─────────────────────────────────────────────────
 // All SkeletonBox instances read the same translateX so every bone

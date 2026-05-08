@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./src/assets/images/icon.png",
     "scheme": "myapp",
-    "userInterfaceStyle": "dark",
+    "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "jsEngine": "hermes",
     "ios": {
@@ -27,11 +27,11 @@
         "monochromeImage": "./src/assets/images/android-icon-monochrome.png"
       },
       "statusBar": {
-        "barStyle": "dark-content",
-        "backgroundColor": "#faf9f7",
-        "translucent": false
+        "barStyle": "light-content",
+        "backgroundColor": "transparent",
+        "translucent": true
       },
-      "edgeToEdgeEnabled": false,
+      "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {

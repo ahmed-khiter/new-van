@@ -70,7 +70,6 @@ export default function HeroSection({
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#faf9f7",
   },
   paddedContainer: {
     paddingHorizontal: 16,

@@ -179,7 +179,7 @@ export default function HomeScreenSkeleton() {
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: "#faf9f7" },
+  root: { flex: 1, backgroundColor: "#FFFFFF" },
   content: { paddingBottom: 36 },
 
   // Hero

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Text, TextInput } from "react-native";
-import { DarkTheme, DefaultTheme, ThemeProvider } from "@react-navigation/native";
+import { Platform, Text, TextInput, View } from "react-native";
+import { DefaultTheme, ThemeProvider } from "@react-navigation/native";
 import {
   useFonts,
   OpenSans_400Regular,
@@ -12,10 +12,10 @@ import {
 } from "@expo-google-fonts/open-sans";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
-import { StatusBar } from "expo-status-bar";
-
-import { useColorScheme } from "@/hooks/use-color-scheme";
+import { StatusBar, setStatusBarStyle } from "expo-status-bar";
+import * as SystemUI from "expo-system-ui";
 import AnimatedSplash from "@/features/splash/SplashScreen";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -33,7 +33,6 @@ const applyDefaultFont = () => {
 };
 
 export default function RootNavigationLayout() {
-  const colorScheme = useColorScheme();
   const [fontsLoaded, fontError] = useFonts({
     OpenSans_400Regular,
     OpenSans_400Regular_Italic,
@@ -51,17 +50,44 @@ export default function RootNavigationLayout() {
     }
   }, [fontsLoaded, fontError]);
 
+  // Force pure white background at system level
+  useEffect(() => {
+    SystemUI.setBackgroundColorAsync("#FFFFFF");
+  }, []);
+
+  // Imperative status bar control for maximum reliability
+  useEffect(() => {
+    if (splashDone) {
+      // Small delay to ensure the screen has transitioned
+      const timer = setTimeout(() => {
+        setStatusBarStyle("dark");
+      }, 100);
+      return () => clearTimeout(timer);
+    } else {
+      setStatusBarStyle("light");
+    }
+  }, [splashDone]);
+
   if (!fontsLoaded && !fontError) {
     return null;
   }
 
   return (
-    <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="index" options={{ headerShown: false }} />
-      </Stack>
-      <StatusBar style="light" />
-      {!splashDone && <AnimatedSplash onFinish={() => setSplashDone(true)} />}
-    </ThemeProvider>
+    <View style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
+      <SafeAreaProvider>
+        <ThemeProvider value={DefaultTheme}>
+          <Stack>
+            <Stack.Screen name="index" options={{ headerShown: false }} />
+          </Stack>
+
+          <StatusBar
+            key={splashDone ? "app-status" : "splash-status"}
+            style={splashDone ? "dark" : "light"}
+          />
+
+          {!splashDone && <AnimatedSplash onFinish={() => setSplashDone(true)} />}
+        </ThemeProvider>
+      </SafeAreaProvider>
+    </View>
   );
 }

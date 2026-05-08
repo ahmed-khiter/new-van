@@ -1,7 +1,8 @@
-import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { StatusBar } from "expo-status-bar";
+import { useColorScheme } from "@/hooks/use-color-scheme";
 import CtaBlock from "@/features/home/components/CtaBlock";
 import FeatureHighlight from "@/features/home/components/FeatureHighlight";
 import Footer from "@/features/home/components/Footer";
@@ -25,6 +26,8 @@ export default function HomeScreen({
   onGetStarted,
   onSelectService,
 }: Props) {
+  const colorScheme = useColorScheme();
+  const isDark = colorScheme === "dark";
   const [isLocationModalVisible, setIsLocationModalVisible] = useState(false);
   const [currentLocation, setCurrentLocation] = useState(DEFAULT_LOCATION);
   const [pendingLocation, setPendingLocation] = useState(DEFAULT_LOCATION);
@@ -56,16 +59,16 @@ export default function HomeScreen({
 
   if (loading) {
     return (
-      <SafeAreaView style={styles.root}>
-        <StatusBar style="dark" backgroundColor="#faf9f7" translucent={false} hidden={false} />
+      <SafeAreaView style={[styles.root, { backgroundColor: "#FFFFFF" }]}>
+        <StatusBar style="dark" />
         <HomeScreenSkeleton />
       </SafeAreaView>
     );
   }
 
   return (
-    <SafeAreaView style={styles.root}>
-      <StatusBar style="dark" backgroundColor="#faf9f7" translucent={false} hidden={false} />
+    <SafeAreaView style={[styles.root, { backgroundColor: "#FFFFFF" }]}>
+      <StatusBar style="dark" />
       <ScrollView contentContainerStyle={styles.content}>
         <HeroSection
           currentLocation={currentLocation}
@@ -108,7 +111,7 @@ export default function HomeScreen({
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: "#faf9f7" },
+  root: { flex: 1 },
   content: { paddingBottom: 0 },
   stateBanner: {
     marginHorizontal: 16,
