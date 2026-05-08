@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   },
   labelText: {
     fontSize: 11,
-    fontWeight: "700",
+    fontFamily: "OpenSans_700Bold",
     color: "#9ca3af",
     letterSpacing: 1.5,
     textTransform: "uppercase",
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 15,
-    fontWeight: "700",
+    fontFamily: "OpenSans_700Bold",
     color: "#111827",
     marginBottom: 6,
   },

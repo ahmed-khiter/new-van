@@ -6,7 +6,7 @@ import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 export default function Footer() {
   return (
     <View style={styles.container}>
-      <Text style={styles.logo}>SWIPPED.</Text>
+      <Text style={styles.logo}>swipped.</Text>
       <Text style={styles.tagline}>
         Order, book, connect & earn — all from one platform.
       </Text>
@@ -63,22 +63,23 @@ export default function Footer() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#0a0a0aff",
+    backgroundColor: "#0a0a0a",
     paddingVertical: 32,
     paddingHorizontal: 20,
     alignItems: "center",
   },
   logo: {
-    fontSize: 22,
-    fontWeight: "900",
+    fontSize: 30,
+    fontWeight: "800",
     fontStyle: "italic",
+    letterSpacing: -1.6,
     color: "#ffffff",
     textAlign: "center",
   },
   tagline: {
     marginTop: 8,
     fontSize: 13,
-    color: "#94a3b8",
+    color: "rgba(255,255,255,0.35)",
     textAlign: "center",
     lineHeight: 20,
   },
@@ -103,14 +104,14 @@ const styles = StyleSheet.create({
   },
   badgeLarge: {
     fontSize: 14,
-    fontWeight: "700",
+    fontFamily: "OpenSans_700Bold",
     color: "#fff",
     lineHeight: 16,
   },
   divider: {
     marginVertical: 24,
     height: 1,
-    backgroundColor: "#1e293b",
+    backgroundColor: "rgba(255,255,255,0.06)",
     alignSelf: "stretch",
   },
   navRow: {
@@ -120,21 +121,22 @@ const styles = StyleSheet.create({
   },
   navColumn: {},
   navHeader: {
-    fontSize: 11,
-    fontWeight: "700",
-    color: "#64748b",
-    letterSpacing: 1,
+    fontSize: 10,
+    fontFamily: "OpenSans_600SemiBold",
+    color: "rgba(255,255,255,0.25)",
+    letterSpacing: 1.8,
     textTransform: "uppercase",
     marginBottom: 10,
   },
   navLink: {
     fontSize: 13,
-    color: "#cbd5e1",
+    color: "rgba(255,255,255,0.45)",
     marginTop: 6,
+    lineHeight: 20,
   },
   copyright: {
-    fontSize: 12,
-    color: "#475569",
+    fontSize: 11,
+    color: "rgba(255,255,255,0.25)",
     textAlign: "center",
   },
 });

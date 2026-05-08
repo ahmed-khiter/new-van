@@ -1,5 +1,7 @@
 import React from "react";
 import { View, Text, Pressable, StyleSheet } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import HomeHeader from "@/features/home/components/HomeHeader";
 import PromoBanner from "@/features/home/components/PromoBanner";
 import TypewriterPlaceholder from "@/features/home/components/TypewriterPlaceholder";
@@ -27,11 +29,11 @@ export default function HeroSection({
     <View style={styles.container}>
       <HomeHeader />
 
-      {/* Padded container for stats and search */}
       <View style={styles.paddedContainer}>
-        {/* Stats row */}
+        {/* Location + stats row */}
         <Pressable style={styles.statsRow} onPress={onLocationPress}>
-          <Text style={styles.flagEmoji}>{currentLocation.flag}</Text>
+          <MaterialIcons name="place" size={15} color="#6b7280" />
+          <MaterialIcons name="keyboard-arrow-down" size={15} color="#6b7280" />
           <Text style={styles.statsText}>
             · {totalServices} services · {globalUserCount ?? "–"} Global users ·{" "}
             {locationUserCount ?? "–"} in {currentLocation.name}
@@ -46,16 +48,21 @@ export default function HeroSection({
             style={styles.typewriter}
           />
           <Pressable
-            style={styles.exploreButton}
             onPress={onExplorePress}
             android_ripple={{ color: "#ff6b8a" }}
           >
-            <Text style={styles.exploreText}>Explore</Text>
+            <LinearGradient
+              colors={["#ff385c", "#ff7eb3"]}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 0 }}
+              style={styles.exploreButton}
+            >
+              <Text style={styles.exploreText}>Explore</Text>
+            </LinearGradient>
           </Pressable>
         </View>
       </View>
 
-      {/* PromoBanner */}
       <PromoBanner />
     </View>
   );
@@ -68,30 +75,28 @@ const styles = StyleSheet.create({
   paddedContainer: {
     paddingHorizontal: 16,
     paddingTop: 8,
+    paddingBottom: 20,
   },
   statsRow: {
     flexDirection: "row",
     alignItems: "center",
-  },
-  flagEmoji: {
-    fontSize: 16,
+    marginBottom: 10,
   },
   statsText: {
     fontSize: 12,
     color: "#6b7280",
-    marginLeft: 6,
+    marginLeft: 2,
   },
   searchBar: {
     flexDirection: "row",
     alignItems: "center",
-    marginTop: 12,
     borderWidth: 1,
     borderColor: "#e5e7eb",
     borderRadius: 999,
     backgroundColor: "#fff",
     paddingLeft: 14,
-    paddingRight: 6,
-    paddingVertical: 6,
+    paddingRight: 4,
+    paddingVertical: 4,
   },
   domainPrefix: {
     fontSize: 13,
@@ -104,14 +109,13 @@ const styles = StyleSheet.create({
     marginLeft: 4,
   },
   exploreButton: {
-    backgroundColor: "#ff4d77",
     borderRadius: 999,
     paddingHorizontal: 16,
-    paddingVertical: 8,
+    paddingVertical: 9,
   },
   exploreText: {
     fontSize: 13,
-    fontWeight: "700",
+    fontFamily: "OpenSans_700Bold",
     color: "#fff",
   },
 });

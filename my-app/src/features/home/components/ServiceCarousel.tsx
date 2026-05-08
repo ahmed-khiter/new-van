@@ -49,7 +49,8 @@ export default function ServiceCarousel({
   isCarousel = true,
 }: Props) {
   const screenWidth = Dimensions.get("window").width;
-  const cardWidth = (screenWidth - 48) / 2;
+  // 12px container padding each side + 12px gap between 2 columns
+  const gridCardWidth = (screenWidth - 24 - 12) / 2;
   const displayServicesGrid = services.slice(0, 4);
 
   return (
@@ -73,11 +74,13 @@ export default function ServiceCarousel({
               key={item.id}
               style={styles.cardCarousel}
               onPress={() => onPressService?.(item)}
-              android_ripple={{ color: "#ececec" }}
+              android_ripple={{ color: "#333" }}
             >
               <Image source={{ uri: getServiceImage(item) }} style={styles.image} />
-              <View style={styles.overlay} />
-              <Text style={styles.cardTitleCarousel}>{item.name}</Text>
+              {/* Bottom-heavy overlay: full dim layer + stronger bottom layer */}
+              <View style={styles.overlayBase} />
+              <View style={styles.overlayBottom} />
+              <Text style={styles.cardTitle}>{item.name}</Text>
             </Pressable>
           ))}
         </ScrollView>
@@ -86,13 +89,14 @@ export default function ServiceCarousel({
           {displayServicesGrid.map((item) => (
             <Pressable
               key={item.id}
-              style={[styles.cardGrid, { width: cardWidth }]}
+              style={[styles.cardGrid, { width: gridCardWidth }]}
               onPress={() => onPressService?.(item)}
-              android_ripple={{ color: "#ececec" }}
+              android_ripple={{ color: "#333" }}
             >
               <Image source={{ uri: getServiceImage(item) }} style={styles.image} />
-              <View style={styles.overlay} />
-              <Text style={styles.cardTitleGrid}>{item.name}</Text>
+              <View style={styles.overlayBase} />
+              <View style={styles.overlayBottom} />
+              <Text style={styles.cardTitle}>{item.name}</Text>
             </Pressable>
           ))}
         </View>
@@ -102,75 +106,87 @@ export default function ServiceCarousel({
 }
 
 const styles = StyleSheet.create({
-  wrapper: { marginTop: 24 },
+  wrapper: { marginTop: 28 },
   header: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 8,
+    marginBottom: 6,
     gap: 8,
   },
-  title: { fontSize: 22, fontWeight: "800", color: "#0f172a" },
-  badge: { paddingHorizontal: 10, paddingVertical: 5, borderRadius: 999 },
-  badgeText: { color: "#111827", fontSize: 12, fontWeight: "700" },
-  subtitle: { color: "#4b5563", marginBottom: 12, fontSize: 14 },
+  title: {
+    fontSize: 19,
+    fontWeight: "900",
+    color: "#1a1a2e",
+    letterSpacing: 0.76,
+  },
+  badge: {
+    paddingHorizontal: 12,
+    paddingVertical: 5,
+    borderRadius: 999,
+  },
+  badgeText: {
+    fontSize: 11,
+    fontFamily: "OpenSans_700Bold",
+  },
+  subtitle: {
+    color: "#9ca3af",
+    marginBottom: 14,
+    fontSize: 13,
+    lineHeight: 18,
+  },
   carouselContainer: {
-    gap: 12,
-    marginTop: 4,
-    paddingRight: 16,
+    gap: 8,
+    paddingRight: 4,
   },
   grid: {
     flexDirection: "row",
     flexWrap: "wrap",
-    gap: 8,
-    marginTop: 12,
+    gap: 12,
   },
   cardCarousel: {
-    width: 150,
-    height: 150,
+    width: 122,
+    height: 122,
     borderRadius: 12,
     overflow: "hidden",
-    backgroundColor: "#e5e7eb",
-    justifyContent: "center",
+    backgroundColor: "#1a1a2e",
+    justifyContent: "flex-end",
     alignItems: "center",
   },
   cardGrid: {
-    height: 130,
+    height: 111,
     borderRadius: 12,
     overflow: "hidden",
-    backgroundColor: "#e5e7eb",
+    backgroundColor: "#1a1a2e",
     justifyContent: "flex-end",
     alignItems: "center",
-    paddingBottom: 12,
   },
-  image: { 
+  image: {
     ...StyleSheet.absoluteFillObject,
-    width: "100%", 
-    height: "100%", 
-    resizeMode: "cover" 
+    width: "100%",
+    height: "100%",
+    resizeMode: "cover",
   },
-  overlay: {
+  overlayBase: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: "rgba(0,0,0,0.35)",
+    backgroundColor: "rgba(0,0,0,0.20)",
   },
-  cardTitleCarousel: {
+  overlayBottom: {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: "60%",
+    backgroundColor: "rgba(0,0,0,0.55)",
+  },
+  cardTitle: {
     color: "#fff",
-    fontSize: 14,
-    fontWeight: "700",
-    textTransform: "uppercase",
-    letterSpacing: 0.5,
+    fontSize: 13,
+    fontWeight: "800",
+    letterSpacing: 0.39,
     textAlign: "center",
     paddingHorizontal: 8,
-    zIndex: 1,
-  },
-  cardTitleGrid: {
-    color: "#fff",
-    fontSize: 12,
-    fontWeight: "700",
-    textTransform: "uppercase",
-    letterSpacing: 0.5,
-    textAlign: "center",
-    paddingHorizontal: 8,
+    paddingBottom: 10,
     zIndex: 1,
   },
 });

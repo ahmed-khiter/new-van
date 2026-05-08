@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import CtaBlock from "@/features/home/components/CtaBlock";
-import ComingSoonSection from "@/features/home/components/ComingSoonSection";
 import FeatureHighlight from "@/features/home/components/FeatureHighlight";
 import Footer from "@/features/home/components/Footer";
 import HeroSection from "@/features/home/components/HeroSection";
@@ -92,8 +91,6 @@ export default function HomeScreen({
 
         <FeatureHighlight />
 
-        <ComingSoonSection />
-
         <CtaBlock onGetStarted={onGetStarted} />
 
         <Footer />
@@ -122,5 +119,5 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   errorBanner: { backgroundColor: "#fff1f2" },
-  errorText: { color: "#be123c", fontWeight: "700", fontSize: 12 },
+  errorText: { color: "#be123c", fontFamily: "OpenSans_700Bold", fontSize: 12 },
 });
