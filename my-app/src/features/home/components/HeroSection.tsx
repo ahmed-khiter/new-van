@@ -32,10 +32,10 @@ export default function HeroSection({
       <View style={styles.paddedContainer}>
         {/* Location + stats row */}
         <Pressable style={styles.statsRow} onPress={onLocationPress}>
-          <MaterialIcons name="place" size={15} color="#6b7280" />
-          <MaterialIcons name="keyboard-arrow-down" size={15} color="#6b7280" />
+          <Text style={styles.flagText}>{currentLocation.flag}</Text>
+          <MaterialIcons name="keyboard-arrow-down" size={16} color="#111827" style={styles.chevron} />
           <Text style={styles.statsText}>
-            · {totalServices} services · {globalUserCount ?? "–"} Global users ·{" "}
+            {"  "}· {totalServices} services · {globalUserCount ?? "–"} Global users ·{" "}
             {locationUserCount ?? "–"} in {currentLocation.name}
           </Text>
         </Pressable>
@@ -82,10 +82,16 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginBottom: 10,
   },
+  flagText: {
+    fontSize: 18,
+  },
+  chevron: {
+    marginLeft: -2,
+  },
   statsText: {
-    fontSize: 12,
+    fontSize: 13,
     color: "#6b7280",
-    marginLeft: 2,
+    marginLeft: 0,
   },
   searchBar: {
     flexDirection: "row",

@@ -8,6 +8,7 @@
     "scheme": "myapp",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
+    "jsEngine": "hermes",
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.myapp.mobile",
