@@ -61,7 +61,7 @@ export const FEATURE_GRID: PromoFeature[] = [
     description: "promotional_slider.slide6.desc",
     color: "#D1FAE5",
     iconColor: "#10b981",
-    icon: "check",
+    icon: "custom-check",
   },
   {
     id: "rewards",
