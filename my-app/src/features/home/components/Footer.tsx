@@ -1,12 +1,12 @@
 import React from "react";
 import { View, Text, Pressable, StyleSheet } from "react-native";
 import AntDesign from "@expo/vector-icons/AntDesign";
-import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import GooglePlayIcon from "./GooglePlayIcon";
 
 export default function Footer() {
   return (
     <View style={styles.container}>
-      <Text style={styles.logo}>swipped.</Text>
+      <Text style={styles.logo}>SWIPPED.</Text>
       <Text style={styles.tagline}>
         Order, book, connect & earn — all from one platform.
       </Text>
@@ -21,7 +21,7 @@ export default function Footer() {
         </Pressable>
 
         <Pressable style={styles.badge}>
-          <MaterialIcons name="play-arrow" size={24} color="#fff" />
+          <GooglePlayIcon size={24} />
           <View>
             <Text style={styles.badgeSmall}>GET IT ON</Text>
             <Text style={styles.badgeLarge}>Google Play</Text>

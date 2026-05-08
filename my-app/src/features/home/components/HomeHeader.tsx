@@ -5,7 +5,7 @@ import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 export default function HomeHeader() {
   return (
     <View style={styles.wrapper}>
-      <Text style={styles.brand}>swipped.</Text>
+      <Text style={styles.brand}>SWIPPED.</Text>
       <View style={styles.iconsContainer}>
         <Pressable style={styles.iconButton} android_ripple={{ color: "#f0f0f0" }}>
           <MaterialIcons name="shopping-cart" size={20} color="#1a1a2e" />

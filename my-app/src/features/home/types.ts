@@ -32,6 +32,7 @@ export type HomePromoIconId =
   | "globe"
   | "heart"
   | "check"
+  | "custom-check"
   | "star"
   | "briefcase"
   | "hexagon"

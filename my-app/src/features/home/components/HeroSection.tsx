@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, Pressable, StyleSheet } from "react-native";
+import Svg, { Defs, RadialGradient, Stop, Ellipse } from "react-native-svg";
 import { LinearGradient } from "expo-linear-gradient";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import HomeHeader from "@/features/home/components/HomeHeader";
@@ -61,6 +62,16 @@ export default function HeroSection({
             </LinearGradient>
           </Pressable>
         </View>
+        <Svg style={styles.blur} width="100%" height={220} viewBox="0 0 400 220">
+          <Defs>
+            <RadialGradient id="blurGrad" cx="50%" cy="50%" r="60%" fx="50%" fy="50%">
+              <Stop offset="0%" stopColor="#FFC8B4" stopOpacity="0.45" />
+              <Stop offset="90%" stopColor="#FFC8B4" stopOpacity="0" />
+            </RadialGradient>
+          </Defs>
+          <Ellipse cx="200" cy="110" rx="200" ry="110" fill="url(#blurGrad)" />
+        </Svg>
+
       </View>
 
       <PromoBanner />
@@ -102,6 +113,14 @@ const styles = StyleSheet.create({
     paddingLeft: 14,
     paddingRight: 4,
     paddingVertical: 4,
+  },
+  blur: {
+    position: "absolute",
+    // left: 0,
+    right: 20,
+    top: -50,
+    zIndex: -1,
+    pointerEvents: "none",
   },
   domainPrefix: {
     fontSize: 13,

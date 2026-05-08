@@ -1,6 +1,9 @@
 import React from "react";
 import { View, Text, ScrollView, StyleSheet } from "react-native";
 import Feather from "@expo/vector-icons/Feather";
+import MaskedView from "@react-native-masked-view/masked-view";
+import { LinearGradient } from "expo-linear-gradient";
+import CheckCircleSvg from "./CheckCircleSvg";
 import { FEATURE_GRID, COMING_SOON_ITEMS } from "@/features/home/constants/homeContent";
 
 const TRANSLATIONS: Record<string, string> = {
@@ -27,9 +30,22 @@ export default function FeatureHighlight() {
     <View style={styles.container}>
       {/* Headline */}
       <View style={styles.headlineContainer}>
-        <Text style={styles.headlineText}>
-          Everything in one place.{"\n"}Built for you.
-        </Text>
+        <Text style={styles.headlineText}>Everything in one place.</Text>
+        <View style={styles.headlineRow}>
+          <Text style={styles.headlineText}>Built for </Text>
+          <MaskedView
+            maskElement={<Text style={styles.headlineText}>you</Text>}
+          >
+            <LinearGradient
+              colors={["#FF385C", "#8B5CF6"]}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 0 }}
+            >
+              <Text style={[styles.headlineText, { opacity: 0 }]}>you</Text>
+            </LinearGradient>
+          </MaskedView>
+          <Text style={styles.headlineText}>.</Text>
+        </View>
       </View>
 
       {/* Subtitle */}
@@ -49,7 +65,11 @@ export default function FeatureHighlight() {
             ]}
           >
             <View style={[styles.iconBubble, { backgroundColor: feature.color }]}>
-              <Feather name={feature.icon as any} size={22} color={feature.iconColor} />
+              {feature.icon === "custom-check" ? (
+                <CheckCircleSvg size={22} />
+              ) : (
+                <Feather name={feature.icon as any} size={22} color={feature.iconColor} />
+              )}
             </View>
             <Text style={styles.featureTitle}>{t(feature.title)}</Text>
             <Text style={styles.featureDescription}>{t(feature.description)}</Text>
@@ -86,11 +106,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingTop: 55,
     paddingBottom: 40,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F6F9FF",
   },
   headlineContainer: {
     alignItems: "center",
     paddingHorizontal: 12,
+  },
+  headlineRow: {
+    flexDirection: "row",
+    alignItems: "center",
   },
   headlineText: {
     fontSize: 30,
@@ -115,7 +139,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "rgba(0,0,0,0.1)",
     overflow: "hidden",
-    backgroundColor: "#fff",
+    backgroundColor: "#F6F9FF",
   },
   featureCell: {
     alignItems: "center",

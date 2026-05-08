@@ -15,8 +15,8 @@ export default function ServicesSection({
   return (
     <View style={{ paddingHorizontal: 12 }}>
       <ServiceCarousel
-        title="On Demand"
-        badge="Delivered Within 60 Minutes"
+        title="ON DEMAND"
+        badge="DELIVERED WITHIN 60 MINUTES"
         badgeColor="#e9eaec"
         badgeTextColor="#c8173a"
         subtitle="Products, food and groceries — delivered to you."
@@ -26,8 +26,8 @@ export default function ServicesSection({
       />
 
       <ServiceCarousel
-        title="Book Now"
-        badge="Book in Seconds"
+        title="BOOK NOW"
+        badge="BOOK IN SECONDS"
         badgeColor="#fde8b0"
         badgeTextColor="#b06000"
         subtitle="Reserve a table, book a session or schedule an appointment."
@@ -36,8 +36,8 @@ export default function ServicesSection({
       />
 
       <ServiceCarousel
-        title="Services"
-        badge="Instant Dispatch"
+        title="SERVICES"
+        badge="INSTANT DISPATCH"
         badgeColor="#c3f5d4"
         badgeTextColor="#0a8c35"
         subtitle="Cleaning, repairs, deliveries and more — on demand."
